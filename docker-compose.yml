@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: flux_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: flux_user
+      POSTGRES_PASSWORD: flux_password
+      POSTGRES_DB: flux_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - flux_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U flux_user -d flux_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  flux_postgres_data:

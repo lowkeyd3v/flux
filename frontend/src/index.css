@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+:root {
+  --flux-orange: #f97316;
+  --flux-green: #16a34a;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}

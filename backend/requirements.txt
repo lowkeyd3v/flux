@@ -1,0 +1,24 @@
+# --- Core API ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# --- Database ---
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+alembic==1.14.0
+
+# --- Config / env ---
+python-dotenv==1.0.1
+
+# --- CORS / misc utils are built into FastAPI/Starlette ---
+
+# --- Testing ---
+pytest==8.3.4
+httpx==0.28.1
+
+# NOTE: ML, RAG, and Voice dependencies (pandas, scikit-learn, faiss,
+# sentence-transformers, whisper, etc.) will be added in later milestones
+# once those services are actually implemented, to keep this environment
+# lightweight during the foundation phase.
