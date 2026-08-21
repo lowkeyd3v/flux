@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useVendors } from '../hooks/useVendors'
 import { useSalesRecords } from '../hooks/useSalesRecords'
+import { useLanguage } from '../context/LanguageContext'
 import VendorProfileForm from '../components/VendorProfileForm'
 import VendorList from '../components/VendorList'
 import SalesRecordForm from '../components/SalesRecordForm'
@@ -11,6 +12,7 @@ import SchemeAssistantCard from '../components/SchemeAssistantCard'
 import RecommendationCard from '../components/RecommendationCard'
 
 export default function VendorPage() {
+  const { t } = useLanguage()
   const { vendors, status: vendorsStatus, createVendor } = useVendors()
   const [selectedVendorId, setSelectedVendorId] = useState(null)
   const [creatingVendor, setCreatingVendor] = useState(false)
@@ -46,25 +48,24 @@ export default function VendorPage() {
   return (
     <div className="space-y-8">
       <section>
-        <h1 className="text-2xl font-bold text-neutral-900">Vendor Dashboard & Schemes</h1>
+        <h1 className="text-2xl font-bold text-neutral-900">{t('vendorPageTitle')}</h1>
         <p className="text-sm text-neutral-500 mt-1">
-          Create a business profile to track sales, forecast demand, and discover
-          grounded government support schemes.
+          {t('vendorPageSub')}
         </p>
       </section>
 
       <section className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm">
-        <h2 className="font-semibold text-neutral-800 mb-4">New Vendor Profile</h2>
+        <h2 className="font-semibold text-neutral-800 mb-4">{t('newVendorProfile')}</h2>
         <VendorProfileForm onSubmit={handleCreateVendor} submitting={creatingVendor} />
       </section>
 
       <section>
-        <h2 className="font-semibold text-neutral-800 mb-3">Your Vendors</h2>
+        <h2 className="font-semibold text-neutral-800 mb-3">{t('yourVendors')}</h2>
         {vendorsStatus === 'loading' && (
-          <p className="text-sm text-neutral-500">Loading vendors...</p>
+          <p className="text-sm text-neutral-500">{t('loadingVendors')}</p>
         )}
         {vendorsStatus === 'error' && (
-          <p className="text-sm text-red-600">Could not load vendors. Is the backend running?</p>
+          <p className="text-sm text-red-600">{t('errorLoadingVendors')}</p>
         )}
         {vendorsStatus === 'ok' && (
           <VendorList
@@ -82,11 +83,14 @@ export default function VendorPage() {
             <div className="flex items-center gap-2">
               <span className="text-lg">🏛️</span>
               <h2 className="font-semibold text-neutral-800">
-                Recommended Government Schemes — {selectedVendor.name}
+                {t('recommendedSchemesTitle', { name: selectedVendor.name })}
               </h2>
             </div>
             <p className="text-sm text-neutral-500 mt-0.5">
-              Personalized subsidies, loans, and welfare benefits matched to your {selectedVendor.product} business in {selectedVendor.location}.
+              {t('recommendedSchemesSub', {
+                product: selectedVendor.product,
+                location: selectedVendor.location,
+              })}
             </p>
           </div>
           <RecommendedSchemesCard vendor={selectedVendor} />
@@ -99,12 +103,11 @@ export default function VendorPage() {
           <div className="flex items-center gap-2">
             <span className="text-lg">🤖</span>
             <h2 className="font-semibold text-neutral-800">
-              FLUX Scheme Assistant {selectedVendor ? `— for ${selectedVendor.name}` : ''}
+              {t('schemeAssistantTitle')} {selectedVendor ? `— ${selectedVendor.name}` : ''}
             </h2>
           </div>
           <p className="text-sm text-neutral-500 mt-0.5">
-            Ask natural-language questions about government schemes (PM SVANidhi, MUDRA, Vishwakarma, e-Shram).
-            Answers are strictly grounded in official documents with source citations.
+            {t('schemeAssistantSub')}
           </p>
         </div>
         <SchemeAssistantCard vendor={selectedVendor} />
@@ -114,11 +117,10 @@ export default function VendorPage() {
         <section className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm space-y-4">
           <div>
             <h2 className="font-semibold text-neutral-800">
-              Demand Prediction — {selectedVendor.name}
+              {t('demandPredictionTitle', { name: selectedVendor.name })}
             </h2>
             <p className="text-sm text-neutral-500">
-              Get an ML-driven forecast for a specific day, adjusted for weather and
-              holidays.
+              {t('demandPredictionSub')}
             </p>
           </div>
           <DemandPredictionCard vendor={selectedVendor} />
@@ -129,11 +131,10 @@ export default function VendorPage() {
         <section className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm space-y-4">
           <div>
             <h2 className="font-semibold text-neutral-800">
-              Recommendation — {selectedVendor.name}
+              {t('recommendationTitle', { name: selectedVendor.name })}
             </h2>
             <p className="text-sm text-neutral-500">
-              How much to prepare, expected revenue, and risk — combining the demand
-              forecast with your inventory, budget, and local weather.
+              {t('recommendationSub')}
             </p>
           </div>
           <RecommendationCard vendor={selectedVendor} />
@@ -144,10 +145,10 @@ export default function VendorPage() {
         <section className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm space-y-5">
           <div>
             <h2 className="font-semibold text-neutral-800">
-              Sales History — {selectedVendor.name}
+              {t('salesHistoryTitle', { name: selectedVendor.name })}
             </h2>
             <p className="text-sm text-neutral-500">
-              Log historical daily sales. This data will power demand forecasting.
+              {t('salesHistorySub')}
             </p>
           </div>
 

@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import { getRecommendedSchemes, getSchemeById } from '../services/schemeService'
+import { useLanguage } from '../context/LanguageContext'
 import SchemeDetailModal from './SchemeDetailModal'
 
 export default function RecommendedSchemesCard({ vendor }) {
+  const { t } = useLanguage()
   const [recommendations, setRecommendations] = useState([])
   const [status, setStatus] = useState('idle') // 'idle' | 'loading' | 'ok' | 'error'
   const [error, setError] = useState(null)
@@ -82,7 +84,7 @@ export default function RecommendedSchemesCard({ vendor }) {
                   <h3 className="font-semibold text-neutral-900 text-sm">{scheme.name}</h3>
 
                   <div className="bg-amber-50/70 p-2.5 rounded-lg border border-amber-100 text-xs text-amber-900">
-                    <span className="font-medium">Why it matches you:</span> {rec.match_reason}
+                    <span className="font-semibold">{t('matchReasonLabel')}</span> {rec.match_reason}
                   </div>
 
                   <p className="text-xs text-neutral-600 leading-relaxed">
@@ -94,9 +96,9 @@ export default function RecommendedSchemesCard({ vendor }) {
                   <button
                     type="button"
                     onClick={() => handleOpenDetail(scheme.id)}
-                    className="text-xs font-medium text-neutral-600 hover:text-orange-600 transition"
+                    className="text-xs font-medium text-neutral-700 hover:text-orange-600 transition cursor-pointer"
                   >
-                    View Eligibility & Documents ℹ️
+                    {t('btnViewSchemeDetails')}
                   </button>
 
                   {scheme.official_url && (
@@ -104,7 +106,7 @@ export default function RecommendedSchemesCard({ vendor }) {
                       href={scheme.official_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-orange-600 text-white text-xs font-medium hover:bg-orange-700 transition"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-orange-600 text-white text-xs font-medium hover:bg-orange-700 transition shrink-0"
                     >
                       Apply ↗
                     </a>

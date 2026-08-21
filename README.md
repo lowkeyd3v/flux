@@ -6,7 +6,7 @@ FLUX is an AI-powered business intelligence assistant for Indian street vendors 
 
 Built for **OOSC 4.0 Hackathon — Problem Statement PS5: AI for Public Good**.
 
-> **Status: Milestones 1–6 (Foundation through Government Scheme RAG & Dashboard) Complete.** All core features—vendor profile management, sales ledger, ML demand forecasting with uncertainty bounds, rule-based recommendation engine with OpenWeatherMap integration, and grounded government scheme Q&A with personalized recommendations—are fully implemented, integrated into the UI, and verified with automated test suites.
+> **Status: Milestones 1–7 (Foundation through Multilingual UI & Voice Assistant) Complete.** All core features—vendor profile management, sales ledger, ML demand forecasting with uncertainty bounds, rule-based recommendation engine with OpenWeatherMap integration, grounded government scheme Q&A with personalized recommendations, trilingual UI (English, Hindi, Hinglish), browser-native Speech-to-Text / Text-to-Speech, and voice intent parsing—are fully implemented, integrated into the UI, and verified with 41 automated tests.
 
 ---
 
@@ -24,6 +24,7 @@ Built for **OOSC 4.0 Hackathon — Problem Statement PS5: AI for Public Good**.
 - [Environment Variables](#environment-variables)
 - [ML Methodology & Dataset](#ml-methodology--dataset)
 - [Government Scheme RAG System](#government-scheme-rag-system)
+- [Multilingual & Voice Assistant System](#multilingual--voice-assistant-system)
 - [API Documentation](#api-documentation)
 - [Running Tests](#running-tests)
 - [Deployment](#deployment)
@@ -40,6 +41,7 @@ Over 10 million street vendors and micro-entrepreneurs across India make daily b
 - **Demand Uncertainty & Perishability:** Over-preparation leads to wasted raw materials and inventory spoilage; under-preparation leads to lost revenue and dissatisfied customers.
 - **Weather & Local Context Vulnerability:** Extreme heat, sudden rains, and festivals significantly alter daily footfall and purchasing patterns, but vendors lack localized forecasting tools.
 - **Information Asymmetry in Government Support:** Valuable welfare and financial schemes (such as PM SVANidhi, PM MUDRA Yojana, and PM Vishwakarma) offer low-cost working capital, toolkits, and interest subsidies, yet vendors struggle to discover eligibility rules, required documentation, and application procedures due to complex bureaucratic portals.
+- **Language & Literacy Barriers:** Many vendors are non-native English speakers who operate in Hindi, regional dialects, or colloquial Hinglish, requiring voice-driven interaction rather than dense text interfaces.
 
 ---
 
@@ -52,12 +54,13 @@ FLUX provides a lightweight, mobile-friendly dashboard tailored to the operation
 3. **Smart Recommendations with Weather Context:** Receive plain-language, actionable stock preparation quantities and expected revenue adjusted for live weather forecasts, current inventory, and budget constraints.
 4. **Government Scheme RAG Assistant:** Ask natural-language questions regarding government welfare, loans, and subsidies, receiving hallucination-free answers grounded in official scheme documents with source citations and direct application links.
 5. **Personalized Scheme Matching:** Automatically matches vendors to relevant government initiatives based on their business product, budget size, and geographic location.
+6. **Voice & Multilingual Accessibility:** Switch seamlessly between **English**, **हिंदी (Hindi)**, and **Hinglish**, with browser-native speech recognition (STT) for questions and audio narration (TTS) for recommendations.
 
 ---
 
 ## Target Users
 
-Indian street vendors, roadside food stalls, artisans, and micro-retailers (e.g., chaat carts, tea stalls, fruit vendors, handicraft makers) needing accessible, low-friction, high-utility business tools.
+Indian street vendors, roadside food stalls, artisans, and micro-retailers (e.g., chaat carts, tea stalls, fruit vendors, handicraft makers) needing accessible, low-friction, high-utility business tools in their own language.
 
 ---
 
@@ -88,6 +91,12 @@ Indian street vendors, roadside food stalls, artisans, and micro-retailers (e.g.
 ### 5. Unified Dashboard (Milestone 6)
 - Cohesive React interface linking vendor profile state directly to predictions, recommendations, sales history, and personalized schemes.
 
+### 6. Hindi/Hinglish Localization & Voice Assistant (Milestone 7)
+- **Trilingual Localization:** Instant language switching across **English**, **हिंदी (Hindi)**, and **Hinglish (Colloquial Hindi)**.
+- **Voice Speech-to-Text (STT):** Integrated Web Speech recognition button on Scheme Assistant for speaking questions in Hindi/Hinglish.
+- **Voice Text-to-Speech (TTS):** Audio narration button (`SpeakerButton`) on recommendations and scheme answers for hands-free audio playback.
+- **Voice Intent Processing:** Backend endpoint recognizing spoken user commands (scheme searches, demand predictions, preparation advice, sales logging).
+
 ---
 
 ## Project Status & Roadmap
@@ -100,7 +109,7 @@ Indian street vendors, roadside food stalls, artisans, and micro-retailers (e.g.
 | **Milestone 4: Recommendation Engine** | **Complete** | Rule-based preparation logic, OpenWeatherMap integration, risk scoring, explainable text. |
 | **Milestone 5: Scheme RAG Assistant** | **Complete** | Vector search over scheme documents, grounded synthesis, personalized vendor scheme matching. |
 | **Milestone 6: Dashboard Integration** | **Complete** | End-to-end frontend integration connecting vendor selection with all AI/ML & RAG services. |
-| **Milestone 7: Hindi/Hinglish & Voice** | *Planned* | Multilingual UI localization, speech-to-text / text-to-speech voice assistant for hands-free vendor queries. |
+| **Milestone 7: Hindi/Hinglish & Voice** | **Complete** | Trilingual UI (English, Hindi, Hinglish), browser-native Speech-to-Text & Text-to-Speech, voice intent API. |
 | **Milestone 8: Production Deployment** | *Planned* | Cloud hosting, production containerization, CDN integration, and performance monitoring. |
 
 ---
@@ -427,6 +436,17 @@ Structured in `backend/app/data/schemes_data.json`, containing curated documents
 
 ---
 
+## Multilingual & Voice Assistant System
+
+FLUX is built specifically for Indian street vendors who speak diverse languages and have varying levels of literacy:
+
+- **Trilingual Localization (`en`, `hi`, `hinglish`):** Switch effortlessly between English, Hindi (हिंदी in Devanagari), and conversational Hinglish (Roman script, e.g. *"Aaj kitna banana chahiye?"*).
+- **Speech-to-Text (STT):** Powered by browser-native Web Speech Recognition (`webkitSpeechRecognition`) with zero server latency and automatic language adaptation (`hi-IN` / `en-IN`).
+- **Text-to-Speech (TTS):** Integrated audio narration using `speechSynthesis` with Indian accent voice matching to read aloud recommendations and scheme guidance.
+- **Voice Intent Processor:** Backend REST endpoint mapping spoken phrases to actionable platform intents (scheme inquiries, demand forecasts, stock prep calculations, and sales logging).
+
+---
+
 ## API Documentation
 
 All endpoints are prefixed with `/api` (configurable via `API_V1_PREFIX`). Interactive Swagger documentation is available at `http://localhost:8000/docs`.
@@ -467,6 +487,12 @@ All endpoints are prefixed with `/api` (configurable via `API_V1_PREFIX`). Inter
 | `POST` | `/api/schemes/query` | Natural-language RAG query with source-attributed answers |
 | `GET` | `/api/vendors/{vendor_id}/schemes/recommended` | Personalized scheme recommendations matching vendor profile |
 
+### Voice & Multilingual Assistant
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/voice/parse-intent` | Parse spoken vendor query into structured action (schemes, predictions, sales) |
+| `GET` | `/api/voice/supported-languages` | List supported languages (`en`, `hi`, `hinglish`) and speech synthesizer models |
+
 ---
 
 ## Running Tests
@@ -479,13 +505,14 @@ cd backend
 pytest -v
 ```
 
-**Test Coverage Summary:**
+**Test Coverage Summary (41 Tests):**
 - `tests/test_health.py`: Health endpoint and DB connectivity checks.
 - `tests/test_vendors.py`: Vendor CRUD and validation.
 - `tests/test_sales_records.py`: Single and bulk sales logging with constraints.
 - `tests/test_predictions.py`: ML prediction inference and range bounds.
 - `tests/test_recommendations.py`: Stock prep constraints, budget limits, risk assessment, and weather fallbacks.
 - `tests/test_schemes.py`: Scheme listing, detail lookup, vector retrieval, vendor-context queries, and personalized matching.
+- `tests/test_voice.py`: Multilingual intent parsing across English, Hindi, and Hinglish, and supported languages catalog.
 
 ---
 

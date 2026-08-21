@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useLanguage } from '../context/LanguageContext'
 
 const today = () => new Date().toISOString().slice(0, 10)
 
@@ -10,11 +11,18 @@ const INITIAL_FORM = {
   weather_condition: '',
 }
 
-const WEATHER_OPTIONS = ['', 'clear', 'rain', 'extreme_heat', 'cloudy']
-
 export default function SalesRecordForm({ onSubmit, submitting }) {
+  const { t } = useLanguage()
   const [form, setForm] = useState(INITIAL_FORM)
   const [formError, setFormError] = useState(null)
+
+  const weatherOptions = [
+    { value: '', label: 'Not recorded' },
+    { value: 'clear', label: t('weatherClear') },
+    { value: 'cloudy', label: t('weatherCloudy') },
+    { value: 'rain', label: t('weatherRain') },
+    { value: 'extreme_heat', label: t('weatherExtremeHeat') },
+  ]
 
   const handleChange = (field) => (e) => {
     const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
@@ -54,7 +62,7 @@ export default function SalesRecordForm({ onSubmit, submitting }) {
     <form onSubmit={handleSubmit} className="space-y-3">
       <div className="grid sm:grid-cols-4 gap-3">
         <label className="block">
-          <span className="block text-xs font-medium text-neutral-600 mb-1">Date</span>
+          <span className="block text-xs font-medium text-neutral-600 mb-1">{t('dateLabel')}</span>
           <input
             type="date"
             value={form.sale_date}
@@ -64,7 +72,7 @@ export default function SalesRecordForm({ onSubmit, submitting }) {
         </label>
 
         <label className="block">
-          <span className="block text-xs font-medium text-neutral-600 mb-1">Units Sold</span>
+          <span className="block text-xs font-medium text-neutral-600 mb-1">{t('unitsSoldLabel')}</span>
           <input
             type="number"
             min="0"
@@ -77,7 +85,7 @@ export default function SalesRecordForm({ onSubmit, submitting }) {
         </label>
 
         <label className="block">
-          <span className="block text-xs font-medium text-neutral-600 mb-1">Price (₹)</span>
+          <span className="block text-xs font-medium text-neutral-600 mb-1">{t('sellingPriceLabel')}</span>
           <input
             type="number"
             min="0"
@@ -90,15 +98,15 @@ export default function SalesRecordForm({ onSubmit, submitting }) {
         </label>
 
         <label className="block">
-          <span className="block text-xs font-medium text-neutral-600 mb-1">Weather</span>
+          <span className="block text-xs font-medium text-neutral-600 mb-1">{t('weatherConditionLabel')}</span>
           <select
             value={form.weather_condition}
             onChange={handleChange('weather_condition')}
             className="input"
           >
-            {WEATHER_OPTIONS.map((opt) => (
-              <option key={opt} value={opt}>
-                {opt === '' ? 'Not recorded' : opt}
+            {weatherOptions.map((opt) => (
+              <option key={opt.value} value={opt.value}>
+                {opt.label}
               </option>
             ))}
           </select>
@@ -112,7 +120,7 @@ export default function SalesRecordForm({ onSubmit, submitting }) {
           onChange={handleChange('is_holiday_or_event')}
           className="rounded border-neutral-300"
         />
-        This day was a holiday or local event
+        {t('holidayEventLabel')}
       </label>
 
       {formError && (
@@ -124,9 +132,9 @@ export default function SalesRecordForm({ onSubmit, submitting }) {
       <button
         type="submit"
         disabled={submitting}
-        className="px-4 py-2 rounded-lg bg-neutral-800 text-white text-sm font-medium hover:bg-neutral-900 disabled:opacity-50 disabled:cursor-not-allowed transition"
+        className="px-4 py-2 rounded-lg bg-neutral-800 text-white text-sm font-medium hover:bg-neutral-900 disabled:opacity-50 disabled:cursor-not-allowed transition cursor-pointer"
       >
-        {submitting ? 'Saving...' : 'Add Sales Record'}
+        {submitting ? 'Saving...' : t('btnAddRecord')}
       </button>
     </form>
   )

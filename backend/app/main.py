@@ -9,7 +9,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import get_settings
-from app.api import health, vendors, sales_records, predictions, recommendations, schemes
+from app.api import health, vendors, sales_records, predictions, recommendations, schemes, voice
 
 settings = get_settings()
 
@@ -29,6 +29,7 @@ app.include_router(sales_records.router, prefix=settings.API_V1_PREFIX)
 app.include_router(predictions.router, prefix=settings.API_V1_PREFIX)
 app.include_router(recommendations.router, prefix=settings.API_V1_PREFIX)
 app.include_router(schemes.router, prefix=settings.API_V1_PREFIX)
+app.include_router(voice.router, prefix=settings.API_V1_PREFIX)
 
 
 @app.get("/")

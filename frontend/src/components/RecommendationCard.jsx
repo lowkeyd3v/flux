@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { getRecommendation } from '../services/recommendationService'
+import { useLanguage } from '../context/LanguageContext'
+import SpeakerButton from './SpeakerButton'
 
 const tomorrow = () => {
   const d = new Date()
@@ -15,19 +17,26 @@ const INITIAL_FORM = {
   weather_condition: '',
 }
 
-const WEATHER_OPTIONS = ['', 'clear', 'rain', 'extreme_heat', 'cloudy']
-
 const RISK_STYLES = {
-  low: 'border-green-200 bg-green-50 text-green-700',
-  medium: 'border-amber-200 bg-amber-50 text-amber-700',
-  high: 'border-red-200 bg-red-50 text-red-700',
+  low: 'border-green-200 bg-green-50 text-green-700 font-semibold',
+  medium: 'border-amber-200 bg-amber-50 text-amber-700 font-semibold',
+  high: 'border-red-200 bg-red-50 text-red-700 font-semibold',
 }
 
 export default function RecommendationCard({ vendor }) {
+  const { t } = useLanguage()
   const [form, setForm] = useState(INITIAL_FORM)
   const [result, setResult] = useState(null)
   const [status, setStatus] = useState('idle') // 'idle' | 'loading' | 'ok' | 'error'
   const [error, setError] = useState(null)
+
+  const weatherOptions = [
+    { value: '', label: 'Default' },
+    { value: 'clear', label: t('weatherClear') },
+    { value: 'cloudy', label: t('weatherCloudy') },
+    { value: 'rain', label: t('weatherRain') },
+    { value: 'extreme_heat', label: t('weatherExtremeHeat') },
+  ]
 
   const handleChange = (field) => (e) => {
     const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
@@ -64,12 +73,23 @@ export default function RecommendationCard({ vendor }) {
     }
   }
 
+  const speechText = result
+    ? `${result.explanation} Expected revenue is ${result.expected_revenue} rupees.`
+    : ''
+
+  const getRiskLabel = (level) => {
+    if (level === 'low') return t('riskLow')
+    if (level === 'medium') return t('riskMedium')
+    if (level === 'high') return t('riskHigh')
+    return `${level} risk`
+  }
+
   return (
     <div className="space-y-4">
       <form onSubmit={handleSubmit} className="space-y-3">
         <div className="grid sm:grid-cols-3 gap-3 items-end">
           <label className="block">
-            <span className="block text-xs font-medium text-neutral-600 mb-1">Date</span>
+            <span className="block text-xs font-medium text-neutral-600 mb-1">{t('targetDateLabel')}</span>
             <input
               type="date"
               value={form.target_date}
@@ -85,15 +105,15 @@ export default function RecommendationCard({ vendor }) {
               onChange={handleChange('is_holiday_or_event')}
               className="rounded border-neutral-300"
             />
-            Holiday or local event
+            {t('holidayEventLabel')}
           </label>
 
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="px-4 py-2 rounded-lg bg-orange-600 text-white text-sm font-medium hover:bg-orange-700 disabled:opacity-50 transition"
+            className="px-4 py-2 rounded-lg bg-orange-600 text-white text-sm font-medium hover:bg-orange-700 disabled:opacity-50 transition cursor-pointer"
           >
-            {status === 'loading' ? 'Thinking...' : 'Get Recommendation'}
+            {status === 'loading' ? t('btnGettingRecommendation') : t('btnGetRecommendation')}
           </button>
         </div>
 
@@ -104,14 +124,14 @@ export default function RecommendationCard({ vendor }) {
             onChange={handleChange('manual_weather')}
             className="rounded border-neutral-300"
           />
-          Enter weather manually (otherwise we'll try to fetch it for {vendor.location})
+          {t('manualWeatherCheckbox')}
         </label>
 
         {form.manual_weather && (
           <div className="grid sm:grid-cols-2 gap-3">
             <label className="block">
               <span className="block text-xs font-medium text-neutral-600 mb-1">
-                Temperature (°C)
+                {t('tempCelsiusLabel')}
               </span>
               <input
                 type="number"
@@ -122,15 +142,15 @@ export default function RecommendationCard({ vendor }) {
               />
             </label>
             <label className="block">
-              <span className="block text-xs font-medium text-neutral-600 mb-1">Weather</span>
+              <span className="block text-xs font-medium text-neutral-600 mb-1">{t('weatherConditionLabel')}</span>
               <select
                 value={form.weather_condition}
                 onChange={handleChange('weather_condition')}
                 className="input"
               >
-                {WEATHER_OPTIONS.map((opt) => (
-                  <option key={opt} value={opt}>
-                    {opt === '' ? 'Unknown' : opt}
+                {weatherOptions.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
                   </option>
                 ))}
               </select>
@@ -146,45 +166,56 @@ export default function RecommendationCard({ vendor }) {
       )}
 
       {status === 'ok' && result && (
-        <div className="rounded-xl border border-orange-200 bg-orange-50 p-5 space-y-3">
-          <div className="flex items-baseline justify-between flex-wrap gap-2">
+        <div className="rounded-xl border border-orange-200 bg-orange-50/80 p-5 space-y-3">
+          <div className="flex items-center justify-between flex-wrap gap-2">
             <div className="flex items-baseline gap-2">
               <span className="text-3xl font-bold text-orange-700">
                 {result.recommended_preparation_qty}
               </span>
-              <span className="text-sm text-neutral-600">units to prepare</span>
+              <span className="text-sm font-semibold text-neutral-800">
+                {t('prepUnits', { qty: '' })}
+              </span>
             </div>
-            <span
-              className={`text-xs font-medium px-2 py-1 rounded-full border capitalize ${RISK_STYLES[result.risk_level] ?? ''}`}
-            >
-              {result.risk_level} risk
-            </span>
-          </div>
-
-          <p className="text-sm text-neutral-700">{result.explanation}</p>
-
-          <div className="grid sm:grid-cols-3 gap-3 text-sm text-neutral-600 pt-1">
-            <div>
-              <span className="block text-xs text-neutral-400">Expected revenue</span>
-              ₹{result.expected_revenue}
-            </div>
-            <div>
-              <span className="block text-xs text-neutral-400">Surplus / shortage</span>
-              {result.estimated_surplus_or_shortage > 0 ? '+' : ''}
-              {result.estimated_surplus_or_shortage} units
-            </div>
-            <div>
-              <span className="block text-xs text-neutral-400">Weather used</span>
-              {result.weather.condition ?? 'unknown'}
-              {result.weather.temperature_celsius != null
-                ? ` · ${result.weather.temperature_celsius}°C`
-                : ''}
-              {' '}
-              <span className="text-xs text-neutral-400">({result.weather.source})</span>
+            <div className="flex items-center gap-2">
+              <SpeakerButton text={speechText} />
+              <span
+                className={`text-xs px-2.5 py-1 rounded-full border ${RISK_STYLES[result.risk_level] ?? ''}`}
+              >
+                {getRiskLabel(result.risk_level)}
+              </span>
             </div>
           </div>
 
-          <p className="text-xs text-neutral-400">Model: {result.model_version}</p>
+          <p className="text-sm text-neutral-800 leading-relaxed font-medium bg-white/70 p-3 rounded-lg border border-orange-100">
+            {result.explanation}
+          </p>
+
+          <div className="grid sm:grid-cols-3 gap-3 text-sm text-neutral-700 pt-1">
+            <div className="bg-white/60 p-2.5 rounded-md border border-orange-100">
+              <span className="block text-xs text-neutral-500 font-medium">{t('expectedRevenueTitle')}</span>
+              <span className="font-semibold text-neutral-900">₹{result.expected_revenue}</span>
+            </div>
+            <div className="bg-white/60 p-2.5 rounded-md border border-orange-100">
+              <span className="block text-xs text-neutral-500 font-medium">{t('estSurplusShortageTitle')}</span>
+              <span className="font-semibold text-neutral-900">
+                {result.estimated_surplus_or_shortage > 0 ? '+' : ''}
+                {result.estimated_surplus_or_shortage} units
+              </span>
+            </div>
+            <div className="bg-white/60 p-2.5 rounded-md border border-orange-100">
+              <span className="block text-xs text-neutral-500 font-medium">Weather Context</span>
+              <span className="text-xs text-neutral-800">
+                {result.weather.condition ?? 'Default'}
+                {result.weather.temperature_celsius != null
+                  ? ` · ${result.weather.temperature_celsius}°C`
+                  : ''}
+                {' '}
+                <span className="text-neutral-500 font-mono text-[11px]">({result.weather.source})</span>
+              </span>
+            </div>
+          </div>
+
+          <p className="text-xs text-neutral-400">{t('modelVersion', { version: result.model_version })}</p>
         </div>
       )}
     </div>

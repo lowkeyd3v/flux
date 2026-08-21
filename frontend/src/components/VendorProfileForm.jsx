@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useLanguage } from '../context/LanguageContext'
 
 const INITIAL_FORM = {
   name: '',
@@ -14,6 +15,7 @@ const INITIAL_FORM = {
  * Calls onSubmit(payload) with numeric fields coerced from strings.
  */
 export default function VendorProfileForm({ onSubmit, submitting }) {
+  const { t } = useLanguage()
   const [form, setForm] = useState(INITIAL_FORM)
   const [formError, setFormError] = useState(null)
 
@@ -54,68 +56,68 @@ export default function VendorProfileForm({ onSubmit, submitting }) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
-        <Field label="Vendor Name *">
+        <Field label={t('vendorNameLabel')}>
           <input
             type="text"
             value={form.name}
             onChange={handleChange('name')}
-            placeholder="e.g. Ramesh Kumar"
+            placeholder={t('vendorNamePlaceholder')}
             className="input"
           />
         </Field>
 
-        <Field label="Product *">
+        <Field label={t('productLabel')}>
           <input
             type="text"
             value={form.product}
             onChange={handleChange('product')}
-            placeholder="e.g. Samosa"
+            placeholder={t('productPlaceholder')}
             className="input"
           />
         </Field>
 
-        <Field label="Location *">
+        <Field label={t('locationLabel')}>
           <input
             type="text"
             value={form.location}
             onChange={handleChange('location')}
-            placeholder="e.g. Prayagraj"
+            placeholder={t('locationPlaceholder')}
             className="input"
           />
         </Field>
 
-        <Field label="Selling Price (₹) *">
+        <Field label={t('sellingPriceLabel')}>
           <input
             type="number"
             min="0"
             step="0.01"
             value={form.selling_price}
             onChange={handleChange('selling_price')}
-            placeholder="e.g. 10"
+            placeholder={t('sellingPricePlaceholder')}
             className="input"
           />
         </Field>
 
-        <Field label="Current Inventory (units)">
+        <Field label={t('currentInventoryLabel')}>
           <input
             type="number"
             min="0"
             step="0.01"
             value={form.current_inventory}
             onChange={handleChange('current_inventory')}
-            placeholder="e.g. 50"
+            placeholder={t('currentInventoryPlaceholder')}
             className="input"
           />
         </Field>
 
-        <Field label="Budget (₹)">
+        <Field label={t('budgetLabel')}>
           <input
             type="number"
             min="0"
             step="0.01"
             value={form.budget}
             onChange={handleChange('budget')}
-            placeholder="e.g. 2000"
+            placeholder={t('budgetPlaceholder')}
             className="input"
           />
         </Field>
@@ -130,9 +132,9 @@ export default function VendorProfileForm({ onSubmit, submitting }) {
       <button
         type="submit"
         disabled={submitting}
-        className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-orange-600 text-white font-medium hover:bg-orange-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+        className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-orange-600 text-white font-medium hover:bg-orange-700 disabled:opacity-50 disabled:cursor-not-allowed transition cursor-pointer"
       >
-        {submitting ? 'Creating...' : 'Create Vendor Profile'}
+        {submitting ? t('btnCreatingVendor') : t('btnCreateVendor')}
       </button>
     </form>
   )
