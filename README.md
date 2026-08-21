@@ -92,11 +92,11 @@ Currently implemented: Frontend to Backend to PostgreSQL, with a working `/api/h
 
 ## Tech Stack
 
-**Frontend:** React, Vite, Tailwind CSS, React Router, Recharts, Axios
-**Backend:** Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL
-**ML (planned):** Pandas, NumPy, Scikit-learn, Joblib
-**Generative AI (planned):** LLM API (provider-abstracted), FAISS/ChromaDB, Sentence Transformers
-**Voice (planned, P2):** Whisper or equivalent
+**Frontend:** React, Vite, Tailwind CSS, React Router, Recharts, Axios<br>
+**Backend:** Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL<br>
+**ML (planned):** Pandas, NumPy, Scikit-learn, Joblib<br>
+**Generative AI (planned):** LLM API (provider-abstracted), FAISS/ChromaDB, Sentence Transformers<br>
+**Voice (planned, P2):** Whisper or equivalent<br>
 **Deployment:** Simple, single-service hosting (no Kubernetes/microservices)
 
 ## Repository Structure
