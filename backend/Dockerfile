@@ -53,6 +53,10 @@ COPY ml /app/ml
 COPY backend/docker-entrypoint.sh /app/docker-entrypoint.sh
 COPY backend/gunicorn_conf.py /app/gunicorn_conf.py
 
+# Generate synthetic data & train ML model artifact if not present
+RUN python -m ml.data.generate_synthetic_data && \
+    python -m ml.training.train_demand_model
+
 # Fix permissions
 RUN chmod +x /app/docker-entrypoint.sh && \
     chown -R fluxuser:fluxgroup /app

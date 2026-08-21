@@ -55,6 +55,11 @@ jobs:
           cd backend
           alembic upgrade head
 
+      - name: Generate ML Synthetic Data & Train Model
+        run: |
+          python -m ml.data.generate_synthetic_data
+          python -m ml.training.train_demand_model
+
       - name: Run Backend Test Suite (Pytest)
         env:
           DATABASE_URL: postgresql+psycopg2://flux_user:flux_password@localhost:5432/flux_db

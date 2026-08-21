@@ -2,7 +2,7 @@
 Shared pytest fixtures.
 
 Uses the PostgreSQL database configured via DATABASE_URL, ensures all schema tables
-are created, and wraps each test in a transaction that is rolled back afterward.
+are created, verifies ML model artifacts, and wraps each test in a transaction.
 """
 
 import sys
@@ -26,9 +26,17 @@ from app.models import Vendor, SalesRecord  # noqa: F401 - ensure models are reg
 
 
 @pytest.fixture(scope="session", autouse=True)
-def setup_test_db():
-    """Ensure database schema tables are created before running test suite."""
+def setup_test_environment():
+    """Ensure database schema tables and ML model artifact are ready for tests."""
     Base.metadata.create_all(bind=engine)
+
+    from ml.inference.predict import MODEL_PATH
+    if not MODEL_PATH.exists():
+        from ml.data.generate_synthetic_data import generate_synthetic_dataset, OUTPUT_PATH
+        from ml.training.train_demand_model import train
+        df = generate_synthetic_dataset()
+        df.to_csv(OUTPUT_PATH, index=False)
+        train()
     yield
 
 
