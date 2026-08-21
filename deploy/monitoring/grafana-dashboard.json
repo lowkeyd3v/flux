@@ -1,0 +1,106 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 0 },
+      "id": 1,
+      "title": "FLUX Application Health & Throughput",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "red", "value": null },
+              { "color": "green", "value": 1 }
+            ]
+          }
+        }
+      },
+      "gridPos": { "h": 5, "w": 6, "x": 0, "y": 1 },
+      "id": 2,
+      "title": "PostgreSQL DB Status",
+      "type": "stat",
+      "targets": [{ "expr": "flux_db_status", "legendFormat": "Database Status" }]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "s" } },
+      "gridPos": { "h": 5, "w": 6, "x": 6, "y": 1 },
+      "id": 3,
+      "title": "Application Uptime",
+      "type": "stat",
+      "targets": [{ "expr": "flux_app_uptime_seconds", "legendFormat": "Uptime" }]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "gridPos": { "h": 5, "w": 6, "x": 12, "y": 1 },
+      "id": 4,
+      "title": "In-Flight HTTP Requests",
+      "type": "stat",
+      "targets": [{ "expr": "flux_http_requests_in_flight", "legendFormat": "Active Requests" }]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "reqps" } },
+      "gridPos": { "h": 5, "w": 6, "x": 18, "y": 1 },
+      "id": 5,
+      "title": "Total Request Rate",
+      "type": "stat",
+      "targets": [{ "expr": "sum(rate(flux_http_requests_total[1m]))", "legendFormat": "RPS" }]
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 6 },
+      "id": 6,
+      "title": "Latency & Error Telemetry",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "s" } },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 7 },
+      "id": 7,
+      "title": "HTTP Request Latency (p50 / p90 / p99)",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "flux_http_request_duration_seconds{quantile='0.5'}", "legendFormat": "{{endpoint}} (p50)" },
+        { "expr": "flux_http_request_duration_seconds{quantile='0.9'}", "legendFormat": "{{endpoint}} (p90)" },
+        { "expr": "flux_http_request_duration_seconds{quantile='0.99'}", "legendFormat": "{{endpoint}} (p99)" }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "s" } },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 7 },
+      "id": 8,
+      "title": "ML Inference & RAG Query Durations",
+      "type": "timeseries",
+      "targets": [
+        { "expr": "flux_ml_prediction_duration_seconds{quantile='0.5'}", "legendFormat": "ML Inference (p50)" },
+        { "expr": "flux_ml_prediction_duration_seconds{quantile='0.95'}", "legendFormat": "ML Inference (p95)" },
+        { "expr": "flux_rag_query_duration_seconds{quantile='0.5'}", "legendFormat": "RAG Scheme Search (p50)" },
+        { "expr": "flux_rag_query_duration_seconds{quantile='0.95'}", "legendFormat": "RAG Scheme Search (p95)" }
+      ]
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": ["flux", "production", "fastapi", "ai"],
+  "time": { "from": "now-15m", "to": "now" },
+  "title": "FLUX Production Performance & ML Observability",
+  "uid": "flux-prod-metrics",
+  "version": 1
+}

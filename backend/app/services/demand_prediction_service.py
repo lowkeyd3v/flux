@@ -65,8 +65,11 @@ class MLDemandPredictionService(DemandPredictionService):
     """
 
     def predict(self, data: DemandPredictionInput) -> DemandPredictionResult:
+        import time
         from ml.inference.predict import predict_demand
+        from app.core.metrics import get_metrics_registry
 
+        start_t = time.time()
         weather_context = data.weather_context or {}
         result = predict_demand(
             product=data.product,
@@ -77,6 +80,8 @@ class MLDemandPredictionService(DemandPredictionService):
             weather_condition=weather_context.get("condition"),
             is_holiday_or_event=weather_context.get("is_holiday_or_event", False),
         )
+        elapsed = time.time() - start_t
+        get_metrics_registry().record_ml_prediction(elapsed)
 
         return DemandPredictionResult(
             predicted_demand_low=result["predicted_demand_low"],

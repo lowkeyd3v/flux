@@ -1,0 +1,144 @@
+services:
+  # ----------------------------------------------------------------------------
+  # 1. PostgreSQL 16 Relational Database
+  # ----------------------------------------------------------------------------
+  postgres:
+    image: postgres:16-alpine
+    container_name: flux_prod_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-flux_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-flux_password}
+      POSTGRES_DB: ${POSTGRES_DB:-flux_db}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-flux_user} -d ${POSTGRES_DB:-flux_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - flux_net
+    deploy:
+      resources:
+        limits:
+          memory: 1024M
+          cpus: "1.0"
+
+  # ----------------------------------------------------------------------------
+  # 2. FastAPI + ML Inference Backend Service (Gunicorn + Uvicorn Workers)
+  # ----------------------------------------------------------------------------
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: flux_prod_backend
+    restart: always
+    environment:
+      APP_NAME: "FLUX Production API"
+      APP_ENV: "production"
+      API_V1_PREFIX: "/api"
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-flux_user}:${POSTGRES_PASSWORD:-flux_password}@postgres:5432/${POSTGRES_DB:-flux_db}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost,http://localhost:80,http://127.0.0.1}
+      WEATHER_API_KEY: ${WEATHER_API_KEY:-}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      WEB_CONCURRENCY: ${WEB_CONCURRENCY:-2}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/api/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    networks:
+      - flux_net
+    deploy:
+      resources:
+        limits:
+          memory: 1536M
+          cpus: "1.5"
+
+  # ----------------------------------------------------------------------------
+  # 3. High-Performance Nginx Web Server & API Gateway
+  # ----------------------------------------------------------------------------
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        VITE_API_BASE_URL: ""
+    container_name: flux_prod_frontend
+    restart: always
+    ports:
+      - "${HTTP_PORT:-80}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost/healthz || exit 1"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+    networks:
+      - flux_net
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "0.5"
+
+  # ----------------------------------------------------------------------------
+  # 4. Prometheus Metrics Scraper & Time-Series Store
+  # ----------------------------------------------------------------------------
+  prometheus:
+    image: prom/prometheus:v2.50.1
+    container_name: flux_prod_prometheus
+    restart: unless-stopped
+    volumes:
+      - ./deploy/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--web.console.libraries=/usr/share/prometheus/console_libraries"
+      - "--web.console.templates=/usr/share/prometheus/consoles"
+      - "--storage.tsdb.retention.time=15d"
+    ports:
+      - "${PROMETHEUS_PORT:-9090}:9090"
+    depends_on:
+      - backend
+    networks:
+      - flux_net
+
+  # ----------------------------------------------------------------------------
+  # 5. Grafana Real-Time Observability Dashboard
+  # ----------------------------------------------------------------------------
+  grafana:
+    image: grafana/grafana:10.4.0
+    container_name: flux_prod_grafana
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_USER:-admin}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-flux_admin}
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+    ports:
+      - "${GRAFANA_PORT:-3000}:3000"
+    depends_on:
+      - prometheus
+    networks:
+      - flux_net
+
+volumes:
+  postgres_data:
+  prometheus_data:
+  grafana_data:
+
+networks:
+  flux_net:
+    driver: bridge

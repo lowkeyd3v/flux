@@ -6,7 +6,7 @@ FLUX is an AI-powered business intelligence assistant for Indian street vendors 
 
 Built for **OOSC 4.0 Hackathon — Problem Statement PS5: AI for Public Good**.
 
-> **Status: Milestones 1–7 (Foundation through Multilingual UI & Voice Assistant) Complete.** All core features—vendor profile management, sales ledger, ML demand forecasting with uncertainty bounds, rule-based recommendation engine with OpenWeatherMap integration, grounded government scheme Q&A with personalized recommendations, trilingual UI (English, Hindi, Hinglish), browser-native Speech-to-Text / Text-to-Speech, and voice intent parsing—are fully implemented, integrated into the UI, and verified with 41 automated tests.
+> **Status: Milestones 1–8 (Foundation through Production Deployment) Complete.** All core features—vendor profile management, sales ledger, ML demand forecasting with uncertainty bounds, rule-based recommendation engine with OpenWeatherMap integration, grounded government scheme Q&A with personalized recommendations, trilingual UI (English, Hindi, Hinglish), browser-native Speech-to-Text / Text-to-Speech, voice intent parsing, multi-stage Docker containerization, Prometheus metrics & telemetry, and Kubernetes/Cloud deployment manifests—are fully implemented, integrated, and verified with 48 automated tests.
 
 ---
 
@@ -21,13 +21,14 @@ Built for **OOSC 4.0 Hackathon — Problem Statement PS5: AI for Public Good**.
 - [Tech Stack](#tech-stack)
 - [Repository Structure](#repository-structure)
 - [Local Setup](#local-setup)
+- [Production Deployment](#production-deployment)
 - [Environment Variables](#environment-variables)
 - [ML Methodology & Dataset](#ml-methodology--dataset)
 - [Government Scheme RAG System](#government-scheme-rag-system)
 - [Multilingual & Voice Assistant System](#multilingual--voice-assistant-system)
+- [Monitoring & Observability](#monitoring--observability)
 - [API Documentation](#api-documentation)
 - [Running Tests](#running-tests)
-- [Deployment](#deployment)
 - [Limitations](#limitations)
 - [Future Scope](#future-scope)
 - [License](#license)
@@ -55,6 +56,7 @@ FLUX provides a lightweight, mobile-friendly dashboard tailored to the operation
 4. **Government Scheme RAG Assistant:** Ask natural-language questions regarding government welfare, loans, and subsidies, receiving hallucination-free answers grounded in official scheme documents with source citations and direct application links.
 5. **Personalized Scheme Matching:** Automatically matches vendors to relevant government initiatives based on their business product, budget size, and geographic location.
 6. **Voice & Multilingual Accessibility:** Switch seamlessly between **English**, **हिंदी (Hindi)**, and **Hinglish**, with browser-native speech recognition (STT) for questions and audio narration (TTS) for recommendations.
+7. **Production Containerization & Observability:** Production-ready multi-stage Docker containers, Nginx reverse proxy, Prometheus metrics (`/api/metrics`), and Kubernetes/Cloud Run manifests.
 
 ---
 
@@ -97,6 +99,13 @@ Indian street vendors, roadside food stalls, artisans, and micro-retailers (e.g.
 - **Voice Text-to-Speech (TTS):** Audio narration button (`SpeakerButton`) on recommendations and scheme answers for hands-free audio playback.
 - **Voice Intent Processing:** Backend endpoint recognizing spoken user commands (scheme searches, demand predictions, preparation advice, sales logging).
 
+### 7. Production Deployment & Monitoring (Milestone 8)
+- **Multi-Stage Containerization:** Production Dockerfiles for FastAPI + Gunicorn ASGI workers and Vite + Nginx edge server.
+- **Full-Stack Orchestration:** Production `docker-compose.prod.yml` with PostgreSQL 16, backend, frontend, Prometheus, and Grafana.
+- **Prometheus Metrics & Health Probes:** Real-time metrics on `/api/metrics`, plus `/api/health/live`, `/api/health/ready`, and `/api/health/detailed`.
+- **Structured Observability:** JSON access logging and `X-Request-ID` distributed tracing middleware.
+- **Cloud & CDN Manifests:** Ready-to-deploy Kubernetes (`deploy/k8s/`), Google Cloud Run (`deploy/cloudrun/`), and Render blueprints (`deploy/render.yaml`).
+
 ---
 
 ## Project Status & Roadmap
@@ -110,57 +119,61 @@ Indian street vendors, roadside food stalls, artisans, and micro-retailers (e.g.
 | **Milestone 5: Scheme RAG Assistant** | **Complete** | Vector search over scheme documents, grounded synthesis, personalized vendor scheme matching. |
 | **Milestone 6: Dashboard Integration** | **Complete** | End-to-end frontend integration connecting vendor selection with all AI/ML & RAG services. |
 | **Milestone 7: Hindi/Hinglish & Voice** | **Complete** | Trilingual UI (English, Hindi, Hinglish), browser-native Speech-to-Text & Text-to-Speech, voice intent API. |
-| **Milestone 8: Production Deployment** | *Planned* | Cloud hosting, production containerization, CDN integration, and performance monitoring. |
+| **Milestone 8: Production Deployment** | **Complete** | Multi-stage Docker containerization, Docker Compose prod stack, Kubernetes & Cloud Run manifests, Prometheus metrics, structured logging, CDN edge optimization. |
 
 ---
 
 ## System Architecture
 
 ```
-                                +---------------------------------------------+
-                                |               React Frontend                |
-                                |  (Tailwind CSS, React Router, Vite, Axios)  |
-                                +---------------------------------------------+
-                                                       |
-                                            REST API Calls (/api/*)
-                                                       v
-+-------------------------------------------------------------------------------------------------------------------+
-|                                                 FastAPI Backend                                                   |
-|                                                                                                                   |
-|  +---------------------+   +-----------------------+   +---------------------+   +-----------------------------+  |
-|  |     Vendors &       |   |   Demand Prediction   |   |   Recommendation    |   |     Government Scheme       |  |
-|  |    Sales API        |   |       Service         |   |       Service       |   |       RAG Service           |  |
-|  +---------------------+   +-----------------------+   +---------------------+   +-----------------------------+  |
-|             |                         |                           |                             |                 |
-|             |              +----------------------+               |               +----------------------------+  |
-|             |              |  Random Forest Model |               |               |  Schemes Knowledge Base    |  |
-|             |              |  (Scikit-Learn/Joblib)               |               |    (TF-IDF / Vector RAG)   |  |
-|             |              +----------------------+               |               +----------------------------+  |
-|             |                                                     |                             |                 |
-|             |                                           +-------------------+     +----------------------------+  |
-|             |                                           |  Weather Service  |     |   Extractive / LLM Engine  |  |
-|             |                                           |  (OpenWeatherMap) |     |     (AI Service Layer)     |  |
-|             |                                           +-------------------+     +----------------------------+  |
-+-------------|-----------------------------------------------------------------------------------|-----------------+
-              |                                                                                   |
-              v                                                                                   v
-+-----------------------------+                                                   +---------------------------------+
-|     PostgreSQL Database     |                                                   |        External Providers       |
-|  (Vendors, Sales Records)   |                                                   |  (OpenWeatherMap, OpenAI/LLM)   |
-+-----------------------------+                                                   +---------------------------------+
+                                  +---------------------------------------------+
+                                  |              End User / Vendor              |
+                                  +---------------------------------------------+
+                                                         |
+                                                         v
+                                  +---------------------------------------------+
+                                  |     Cloudflare / CloudFront CDN & SSL       |
+                                  |      - Hashed Static Chunks Cached 1yr      |
+                                  |      - Dynamic API Requests Pass-Through    |
+                                  +---------------------------------------------+
+                                          /                             \
+                       (Static Assets / Web)                    (API Gateway / Reverse Proxy)
+                                        /                                 \
+                                       v                                   v
++---------------------------------------------+   +-----------------------------------------------------------------+
+|          Nginx Alpine Container             |   |                  FastAPI Production Container                   |
+|  - SPA Client-Side Fallback Routing         |   |                (Gunicorn + Uvicorn ASGI Workers)                |
+|  - Immutable Vite Asset Headers             |   |                                                                 |
+|  - Security Headers & Compression           |   |  +-------------------+  +------------------+  +--------------+  |
++---------------------------------------------+   |  | Vendors & Sales   |  | Demand Forecast  |  | Stock Recs   |  |
+                                                  |  +-------------------+  +------------------+  +--------------+  |
+                                                  |  | Schemes RAG Engine|  | Voice Intent API |  | Health Probes|  |
+                                                  |  +-------------------+  +------------------+  +--------------+  |
+                                                  |                                 |                               |
+                                                  |  [ X-Request-ID Tracing ] [ JSON Structured Logs ] [ Prometheus ]|
+                                                  +-----------------------------------------------------------------+
+                                                              /                      |                      \
+                                                             /                       |                       \
+                                                            v                        v                        v
+                                            +---------------------+  +----------------------+  +---------------------+
+                                            | PostgreSQL Database |  |  External Providers  |  |  Prometheus Scraper |
+                                            | (Persistent Volume) |  |  (OpenWeather, LLM)  |  |  & Grafana Dashboard|
+                                            +---------------------+  +----------------------+  +---------------------+
 ```
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** React 18, Vite, Tailwind CSS, Lucide Icons, React Router v6, Axios
-- **Backend:** Python 3.11+, FastAPI, Pydantic v2, SQLAlchemy 2.0, Alembic
-- **Database:** PostgreSQL 16 (local development via Docker Compose)
-- **Machine Learning:** Scikit-learn, Pandas, NumPy, Joblib
+- **Frontend:** React 19, Vite, Tailwind CSS, Lucide Icons, React Router v7, Axios
+- **Backend:** Python 3.11/3.13, FastAPI, Gunicorn, Uvicorn, Pydantic v2, SQLAlchemy 2.0, Alembic
+- **Database:** PostgreSQL 16 (Local & Production Containerized)
+- **Machine Learning:** Scikit-learn, Pandas, NumPy, Joblib (Random Forest Regressor)
 - **Generative AI & RAG:** Custom TF-IDF vector retrieval engine with lexical/intent boosting, Grounded Extractive Synthesizer, LLM chat client
+- **Observability & Metrics:** Prometheus exposition (`/api/metrics`), Grafana dashboards, structured JSON logging, distributed tracing (`X-Request-ID`)
+- **Containerization & Cloud:** Docker Multi-Stage, Docker Compose, Kubernetes (K8s), Google Cloud Run, Nginx Alpine, GitHub Actions CI/CD
 - **External Services:** OpenWeatherMap API (5-day forecasts & current weather)
-- **Testing:** Pytest, FastAPI TestClient, Starlette, AnyIO
+- **Testing:** Pytest, FastAPI TestClient, Starlette, AnyIO (48 automated tests)
 
 ---
 
@@ -168,67 +181,75 @@ Indian street vendors, roadside food stalls, artisans, and micro-retailers (e.g.
 
 ```
 flux/
-├── frontend/                     # React Single-Page Application
+├── .github/
+│   └── workflows/
+│       ├── ci.yml                    # Automated tests, linting & Docker builds
+│       └── deploy.yml                # Automated release & container publishing (GHCR)
+│
+├── frontend/                         # React Single-Page Application
 │   ├── src/
-│   │   ├── components/           # UI Components
-│   │   │   ├── DemandPredictionCard.jsx     # ML forecast card
-│   │   │   ├── HealthStatusCard.jsx         # Backend connectivity monitor
-│   │   │   ├── RecommendationCard.jsx       # Inventory & weather recommendation
-│   │   │   ├── RecommendedSchemesCard.jsx   # Personalized scheme badges
-│   │   │   ├── SalesRecordForm.jsx          # Daily sales logging form
-│   │   │   ├── SalesRecordTable.jsx         # Historical sales ledger table
-│   │   │   ├── SchemeAssistantCard.jsx      # Interactive RAG assistant & chat
-│   │   │   ├── SchemeDetailModal.jsx        # Scheme deep-dive & steps modal
-│   │   │   ├── VendorList.jsx               # Vendor profile picker
-│   │   │   └── VendorProfileForm.jsx        # Create vendor form
-│   │   ├── pages/                # Route pages (HomePage, VendorPage)
-│   │   ├── services/             # Axios API client modules
-│   │   ├── hooks/                # Custom React state hooks
-│   │   └── layouts/              # Main application shell
-│   ├── package.json
-│   └── vite.config.js
+│   │   ├── components/               # UI Components & ErrorBoundary
+│   │   ├── pages/                    # Route pages (HomePage, VendorPage)
+│   │   ├── services/                 # Axios client with tracing & latency tracking
+│   │   ├── utils/performance.js      # Web Vitals & performance telemetry
+│   │   ├── translations/             # English, Hindi, Hinglish dictionaries
+│   │   └── hooks/                    # Custom React state hooks
+│   ├── public/
+│   │   ├── _headers                  # Cloudflare Pages / CDN cache headers
+│   │   ├── robots.txt                # Search engine crawler configuration
+│   │   └── sitemap.xml               # Site URL manifest
+│   ├── Dockerfile                    # Multi-stage production container
+│   ├── nginx.conf                    # Nginx reverse proxy & cache configuration
+│   └── package.json
 │
-├── backend/                      # FastAPI Backend
+├── backend/                          # FastAPI Backend
 │   ├── app/
-│   │   ├── main.py               # Application factory & router wiring
-│   │   ├── core/config.py        # Pydantic Settings & environment config
-│   │   ├── api/                  # REST route controllers
-│   │   │   ├── health.py         # DB & API health check
-│   │   │   ├── vendors.py        # Vendor profile CRUD
-│   │   │   ├── sales_records.py  # Sales history logging & bulk upload
-│   │   │   ├── predictions.py    # Demand forecasting endpoint
-│   │   │   ├── recommendations.py# Stock prep & weather recommendation
-│   │   │   └── schemes.py        # Government scheme RAG & recommendations
-│   │   ├── models/               # SQLAlchemy ORM models (Vendor, SalesRecord)
-│   │   ├── schemas/              # Pydantic request/response schemas
-│   │   ├── services/             # Core business & AI logic
-│   │   │   ├── demand_prediction_service.py # ML inference interface
-│   │   │   ├── recommendation_service.py    # Rule-based decision engine
-│   │   │   ├── rag_service.py               # Vector retrieval & chunking
-│   │   │   ├── ai_service.py                # Grounded synthesis / LLM wrapper
-│   │   │   ├── weather_service.py           # OpenWeatherMap client
-│   │   │   └── voice_service.py             # Voice abstraction (planned)
-│   │   ├── data/
-│   │   │   └── schemes_data.json            # Curated scheme knowledge base
-│   │   └── db/session.py         # Database engine & session maker
-│   ├── alembic/                  # Database migration versions
-│   ├── tests/                    # 35 Pytest unit and integration tests
-│   ├── requirements.txt
-│   └── .env.example
+│   │   ├── main.py                   # App factory with tracing & metrics middlewares
+│   │   ├── core/
+│   │   │   ├── config.py             # Pydantic Settings & environment config
+│   │   │   ├── metrics.py            # Prometheus metrics collector & registry
+│   │   │   └── middleware.py         # Request ID tracing & structured JSON logging
+│   │   ├── api/                      # REST route controllers
+│   │   │   ├── health.py             # Liveness, readiness, detailed & Prometheus endpoints
+│   │   │   ├── vendors.py            # Vendor profile CRUD
+│   │   │   ├── sales_records.py      # Sales history logging & bulk upload
+│   │   │   ├── predictions.py        # Demand forecasting endpoint
+│   │   │   ├── recommendations.py    # Stock prep & weather recommendation
+│   │   │   ├── schemes.py            # Government scheme RAG & recommendations
+│   │   │   └── voice.py              # Voice intent parsing & language catalog
+│   │   ├── models/                   # SQLAlchemy ORM models
+│   │   ├── schemas/                  # Pydantic request/response schemas
+│   │   ├── services/                 # Core business & AI logic
+│   │   └── data/schemes_data.json    # Curated scheme knowledge base
+│   ├── alembic/                      # Database migration versions
+│   ├── tests/                        # 48 Pytest unit, integration & monitoring tests
+│   ├── Dockerfile                    # Multi-stage production container
+│   ├── docker-entrypoint.sh          # DB migration runner & server starter
+│   ├── gunicorn_conf.py              # Production Gunicorn ASGI worker config
+│   └── requirements.txt
 │
-├── ml/                           # Machine Learning Pipeline
-│   ├── data/
-│   │   ├── generate_synthetic_data.py # Synthetic time-series generator
-│   │   └── synthetic_sales_data.csv   # ~2,800 training rows
-│   ├── preprocessing/features.py      # Feature derivation & one-hot encoding
-│   ├── training/train_demand_model.py # Training & date-based evaluation
-│   ├── inference/predict.py           # Model loading & inference wrapper
-│   └── models/
-│       ├── demand_model.joblib        # Serialized Random Forest model
-│       └── demand_model_metadata.json # Evaluation metrics & metadata
+├── deploy/                           # Cloud & Production Deployment Manifests
+│   ├── k8s/                          # Kubernetes Manifests (Deployments, Services, HPA, Ingress)
+│   ├── cloudrun/                     # Google Cloud Run service definition & deploy script
+│   ├── monitoring/                   # Prometheus scrape config & Grafana dashboard JSON
+│   ├── render.yaml                   # Render.com infrastructure blueprint
+│   └── docker.env.example            # Docker Compose production environment template
 │
-├── docker-compose.yml            # Local PostgreSQL service
-├── LICENSE                       # MIT License
+├── docs/                             # Comprehensive System Documentation
+│   ├── PRODUCTION_DEPLOYMENT.md      # Step-by-step production deployment & runbooks
+│   ├── CDN_AND_EDGE_GUIDE.md         # CDN edge caching, SSL & performance guide
+│   └── MONITORING_AND_OBSERVABILITY.md# Metrics, structured logs, and alert rules
+│
+├── ml/                               # Machine Learning Pipeline
+│   ├── data/                         # Synthetic data generation
+│   ├── preprocessing/                # Feature engineering
+│   ├── training/                     # Training & evaluation
+│   ├── inference/predict.py          # Model loading & inference wrapper
+│   └── models/demand_model.joblib    # Serialized Random Forest model
+│
+├── docker-compose.yml                # Local development database
+├── docker-compose.prod.yml           # Full production compose stack
+├── LICENSE                           # MIT License
 └── README.md
 ```
 
@@ -451,10 +472,14 @@ FLUX is built specifically for Indian street vendors who speak diverse languages
 
 All endpoints are prefixed with `/api` (configurable via `API_V1_PREFIX`). Interactive Swagger documentation is available at `http://localhost:8000/docs`.
 
-### Health Check
+### Health & Observability Probes
 | Method | Endpoint | Description |
 |---|---|---|
 | `GET` | `/api/health` | Service health and PostgreSQL database connectivity check |
+| `GET` | `/api/health/live` | Kubernetes liveness probe (checks process responsiveness) |
+| `GET` | `/api/health/ready` | Kubernetes readiness probe (verifies DB, ML model, and RAG data) |
+| `GET` | `/api/health/detailed` | Comprehensive system telemetry, memory stats, CPU, and components |
+| `GET` | `/api/metrics` | Prometheus metrics exposition format (version 0.0.4) |
 
 ### Vendor Profile Management
 | Method | Endpoint | Description |
@@ -497,7 +522,7 @@ All endpoints are prefixed with `/api` (configurable via `API_V1_PREFIX`). Inter
 
 ## Running Tests
 
-The test suite covers database persistence, ML model inference, rule-based recommendation logic, weather fallback mechanisms, and RAG retrieval/synthesis:
+The test suite covers database persistence, ML model inference, rule-based recommendation logic, weather fallback mechanisms, RAG retrieval/synthesis, multilingual voice intent parsing, and production observability:
 
 ```bash
 cd backend
@@ -505,8 +530,9 @@ cd backend
 pytest -v
 ```
 
-**Test Coverage Summary (41 Tests):**
+**Test Coverage Summary (48 Tests):**
 - `tests/test_health.py`: Health endpoint and DB connectivity checks.
+- `tests/test_monitoring.py`: Liveness probe, readiness probe, system telemetry, Prometheus metrics, and distributed tracing (`X-Request-ID`).
 - `tests/test_vendors.py`: Vendor CRUD and validation.
 - `tests/test_sales_records.py`: Single and bulk sales logging with constraints.
 - `tests/test_predictions.py`: ML prediction inference and range bounds.
@@ -516,12 +542,41 @@ pytest -v
 
 ---
 
-## Deployment
+## Production Deployment
 
-For production deployment:
-1. **Containerized Backend:** Package the FastAPI backend using Docker, connecting to a managed PostgreSQL service (e.g. AWS RDS or Supabase).
-2. **Static Frontend:** Build frontend static assets via `npm run build` and deploy to Cloudflare Pages, Vercel, or AWS S3/CloudFront.
-3. **Environment Setup:** Set `APP_ENV=production`, configure production `DATABASE_URL`, `CORS_ORIGINS`, and optionally supply `WEATHER_API_KEY` and `LLM_API_KEY`.
+FLUX provides production configurations and manifests across multiple cloud providers:
+
+### Option 1: Full-Stack Docker Compose (Single Host / VPS)
+```bash
+# 1. Configure production environment
+cp deploy/docker.env.example .env
+
+# 2. Launch production stack with PostgreSQL, Backend, Frontend, Prometheus & Grafana
+docker compose -f docker-compose.prod.yml up -d --build
+```
+
+### Option 2: Kubernetes Cluster (EKS / GKE / AKS)
+```bash
+kubectl apply -f deploy/k8s/namespace.yaml
+kubectl apply -f deploy/k8s/configmap.yaml
+kubectl apply -f deploy/k8s/secret.yaml
+kubectl apply -f deploy/k8s/postgres.yaml
+kubectl apply -f deploy/k8s/backend.yaml
+kubectl apply -f deploy/k8s/frontend.yaml
+kubectl apply -f deploy/k8s/ingress.yaml
+kubectl apply -f deploy/k8s/hpa.yaml
+```
+
+### Option 3: Google Cloud Run (Serverless)
+```bash
+chmod +x deploy/cloudrun/deploy.sh
+./deploy/cloudrun/deploy.sh
+```
+
+### Option 4: Render / PaaS 1-Click Deployment
+Use `deploy/render.yaml` to deploy the unified backend, frontend, and PostgreSQL services directly via Render Blueprints.
+
+*For detailed production runbooks, SSL configuration, database backup scripts, and rollback strategies, see [docs/PRODUCTION_DEPLOYMENT.md](docs/PRODUCTION_DEPLOYMENT.md), [docs/CDN_AND_EDGE_GUIDE.md](docs/CDN_AND_EDGE_GUIDE.md), and [docs/MONITORING_AND_OBSERVABILITY.md](docs/MONITORING_AND_OBSERVABILITY.md).*
 
 ---
 
@@ -535,15 +590,13 @@ For production deployment:
 
 ## Future Scope
 
-- **Milestone 7: Hindi & Hinglish Localization + Voice Assistant:**
-  - Speech-to-Text (STT) using Whisper / browser Web Speech API for voice-driven sales logging and questions.
-  - Multilingual user interface with full Hindi and Hinglish translation.
-  - Text-to-Speech (TTS) audio output of scheme guidance and daily recommendations.
 - **Supplier & Raw Material Price Tracking:** Integrating local mandi (wholesale market) commodity pricing to advise vendors on optimal raw ingredient purchasing times.
 - **Peer Benchmark Insights:** Anonymized neighborhood demand trends comparing vendor sales against local averages.
+- **Federated On-Device Training:** Fine-tuning demand forecasting models directly on vendor mobile devices while preserving privacy.
 
 ---
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+

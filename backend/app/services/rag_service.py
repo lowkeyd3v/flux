@@ -324,8 +324,14 @@ class SchemeRAGService(RAGService):
         return top
 
     def answer(self, query: str, vendor_context: dict | None = None) -> RAGAnswerResult:
+        import time
+        from app.core.metrics import get_metrics_registry
+
+        start_t = time.time()
         chunks = self.retrieve(query, top_k=5)
         if not chunks:
+            elapsed = time.time() - start_t
+            get_metrics_registry().record_rag_query(elapsed)
             return RAGAnswerResult(
                 query=query,
                 answer=(
@@ -385,6 +391,9 @@ class SchemeRAGService(RAGService):
 
         # Generate follow-up suggestions
         followups = self._generate_followups(query, matched_schemes)
+
+        elapsed = time.time() - start_t
+        get_metrics_registry().record_rag_query(elapsed)
 
         return RAGAnswerResult(
             query=query,

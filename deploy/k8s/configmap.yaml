@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flux-config
+  namespace: flux
+data:
+  APP_NAME: "FLUX Production API"
+  APP_ENV: "production"
+  API_V1_PREFIX: "/api"
+  CORS_ORIGINS: "https://flux.example.com,https://app.flux.org.in"
+  WEB_CONCURRENCY: "4"
+  LOG_LEVEL: "info"

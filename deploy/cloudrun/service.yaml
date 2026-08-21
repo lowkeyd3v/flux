@@ -1,0 +1,49 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: flux-backend
+  annotations:
+    run.googleapis.com/ingress: all
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "1"
+        autoscaling.knative.dev/maxScale: "10"
+        run.googleapis.com/cpu-throttling: "false"
+        run.googleapis.com/startup-cpu-boost: "true"
+    spec:
+      containerConcurrency: 80
+      timeoutSeconds: 300
+      containers:
+        - image: gcr.io/YOUR_PROJECT_ID/flux-backend:latest
+          ports:
+            - containerPort: 8000
+          resources:
+            limits:
+              cpu: "2000m"
+              memory: "2Gi"
+          env:
+            - name: APP_ENV
+              value: "production"
+            - name: API_V1_PREFIX
+              value: "/api"
+            - name: WEB_CONCURRENCY
+              value: "4"
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: flux-database-url
+                  key: latest
+          startupProbe:
+            httpGet:
+              path: /api/health/live
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 10
+          livenessProbe:
+            httpGet:
+              path: /api/health/live
+              port: 8000
+            periodSeconds: 15
