@@ -19,8 +19,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir --user -r requirements.txt && \
-    pip install --no-cache-dir --user gunicorn==23.0.0
+    pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir gunicorn==23.0.0
 
 # --- Stage 2: Final Runtime Image ---
 FROM python:3.11-slim AS runtime
@@ -29,7 +29,6 @@ WORKDIR /app
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PATH=/root/.local/bin:$PATH \
     PYTHONPATH=/app:/app/backend
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -38,8 +37,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy installed Python packages from builder stage
-COPY --from=builder /root/.local /root/.local
+# Copy globally installed Python packages and entrypoint binaries from builder stage
+COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
 
 # Create non-root system user
 RUN groupadd -g 10001 fluxgroup && \
@@ -53,7 +53,7 @@ COPY ml /app/ml
 COPY backend/docker-entrypoint.sh /app/docker-entrypoint.sh
 COPY backend/gunicorn_conf.py /app/gunicorn_conf.py
 
-# Generate synthetic data & train ML model artifact if not present
+# Generate synthetic data & train ML model artifact during build
 RUN python -m ml.data.generate_synthetic_data && \
     python -m ml.training.train_demand_model
 

@@ -13,7 +13,10 @@ import psycopg2
 
 db_url = os.getenv("DATABASE_URL", "postgresql://flux_user:flux_password@postgres:5432/flux_db")
 
-# Parse connection params from standard URL or direct variables
+# Normalize SQLAlchemy connection string prefix for psycopg2 driver
+if db_url.startswith("postgresql+psycopg2://"):
+    db_url = db_url.replace("postgresql+psycopg2://", "postgresql://", 1)
+
 max_retries = 30
 retry_interval = 2
 
