@@ -9,7 +9,7 @@
 
 **An AI-powered business intelligence & welfare enablement assistant for India's 10+ million street vendors and micro-entrepreneurs.**
 
-[⚡ Quickstart & Local Run](#-quickstart--local-run-instructions) • [🎥 Demo Video](#-demo-video) • [🏛️ System Architecture](#-system-architecture) • [📊 Core Capabilities](#-core-capabilities) • [📜 API Reference](#-api-documentation) • [🧪 Testing](#-running-automated-tests)
+[🌐 Live Prototype](https://flux-frontend-iojr.onrender.com) • [📑 API Docs](https://flux-backend-w7fd.onrender.com/docs) • [🎥 Demo Video](#-demo-video) • [⚡ Quickstart / Local Run](#-quickstart--local-run-instructions) • [🏛️ System Architecture](#-system-architecture) • [📊 Core Capabilities](#-core-capabilities) • [📜 API Reference](#-api-documentation) • [🧪 Testing](#-running-automated-tests)
 
 </div>
 
@@ -24,15 +24,25 @@
 | **Theme** | Inclusive AI, Social Impact and Empowerment of Underserved Communities |
 | **Sub-Track** | *AI for Micro-Entrepreneurs and Street Vendors* & *AI for Accessible Public Services* |
 | **Repository** | [github.com/lowkeyd3v/flux](https://github.com/lowkeyd3v/flux) |
-| **Prototype Access** | **[One-Command Local Run (Docker Compose)](#-quickstart--local-run-instructions)** (`http://localhost`) |
+| **Live Prototype URL** | 🌐 **[https://flux-frontend-iojr.onrender.com](https://flux-frontend-iojr.onrender.com)** |
+| **Live API Swagger Docs** | 📑 **[https://flux-backend-w7fd.onrender.com/docs](https://flux-backend-w7fd.onrender.com/docs)** |
 | **Demo Video** | **[Watch 10-Minute Video Demo](#-demo-video)** *(Mandatory submission video)* |
 | **Test Suite** | **48/48 Automated Tests Passing** (Pytest + React Build) |
 
 ---
 
-## 🚀 How to Run the Prototype
+## 🔗 Live Prototype & API Endpoints
 
-Per hackathon submission guidelines, the prototype can be run locally with a single command using Docker Compose:
+- 🌐 **Live Web Application:** [https://flux-frontend-iojr.onrender.com](https://flux-frontend-iojr.onrender.com)
+- 📑 **Interactive OpenAPI (Swagger) Docs:** [https://flux-backend-w7fd.onrender.com/docs](https://flux-backend-w7fd.onrender.com/docs)
+- 🩺 **Live Health & Readiness Probe:** [https://flux-backend-w7fd.onrender.com/api/health/ready](https://flux-backend-w7fd.onrender.com/api/health/ready)
+- 📊 **Live Prometheus Metrics:** [https://flux-backend-w7fd.onrender.com/api/metrics](https://flux-backend-w7fd.onrender.com/api/metrics)
+
+---
+
+## 🚀 How to Run the Prototype Locally (Alternative)
+
+For evaluators who prefer to run the prototype locally, the entire stack can be launched with a single command using Docker Compose:
 
 ```bash
 # 1. Clone the repository
