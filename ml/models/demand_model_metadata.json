@@ -1,0 +1,43 @@
+{
+  "model_type": "random_forest",
+  "trained_on": "synthetic_sales_data.csv (SYNTHETIC/DEMO data, not real vendor data)",
+  "train_rows": 2272,
+  "validation_rows": 560,
+  "metrics": {
+    "mae": 8.68277947182183,
+    "mape": 0.10699801427887061,
+    "r2": 0.8358491672781777
+  },
+  "all_candidates": {
+    "linear_regression": {
+      "mae": 11.647192814211534,
+      "mape": 0.14407259087278984,
+      "r2": 0.6814799472037534
+    },
+    "random_forest": {
+      "mae": 8.68277947182183,
+      "mape": 0.10699801427887061,
+      "r2": 0.8358491672781777
+    }
+  },
+  "feature_columns": [
+    "day_of_week",
+    "month",
+    "is_holiday_or_event",
+    "temperature_celsius",
+    "price",
+    "product_Chaat",
+    "product_Chai",
+    "product_Momos",
+    "product_Samosa",
+    "product_Sugarcane Juice",
+    "location_Kanpur",
+    "location_Lucknow",
+    "location_Prayagraj",
+    "location_Varanasi",
+    "weather_condition_clear",
+    "weather_condition_extreme_heat",
+    "weather_condition_rain"
+  ],
+  "version": "v1"
+}

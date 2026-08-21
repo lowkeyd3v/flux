@@ -21,6 +21,7 @@ Built for **OOSC 4.0 Hackathon — Problem Statement PS5: AI for Public Good**.
 - [Repository Structure](#repository-structure)
 - [Local Setup](#local-setup)
 - [Environment Variables](#environment-variables)
+- [ML Methodology & Dataset](#ml-methodology--dataset)
 - [API Documentation](#api-documentation)
 - [Running Tests](#running-tests)
 - [Deployment](#deployment)
@@ -59,7 +60,7 @@ Indian street vendors and micro-entrepreneurs (e.g. food carts, small retail sta
 |---|---|
 | Project foundation (frontend, backend, DB, health check) | Done (Milestone 1) |
 | Vendor profile + sales data | Done (Milestone 2) |
-| Demand forecasting (ML) | Planned (Milestone 3) |
+| Demand forecasting (ML) | Done (Milestone 3) |
 | Recommendation engine + weather | Planned (Milestone 4) |
 | Government scheme RAG | Planned (Milestone 5) |
 | Dashboard integration | Planned (Milestone 6) |
@@ -92,11 +93,11 @@ Currently implemented: Frontend to Backend to PostgreSQL, with a working `/api/h
 
 ## Tech Stack
 
-**Frontend:** React, Vite, Tailwind CSS, React Router, Recharts, Axios<br>
-**Backend:** Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL<br>
-**ML (planned):** Pandas, NumPy, Scikit-learn, Joblib<br>
-**Generative AI (planned):** LLM API (provider-abstracted), FAISS/ChromaDB, Sentence Transformers<br>
-**Voice (planned, P2):** Whisper or equivalent<br>
+**Frontend:** React, Vite, Tailwind CSS, React Router, Recharts, Axios
+**Backend:** Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL
+**ML (planned):** Pandas, NumPy, Scikit-learn, Joblib
+**Generative AI (planned):** LLM API (provider-abstracted), FAISS/ChromaDB, Sentence Transformers
+**Voice (planned, P2):** Whisper or equivalent
 **Deployment:** Simple, single-service hosting (no Kubernetes/microservices)
 
 ## Repository Structure
@@ -128,7 +129,7 @@ flux/
 │   ├── requirements.txt
 │   └── .env.example
 │
-├── ml/                    # ML training/inference (populated from Milestone 3)
+├── ml/                    # ML training/inference — synthetic data, preprocessing, training, inference (Milestone 3)
 ├── data/                  # Datasets (synthetic data will be clearly labeled)
 ├── docs/                  # Architecture diagrams, design notes
 ├── tests/                 # (reserved for cross-cutting/integration tests)
@@ -175,6 +176,18 @@ alembic upgrade head            # creates vendors and sales_records tables
 uvicorn app.main:app --reload --port 8000
 ```
 
+### 3b. Generate the demand forecasting model (one-time)
+
+In a separate terminal, from the repo root, with the backend venv active:
+
+```bash
+source backend/venv/bin/activate    # Windows: backend\venv\Scripts\activate
+python -m ml.data.generate_synthetic_data      # creates ml/data/synthetic_sales_data.csv
+python -m ml.training.train_demand_model       # trains and saves ml/models/demand_model.joblib
+```
+
+This only needs to be run once (or whenever you want to regenerate the dataset/retrain). Without this step, the `/predict` endpoint returns a 503 error rather than a fake prediction.
+
 Backend will be available at `http://localhost:8000`. Interactive API docs at `http://localhost:8000/docs`.
 
 ### 4. Frontend setup
@@ -195,6 +208,7 @@ Frontend will be available at `http://localhost:5173`. It calls the backend's `/
 - Visit `http://localhost:5173` — you should see the FLUX home page with a "Connected" backend status badge.
 - Visit `http://localhost:8000/api/health` directly — should return `{"status": "ok", "service": "flux-backend", "database": "ok"}`.
 - Visit `http://localhost:5173/vendor` — create a vendor profile, select it, and log a sales record. Refresh to confirm the data persisted.
+- On the same page, use the **Demand Prediction** card to get a forecast for a chosen date/weather — should return a real number, not a placeholder.
 
 ## Environment Variables
 
@@ -214,6 +228,27 @@ Frontend will be available at `http://localhost:5173`. It calls the backend's `/
 |---|---|---|
 | `VITE_API_BASE_URL` | Backend API base URL | `http://localhost:8000` |
 
+## ML Methodology & Dataset
+
+**Dataset**: `ml/data/synthetic_sales_data.csv` — **SYNTHETIC / DEMO DATA, not real vendor sales.** No real street-vendor sales dataset was available at hackathon time, so `ml/data/generate_synthetic_data.py` generates ~2,800 rows of daily sales for 8 vendor archetypes (5 products × 4 North Indian cities) over roughly one year, with realistic weekly seasonality, holiday/event spikes, weather sensitivity, and random noise. The schema matches the `SalesRecord` model, so real vendor data can replace this file without changing the pipeline.
+
+**Preprocessing** (`ml/preprocessing/features.py`): derives calendar features (day of week, month) from the date, one-hot encodes product/location/weather condition, and assembles a numeric feature matrix. The same function is used for both training and inference, so there's no train/serve skew.
+
+**Train/validation split** (`ml/training/train_demand_model.py`): split **by date**, not randomly — the most recent 20% of the date range is held out for validation, and the model only ever trains on earlier dates. A random shuffle split would leak future information into training for time-series data, so this was deliberately avoided.
+
+**Models compared**: a Linear Regression baseline and a Random Forest Regressor. The Random Forest was selected (lower validation MAE): **MAE ≈ 8.7 units, MAPE ≈ 10.7%, R² ≈ 0.84** on held-out validation data (exact numbers in `ml/models/demand_model_metadata.json`, regenerated each time the model is retrained).
+
+**Serving**: the trained model is serialized with `joblib` to `ml/models/demand_model.joblib`. `ml/inference/predict.py` loads it once and exposes `predict_demand(...)`, which the backend's `MLDemandPredictionService` calls. The prediction's low/high range comes from the spread across the Random Forest's individual trees, giving an honest uncertainty band rather than a single falsely-precise number.
+
+**Retraining**: to regenerate the dataset and retrain the model:
+
+```bash
+cd /path/to/flux   # repo root
+source backend/venv/bin/activate
+python -m ml.data.generate_synthetic_data
+python -m ml.training.train_demand_model
+```
+
 ## API Documentation
 
 Currently implemented endpoints:
@@ -231,6 +266,7 @@ Currently implemented endpoints:
 | `POST` | `/api/vendors/{vendor_id}/sales/bulk` | Upload multiple historical sales records at once |
 | `GET` | `/api/vendors/{vendor_id}/sales` | List a vendor's sales history |
 | `DELETE` | `/api/vendors/{vendor_id}/sales/{record_id}` | Delete a single sales record |
+| `POST` | `/api/vendors/{vendor_id}/predict` | Predict expected demand for a given date, with optional weather/holiday context |
 
 Full interactive documentation (Swagger UI) is auto-generated by FastAPI at `/docs` once the backend is running. This table will grow as milestones add real endpoints (predictions, recommendations, scheme Q&A).
 
@@ -259,6 +295,7 @@ See [Project Status](#project-status) for the milestone roadmap: demand forecast
 ## Limitations
 
 - This is a hackathon prototype, not a production system. Authentication, payments, and enterprise-grade infrastructure are intentionally out of scope.
-- As of Milestone 2, vendor profiles and sales history can be created and stored, but no ML model, RAG pipeline, or recommendation logic exists yet — only their interfaces. Do not expect predictions or scheme answers until later milestones land.
+- As of Milestone 3, vendor profiles, sales history, and demand predictions work end-to-end, but the recommendation engine, government scheme RAG, and voice features are not implemented yet — only their interfaces.
+- The demand forecasting model is trained on **synthetic data**, not real vendor sales (see [ML Methodology & Dataset](#ml-methodology--dataset)). Predictions are directionally reasonable (respond correctly to weather, holidays, weekends) but should not be treated as real-world accurate until retrained on real data.
 - There is no authentication, so any client can view or modify any vendor's data. Acceptable for a hackathon demo; would need to be addressed for a real deployment.
 - Local development currently assumes PostgreSQL is reachable at the configured `DATABASE_URL`; no managed cloud DB is configured yet.

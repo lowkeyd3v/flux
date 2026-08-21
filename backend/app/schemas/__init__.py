@@ -4,6 +4,7 @@ from app.schemas.sales_record import (
     SalesRecordBulkCreate,
     SalesRecordResponse,
 )
+from app.schemas.prediction import PredictionRequest, PredictionResponse
 
 __all__ = [
     "VendorCreate",
@@ -12,4 +13,6 @@ __all__ = [
     "SalesRecordCreate",
     "SalesRecordBulkCreate",
     "SalesRecordResponse",
+    "PredictionRequest",
+    "PredictionResponse",
 ]

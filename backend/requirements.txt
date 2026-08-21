@@ -18,7 +18,12 @@ python-dotenv==1.0.1
 pytest==8.3.4
 httpx==0.28.1
 
-# NOTE: ML, RAG, and Voice dependencies (pandas, scikit-learn, faiss,
-# sentence-transformers, whisper, etc.) will be added in later milestones
-# once those services are actually implemented, to keep this environment
-# lightweight during the foundation phase.
+# --- ML (demand forecasting) ---
+pandas==2.2.3
+numpy==2.1.3
+scikit-learn==1.5.2
+joblib==1.4.2
+
+# NOTE: RAG and Voice dependencies (faiss, sentence-transformers, whisper,
+# etc.) will be added in later milestones once those services are
+# actually implemented, to keep this environment lightweight until then.

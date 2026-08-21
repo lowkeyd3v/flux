@@ -5,6 +5,7 @@ import VendorProfileForm from '../components/VendorProfileForm'
 import VendorList from '../components/VendorList'
 import SalesRecordForm from '../components/SalesRecordForm'
 import SalesRecordTable from '../components/SalesRecordTable'
+import DemandPredictionCard from '../components/DemandPredictionCard'
 
 export default function VendorPage() {
   const { vendors, status: vendorsStatus, createVendor } = useVendors()
@@ -70,6 +71,21 @@ export default function VendorPage() {
           />
         )}
       </section>
+
+      {selectedVendor && (
+        <section className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm space-y-4">
+          <div>
+            <h2 className="font-semibold text-neutral-800">
+              Demand Prediction — {selectedVendor.name}
+            </h2>
+            <p className="text-sm text-neutral-500">
+              Get an ML-driven forecast for a specific day, adjusted for weather and
+              holidays.
+            </p>
+          </div>
+          <DemandPredictionCard vendor={selectedVendor} />
+        </section>
+      )}
 
       {selectedVendor && (
         <section className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm space-y-5">

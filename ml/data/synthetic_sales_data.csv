@@ -1,0 +1,2833 @@
+product,location,date,day_of_week,month,is_holiday_or_event,temperature_celsius,weather_condition,price,units_sold
+Samosa,Prayagraj,2025-09-01,0,9,False,29.9,rain,10,46
+Samosa,Prayagraj,2025-09-02,1,9,False,31.8,rain,10,35
+Samosa,Prayagraj,2025-09-03,2,9,False,29.4,clear,10,60
+Samosa,Prayagraj,2025-09-04,3,9,False,26.4,rain,10,46
+Samosa,Prayagraj,2025-09-05,4,9,False,29.2,clear,10,79
+Samosa,Prayagraj,2025-09-06,5,9,False,26.4,clear,10,66
+Samosa,Prayagraj,2025-09-07,6,9,False,31.6,clear,10,73
+Samosa,Prayagraj,2025-09-08,0,9,False,27.0,clear,10,59
+Samosa,Prayagraj,2025-09-09,1,9,False,27.7,rain,10,45
+Samosa,Prayagraj,2025-09-10,2,9,False,30.1,rain,10,44
+Samosa,Prayagraj,2025-09-11,3,9,False,35.4,clear,10,56
+Samosa,Prayagraj,2025-09-12,4,9,False,26.6,clear,10,85
+Samosa,Prayagraj,2025-09-13,5,9,False,28.7,clear,10,68
+Samosa,Prayagraj,2025-09-14,6,9,False,31.0,rain,10,56
+Samosa,Prayagraj,2025-09-15,0,9,False,27.0,clear,10,61
+Samosa,Prayagraj,2025-09-16,1,9,False,29.7,clear,10,62
+Samosa,Prayagraj,2025-09-17,2,9,False,31.0,rain,10,44
+Samosa,Prayagraj,2025-09-18,3,9,False,30.9,clear,10,58
+Samosa,Prayagraj,2025-09-19,4,9,False,27.6,clear,10,73
+Samosa,Prayagraj,2025-09-20,5,9,False,33.5,clear,10,84
+Samosa,Prayagraj,2025-09-21,6,9,False,24.0,clear,10,77
+Samosa,Prayagraj,2025-09-22,0,9,False,30.8,clear,10,66
+Samosa,Prayagraj,2025-09-23,1,9,False,28.0,rain,10,47
+Samosa,Prayagraj,2025-09-24,2,9,False,28.4,clear,10,52
+Samosa,Prayagraj,2025-09-25,3,9,False,26.2,rain,10,43
+Samosa,Prayagraj,2025-09-26,4,9,False,31.1,clear,10,77
+Samosa,Prayagraj,2025-09-27,5,9,False,30.9,rain,10,56
+Samosa,Prayagraj,2025-09-28,6,9,False,27.0,rain,10,51
+Samosa,Prayagraj,2025-09-29,0,9,False,25.4,clear,10,57
+Samosa,Prayagraj,2025-09-30,1,9,False,29.0,rain,10,45
+Samosa,Prayagraj,2025-10-01,2,10,False,26.7,clear,10,57
+Samosa,Prayagraj,2025-10-02,3,10,True,23.7,clear,10,80
+Samosa,Prayagraj,2025-10-03,4,10,False,18.7,clear,10,79
+Samosa,Prayagraj,2025-10-04,5,10,False,20.4,clear,10,88
+Samosa,Prayagraj,2025-10-05,6,10,False,22.6,clear,10,67
+Samosa,Prayagraj,2025-10-06,0,10,False,23.2,rain,10,41
+Samosa,Prayagraj,2025-10-07,1,10,False,27.4,clear,10,64
+Samosa,Prayagraj,2025-10-08,2,10,False,25.0,clear,10,50
+Samosa,Prayagraj,2025-10-09,3,10,False,24.3,clear,10,62
+Samosa,Prayagraj,2025-10-10,4,10,False,24.1,clear,10,74
+Samosa,Prayagraj,2025-10-11,5,10,False,19.9,clear,10,78
+Samosa,Prayagraj,2025-10-12,6,10,False,29.4,clear,10,79
+Samosa,Prayagraj,2025-10-13,0,10,False,29.9,clear,10,56
+Samosa,Prayagraj,2025-10-14,1,10,False,20.3,clear,10,51
+Samosa,Prayagraj,2025-10-15,2,10,False,26.5,rain,10,35
+Samosa,Prayagraj,2025-10-16,3,10,False,19.9,clear,10,67
+Samosa,Prayagraj,2025-10-17,4,10,False,32.0,clear,10,80
+Samosa,Prayagraj,2025-10-18,5,10,False,20.0,clear,10,79
+Samosa,Prayagraj,2025-10-19,6,10,False,20.7,clear,10,70
+Samosa,Prayagraj,2025-10-20,0,10,True,23.4,clear,10,99
+Samosa,Prayagraj,2025-10-21,1,10,True,23.4,clear,10,78
+Samosa,Prayagraj,2025-10-22,2,10,False,22.1,clear,10,63
+Samosa,Prayagraj,2025-10-23,3,10,False,31.1,clear,10,68
+Samosa,Prayagraj,2025-10-24,4,10,False,22.0,clear,10,67
+Samosa,Prayagraj,2025-10-25,5,10,False,21.1,clear,10,69
+Samosa,Prayagraj,2025-10-26,6,10,False,27.4,clear,10,85
+Samosa,Prayagraj,2025-10-27,0,10,False,25.5,clear,10,61
+Samosa,Prayagraj,2025-10-28,1,10,False,21.4,clear,10,58
+Samosa,Prayagraj,2025-10-29,2,10,False,19.1,clear,10,62
+Samosa,Prayagraj,2025-10-30,3,10,False,30.3,clear,10,60
+Samosa,Prayagraj,2025-10-31,4,10,False,25.1,clear,10,78
+Samosa,Prayagraj,2025-11-01,5,11,True,22.4,clear,10,128
+Samosa,Prayagraj,2025-11-02,6,11,False,30.1,clear,10,65
+Samosa,Prayagraj,2025-11-03,0,11,False,18.5,clear,10,74
+Samosa,Prayagraj,2025-11-04,1,11,False,23.3,clear,10,72
+Samosa,Prayagraj,2025-11-05,2,11,False,19.6,clear,10,66
+Samosa,Prayagraj,2025-11-06,3,11,False,22.4,clear,10,60
+Samosa,Prayagraj,2025-11-07,4,11,False,25.4,clear,10,77
+Samosa,Prayagraj,2025-11-08,5,11,False,26.6,clear,10,76
+Samosa,Prayagraj,2025-11-09,6,11,False,20.6,clear,10,68
+Samosa,Prayagraj,2025-11-10,0,11,False,22.7,clear,10,52
+Samosa,Prayagraj,2025-11-11,1,11,False,24.1,clear,10,65
+Samosa,Prayagraj,2025-11-12,2,11,False,22.1,clear,10,69
+Samosa,Prayagraj,2025-11-13,3,11,False,26.2,clear,10,60
+Samosa,Prayagraj,2025-11-14,4,11,False,21.2,rain,10,55
+Samosa,Prayagraj,2025-11-15,5,11,False,24.7,clear,10,78
+Samosa,Prayagraj,2025-11-16,6,11,False,24.9,clear,10,94
+Samosa,Prayagraj,2025-11-17,0,11,False,20.6,clear,10,51
+Samosa,Prayagraj,2025-11-18,1,11,False,21.6,rain,10,49
+Samosa,Prayagraj,2025-11-19,2,11,False,21.1,clear,10,46
+Samosa,Prayagraj,2025-11-20,3,11,False,23.3,clear,10,58
+Samosa,Prayagraj,2025-11-21,4,11,False,20.5,clear,10,61
+Samosa,Prayagraj,2025-11-22,5,11,False,18.1,clear,10,65
+Samosa,Prayagraj,2025-11-23,6,11,False,19.6,clear,10,104
+Samosa,Prayagraj,2025-11-24,0,11,False,19.3,clear,10,64
+Samosa,Prayagraj,2025-11-25,1,11,False,30.9,clear,10,60
+Samosa,Prayagraj,2025-11-26,2,11,False,27.1,clear,10,59
+Samosa,Prayagraj,2025-11-27,3,11,False,23.5,clear,10,60
+Samosa,Prayagraj,2025-11-28,4,11,False,22.9,clear,10,72
+Samosa,Prayagraj,2025-11-29,5,11,False,25.9,clear,10,78
+Samosa,Prayagraj,2025-11-30,6,11,False,25.4,clear,10,77
+Samosa,Prayagraj,2025-12-01,0,12,False,12.1,rain,10,43
+Samosa,Prayagraj,2025-12-02,1,12,False,23.4,clear,10,65
+Samosa,Prayagraj,2025-12-03,2,12,False,11.9,clear,10,64
+Samosa,Prayagraj,2025-12-04,3,12,False,10.6,clear,10,64
+Samosa,Prayagraj,2025-12-05,4,12,False,16.9,clear,10,86
+Samosa,Prayagraj,2025-12-06,5,12,False,16.8,clear,10,73
+Samosa,Prayagraj,2025-12-07,6,12,False,16.1,clear,10,74
+Samosa,Prayagraj,2025-12-08,0,12,False,14.6,clear,10,63
+Samosa,Prayagraj,2025-12-09,1,12,False,20.9,clear,10,60
+Samosa,Prayagraj,2025-12-10,2,12,False,15.7,clear,10,59
+Samosa,Prayagraj,2025-12-11,3,12,False,8.0,clear,10,75
+Samosa,Prayagraj,2025-12-12,4,12,False,8.9,clear,10,74
+Samosa,Prayagraj,2025-12-13,5,12,False,14.8,clear,10,74
+Samosa,Prayagraj,2025-12-14,6,12,False,20.2,clear,10,93
+Samosa,Prayagraj,2025-12-15,0,12,False,19.7,clear,10,75
+Samosa,Prayagraj,2025-12-16,1,12,False,16.8,clear,10,60
+Samosa,Prayagraj,2025-12-17,2,12,False,15.3,clear,10,69
+Samosa,Prayagraj,2025-12-18,3,12,False,10.3,clear,10,61
+Samosa,Prayagraj,2025-12-19,4,12,False,19.7,clear,10,94
+Samosa,Prayagraj,2025-12-20,5,12,False,17.9,clear,10,77
+Samosa,Prayagraj,2025-12-21,6,12,False,10.3,clear,10,92
+Samosa,Prayagraj,2025-12-22,0,12,False,17.6,clear,10,54
+Samosa,Prayagraj,2025-12-23,1,12,False,15.1,clear,10,57
+Samosa,Prayagraj,2025-12-24,2,12,False,16.2,clear,10,67
+Samosa,Prayagraj,2025-12-25,3,12,True,5.8,clear,10,100
+Samosa,Prayagraj,2025-12-26,4,12,False,16.7,clear,10,58
+Samosa,Prayagraj,2025-12-27,5,12,False,12.6,clear,10,63
+Samosa,Prayagraj,2025-12-28,6,12,False,20.9,clear,10,86
+Samosa,Prayagraj,2025-12-29,0,12,False,12.7,clear,10,70
+Samosa,Prayagraj,2025-12-30,1,12,False,15.9,clear,10,64
+Samosa,Prayagraj,2025-12-31,2,12,False,11.5,clear,10,61
+Samosa,Prayagraj,2026-01-01,3,1,False,16.5,clear,10,54
+Samosa,Prayagraj,2026-01-02,4,1,False,14.5,clear,10,71
+Samosa,Prayagraj,2026-01-03,5,1,False,11.7,clear,10,86
+Samosa,Prayagraj,2026-01-04,6,1,False,15.0,clear,10,86
+Samosa,Prayagraj,2026-01-05,0,1,False,18.4,clear,10,80
+Samosa,Prayagraj,2026-01-06,1,1,False,14.2,clear,10,74
+Samosa,Prayagraj,2026-01-07,2,1,False,13.2,rain,10,50
+Samosa,Prayagraj,2026-01-08,3,1,False,8.6,clear,10,50
+Samosa,Prayagraj,2026-01-09,4,1,False,11.8,clear,10,83
+Samosa,Prayagraj,2026-01-10,5,1,False,16.1,clear,10,56
+Samosa,Prayagraj,2026-01-11,6,1,False,15.2,clear,10,82
+Samosa,Prayagraj,2026-01-12,0,1,False,17.8,clear,10,57
+Samosa,Prayagraj,2026-01-13,1,1,False,15.6,clear,10,64
+Samosa,Prayagraj,2026-01-14,2,1,True,17.1,clear,10,98
+Samosa,Prayagraj,2026-01-15,3,1,False,15.8,clear,10,59
+Samosa,Prayagraj,2026-01-16,4,1,False,17.1,rain,10,54
+Samosa,Prayagraj,2026-01-17,5,1,False,18.3,clear,10,66
+Samosa,Prayagraj,2026-01-18,6,1,False,9.1,clear,10,72
+Samosa,Prayagraj,2026-01-19,0,1,False,18.0,clear,10,64
+Samosa,Prayagraj,2026-01-20,1,1,False,19.4,clear,10,62
+Samosa,Prayagraj,2026-01-21,2,1,False,20.4,clear,10,56
+Samosa,Prayagraj,2026-01-22,3,1,False,12.6,clear,10,56
+Samosa,Prayagraj,2026-01-23,4,1,False,13.6,clear,10,94
+Samosa,Prayagraj,2026-01-24,5,1,False,9.5,clear,10,68
+Samosa,Prayagraj,2026-01-25,6,1,False,16.9,clear,10,61
+Samosa,Prayagraj,2026-01-26,0,1,True,18.7,clear,10,94
+Samosa,Prayagraj,2026-01-27,1,1,False,10.7,clear,10,66
+Samosa,Prayagraj,2026-01-28,2,1,False,14.2,clear,10,65
+Samosa,Prayagraj,2026-01-29,3,1,False,20.3,clear,10,52
+Samosa,Prayagraj,2026-01-30,4,1,False,19.3,clear,10,89
+Samosa,Prayagraj,2026-01-31,5,1,False,16.5,clear,10,82
+Samosa,Prayagraj,2026-02-01,6,2,False,22.8,clear,10,79
+Samosa,Prayagraj,2026-02-02,0,2,False,15.6,clear,10,56
+Samosa,Prayagraj,2026-02-03,1,2,False,16.3,clear,10,65
+Samosa,Prayagraj,2026-02-04,2,2,False,11.7,clear,10,47
+Samosa,Prayagraj,2026-02-05,3,2,False,10.5,rain,10,42
+Samosa,Prayagraj,2026-02-06,4,2,False,22.7,clear,10,69
+Samosa,Prayagraj,2026-02-07,5,2,False,16.4,clear,10,76
+Samosa,Prayagraj,2026-02-08,6,2,False,15.7,clear,10,75
+Samosa,Prayagraj,2026-02-09,0,2,False,19.3,clear,10,63
+Samosa,Prayagraj,2026-02-10,1,2,False,25.4,clear,10,74
+Samosa,Prayagraj,2026-02-11,2,2,False,15.4,clear,10,63
+Samosa,Prayagraj,2026-02-12,3,2,False,14.3,clear,10,66
+Samosa,Prayagraj,2026-02-13,4,2,False,11.6,clear,10,84
+Samosa,Prayagraj,2026-02-14,5,2,False,17.7,clear,10,82
+Samosa,Prayagraj,2026-02-15,6,2,False,13.9,clear,10,76
+Samosa,Prayagraj,2026-02-16,0,2,False,18.7,clear,10,60
+Samosa,Prayagraj,2026-02-17,1,2,False,7.0,clear,10,73
+Samosa,Prayagraj,2026-02-18,2,2,False,18.6,clear,10,52
+Samosa,Prayagraj,2026-02-19,3,2,False,3.1,clear,10,81
+Samosa,Prayagraj,2026-02-20,4,2,False,16.7,clear,10,83
+Samosa,Prayagraj,2026-02-21,5,2,False,8.8,clear,10,80
+Samosa,Prayagraj,2026-02-22,6,2,False,14.7,clear,10,82
+Samosa,Prayagraj,2026-02-23,0,2,False,17.7,clear,10,70
+Samosa,Prayagraj,2026-02-24,1,2,False,21.5,clear,10,56
+Samosa,Prayagraj,2026-02-25,2,2,False,20.3,clear,10,74
+Samosa,Prayagraj,2026-02-26,3,2,False,13.2,clear,10,64
+Samosa,Prayagraj,2026-02-27,4,2,False,16.0,clear,10,76
+Samosa,Prayagraj,2026-02-28,5,2,False,11.2,clear,10,83
+Samosa,Prayagraj,2026-03-01,6,3,False,27.2,clear,10,74
+Samosa,Prayagraj,2026-03-02,0,3,False,40.7,extreme_heat,10,54
+Samosa,Prayagraj,2026-03-03,1,3,False,26.6,clear,10,65
+Samosa,Prayagraj,2026-03-04,2,3,False,34.1,clear,10,62
+Samosa,Prayagraj,2026-03-05,3,3,False,36.0,clear,10,69
+Samosa,Prayagraj,2026-03-06,4,3,True,38.3,extreme_heat,10,128
+Samosa,Prayagraj,2026-03-07,5,3,False,36.5,clear,10,78
+Samosa,Prayagraj,2026-03-08,6,3,False,33.5,clear,10,69
+Samosa,Prayagraj,2026-03-09,0,3,False,28.8,clear,10,59
+Samosa,Prayagraj,2026-03-10,1,3,False,30.6,clear,10,66
+Samosa,Prayagraj,2026-03-11,2,3,False,35.3,clear,10,70
+Samosa,Prayagraj,2026-03-12,3,3,False,38.7,rain,10,41
+Samosa,Prayagraj,2026-03-13,4,3,False,37.7,clear,10,66
+Samosa,Prayagraj,2026-03-14,5,3,False,34.7,clear,10,71
+Samosa,Prayagraj,2026-03-15,6,3,False,35.9,clear,10,92
+Samosa,Prayagraj,2026-03-16,0,3,False,41.2,extreme_heat,10,63
+Samosa,Prayagraj,2026-03-17,1,3,False,23.0,clear,10,61
+Samosa,Prayagraj,2026-03-18,2,3,False,29.6,clear,10,79
+Samosa,Prayagraj,2026-03-19,3,3,False,29.1,clear,10,65
+Samosa,Prayagraj,2026-03-20,4,3,False,43.1,extreme_heat,10,78
+Samosa,Prayagraj,2026-03-21,5,3,False,44.1,extreme_heat,10,72
+Samosa,Prayagraj,2026-03-22,6,3,False,26.7,rain,10,53
+Samosa,Prayagraj,2026-03-23,0,3,False,32.4,clear,10,65
+Samosa,Prayagraj,2026-03-24,1,3,False,26.1,clear,10,59
+Samosa,Prayagraj,2026-03-25,2,3,True,41.4,extreme_heat,10,89
+Samosa,Prayagraj,2026-03-26,3,3,False,37.7,clear,10,67
+Samosa,Prayagraj,2026-03-27,4,3,False,26.6,rain,10,49
+Samosa,Prayagraj,2026-03-28,5,3,False,36.2,clear,10,84
+Samosa,Prayagraj,2026-03-29,6,3,False,31.0,clear,10,87
+Samosa,Prayagraj,2026-03-30,0,3,False,36.2,clear,10,75
+Samosa,Prayagraj,2026-03-31,1,3,False,32.8,rain,10,46
+Samosa,Prayagraj,2026-04-01,2,4,False,31.9,rain,10,42
+Samosa,Prayagraj,2026-04-02,3,4,False,32.9,clear,10,56
+Samosa,Prayagraj,2026-04-03,4,4,False,22.9,clear,10,104
+Samosa,Prayagraj,2026-04-04,5,4,False,33.0,clear,10,77
+Samosa,Prayagraj,2026-04-05,6,4,False,33.6,clear,10,69
+Samosa,Prayagraj,2026-04-06,0,4,False,37.9,clear,10,52
+Samosa,Prayagraj,2026-04-07,1,4,False,38.5,extreme_heat,10,62
+Samosa,Prayagraj,2026-04-08,2,4,False,33.3,clear,10,69
+Samosa,Prayagraj,2026-04-09,3,4,False,26.3,clear,10,61
+Samosa,Prayagraj,2026-04-10,4,4,False,44.2,extreme_heat,10,91
+Samosa,Prayagraj,2026-04-11,5,4,False,29.5,clear,10,83
+Samosa,Prayagraj,2026-04-12,6,4,False,30.7,clear,10,92
+Samosa,Prayagraj,2026-04-13,0,4,False,33.4,clear,10,64
+Samosa,Prayagraj,2026-04-14,1,4,False,30.5,clear,10,63
+Samosa,Prayagraj,2026-04-15,2,4,False,26.5,clear,10,68
+Samosa,Prayagraj,2026-04-16,3,4,False,32.4,clear,10,70
+Samosa,Prayagraj,2026-04-17,4,4,False,36.4,clear,10,67
+Samosa,Prayagraj,2026-04-18,5,4,False,39.2,extreme_heat,10,98
+Samosa,Prayagraj,2026-04-19,6,4,False,37.1,clear,10,79
+Samosa,Prayagraj,2026-04-20,0,4,False,39.1,extreme_heat,10,70
+Samosa,Prayagraj,2026-04-21,1,4,False,32.4,clear,10,60
+Samosa,Prayagraj,2026-04-22,2,4,False,32.8,clear,10,70
+Samosa,Prayagraj,2026-04-23,3,4,False,42.5,extreme_heat,10,58
+Samosa,Prayagraj,2026-04-24,4,4,False,36.6,clear,10,89
+Samosa,Prayagraj,2026-04-25,5,4,False,23.7,clear,10,73
+Samosa,Prayagraj,2026-04-26,6,4,False,23.4,clear,10,72
+Samosa,Prayagraj,2026-04-27,0,4,False,34.0,clear,10,62
+Samosa,Prayagraj,2026-04-28,1,4,False,29.8,clear,10,72
+Samosa,Prayagraj,2026-04-29,2,4,False,30.1,clear,10,69
+Samosa,Prayagraj,2026-04-30,3,4,False,33.9,clear,10,64
+Samosa,Prayagraj,2026-05-01,4,5,False,38.5,extreme_heat,10,76
+Samosa,Prayagraj,2026-05-02,5,5,False,33.9,clear,10,65
+Samosa,Prayagraj,2026-05-03,6,5,False,38.4,extreme_heat,10,67
+Samosa,Prayagraj,2026-05-04,0,5,False,34.5,clear,10,47
+Samosa,Prayagraj,2026-05-05,1,5,False,27.5,clear,10,76
+Samosa,Prayagraj,2026-05-06,2,5,False,36.4,clear,10,56
+Samosa,Prayagraj,2026-05-07,3,5,False,29.4,clear,10,65
+Samosa,Prayagraj,2026-05-08,4,5,False,37.7,clear,10,83
+Samosa,Prayagraj,2026-05-09,5,5,False,35.8,clear,10,88
+Samosa,Prayagraj,2026-05-10,6,5,False,26.9,clear,10,90
+Samosa,Prayagraj,2026-05-11,0,5,False,40.9,extreme_heat,10,48
+Samosa,Prayagraj,2026-05-12,1,5,False,35.5,clear,10,78
+Samosa,Prayagraj,2026-05-13,2,5,False,37.6,clear,10,58
+Samosa,Prayagraj,2026-05-14,3,5,False,35.1,clear,10,57
+Samosa,Prayagraj,2026-05-15,4,5,False,45.2,extreme_heat,10,87
+Samosa,Prayagraj,2026-05-16,5,5,False,30.4,clear,10,87
+Samosa,Prayagraj,2026-05-17,6,5,False,37.2,clear,10,87
+Samosa,Prayagraj,2026-05-18,0,5,False,38.7,extreme_heat,10,64
+Samosa,Prayagraj,2026-05-19,1,5,False,26.1,rain,10,42
+Samosa,Prayagraj,2026-05-20,2,5,False,28.6,clear,10,78
+Samosa,Prayagraj,2026-05-21,3,5,False,41.8,extreme_heat,10,71
+Samosa,Prayagraj,2026-05-22,4,5,False,35.1,clear,10,70
+Samosa,Prayagraj,2026-05-23,5,5,False,37.0,clear,10,68
+Samosa,Prayagraj,2026-05-24,6,5,False,34.7,rain,10,69
+Samosa,Prayagraj,2026-05-25,0,5,False,39.5,extreme_heat,10,63
+Samosa,Prayagraj,2026-05-26,1,5,False,35.2,clear,10,56
+Samosa,Prayagraj,2026-05-27,2,5,False,34.2,clear,10,55
+Samosa,Prayagraj,2026-05-28,3,5,False,37.6,clear,10,51
+Samosa,Prayagraj,2026-05-29,4,5,False,34.4,clear,10,91
+Samosa,Prayagraj,2026-05-30,5,5,False,40.1,extreme_heat,10,69
+Samosa,Prayagraj,2026-05-31,6,5,False,29.6,clear,10,85
+Samosa,Prayagraj,2026-06-01,0,6,False,32.9,clear,10,64
+Samosa,Prayagraj,2026-06-02,1,6,False,25.3,rain,10,47
+Samosa,Prayagraj,2026-06-03,2,6,False,28.4,clear,10,67
+Samosa,Prayagraj,2026-06-04,3,6,False,27.5,rain,10,47
+Samosa,Prayagraj,2026-06-05,4,6,False,27.8,clear,10,84
+Samosa,Prayagraj,2026-06-06,5,6,False,25.6,rain,10,67
+Samosa,Prayagraj,2026-06-07,6,6,False,25.5,clear,10,63
+Samosa,Prayagraj,2026-06-08,0,6,False,29.1,rain,10,45
+Samosa,Prayagraj,2026-06-09,1,6,False,32.6,clear,10,68
+Samosa,Prayagraj,2026-06-10,2,6,False,33.7,rain,10,43
+Samosa,Prayagraj,2026-06-11,3,6,False,26.7,clear,10,63
+Samosa,Prayagraj,2026-06-12,4,6,False,33.3,clear,10,78
+Samosa,Prayagraj,2026-06-13,5,6,False,34.7,rain,10,69
+Samosa,Prayagraj,2026-06-14,6,6,False,28.7,rain,10,60
+Samosa,Prayagraj,2026-06-15,0,6,False,38.5,extreme_heat,10,57
+Samosa,Prayagraj,2026-06-16,1,6,False,31.9,clear,10,61
+Samosa,Prayagraj,2026-06-17,2,6,False,31.7,rain,10,47
+Samosa,Prayagraj,2026-06-18,3,6,False,29.0,rain,10,48
+Samosa,Prayagraj,2026-06-19,4,6,False,23.2,clear,10,72
+Samosa,Prayagraj,2026-06-20,5,6,False,24.7,clear,10,82
+Samosa,Prayagraj,2026-06-21,6,6,False,26.9,rain,10,48
+Samosa,Prayagraj,2026-06-22,0,6,False,27.8,clear,10,65
+Samosa,Prayagraj,2026-06-23,1,6,False,29.8,clear,10,71
+Samosa,Prayagraj,2026-06-24,2,6,False,29.2,clear,10,50
+Samosa,Prayagraj,2026-06-25,3,6,False,29.0,rain,10,45
+Samosa,Prayagraj,2026-06-26,4,6,False,28.9,clear,10,91
+Samosa,Prayagraj,2026-06-27,5,6,False,25.7,clear,10,71
+Samosa,Prayagraj,2026-06-28,6,6,False,29.9,rain,10,54
+Samosa,Prayagraj,2026-06-29,0,6,False,21.5,clear,10,59
+Samosa,Prayagraj,2026-06-30,1,6,False,27.3,rain,10,46
+Samosa,Prayagraj,2026-07-01,2,7,False,28.1,clear,10,60
+Samosa,Prayagraj,2026-07-02,3,7,False,26.4,rain,10,37
+Samosa,Prayagraj,2026-07-03,4,7,False,30.2,clear,10,80
+Samosa,Prayagraj,2026-07-04,5,7,False,33.8,clear,10,102
+Samosa,Prayagraj,2026-07-05,6,7,False,28.3,rain,10,58
+Samosa,Prayagraj,2026-07-06,0,7,False,25.8,rain,10,48
+Samosa,Prayagraj,2026-07-07,1,7,False,30.7,rain,10,51
+Samosa,Prayagraj,2026-07-08,2,7,False,32.5,clear,10,58
+Samosa,Prayagraj,2026-07-09,3,7,False,30.6,rain,10,36
+Samosa,Prayagraj,2026-07-10,4,7,False,28.0,clear,10,83
+Samosa,Prayagraj,2026-07-11,5,7,False,27.3,clear,10,101
+Samosa,Prayagraj,2026-07-12,6,7,False,28.5,clear,10,80
+Samosa,Prayagraj,2026-07-13,0,7,False,29.2,rain,10,48
+Samosa,Prayagraj,2026-07-14,1,7,False,32.5,clear,10,68
+Samosa,Prayagraj,2026-07-15,2,7,False,30.8,rain,10,46
+Samosa,Prayagraj,2026-07-16,3,7,False,31.8,rain,10,47
+Samosa,Prayagraj,2026-07-17,4,7,False,31.7,clear,10,94
+Samosa,Prayagraj,2026-07-18,5,7,False,29.9,clear,10,86
+Samosa,Prayagraj,2026-07-19,6,7,False,20.2,clear,10,46
+Samosa,Prayagraj,2026-07-20,0,7,False,23.8,rain,10,49
+Samosa,Prayagraj,2026-07-21,1,7,False,25.5,rain,10,54
+Samosa,Prayagraj,2026-07-22,2,7,False,27.5,clear,10,66
+Samosa,Prayagraj,2026-07-23,3,7,False,30.2,rain,10,47
+Samosa,Prayagraj,2026-07-24,4,7,False,26.0,clear,10,82
+Samosa,Prayagraj,2026-07-25,5,7,False,24.9,rain,10,53
+Samosa,Prayagraj,2026-07-26,6,7,False,31.8,rain,10,56
+Samosa,Prayagraj,2026-07-27,0,7,False,28.7,rain,10,50
+Samosa,Prayagraj,2026-07-28,1,7,False,26.0,clear,10,75
+Samosa,Prayagraj,2026-07-29,2,7,False,27.8,clear,10,69
+Samosa,Prayagraj,2026-07-30,3,7,False,30.4,rain,10,47
+Samosa,Prayagraj,2026-07-31,4,7,False,31.2,clear,10,89
+Samosa,Prayagraj,2026-08-01,5,8,False,24.8,clear,10,80
+Samosa,Prayagraj,2026-08-02,6,8,False,27.6,rain,10,68
+Samosa,Prayagraj,2026-08-03,0,8,False,34.4,clear,10,65
+Samosa,Prayagraj,2026-08-04,1,8,False,30.1,clear,10,67
+Samosa,Prayagraj,2026-08-05,2,8,False,29.4,rain,10,46
+Samosa,Prayagraj,2026-08-06,3,8,False,26.8,rain,10,50
+Samosa,Prayagraj,2026-08-07,4,8,False,29.0,rain,10,63
+Samosa,Prayagraj,2026-08-08,5,8,False,27.9,clear,10,86
+Samosa,Prayagraj,2026-08-09,6,8,False,25.3,rain,10,54
+Samosa,Prayagraj,2026-08-10,0,8,False,24.0,rain,10,41
+Samosa,Prayagraj,2026-08-11,1,8,False,29.2,rain,10,44
+Samosa,Prayagraj,2026-08-12,2,8,False,30.9,clear,10,69
+Samosa,Prayagraj,2026-08-13,3,8,False,30.2,clear,10,49
+Samosa,Prayagraj,2026-08-14,4,8,False,27.9,clear,10,83
+Samosa,Prayagraj,2026-08-15,5,8,True,29.0,rain,10,106
+Samosa,Prayagraj,2026-08-16,6,8,False,29.6,clear,10,88
+Samosa,Prayagraj,2026-08-17,0,8,False,27.4,clear,10,74
+Samosa,Prayagraj,2026-08-18,1,8,False,27.3,clear,10,72
+Samosa,Prayagraj,2026-08-19,2,8,False,26.1,clear,10,72
+Samosa,Prayagraj,2026-08-20,3,8,False,29.3,rain,10,42
+Samosa,Varanasi,2025-09-01,0,9,False,27.4,clear,10,49
+Samosa,Varanasi,2025-09-02,1,9,False,30.3,clear,10,54
+Samosa,Varanasi,2025-09-03,2,9,False,29.3,clear,10,46
+Samosa,Varanasi,2025-09-04,3,9,False,33.4,clear,10,58
+Samosa,Varanasi,2025-09-05,4,9,False,29.4,clear,10,68
+Samosa,Varanasi,2025-09-06,5,9,False,33.4,clear,10,78
+Samosa,Varanasi,2025-09-07,6,9,False,27.1,rain,10,42
+Samosa,Varanasi,2025-09-08,0,9,False,30.4,clear,10,55
+Samosa,Varanasi,2025-09-09,1,9,False,28.4,rain,10,38
+Samosa,Varanasi,2025-09-10,2,9,False,24.2,rain,10,40
+Samosa,Varanasi,2025-09-11,3,9,False,33.0,clear,10,51
+Samosa,Varanasi,2025-09-12,4,9,False,33.3,rain,10,47
+Samosa,Varanasi,2025-09-13,5,9,False,30.3,rain,10,49
+Samosa,Varanasi,2025-09-14,6,9,False,27.8,rain,10,39
+Samosa,Varanasi,2025-09-15,0,9,False,31.0,rain,10,36
+Samosa,Varanasi,2025-09-16,1,9,False,29.0,clear,10,56
+Samosa,Varanasi,2025-09-17,2,9,False,27.0,clear,10,55
+Samosa,Varanasi,2025-09-18,3,9,False,33.7,clear,10,62
+Samosa,Varanasi,2025-09-19,4,9,False,32.7,clear,10,74
+Samosa,Varanasi,2025-09-20,5,9,False,30.8,clear,10,60
+Samosa,Varanasi,2025-09-21,6,9,False,31.1,clear,10,63
+Samosa,Varanasi,2025-09-22,0,9,False,32.9,rain,10,46
+Samosa,Varanasi,2025-09-23,1,9,False,28.2,clear,10,54
+Samosa,Varanasi,2025-09-24,2,9,False,29.3,clear,10,63
+Samosa,Varanasi,2025-09-25,3,9,False,27.9,clear,10,49
+Samosa,Varanasi,2025-09-26,4,9,False,30.4,rain,10,44
+Samosa,Varanasi,2025-09-27,5,9,False,28.3,rain,10,47
+Samosa,Varanasi,2025-09-28,6,9,False,34.3,rain,10,47
+Samosa,Varanasi,2025-09-29,0,9,False,22.7,clear,10,54
+Samosa,Varanasi,2025-09-30,1,9,False,26.9,rain,10,38
+Samosa,Varanasi,2025-10-01,2,10,False,29.2,clear,10,56
+Samosa,Varanasi,2025-10-02,3,10,True,23.6,clear,10,107
+Samosa,Varanasi,2025-10-03,4,10,False,14.7,clear,10,65
+Samosa,Varanasi,2025-10-04,5,10,False,24.1,clear,10,73
+Samosa,Varanasi,2025-10-05,6,10,False,22.5,clear,10,78
+Samosa,Varanasi,2025-10-06,0,10,False,24.7,clear,10,57
+Samosa,Varanasi,2025-10-07,1,10,False,21.8,clear,10,56
+Samosa,Varanasi,2025-10-08,2,10,False,24.0,clear,10,39
+Samosa,Varanasi,2025-10-09,3,10,False,18.3,clear,10,53
+Samosa,Varanasi,2025-10-10,4,10,False,23.0,clear,10,61
+Samosa,Varanasi,2025-10-11,5,10,False,20.6,clear,10,85
+Samosa,Varanasi,2025-10-12,6,10,False,22.4,rain,10,42
+Samosa,Varanasi,2025-10-13,0,10,False,16.4,clear,10,49
+Samosa,Varanasi,2025-10-14,1,10,False,23.7,clear,10,51
+Samosa,Varanasi,2025-10-15,2,10,False,24.6,clear,10,59
+Samosa,Varanasi,2025-10-16,3,10,False,18.7,clear,10,50
+Samosa,Varanasi,2025-10-17,4,10,False,26.5,rain,10,41
+Samosa,Varanasi,2025-10-18,5,10,False,22.7,clear,10,75
+Samosa,Varanasi,2025-10-19,6,10,False,23.4,clear,10,78
+Samosa,Varanasi,2025-10-20,0,10,True,23.0,rain,10,77
+Samosa,Varanasi,2025-10-21,1,10,True,31.8,clear,10,79
+Samosa,Varanasi,2025-10-22,2,10,False,29.9,rain,10,33
+Samosa,Varanasi,2025-10-23,3,10,False,22.1,clear,10,55
+Samosa,Varanasi,2025-10-24,4,10,False,21.4,clear,10,64
+Samosa,Varanasi,2025-10-25,5,10,False,20.5,clear,10,72
+Samosa,Varanasi,2025-10-26,6,10,False,27.5,clear,10,68
+Samosa,Varanasi,2025-10-27,0,10,False,21.1,rain,10,33
+Samosa,Varanasi,2025-10-28,1,10,False,16.8,clear,10,48
+Samosa,Varanasi,2025-10-29,2,10,False,29.3,clear,10,65
+Samosa,Varanasi,2025-10-30,3,10,False,25.6,clear,10,50
+Samosa,Varanasi,2025-10-31,4,10,False,26.1,clear,10,65
+Samosa,Varanasi,2025-11-01,5,11,True,26.2,clear,10,105
+Samosa,Varanasi,2025-11-02,6,11,False,19.5,clear,10,71
+Samosa,Varanasi,2025-11-03,0,11,False,25.3,clear,10,56
+Samosa,Varanasi,2025-11-04,1,11,False,26.3,clear,10,66
+Samosa,Varanasi,2025-11-05,2,11,False,29.1,clear,10,67
+Samosa,Varanasi,2025-11-06,3,11,False,21.9,clear,10,57
+Samosa,Varanasi,2025-11-07,4,11,False,22.4,clear,10,69
+Samosa,Varanasi,2025-11-08,5,11,False,17.8,clear,10,83
+Samosa,Varanasi,2025-11-09,6,11,False,20.8,clear,10,64
+Samosa,Varanasi,2025-11-10,0,11,False,21.5,clear,10,56
+Samosa,Varanasi,2025-11-11,1,11,False,31.0,clear,10,63
+Samosa,Varanasi,2025-11-12,2,11,False,24.4,clear,10,53
+Samosa,Varanasi,2025-11-13,3,11,False,23.8,clear,10,51
+Samosa,Varanasi,2025-11-14,4,11,False,26.6,clear,10,75
+Samosa,Varanasi,2025-11-15,5,11,False,30.1,clear,10,67
+Samosa,Varanasi,2025-11-16,6,11,False,25.5,clear,10,71
+Samosa,Varanasi,2025-11-17,0,11,False,21.6,clear,10,59
+Samosa,Varanasi,2025-11-18,1,11,False,23.1,clear,10,42
+Samosa,Varanasi,2025-11-19,2,11,False,15.9,clear,10,57
+Samosa,Varanasi,2025-11-20,3,11,False,25.0,clear,10,56
+Samosa,Varanasi,2025-11-21,4,11,False,32.0,clear,10,72
+Samosa,Varanasi,2025-11-22,5,11,False,22.2,clear,10,52
+Samosa,Varanasi,2025-11-23,6,11,False,25.0,clear,10,57
+Samosa,Varanasi,2025-11-24,0,11,False,21.4,clear,10,50
+Samosa,Varanasi,2025-11-25,1,11,False,24.2,clear,10,39
+Samosa,Varanasi,2025-11-26,2,11,False,26.5,clear,10,55
+Samosa,Varanasi,2025-11-27,3,11,False,14.1,clear,10,65
+Samosa,Varanasi,2025-11-28,4,11,False,12.9,clear,10,61
+Samosa,Varanasi,2025-11-29,5,11,False,27.2,clear,10,74
+Samosa,Varanasi,2025-11-30,6,11,False,26.3,clear,10,69
+Samosa,Varanasi,2025-12-01,0,12,False,16.5,clear,10,65
+Samosa,Varanasi,2025-12-02,1,12,False,12.0,clear,10,56
+Samosa,Varanasi,2025-12-03,2,12,False,8.7,rain,10,44
+Samosa,Varanasi,2025-12-04,3,12,False,16.2,clear,10,56
+Samosa,Varanasi,2025-12-05,4,12,False,18.0,clear,10,62
+Samosa,Varanasi,2025-12-06,5,12,False,18.5,clear,10,74
+Samosa,Varanasi,2025-12-07,6,12,False,22.4,clear,10,76
+Samosa,Varanasi,2025-12-08,0,12,False,25.8,clear,10,51
+Samosa,Varanasi,2025-12-09,1,12,False,16.7,rain,10,37
+Samosa,Varanasi,2025-12-10,2,12,False,10.9,clear,10,59
+Samosa,Varanasi,2025-12-11,3,12,False,12.1,clear,10,56
+Samosa,Varanasi,2025-12-12,4,12,False,14.0,clear,10,60
+Samosa,Varanasi,2025-12-13,5,12,False,16.4,clear,10,75
+Samosa,Varanasi,2025-12-14,6,12,False,13.5,clear,10,67
+Samosa,Varanasi,2025-12-15,0,12,False,14.0,clear,10,63
+Samosa,Varanasi,2025-12-16,1,12,False,8.1,clear,10,54
+Samosa,Varanasi,2025-12-17,2,12,False,16.5,clear,10,66
+Samosa,Varanasi,2025-12-18,3,12,False,20.0,clear,10,46
+Samosa,Varanasi,2025-12-19,4,12,False,18.3,clear,10,57
+Samosa,Varanasi,2025-12-20,5,12,False,14.9,clear,10,76
+Samosa,Varanasi,2025-12-21,6,12,False,15.7,clear,10,84
+Samosa,Varanasi,2025-12-22,0,12,False,19.9,clear,10,55
+Samosa,Varanasi,2025-12-23,1,12,False,14.3,clear,10,58
+Samosa,Varanasi,2025-12-24,2,12,False,20.0,clear,10,59
+Samosa,Varanasi,2025-12-25,3,12,True,11.3,clear,10,107
+Samosa,Varanasi,2025-12-26,4,12,False,12.8,clear,10,55
+Samosa,Varanasi,2025-12-27,5,12,False,22.4,clear,10,70
+Samosa,Varanasi,2025-12-28,6,12,False,17.3,clear,10,81
+Samosa,Varanasi,2025-12-29,0,12,False,13.7,clear,10,54
+Samosa,Varanasi,2025-12-30,1,12,False,12.7,clear,10,59
+Samosa,Varanasi,2025-12-31,2,12,False,17.6,clear,10,61
+Samosa,Varanasi,2026-01-01,3,1,False,13.3,clear,10,46
+Samosa,Varanasi,2026-01-02,4,1,False,20.0,clear,10,64
+Samosa,Varanasi,2026-01-03,5,1,False,23.9,clear,10,80
+Samosa,Varanasi,2026-01-04,6,1,False,15.1,clear,10,70
+Samosa,Varanasi,2026-01-05,0,1,False,16.6,clear,10,58
+Samosa,Varanasi,2026-01-06,1,1,False,11.4,clear,10,63
+Samosa,Varanasi,2026-01-07,2,1,False,17.6,clear,10,55
+Samosa,Varanasi,2026-01-08,3,1,False,11.3,clear,10,46
+Samosa,Varanasi,2026-01-09,4,1,False,15.9,clear,10,68
+Samosa,Varanasi,2026-01-10,5,1,False,3.2,clear,10,81
+Samosa,Varanasi,2026-01-11,6,1,False,12.3,clear,10,60
+Samosa,Varanasi,2026-01-12,0,1,False,20.8,clear,10,59
+Samosa,Varanasi,2026-01-13,1,1,False,24.3,clear,10,55
+Samosa,Varanasi,2026-01-14,2,1,True,12.6,clear,10,97
+Samosa,Varanasi,2026-01-15,3,1,False,14.6,clear,10,67
+Samosa,Varanasi,2026-01-16,4,1,False,14.5,clear,10,72
+Samosa,Varanasi,2026-01-17,5,1,False,22.1,clear,10,80
+Samosa,Varanasi,2026-01-18,6,1,False,12.1,clear,10,76
+Samosa,Varanasi,2026-01-19,0,1,False,19.0,clear,10,48
+Samosa,Varanasi,2026-01-20,1,1,False,9.6,clear,10,45
+Samosa,Varanasi,2026-01-21,2,1,False,15.4,clear,10,57
+Samosa,Varanasi,2026-01-22,3,1,False,6.0,clear,10,56
+Samosa,Varanasi,2026-01-23,4,1,False,23.4,clear,10,68
+Samosa,Varanasi,2026-01-24,5,1,False,21.8,clear,10,77
+Samosa,Varanasi,2026-01-25,6,1,False,15.5,clear,10,78
+Samosa,Varanasi,2026-01-26,0,1,True,11.8,clear,10,77
+Samosa,Varanasi,2026-01-27,1,1,False,16.3,clear,10,53
+Samosa,Varanasi,2026-01-28,2,1,False,14.9,clear,10,50
+Samosa,Varanasi,2026-01-29,3,1,False,13.6,clear,10,60
+Samosa,Varanasi,2026-01-30,4,1,False,10.4,clear,10,62
+Samosa,Varanasi,2026-01-31,5,1,False,12.7,clear,10,83
+Samosa,Varanasi,2026-02-01,6,2,False,16.3,clear,10,76
+Samosa,Varanasi,2026-02-02,0,2,False,6.6,clear,10,71
+Samosa,Varanasi,2026-02-03,1,2,False,15.5,clear,10,61
+Samosa,Varanasi,2026-02-04,2,2,False,18.6,clear,10,46
+Samosa,Varanasi,2026-02-05,3,2,False,15.8,clear,10,67
+Samosa,Varanasi,2026-02-06,4,2,False,13.7,clear,10,61
+Samosa,Varanasi,2026-02-07,5,2,False,4.0,clear,10,70
+Samosa,Varanasi,2026-02-08,6,2,False,13.3,clear,10,82
+Samosa,Varanasi,2026-02-09,0,2,False,14.3,clear,10,62
+Samosa,Varanasi,2026-02-10,1,2,False,17.2,clear,10,64
+Samosa,Varanasi,2026-02-11,2,2,False,10.3,clear,10,51
+Samosa,Varanasi,2026-02-12,3,2,False,18.0,clear,10,51
+Samosa,Varanasi,2026-02-13,4,2,False,21.1,clear,10,79
+Samosa,Varanasi,2026-02-14,5,2,False,15.9,clear,10,84
+Samosa,Varanasi,2026-02-15,6,2,False,14.1,clear,10,65
+Samosa,Varanasi,2026-02-16,0,2,False,17.2,clear,10,47
+Samosa,Varanasi,2026-02-17,1,2,False,12.1,clear,10,55
+Samosa,Varanasi,2026-02-18,2,2,False,9.5,clear,10,53
+Samosa,Varanasi,2026-02-19,3,2,False,18.1,clear,10,57
+Samosa,Varanasi,2026-02-20,4,2,False,13.4,clear,10,65
+Samosa,Varanasi,2026-02-21,5,2,False,10.4,clear,10,67
+Samosa,Varanasi,2026-02-22,6,2,False,10.3,clear,10,79
+Samosa,Varanasi,2026-02-23,0,2,False,8.7,clear,10,56
+Samosa,Varanasi,2026-02-24,1,2,False,16.4,clear,10,48
+Samosa,Varanasi,2026-02-25,2,2,False,10.0,rain,10,46
+Samosa,Varanasi,2026-02-26,3,2,False,6.1,rain,10,46
+Samosa,Varanasi,2026-02-27,4,2,False,14.4,clear,10,66
+Samosa,Varanasi,2026-02-28,5,2,False,14.5,clear,10,52
+Samosa,Varanasi,2026-03-01,6,3,False,39.7,extreme_heat,10,65
+Samosa,Varanasi,2026-03-02,0,3,False,28.1,clear,10,57
+Samosa,Varanasi,2026-03-03,1,3,False,31.4,clear,10,61
+Samosa,Varanasi,2026-03-04,2,3,False,36.6,clear,10,69
+Samosa,Varanasi,2026-03-05,3,3,False,29.7,clear,10,66
+Samosa,Varanasi,2026-03-06,4,3,True,41.3,extreme_heat,10,106
+Samosa,Varanasi,2026-03-07,5,3,False,41.8,extreme_heat,10,71
+Samosa,Varanasi,2026-03-08,6,3,False,33.9,clear,10,75
+Samosa,Varanasi,2026-03-09,0,3,False,33.7,clear,10,59
+Samosa,Varanasi,2026-03-10,1,3,False,31.6,clear,10,78
+Samosa,Varanasi,2026-03-11,2,3,False,26.1,clear,10,53
+Samosa,Varanasi,2026-03-12,3,3,False,37.9,clear,10,63
+Samosa,Varanasi,2026-03-13,4,3,False,40.9,extreme_heat,10,78
+Samosa,Varanasi,2026-03-14,5,3,False,23.3,clear,10,76
+Samosa,Varanasi,2026-03-15,6,3,False,40.4,extreme_heat,10,62
+Samosa,Varanasi,2026-03-16,0,3,False,35.7,clear,10,60
+Samosa,Varanasi,2026-03-17,1,3,False,40.4,extreme_heat,10,62
+Samosa,Varanasi,2026-03-18,2,3,False,35.0,clear,10,48
+Samosa,Varanasi,2026-03-19,3,3,False,37.5,clear,10,55
+Samosa,Varanasi,2026-03-20,4,3,False,38.2,extreme_heat,10,70
+Samosa,Varanasi,2026-03-21,5,3,False,34.4,clear,10,71
+Samosa,Varanasi,2026-03-22,6,3,False,31.5,clear,10,84
+Samosa,Varanasi,2026-03-23,0,3,False,37.7,clear,10,57
+Samosa,Varanasi,2026-03-24,1,3,False,27.2,clear,10,46
+Samosa,Varanasi,2026-03-25,2,3,True,38.8,extreme_heat,10,114
+Samosa,Varanasi,2026-03-26,3,3,False,29.5,clear,10,71
+Samosa,Varanasi,2026-03-27,4,3,False,41.0,extreme_heat,10,71
+Samosa,Varanasi,2026-03-28,5,3,False,35.0,clear,10,67
+Samosa,Varanasi,2026-03-29,6,3,False,34.6,clear,10,74
+Samosa,Varanasi,2026-03-30,0,3,False,37.3,clear,10,47
+Samosa,Varanasi,2026-03-31,1,3,False,39.9,extreme_heat,10,51
+Samosa,Varanasi,2026-04-01,2,4,False,33.6,clear,10,51
+Samosa,Varanasi,2026-04-02,3,4,False,32.3,clear,10,54
+Samosa,Varanasi,2026-04-03,4,4,False,38.2,extreme_heat,10,72
+Samosa,Varanasi,2026-04-04,5,4,False,34.3,clear,10,68
+Samosa,Varanasi,2026-04-05,6,4,False,27.1,clear,10,69
+Samosa,Varanasi,2026-04-06,0,4,False,28.8,clear,10,55
+Samosa,Varanasi,2026-04-07,1,4,False,46.9,extreme_heat,10,57
+Samosa,Varanasi,2026-04-08,2,4,False,29.4,clear,10,60
+Samosa,Varanasi,2026-04-09,3,4,False,23.4,clear,10,72
+Samosa,Varanasi,2026-04-10,4,4,False,32.7,clear,10,82
+Samosa,Varanasi,2026-04-11,5,4,False,34.2,clear,10,53
+Samosa,Varanasi,2026-04-12,6,4,False,38.2,extreme_heat,10,61
+Samosa,Varanasi,2026-04-13,0,4,False,35.6,clear,10,55
+Samosa,Varanasi,2026-04-14,1,4,False,38.0,extreme_heat,10,63
+Samosa,Varanasi,2026-04-15,2,4,False,28.0,clear,10,72
+Samosa,Varanasi,2026-04-16,3,4,False,40.6,extreme_heat,10,50
+Samosa,Varanasi,2026-04-17,4,4,False,32.4,clear,10,74
+Samosa,Varanasi,2026-04-18,5,4,False,34.5,clear,10,72
+Samosa,Varanasi,2026-04-19,6,4,False,27.8,clear,10,82
+Samosa,Varanasi,2026-04-20,0,4,False,28.2,clear,10,53
+Samosa,Varanasi,2026-04-21,1,4,False,35.6,clear,10,69
+Samosa,Varanasi,2026-04-22,2,4,False,37.5,clear,10,64
+Samosa,Varanasi,2026-04-23,3,4,False,31.1,clear,10,61
+Samosa,Varanasi,2026-04-24,4,4,False,32.5,clear,10,67
+Samosa,Varanasi,2026-04-25,5,4,False,31.9,clear,10,69
+Samosa,Varanasi,2026-04-26,6,4,False,40.5,extreme_heat,10,84
+Samosa,Varanasi,2026-04-27,0,4,False,46.3,extreme_heat,10,56
+Samosa,Varanasi,2026-04-28,1,4,False,29.1,clear,10,54
+Samosa,Varanasi,2026-04-29,2,4,False,29.7,clear,10,58
+Samosa,Varanasi,2026-04-30,3,4,False,28.9,clear,10,52
+Samosa,Varanasi,2026-05-01,4,5,False,49.0,extreme_heat,10,67
+Samosa,Varanasi,2026-05-02,5,5,False,32.7,clear,10,62
+Samosa,Varanasi,2026-05-03,6,5,False,43.5,extreme_heat,10,73
+Samosa,Varanasi,2026-05-04,0,5,False,28.3,clear,10,51
+Samosa,Varanasi,2026-05-05,1,5,False,42.3,extreme_heat,10,57
+Samosa,Varanasi,2026-05-06,2,5,False,22.8,clear,10,64
+Samosa,Varanasi,2026-05-07,3,5,False,41.1,extreme_heat,10,45
+Samosa,Varanasi,2026-05-08,4,5,False,36.5,clear,10,59
+Samosa,Varanasi,2026-05-09,5,5,False,35.0,clear,10,71
+Samosa,Varanasi,2026-05-10,6,5,False,25.7,rain,10,50
+Samosa,Varanasi,2026-05-11,0,5,False,34.3,clear,10,56
+Samosa,Varanasi,2026-05-12,1,5,False,34.8,clear,10,57
+Samosa,Varanasi,2026-05-13,2,5,False,33.0,clear,10,46
+Samosa,Varanasi,2026-05-14,3,5,False,37.4,clear,10,59
+Samosa,Varanasi,2026-05-15,4,5,False,39.8,extreme_heat,10,54
+Samosa,Varanasi,2026-05-16,5,5,False,36.4,clear,10,76
+Samosa,Varanasi,2026-05-17,6,5,False,32.7,clear,10,82
+Samosa,Varanasi,2026-05-18,0,5,False,37.4,clear,10,44
+Samosa,Varanasi,2026-05-19,1,5,False,38.8,extreme_heat,10,61
+Samosa,Varanasi,2026-05-20,2,5,False,30.6,clear,10,65
+Samosa,Varanasi,2026-05-21,3,5,False,42.8,extreme_heat,10,55
+Samosa,Varanasi,2026-05-22,4,5,False,38.7,extreme_heat,10,61
+Samosa,Varanasi,2026-05-23,5,5,False,37.1,clear,10,75
+Samosa,Varanasi,2026-05-24,6,5,False,36.1,clear,10,87
+Samosa,Varanasi,2026-05-25,0,5,False,30.5,clear,10,59
+Samosa,Varanasi,2026-05-26,1,5,False,39.4,extreme_heat,10,48
+Samosa,Varanasi,2026-05-27,2,5,False,24.8,clear,10,51
+Samosa,Varanasi,2026-05-28,3,5,False,33.1,clear,10,55
+Samosa,Varanasi,2026-05-29,4,5,False,36.2,clear,10,80
+Samosa,Varanasi,2026-05-30,5,5,False,37.4,clear,10,73
+Samosa,Varanasi,2026-05-31,6,5,False,40.2,extreme_heat,10,59
+Samosa,Varanasi,2026-06-01,0,6,False,31.0,rain,10,49
+Samosa,Varanasi,2026-06-02,1,6,False,32.1,clear,10,61
+Samosa,Varanasi,2026-06-03,2,6,False,28.4,clear,10,57
+Samosa,Varanasi,2026-06-04,3,6,False,29.7,rain,10,39
+Samosa,Varanasi,2026-06-05,4,6,False,27.2,clear,10,65
+Samosa,Varanasi,2026-06-06,5,6,False,23.5,rain,10,63
+Samosa,Varanasi,2026-06-07,6,6,False,33.3,rain,10,57
+Samosa,Varanasi,2026-06-08,0,6,False,33.3,clear,10,60
+Samosa,Varanasi,2026-06-09,1,6,False,23.0,clear,10,52
+Samosa,Varanasi,2026-06-10,2,6,False,29.6,clear,10,64
+Samosa,Varanasi,2026-06-11,3,6,False,32.1,clear,10,52
+Samosa,Varanasi,2026-06-12,4,6,False,22.5,rain,10,49
+Samosa,Varanasi,2026-06-13,5,6,False,24.3,rain,10,49
+Samosa,Varanasi,2026-06-14,6,6,False,25.8,clear,10,84
+Samosa,Varanasi,2026-06-15,0,6,False,30.8,rain,10,45
+Samosa,Varanasi,2026-06-16,1,6,False,25.5,rain,10,43
+Samosa,Varanasi,2026-06-17,2,6,False,27.6,clear,10,54
+Samosa,Varanasi,2026-06-18,3,6,False,30.5,rain,10,27
+Samosa,Varanasi,2026-06-19,4,6,False,32.6,clear,10,69
+Samosa,Varanasi,2026-06-20,5,6,False,32.1,rain,10,43
+Samosa,Varanasi,2026-06-21,6,6,False,25.7,clear,10,58
+Samosa,Varanasi,2026-06-22,0,6,False,32.4,clear,10,51
+Samosa,Varanasi,2026-06-23,1,6,False,27.3,clear,10,66
+Samosa,Varanasi,2026-06-24,2,6,False,31.2,rain,10,40
+Samosa,Varanasi,2026-06-25,3,6,False,26.4,clear,10,50
+Samosa,Varanasi,2026-06-26,4,6,False,33.8,rain,10,45
+Samosa,Varanasi,2026-06-27,5,6,False,27.0,clear,10,63
+Samosa,Varanasi,2026-06-28,6,6,False,29.3,clear,10,55
+Samosa,Varanasi,2026-06-29,0,6,False,27.9,rain,10,38
+Samosa,Varanasi,2026-06-30,1,6,False,26.3,rain,10,52
+Samosa,Varanasi,2026-07-01,2,7,False,29.2,rain,10,33
+Samosa,Varanasi,2026-07-02,3,7,False,27.0,clear,10,53
+Samosa,Varanasi,2026-07-03,4,7,False,31.7,clear,10,72
+Samosa,Varanasi,2026-07-04,5,7,False,27.2,clear,10,69
+Samosa,Varanasi,2026-07-05,6,7,False,28.2,rain,10,48
+Samosa,Varanasi,2026-07-06,0,7,False,30.5,rain,10,42
+Samosa,Varanasi,2026-07-07,1,7,False,27.7,rain,10,41
+Samosa,Varanasi,2026-07-08,2,7,False,28.1,rain,10,51
+Samosa,Varanasi,2026-07-09,3,7,False,25.0,clear,10,46
+Samosa,Varanasi,2026-07-10,4,7,False,29.7,rain,10,56
+Samosa,Varanasi,2026-07-11,5,7,False,29.5,clear,10,75
+Samosa,Varanasi,2026-07-12,6,7,False,28.2,clear,10,73
+Samosa,Varanasi,2026-07-13,0,7,False,29.6,rain,10,38
+Samosa,Varanasi,2026-07-14,1,7,False,24.9,clear,10,64
+Samosa,Varanasi,2026-07-15,2,7,False,29.7,clear,10,61
+Samosa,Varanasi,2026-07-16,3,7,False,30.2,clear,10,60
+Samosa,Varanasi,2026-07-17,4,7,False,27.4,clear,10,71
+Samosa,Varanasi,2026-07-18,5,7,False,27.0,clear,10,78
+Samosa,Varanasi,2026-07-19,6,7,False,24.8,clear,10,75
+Samosa,Varanasi,2026-07-20,0,7,False,25.7,clear,10,65
+Samosa,Varanasi,2026-07-21,1,7,False,25.2,clear,10,65
+Samosa,Varanasi,2026-07-22,2,7,False,29.0,clear,10,61
+Samosa,Varanasi,2026-07-23,3,7,False,28.9,rain,10,45
+Samosa,Varanasi,2026-07-24,4,7,False,30.4,clear,10,68
+Samosa,Varanasi,2026-07-25,5,7,False,29.4,clear,10,63
+Samosa,Varanasi,2026-07-26,6,7,False,24.6,rain,10,36
+Samosa,Varanasi,2026-07-27,0,7,False,29.6,clear,10,70
+Samosa,Varanasi,2026-07-28,1,7,False,27.5,rain,10,40
+Samosa,Varanasi,2026-07-29,2,7,False,29.3,rain,10,40
+Samosa,Varanasi,2026-07-30,3,7,False,32.0,clear,10,63
+Samosa,Varanasi,2026-07-31,4,7,False,31.8,rain,10,65
+Samosa,Varanasi,2026-08-01,5,8,False,26.7,rain,10,47
+Samosa,Varanasi,2026-08-02,6,8,False,31.0,rain,10,54
+Samosa,Varanasi,2026-08-03,0,8,False,25.6,rain,10,36
+Samosa,Varanasi,2026-08-04,1,8,False,32.5,rain,10,44
+Samosa,Varanasi,2026-08-05,2,8,False,30.7,clear,10,47
+Samosa,Varanasi,2026-08-06,3,8,False,27.2,clear,10,50
+Samosa,Varanasi,2026-08-07,4,8,False,34.2,rain,10,55
+Samosa,Varanasi,2026-08-08,5,8,False,28.1,rain,10,59
+Samosa,Varanasi,2026-08-09,6,8,False,28.9,clear,10,74
+Samosa,Varanasi,2026-08-10,0,8,False,28.0,rain,10,32
+Samosa,Varanasi,2026-08-11,1,8,False,28.2,rain,10,40
+Samosa,Varanasi,2026-08-12,2,8,False,25.1,rain,10,43
+Samosa,Varanasi,2026-08-13,3,8,False,22.5,rain,10,45
+Samosa,Varanasi,2026-08-14,4,8,False,30.2,rain,10,54
+Samosa,Varanasi,2026-08-15,5,8,True,32.1,clear,10,120
+Samosa,Varanasi,2026-08-16,6,8,False,27.6,rain,10,56
+Samosa,Varanasi,2026-08-17,0,8,False,29.6,clear,10,62
+Samosa,Varanasi,2026-08-18,1,8,False,31.5,clear,10,67
+Samosa,Varanasi,2026-08-19,2,8,False,31.6,clear,10,48
+Samosa,Varanasi,2026-08-20,3,8,False,33.6,clear,10,48
+Chai,Varanasi,2025-09-01,0,9,False,26.9,rain,15,100
+Chai,Varanasi,2025-09-02,1,9,False,27.5,clear,15,79
+Chai,Varanasi,2025-09-03,2,9,False,26.6,rain,15,108
+Chai,Varanasi,2025-09-04,3,9,False,30.5,rain,15,106
+Chai,Varanasi,2025-09-05,4,9,False,30.5,rain,15,131
+Chai,Varanasi,2025-09-06,5,9,False,29.3,clear,15,123
+Chai,Varanasi,2025-09-07,6,9,False,30.7,clear,15,102
+Chai,Varanasi,2025-09-08,0,9,False,29.2,clear,15,92
+Chai,Varanasi,2025-09-09,1,9,False,35.6,clear,15,95
+Chai,Varanasi,2025-09-10,2,9,False,32.2,rain,15,133
+Chai,Varanasi,2025-09-11,3,9,False,27.9,clear,15,82
+Chai,Varanasi,2025-09-12,4,9,False,27.9,clear,15,124
+Chai,Varanasi,2025-09-13,5,9,False,30.0,clear,15,112
+Chai,Varanasi,2025-09-14,6,9,False,28.0,rain,15,136
+Chai,Varanasi,2025-09-15,0,9,False,26.8,rain,15,92
+Chai,Varanasi,2025-09-16,1,9,False,31.8,rain,15,106
+Chai,Varanasi,2025-09-17,2,9,False,28.8,clear,15,81
+Chai,Varanasi,2025-09-18,3,9,False,25.8,clear,15,97
+Chai,Varanasi,2025-09-19,4,9,False,30.0,clear,15,122
+Chai,Varanasi,2025-09-20,5,9,False,26.8,rain,15,115
+Chai,Varanasi,2025-09-21,6,9,False,32.9,clear,15,121
+Chai,Varanasi,2025-09-22,0,9,False,32.7,rain,15,83
+Chai,Varanasi,2025-09-23,1,9,False,26.8,rain,15,94
+Chai,Varanasi,2025-09-24,2,9,False,25.8,rain,15,89
+Chai,Varanasi,2025-09-25,3,9,False,30.0,rain,15,110
+Chai,Varanasi,2025-09-26,4,9,False,30.5,rain,15,125
+Chai,Varanasi,2025-09-27,5,9,False,35.4,clear,15,88
+Chai,Varanasi,2025-09-28,6,9,False,26.0,clear,15,114
+Chai,Varanasi,2025-09-29,0,9,False,28.6,rain,15,130
+Chai,Varanasi,2025-09-30,1,9,False,30.6,rain,15,93
+Chai,Varanasi,2025-10-01,2,10,False,20.0,clear,15,93
+Chai,Varanasi,2025-10-02,3,10,True,16.6,clear,15,146
+Chai,Varanasi,2025-10-03,4,10,False,23.1,clear,15,106
+Chai,Varanasi,2025-10-04,5,10,False,23.3,clear,15,122
+Chai,Varanasi,2025-10-05,6,10,False,28.3,clear,15,107
+Chai,Varanasi,2025-10-06,0,10,False,25.8,rain,15,99
+Chai,Varanasi,2025-10-07,1,10,False,27.2,clear,15,105
+Chai,Varanasi,2025-10-08,2,10,False,31.1,clear,15,91
+Chai,Varanasi,2025-10-09,3,10,False,24.0,clear,15,84
+Chai,Varanasi,2025-10-10,4,10,False,18.1,clear,15,103
+Chai,Varanasi,2025-10-11,5,10,False,24.3,clear,15,99
+Chai,Varanasi,2025-10-12,6,10,False,24.9,clear,15,122
+Chai,Varanasi,2025-10-13,0,10,False,32.7,clear,15,96
+Chai,Varanasi,2025-10-14,1,10,False,19.7,clear,15,108
+Chai,Varanasi,2025-10-15,2,10,False,20.3,rain,15,104
+Chai,Varanasi,2025-10-16,3,10,False,23.6,clear,15,88
+Chai,Varanasi,2025-10-17,4,10,False,28.9,clear,15,95
+Chai,Varanasi,2025-10-18,5,10,False,27.8,clear,15,106
+Chai,Varanasi,2025-10-19,6,10,False,17.7,rain,15,130
+Chai,Varanasi,2025-10-20,0,10,True,28.7,clear,15,145
+Chai,Varanasi,2025-10-21,1,10,True,26.7,clear,15,164
+Chai,Varanasi,2025-10-22,2,10,False,19.3,clear,15,94
+Chai,Varanasi,2025-10-23,3,10,False,28.3,clear,15,65
+Chai,Varanasi,2025-10-24,4,10,False,20.9,clear,15,112
+Chai,Varanasi,2025-10-25,5,10,False,25.9,clear,15,123
+Chai,Varanasi,2025-10-26,6,10,False,23.1,clear,15,108
+Chai,Varanasi,2025-10-27,0,10,False,25.7,rain,15,113
+Chai,Varanasi,2025-10-28,1,10,False,27.6,clear,15,58
+Chai,Varanasi,2025-10-29,2,10,False,18.9,clear,15,86
+Chai,Varanasi,2025-10-30,3,10,False,16.1,clear,15,92
+Chai,Varanasi,2025-10-31,4,10,False,28.4,clear,15,121
+Chai,Varanasi,2025-11-01,5,11,True,25.5,clear,15,233
+Chai,Varanasi,2025-11-02,6,11,False,27.9,rain,15,139
+Chai,Varanasi,2025-11-03,0,11,False,28.6,clear,15,87
+Chai,Varanasi,2025-11-04,1,11,False,28.7,rain,15,138
+Chai,Varanasi,2025-11-05,2,11,False,21.0,rain,15,102
+Chai,Varanasi,2025-11-06,3,11,False,22.0,clear,15,61
+Chai,Varanasi,2025-11-07,4,11,False,22.3,clear,15,108
+Chai,Varanasi,2025-11-08,5,11,False,31.7,clear,15,133
+Chai,Varanasi,2025-11-09,6,11,False,25.0,clear,15,119
+Chai,Varanasi,2025-11-10,0,11,False,29.5,clear,15,97
+Chai,Varanasi,2025-11-11,1,11,False,25.5,clear,15,96
+Chai,Varanasi,2025-11-12,2,11,False,32.9,clear,15,97
+Chai,Varanasi,2025-11-13,3,11,False,29.0,clear,15,92
+Chai,Varanasi,2025-11-14,4,11,False,14.5,clear,15,84
+Chai,Varanasi,2025-11-15,5,11,False,29.9,clear,15,129
+Chai,Varanasi,2025-11-16,6,11,False,20.4,clear,15,119
+Chai,Varanasi,2025-11-17,0,11,False,23.9,rain,15,107
+Chai,Varanasi,2025-11-18,1,11,False,35.1,rain,15,119
+Chai,Varanasi,2025-11-19,2,11,False,27.4,clear,15,90
+Chai,Varanasi,2025-11-20,3,11,False,15.8,rain,15,116
+Chai,Varanasi,2025-11-21,4,11,False,20.1,clear,15,106
+Chai,Varanasi,2025-11-22,5,11,False,30.0,clear,15,124
+Chai,Varanasi,2025-11-23,6,11,False,26.5,clear,15,118
+Chai,Varanasi,2025-11-24,0,11,False,19.3,clear,15,94
+Chai,Varanasi,2025-11-25,1,11,False,25.3,clear,15,110
+Chai,Varanasi,2025-11-26,2,11,False,30.3,clear,15,88
+Chai,Varanasi,2025-11-27,3,11,False,25.9,clear,15,109
+Chai,Varanasi,2025-11-28,4,11,False,28.5,clear,15,103
+Chai,Varanasi,2025-11-29,5,11,False,27.2,clear,15,112
+Chai,Varanasi,2025-11-30,6,11,False,23.5,rain,15,127
+Chai,Varanasi,2025-12-01,0,12,False,5.2,clear,15,85
+Chai,Varanasi,2025-12-02,1,12,False,15.2,clear,15,89
+Chai,Varanasi,2025-12-03,2,12,False,18.2,clear,15,87
+Chai,Varanasi,2025-12-04,3,12,False,17.7,clear,15,75
+Chai,Varanasi,2025-12-05,4,12,False,17.7,clear,15,115
+Chai,Varanasi,2025-12-06,5,12,False,7.2,clear,15,93
+Chai,Varanasi,2025-12-07,6,12,False,16.2,clear,15,100
+Chai,Varanasi,2025-12-08,0,12,False,13.2,clear,15,85
+Chai,Varanasi,2025-12-09,1,12,False,17.4,clear,15,104
+Chai,Varanasi,2025-12-10,2,12,False,16.1,clear,15,83
+Chai,Varanasi,2025-12-11,3,12,False,8.4,clear,15,89
+Chai,Varanasi,2025-12-12,4,12,False,5.5,clear,15,103
+Chai,Varanasi,2025-12-13,5,12,False,21.3,clear,15,96
+Chai,Varanasi,2025-12-14,6,12,False,19.4,clear,15,106
+Chai,Varanasi,2025-12-15,0,12,False,12.5,clear,15,67
+Chai,Varanasi,2025-12-16,1,12,False,7.6,clear,15,110
+Chai,Varanasi,2025-12-17,2,12,False,13.3,clear,15,106
+Chai,Varanasi,2025-12-18,3,12,False,23.4,clear,15,93
+Chai,Varanasi,2025-12-19,4,12,False,22.3,clear,15,131
+Chai,Varanasi,2025-12-20,5,12,False,10.9,clear,15,113
+Chai,Varanasi,2025-12-21,6,12,False,11.2,clear,15,93
+Chai,Varanasi,2025-12-22,0,12,False,11.1,clear,15,104
+Chai,Varanasi,2025-12-23,1,12,False,14.5,clear,15,99
+Chai,Varanasi,2025-12-24,2,12,False,11.1,clear,15,102
+Chai,Varanasi,2025-12-25,3,12,True,25.4,rain,15,162
+Chai,Varanasi,2025-12-26,4,12,False,18.1,clear,15,109
+Chai,Varanasi,2025-12-27,5,12,False,13.4,clear,15,105
+Chai,Varanasi,2025-12-28,6,12,False,13.4,clear,15,130
+Chai,Varanasi,2025-12-29,0,12,False,12.6,clear,15,72
+Chai,Varanasi,2025-12-30,1,12,False,10.0,clear,15,92
+Chai,Varanasi,2025-12-31,2,12,False,10.2,clear,15,85
+Chai,Varanasi,2026-01-01,3,1,False,13.2,clear,15,101
+Chai,Varanasi,2026-01-02,4,1,False,15.1,clear,15,111
+Chai,Varanasi,2026-01-03,5,1,False,16.3,clear,15,104
+Chai,Varanasi,2026-01-04,6,1,False,15.1,clear,15,120
+Chai,Varanasi,2026-01-05,0,1,False,18.0,rain,15,131
+Chai,Varanasi,2026-01-06,1,1,False,11.5,clear,15,93
+Chai,Varanasi,2026-01-07,2,1,False,14.6,clear,15,95
+Chai,Varanasi,2026-01-08,3,1,False,18.4,clear,15,93
+Chai,Varanasi,2026-01-09,4,1,False,18.3,clear,15,128
+Chai,Varanasi,2026-01-10,5,1,False,12.0,clear,15,148
+Chai,Varanasi,2026-01-11,6,1,False,14.5,clear,15,109
+Chai,Varanasi,2026-01-12,0,1,False,19.9,rain,15,111
+Chai,Varanasi,2026-01-13,1,1,False,19.0,rain,15,123
+Chai,Varanasi,2026-01-14,2,1,True,18.7,clear,15,156
+Chai,Varanasi,2026-01-15,3,1,False,18.6,clear,15,87
+Chai,Varanasi,2026-01-16,4,1,False,21.8,clear,15,128
+Chai,Varanasi,2026-01-17,5,1,False,15.5,clear,15,117
+Chai,Varanasi,2026-01-18,6,1,False,20.7,clear,15,93
+Chai,Varanasi,2026-01-19,0,1,False,14.1,clear,15,91
+Chai,Varanasi,2026-01-20,1,1,False,7.8,clear,15,101
+Chai,Varanasi,2026-01-21,2,1,False,14.7,clear,15,106
+Chai,Varanasi,2026-01-22,3,1,False,12.8,clear,15,100
+Chai,Varanasi,2026-01-23,4,1,False,16.0,clear,15,115
+Chai,Varanasi,2026-01-24,5,1,False,19.2,clear,15,95
+Chai,Varanasi,2026-01-25,6,1,False,17.5,clear,15,124
+Chai,Varanasi,2026-01-26,0,1,True,16.6,clear,15,165
+Chai,Varanasi,2026-01-27,1,1,False,14.8,rain,15,104
+Chai,Varanasi,2026-01-28,2,1,False,23.1,clear,15,100
+Chai,Varanasi,2026-01-29,3,1,False,8.3,clear,15,89
+Chai,Varanasi,2026-01-30,4,1,False,6.7,clear,15,112
+Chai,Varanasi,2026-01-31,5,1,False,6.6,clear,15,138
+Chai,Varanasi,2026-02-01,6,2,False,21.0,clear,15,118
+Chai,Varanasi,2026-02-02,0,2,False,20.3,clear,15,107
+Chai,Varanasi,2026-02-03,1,2,False,11.2,clear,15,99
+Chai,Varanasi,2026-02-04,2,2,False,7.8,clear,15,120
+Chai,Varanasi,2026-02-05,3,2,False,17.6,clear,15,96
+Chai,Varanasi,2026-02-06,4,2,False,14.7,clear,15,106
+Chai,Varanasi,2026-02-07,5,2,False,11.1,clear,15,137
+Chai,Varanasi,2026-02-08,6,2,False,11.0,clear,15,117
+Chai,Varanasi,2026-02-09,0,2,False,16.4,clear,15,106
+Chai,Varanasi,2026-02-10,1,2,False,15.3,clear,15,98
+Chai,Varanasi,2026-02-11,2,2,False,17.5,clear,15,119
+Chai,Varanasi,2026-02-12,3,2,False,16.9,clear,15,76
+Chai,Varanasi,2026-02-13,4,2,False,11.7,clear,15,122
+Chai,Varanasi,2026-02-14,5,2,False,7.3,clear,15,110
+Chai,Varanasi,2026-02-15,6,2,False,20.6,clear,15,121
+Chai,Varanasi,2026-02-16,0,2,False,19.7,clear,15,83
+Chai,Varanasi,2026-02-17,1,2,False,14.2,clear,15,79
+Chai,Varanasi,2026-02-18,2,2,False,8.3,clear,15,88
+Chai,Varanasi,2026-02-19,3,2,False,13.4,clear,15,87
+Chai,Varanasi,2026-02-20,4,2,False,15.0,clear,15,107
+Chai,Varanasi,2026-02-21,5,2,False,21.6,clear,15,109
+Chai,Varanasi,2026-02-22,6,2,False,21.1,clear,15,111
+Chai,Varanasi,2026-02-23,0,2,False,14.4,clear,15,111
+Chai,Varanasi,2026-02-24,1,2,False,11.7,clear,15,96
+Chai,Varanasi,2026-02-25,2,2,False,11.1,clear,15,95
+Chai,Varanasi,2026-02-26,3,2,False,19.6,clear,15,103
+Chai,Varanasi,2026-02-27,4,2,False,19.8,rain,15,133
+Chai,Varanasi,2026-02-28,5,2,False,17.7,clear,15,127
+Chai,Varanasi,2026-03-01,6,3,False,34.6,clear,15,105
+Chai,Varanasi,2026-03-02,0,3,False,42.2,extreme_heat,15,91
+Chai,Varanasi,2026-03-03,1,3,False,32.4,clear,15,122
+Chai,Varanasi,2026-03-04,2,3,False,29.7,clear,15,97
+Chai,Varanasi,2026-03-05,3,3,False,41.4,extreme_heat,15,76
+Chai,Varanasi,2026-03-06,4,3,True,32.1,rain,15,194
+Chai,Varanasi,2026-03-07,5,3,False,34.1,clear,15,104
+Chai,Varanasi,2026-03-08,6,3,False,31.5,clear,15,98
+Chai,Varanasi,2026-03-09,0,3,False,32.9,clear,15,91
+Chai,Varanasi,2026-03-10,1,3,False,33.6,rain,15,101
+Chai,Varanasi,2026-03-11,2,3,False,38.5,extreme_heat,15,72
+Chai,Varanasi,2026-03-12,3,3,False,37.4,clear,15,99
+Chai,Varanasi,2026-03-13,4,3,False,42.8,extreme_heat,15,75
+Chai,Varanasi,2026-03-14,5,3,False,37.3,clear,15,116
+Chai,Varanasi,2026-03-15,6,3,False,40.0,extreme_heat,15,78
+Chai,Varanasi,2026-03-16,0,3,False,35.7,clear,15,93
+Chai,Varanasi,2026-03-17,1,3,False,41.4,extreme_heat,15,65
+Chai,Varanasi,2026-03-18,2,3,False,29.8,clear,15,91
+Chai,Varanasi,2026-03-19,3,3,False,42.0,extreme_heat,15,81
+Chai,Varanasi,2026-03-20,4,3,False,35.7,clear,15,107
+Chai,Varanasi,2026-03-21,5,3,False,39.3,extreme_heat,15,105
+Chai,Varanasi,2026-03-22,6,3,False,40.9,extreme_heat,15,93
+Chai,Varanasi,2026-03-23,0,3,False,37.0,clear,15,99
+Chai,Varanasi,2026-03-24,1,3,False,34.4,clear,15,104
+Chai,Varanasi,2026-03-25,2,3,True,34.6,clear,15,150
+Chai,Varanasi,2026-03-26,3,3,False,35.3,clear,15,97
+Chai,Varanasi,2026-03-27,4,3,False,40.2,extreme_heat,15,98
+Chai,Varanasi,2026-03-28,5,3,False,41.4,extreme_heat,15,98
+Chai,Varanasi,2026-03-29,6,3,False,32.1,clear,15,107
+Chai,Varanasi,2026-03-30,0,3,False,34.2,clear,15,81
+Chai,Varanasi,2026-03-31,1,3,False,29.2,clear,15,116
+Chai,Varanasi,2026-04-01,2,4,False,32.7,clear,15,91
+Chai,Varanasi,2026-04-02,3,4,False,30.3,clear,15,124
+Chai,Varanasi,2026-04-03,4,4,False,42.0,extreme_heat,15,103
+Chai,Varanasi,2026-04-04,5,4,False,30.8,clear,15,134
+Chai,Varanasi,2026-04-05,6,4,False,40.8,extreme_heat,15,90
+Chai,Varanasi,2026-04-06,0,4,False,34.2,clear,15,84
+Chai,Varanasi,2026-04-07,1,4,False,37.0,rain,15,89
+Chai,Varanasi,2026-04-08,2,4,False,35.6,clear,15,82
+Chai,Varanasi,2026-04-09,3,4,False,38.2,extreme_heat,15,84
+Chai,Varanasi,2026-04-10,4,4,False,39.4,extreme_heat,15,77
+Chai,Varanasi,2026-04-11,5,4,False,32.3,clear,15,112
+Chai,Varanasi,2026-04-12,6,4,False,31.5,clear,15,145
+Chai,Varanasi,2026-04-13,0,4,False,39.1,extreme_heat,15,86
+Chai,Varanasi,2026-04-14,1,4,False,37.9,clear,15,94
+Chai,Varanasi,2026-04-15,2,4,False,32.9,clear,15,103
+Chai,Varanasi,2026-04-16,3,4,False,32.7,clear,15,84
+Chai,Varanasi,2026-04-17,4,4,False,42.5,extreme_heat,15,102
+Chai,Varanasi,2026-04-18,5,4,False,40.3,extreme_heat,15,97
+Chai,Varanasi,2026-04-19,6,4,False,35.1,clear,15,112
+Chai,Varanasi,2026-04-20,0,4,False,32.8,clear,15,95
+Chai,Varanasi,2026-04-21,1,4,False,31.1,clear,15,109
+Chai,Varanasi,2026-04-22,2,4,False,38.4,extreme_heat,15,75
+Chai,Varanasi,2026-04-23,3,4,False,37.9,clear,15,93
+Chai,Varanasi,2026-04-24,4,4,False,39.8,extreme_heat,15,85
+Chai,Varanasi,2026-04-25,5,4,False,30.7,rain,15,167
+Chai,Varanasi,2026-04-26,6,4,False,25.4,rain,15,116
+Chai,Varanasi,2026-04-27,0,4,False,31.8,clear,15,92
+Chai,Varanasi,2026-04-28,1,4,False,32.3,rain,15,104
+Chai,Varanasi,2026-04-29,2,4,False,27.7,clear,15,105
+Chai,Varanasi,2026-04-30,3,4,False,39.2,extreme_heat,15,80
+Chai,Varanasi,2026-05-01,4,5,False,38.4,extreme_heat,15,97
+Chai,Varanasi,2026-05-02,5,5,False,34.4,clear,15,149
+Chai,Varanasi,2026-05-03,6,5,False,26.7,clear,15,107
+Chai,Varanasi,2026-05-04,0,5,False,39.9,extreme_heat,15,68
+Chai,Varanasi,2026-05-05,1,5,False,37.5,clear,15,103
+Chai,Varanasi,2026-05-06,2,5,False,36.2,clear,15,98
+Chai,Varanasi,2026-05-07,3,5,False,34.2,clear,15,103
+Chai,Varanasi,2026-05-08,4,5,False,38.7,extreme_heat,15,85
+Chai,Varanasi,2026-05-09,5,5,False,32.2,clear,15,132
+Chai,Varanasi,2026-05-10,6,5,False,39.9,extreme_heat,15,113
+Chai,Varanasi,2026-05-11,0,5,False,41.8,rain,15,100
+Chai,Varanasi,2026-05-12,1,5,False,42.9,rain,15,113
+Chai,Varanasi,2026-05-13,2,5,False,33.3,clear,15,80
+Chai,Varanasi,2026-05-14,3,5,False,38.2,extreme_heat,15,106
+Chai,Varanasi,2026-05-15,4,5,False,29.6,clear,15,129
+Chai,Varanasi,2026-05-16,5,5,False,42.6,extreme_heat,15,104
+Chai,Varanasi,2026-05-17,6,5,False,25.8,clear,15,106
+Chai,Varanasi,2026-05-18,0,5,False,25.5,rain,15,82
+Chai,Varanasi,2026-05-19,1,5,False,28.4,clear,15,87
+Chai,Varanasi,2026-05-20,2,5,False,37.0,clear,15,107
+Chai,Varanasi,2026-05-21,3,5,False,38.8,extreme_heat,15,78
+Chai,Varanasi,2026-05-22,4,5,False,36.5,clear,15,123
+Chai,Varanasi,2026-05-23,5,5,False,33.0,clear,15,109
+Chai,Varanasi,2026-05-24,6,5,False,37.1,rain,15,129
+Chai,Varanasi,2026-05-25,0,5,False,31.7,clear,15,109
+Chai,Varanasi,2026-05-26,1,5,False,35.4,clear,15,107
+Chai,Varanasi,2026-05-27,2,5,False,32.2,clear,15,109
+Chai,Varanasi,2026-05-28,3,5,False,32.3,clear,15,98
+Chai,Varanasi,2026-05-29,4,5,False,40.7,extreme_heat,15,83
+Chai,Varanasi,2026-05-30,5,5,False,37.7,clear,15,149
+Chai,Varanasi,2026-05-31,6,5,False,35.0,clear,15,127
+Chai,Varanasi,2026-06-01,0,6,False,34.8,clear,15,119
+Chai,Varanasi,2026-06-02,1,6,False,25.9,rain,15,102
+Chai,Varanasi,2026-06-03,2,6,False,29.7,clear,15,90
+Chai,Varanasi,2026-06-04,3,6,False,27.0,rain,15,123
+Chai,Varanasi,2026-06-05,4,6,False,29.8,clear,15,117
+Chai,Varanasi,2026-06-06,5,6,False,26.8,clear,15,139
+Chai,Varanasi,2026-06-07,6,6,False,32.2,clear,15,82
+Chai,Varanasi,2026-06-08,0,6,False,23.7,rain,15,107
+Chai,Varanasi,2026-06-09,1,6,False,26.7,rain,15,129
+Chai,Varanasi,2026-06-10,2,6,False,29.1,rain,15,110
+Chai,Varanasi,2026-06-11,3,6,False,29.7,clear,15,103
+Chai,Varanasi,2026-06-12,4,6,False,31.2,clear,15,105
+Chai,Varanasi,2026-06-13,5,6,False,31.3,rain,15,135
+Chai,Varanasi,2026-06-14,6,6,False,21.5,clear,15,107
+Chai,Varanasi,2026-06-15,0,6,False,30.6,rain,15,115
+Chai,Varanasi,2026-06-16,1,6,False,34.9,clear,15,97
+Chai,Varanasi,2026-06-17,2,6,False,29.9,rain,15,113
+Chai,Varanasi,2026-06-18,3,6,False,24.2,clear,15,90
+Chai,Varanasi,2026-06-19,4,6,False,35.1,rain,15,158
+Chai,Varanasi,2026-06-20,5,6,False,28.8,rain,15,131
+Chai,Varanasi,2026-06-21,6,6,False,29.4,rain,15,128
+Chai,Varanasi,2026-06-22,0,6,False,28.6,clear,15,125
+Chai,Varanasi,2026-06-23,1,6,False,28.7,rain,15,110
+Chai,Varanasi,2026-06-24,2,6,False,29.8,clear,15,93
+Chai,Varanasi,2026-06-25,3,6,False,29.6,rain,15,116
+Chai,Varanasi,2026-06-26,4,6,False,33.2,rain,15,168
+Chai,Varanasi,2026-06-27,5,6,False,28.8,rain,15,133
+Chai,Varanasi,2026-06-28,6,6,False,26.7,rain,15,180
+Chai,Varanasi,2026-06-29,0,6,False,31.5,rain,15,130
+Chai,Varanasi,2026-06-30,1,6,False,31.1,clear,15,80
+Chai,Varanasi,2026-07-01,2,7,False,28.2,rain,15,86
+Chai,Varanasi,2026-07-02,3,7,False,32.2,rain,15,123
+Chai,Varanasi,2026-07-03,4,7,False,36.1,clear,15,117
+Chai,Varanasi,2026-07-04,5,7,False,29.4,rain,15,132
+Chai,Varanasi,2026-07-05,6,7,False,27.1,clear,15,128
+Chai,Varanasi,2026-07-06,0,7,False,22.9,clear,15,116
+Chai,Varanasi,2026-07-07,1,7,False,30.2,rain,15,111
+Chai,Varanasi,2026-07-08,2,7,False,29.0,clear,15,82
+Chai,Varanasi,2026-07-09,3,7,False,26.5,clear,15,97
+Chai,Varanasi,2026-07-10,4,7,False,30.7,rain,15,148
+Chai,Varanasi,2026-07-11,5,7,False,32.3,clear,15,125
+Chai,Varanasi,2026-07-12,6,7,False,28.7,clear,15,122
+Chai,Varanasi,2026-07-13,0,7,False,32.8,clear,15,88
+Chai,Varanasi,2026-07-14,1,7,False,27.5,rain,15,108
+Chai,Varanasi,2026-07-15,2,7,False,30.5,rain,15,125
+Chai,Varanasi,2026-07-16,3,7,False,33.3,rain,15,101
+Chai,Varanasi,2026-07-17,4,7,False,26.3,rain,15,134
+Chai,Varanasi,2026-07-18,5,7,False,25.6,rain,15,134
+Chai,Varanasi,2026-07-19,6,7,False,27.0,rain,15,162
+Chai,Varanasi,2026-07-20,0,7,False,29.6,clear,15,101
+Chai,Varanasi,2026-07-21,1,7,False,28.1,rain,15,117
+Chai,Varanasi,2026-07-22,2,7,False,30.3,clear,15,89
+Chai,Varanasi,2026-07-23,3,7,False,31.6,clear,15,80
+Chai,Varanasi,2026-07-24,4,7,False,31.3,clear,15,111
+Chai,Varanasi,2026-07-25,5,7,False,29.0,clear,15,105
+Chai,Varanasi,2026-07-26,6,7,False,32.1,rain,15,123
+Chai,Varanasi,2026-07-27,0,7,False,29.7,rain,15,107
+Chai,Varanasi,2026-07-28,1,7,False,31.2,clear,15,88
+Chai,Varanasi,2026-07-29,2,7,False,29.5,clear,15,114
+Chai,Varanasi,2026-07-30,3,7,False,27.0,rain,15,103
+Chai,Varanasi,2026-07-31,4,7,False,34.5,clear,15,143
+Chai,Varanasi,2026-08-01,5,8,False,27.0,clear,15,133
+Chai,Varanasi,2026-08-02,6,8,False,26.0,rain,15,156
+Chai,Varanasi,2026-08-03,0,8,False,32.2,rain,15,115
+Chai,Varanasi,2026-08-04,1,8,False,31.3,rain,15,96
+Chai,Varanasi,2026-08-05,2,8,False,26.6,rain,15,131
+Chai,Varanasi,2026-08-06,3,8,False,33.8,clear,15,103
+Chai,Varanasi,2026-08-07,4,8,False,31.2,rain,15,140
+Chai,Varanasi,2026-08-08,5,8,False,26.5,clear,15,129
+Chai,Varanasi,2026-08-09,6,8,False,29.6,clear,15,132
+Chai,Varanasi,2026-08-10,0,8,False,29.7,clear,15,99
+Chai,Varanasi,2026-08-11,1,8,False,30.2,clear,15,104
+Chai,Varanasi,2026-08-12,2,8,False,31.0,rain,15,115
+Chai,Varanasi,2026-08-13,3,8,False,27.1,rain,15,99
+Chai,Varanasi,2026-08-14,4,8,False,32.8,clear,15,132
+Chai,Varanasi,2026-08-15,5,8,True,34.9,rain,15,312
+Chai,Varanasi,2026-08-16,6,8,False,28.3,rain,15,136
+Chai,Varanasi,2026-08-17,0,8,False,30.1,clear,15,98
+Chai,Varanasi,2026-08-18,1,8,False,34.3,rain,15,118
+Chai,Varanasi,2026-08-19,2,8,False,26.3,rain,15,113
+Chai,Varanasi,2026-08-20,3,8,False,27.2,rain,15,151
+Chai,Lucknow,2025-09-01,0,9,False,28.2,rain,15,90
+Chai,Lucknow,2025-09-02,1,9,False,28.8,clear,15,91
+Chai,Lucknow,2025-09-03,2,9,False,31.0,rain,15,102
+Chai,Lucknow,2025-09-04,3,9,False,26.4,clear,15,76
+Chai,Lucknow,2025-09-05,4,9,False,25.4,clear,15,115
+Chai,Lucknow,2025-09-06,5,9,False,31.9,clear,15,116
+Chai,Lucknow,2025-09-07,6,9,False,23.7,clear,15,109
+Chai,Lucknow,2025-09-08,0,9,False,30.9,rain,15,86
+Chai,Lucknow,2025-09-09,1,9,False,24.5,rain,15,105
+Chai,Lucknow,2025-09-10,2,9,False,31.1,rain,15,86
+Chai,Lucknow,2025-09-11,3,9,False,26.8,clear,15,71
+Chai,Lucknow,2025-09-12,4,9,False,24.7,rain,15,124
+Chai,Lucknow,2025-09-13,5,9,False,25.5,rain,15,138
+Chai,Lucknow,2025-09-14,6,9,False,25.1,clear,15,120
+Chai,Lucknow,2025-09-15,0,9,False,27.7,clear,15,97
+Chai,Lucknow,2025-09-16,1,9,False,28.1,rain,15,103
+Chai,Lucknow,2025-09-17,2,9,False,28.0,rain,15,102
+Chai,Lucknow,2025-09-18,3,9,False,32.1,rain,15,99
+Chai,Lucknow,2025-09-19,4,9,False,28.8,rain,15,108
+Chai,Lucknow,2025-09-20,5,9,False,32.1,rain,15,103
+Chai,Lucknow,2025-09-21,6,9,False,32.6,clear,15,120
+Chai,Lucknow,2025-09-22,0,9,False,33.3,clear,15,68
+Chai,Lucknow,2025-09-23,1,9,False,23.5,rain,15,91
+Chai,Lucknow,2025-09-24,2,9,False,26.3,rain,15,106
+Chai,Lucknow,2025-09-25,3,9,False,24.6,rain,15,116
+Chai,Lucknow,2025-09-26,4,9,False,25.8,clear,15,101
+Chai,Lucknow,2025-09-27,5,9,False,30.6,clear,15,117
+Chai,Lucknow,2025-09-28,6,9,False,31.7,clear,15,121
+Chai,Lucknow,2025-09-29,0,9,False,26.4,rain,15,102
+Chai,Lucknow,2025-09-30,1,9,False,30.5,clear,15,77
+Chai,Lucknow,2025-10-01,2,10,False,18.6,clear,15,88
+Chai,Lucknow,2025-10-02,3,10,True,28.6,clear,15,114
+Chai,Lucknow,2025-10-03,4,10,False,27.9,clear,15,112
+Chai,Lucknow,2025-10-04,5,10,False,21.4,clear,15,96
+Chai,Lucknow,2025-10-05,6,10,False,22.7,clear,15,93
+Chai,Lucknow,2025-10-06,0,10,False,25.3,clear,15,81
+Chai,Lucknow,2025-10-07,1,10,False,25.6,clear,15,86
+Chai,Lucknow,2025-10-08,2,10,False,22.7,clear,15,97
+Chai,Lucknow,2025-10-09,3,10,False,22.7,clear,15,82
+Chai,Lucknow,2025-10-10,4,10,False,16.3,rain,15,138
+Chai,Lucknow,2025-10-11,5,10,False,15.6,clear,15,102
+Chai,Lucknow,2025-10-12,6,10,False,31.0,clear,15,100
+Chai,Lucknow,2025-10-13,0,10,False,29.2,clear,15,96
+Chai,Lucknow,2025-10-14,1,10,False,18.6,clear,15,82
+Chai,Lucknow,2025-10-15,2,10,False,19.9,clear,15,89
+Chai,Lucknow,2025-10-16,3,10,False,22.0,clear,15,80
+Chai,Lucknow,2025-10-17,4,10,False,26.5,clear,15,107
+Chai,Lucknow,2025-10-18,5,10,False,22.2,rain,15,132
+Chai,Lucknow,2025-10-19,6,10,False,32.2,clear,15,120
+Chai,Lucknow,2025-10-20,0,10,True,36.4,clear,15,146
+Chai,Lucknow,2025-10-21,1,10,True,26.8,clear,15,131
+Chai,Lucknow,2025-10-22,2,10,False,22.0,clear,15,84
+Chai,Lucknow,2025-10-23,3,10,False,24.6,clear,15,95
+Chai,Lucknow,2025-10-24,4,10,False,23.4,clear,15,123
+Chai,Lucknow,2025-10-25,5,10,False,27.1,clear,15,104
+Chai,Lucknow,2025-10-26,6,10,False,24.7,rain,15,138
+Chai,Lucknow,2025-10-27,0,10,False,25.1,clear,15,87
+Chai,Lucknow,2025-10-28,1,10,False,21.3,clear,15,87
+Chai,Lucknow,2025-10-29,2,10,False,23.9,clear,15,82
+Chai,Lucknow,2025-10-30,3,10,False,24.2,clear,15,84
+Chai,Lucknow,2025-10-31,4,10,False,26.0,clear,15,87
+Chai,Lucknow,2025-11-01,5,11,True,22.6,rain,15,239
+Chai,Lucknow,2025-11-02,6,11,False,27.1,clear,15,105
+Chai,Lucknow,2025-11-03,0,11,False,25.0,clear,15,92
+Chai,Lucknow,2025-11-04,1,11,False,20.3,clear,15,91
+Chai,Lucknow,2025-11-05,2,11,False,27.3,clear,15,83
+Chai,Lucknow,2025-11-06,3,11,False,13.2,clear,15,100
+Chai,Lucknow,2025-11-07,4,11,False,21.9,clear,15,111
+Chai,Lucknow,2025-11-08,5,11,False,23.8,clear,15,111
+Chai,Lucknow,2025-11-09,6,11,False,20.3,rain,15,106
+Chai,Lucknow,2025-11-10,0,11,False,24.1,clear,15,90
+Chai,Lucknow,2025-11-11,1,11,False,24.5,clear,15,71
+Chai,Lucknow,2025-11-12,2,11,False,18.1,clear,15,87
+Chai,Lucknow,2025-11-13,3,11,False,21.6,clear,15,84
+Chai,Lucknow,2025-11-14,4,11,False,20.1,clear,15,112
+Chai,Lucknow,2025-11-15,5,11,False,25.3,clear,15,100
+Chai,Lucknow,2025-11-16,6,11,False,23.7,clear,15,108
+Chai,Lucknow,2025-11-17,0,11,False,22.0,clear,15,82
+Chai,Lucknow,2025-11-18,1,11,False,19.7,clear,15,79
+Chai,Lucknow,2025-11-19,2,11,False,19.8,clear,15,93
+Chai,Lucknow,2025-11-20,3,11,False,20.4,clear,15,68
+Chai,Lucknow,2025-11-21,4,11,False,22.0,clear,15,120
+Chai,Lucknow,2025-11-22,5,11,False,21.1,clear,15,89
+Chai,Lucknow,2025-11-23,6,11,False,19.0,clear,15,131
+Chai,Lucknow,2025-11-24,0,11,False,26.0,clear,15,71
+Chai,Lucknow,2025-11-25,1,11,False,23.8,clear,15,66
+Chai,Lucknow,2025-11-26,2,11,False,24.5,clear,15,76
+Chai,Lucknow,2025-11-27,3,11,False,24.3,clear,15,97
+Chai,Lucknow,2025-11-28,4,11,False,24.5,clear,15,109
+Chai,Lucknow,2025-11-29,5,11,False,23.5,clear,15,96
+Chai,Lucknow,2025-11-30,6,11,False,35.3,clear,15,114
+Chai,Lucknow,2025-12-01,0,12,False,17.1,clear,15,96
+Chai,Lucknow,2025-12-02,1,12,False,8.6,clear,15,84
+Chai,Lucknow,2025-12-03,2,12,False,15.4,clear,15,93
+Chai,Lucknow,2025-12-04,3,12,False,12.4,clear,15,84
+Chai,Lucknow,2025-12-05,4,12,False,22.7,clear,15,110
+Chai,Lucknow,2025-12-06,5,12,False,15.3,clear,15,124
+Chai,Lucknow,2025-12-07,6,12,False,13.7,clear,15,122
+Chai,Lucknow,2025-12-08,0,12,False,12.8,rain,15,82
+Chai,Lucknow,2025-12-09,1,12,False,17.8,clear,15,95
+Chai,Lucknow,2025-12-10,2,12,False,20.8,clear,15,90
+Chai,Lucknow,2025-12-11,3,12,False,11.2,clear,15,96
+Chai,Lucknow,2025-12-12,4,12,False,15.4,clear,15,92
+Chai,Lucknow,2025-12-13,5,12,False,9.5,clear,15,137
+Chai,Lucknow,2025-12-14,6,12,False,20.4,clear,15,128
+Chai,Lucknow,2025-12-15,0,12,False,18.7,clear,15,84
+Chai,Lucknow,2025-12-16,1,12,False,19.4,clear,15,74
+Chai,Lucknow,2025-12-17,2,12,False,17.4,clear,15,85
+Chai,Lucknow,2025-12-18,3,12,False,19.6,clear,15,82
+Chai,Lucknow,2025-12-19,4,12,False,18.6,clear,15,127
+Chai,Lucknow,2025-12-20,5,12,False,18.5,clear,15,119
+Chai,Lucknow,2025-12-21,6,12,False,16.1,clear,15,107
+Chai,Lucknow,2025-12-22,0,12,False,10.2,clear,15,85
+Chai,Lucknow,2025-12-23,1,12,False,16.0,clear,15,87
+Chai,Lucknow,2025-12-24,2,12,False,19.0,clear,15,85
+Chai,Lucknow,2025-12-25,3,12,True,17.4,clear,15,163
+Chai,Lucknow,2025-12-26,4,12,False,17.5,clear,15,112
+Chai,Lucknow,2025-12-27,5,12,False,21.6,clear,15,116
+Chai,Lucknow,2025-12-28,6,12,False,17.2,clear,15,117
+Chai,Lucknow,2025-12-29,0,12,False,9.4,rain,15,114
+Chai,Lucknow,2025-12-30,1,12,False,16.4,clear,15,93
+Chai,Lucknow,2025-12-31,2,12,False,14.8,clear,15,95
+Chai,Lucknow,2026-01-01,3,1,False,12.1,rain,15,98
+Chai,Lucknow,2026-01-02,4,1,False,8.7,clear,15,131
+Chai,Lucknow,2026-01-03,5,1,False,16.5,clear,15,90
+Chai,Lucknow,2026-01-04,6,1,False,14.6,clear,15,108
+Chai,Lucknow,2026-01-05,0,1,False,20.2,clear,15,93
+Chai,Lucknow,2026-01-06,1,1,False,9.7,clear,15,85
+Chai,Lucknow,2026-01-07,2,1,False,18.5,clear,15,90
+Chai,Lucknow,2026-01-08,3,1,False,16.4,clear,15,93
+Chai,Lucknow,2026-01-09,4,1,False,13.9,clear,15,132
+Chai,Lucknow,2026-01-10,5,1,False,19.2,clear,15,118
+Chai,Lucknow,2026-01-11,6,1,False,12.0,clear,15,124
+Chai,Lucknow,2026-01-12,0,1,False,8.2,clear,15,86
+Chai,Lucknow,2026-01-13,1,1,False,14.2,rain,15,109
+Chai,Lucknow,2026-01-14,2,1,True,11.7,clear,15,143
+Chai,Lucknow,2026-01-15,3,1,False,10.0,clear,15,103
+Chai,Lucknow,2026-01-16,4,1,False,21.7,clear,15,95
+Chai,Lucknow,2026-01-17,5,1,False,17.0,clear,15,120
+Chai,Lucknow,2026-01-18,6,1,False,18.1,clear,15,110
+Chai,Lucknow,2026-01-19,0,1,False,12.6,clear,15,92
+Chai,Lucknow,2026-01-20,1,1,False,15.7,clear,15,74
+Chai,Lucknow,2026-01-21,2,1,False,17.6,clear,15,89
+Chai,Lucknow,2026-01-22,3,1,False,14.8,clear,15,110
+Chai,Lucknow,2026-01-23,4,1,False,10.9,clear,15,100
+Chai,Lucknow,2026-01-24,5,1,False,12.8,clear,15,129
+Chai,Lucknow,2026-01-25,6,1,False,22.2,clear,15,106
+Chai,Lucknow,2026-01-26,0,1,True,25.0,clear,15,132
+Chai,Lucknow,2026-01-27,1,1,False,7.9,clear,15,99
+Chai,Lucknow,2026-01-28,2,1,False,24.7,clear,15,104
+Chai,Lucknow,2026-01-29,3,1,False,15.3,rain,15,82
+Chai,Lucknow,2026-01-30,4,1,False,20.9,clear,15,111
+Chai,Lucknow,2026-01-31,5,1,False,17.6,clear,15,103
+Chai,Lucknow,2026-02-01,6,2,False,13.1,clear,15,113
+Chai,Lucknow,2026-02-02,0,2,False,7.6,clear,15,102
+Chai,Lucknow,2026-02-03,1,2,False,12.2,clear,15,86
+Chai,Lucknow,2026-02-04,2,2,False,16.3,clear,15,80
+Chai,Lucknow,2026-02-05,3,2,False,19.2,clear,15,111
+Chai,Lucknow,2026-02-06,4,2,False,15.2,clear,15,128
+Chai,Lucknow,2026-02-07,5,2,False,17.5,clear,15,127
+Chai,Lucknow,2026-02-08,6,2,False,12.4,clear,15,109
+Chai,Lucknow,2026-02-09,0,2,False,9.8,clear,15,103
+Chai,Lucknow,2026-02-10,1,2,False,15.9,clear,15,72
+Chai,Lucknow,2026-02-11,2,2,False,21.7,clear,15,82
+Chai,Lucknow,2026-02-12,3,2,False,13.9,clear,15,104
+Chai,Lucknow,2026-02-13,4,2,False,13.4,clear,15,112
+Chai,Lucknow,2026-02-14,5,2,False,20.7,clear,15,123
+Chai,Lucknow,2026-02-15,6,2,False,17.9,clear,15,116
+Chai,Lucknow,2026-02-16,0,2,False,14.1,clear,15,80
+Chai,Lucknow,2026-02-17,1,2,False,15.0,clear,15,94
+Chai,Lucknow,2026-02-18,2,2,False,13.3,clear,15,88
+Chai,Lucknow,2026-02-19,3,2,False,8.7,clear,15,78
+Chai,Lucknow,2026-02-20,4,2,False,8.1,clear,15,118
+Chai,Lucknow,2026-02-21,5,2,False,17.1,clear,15,86
+Chai,Lucknow,2026-02-22,6,2,False,9.6,clear,15,98
+Chai,Lucknow,2026-02-23,0,2,False,17.4,clear,15,90
+Chai,Lucknow,2026-02-24,1,2,False,12.5,clear,15,91
+Chai,Lucknow,2026-02-25,2,2,False,13.2,clear,15,92
+Chai,Lucknow,2026-02-26,3,2,False,10.1,clear,15,118
+Chai,Lucknow,2026-02-27,4,2,False,20.4,clear,15,111
+Chai,Lucknow,2026-02-28,5,2,False,7.2,clear,15,129
+Chai,Lucknow,2026-03-01,6,3,False,31.1,clear,15,110
+Chai,Lucknow,2026-03-02,0,3,False,29.7,clear,15,89
+Chai,Lucknow,2026-03-03,1,3,False,30.5,clear,15,81
+Chai,Lucknow,2026-03-04,2,3,False,37.6,rain,15,101
+Chai,Lucknow,2026-03-05,3,3,False,38.0,clear,15,87
+Chai,Lucknow,2026-03-06,4,3,True,37.4,clear,15,176
+Chai,Lucknow,2026-03-07,5,3,False,35.4,clear,15,101
+Chai,Lucknow,2026-03-08,6,3,False,38.8,rain,15,136
+Chai,Lucknow,2026-03-09,0,3,False,36.4,clear,15,97
+Chai,Lucknow,2026-03-10,1,3,False,39.7,extreme_heat,15,71
+Chai,Lucknow,2026-03-11,2,3,False,41.9,extreme_heat,15,77
+Chai,Lucknow,2026-03-12,3,3,False,36.4,clear,15,82
+Chai,Lucknow,2026-03-13,4,3,False,38.5,extreme_heat,15,86
+Chai,Lucknow,2026-03-14,5,3,False,35.4,clear,15,106
+Chai,Lucknow,2026-03-15,6,3,False,42.7,extreme_heat,15,85
+Chai,Lucknow,2026-03-16,0,3,False,27.1,clear,15,72
+Chai,Lucknow,2026-03-17,1,3,False,38.2,extreme_heat,15,69
+Chai,Lucknow,2026-03-18,2,3,False,26.7,clear,15,82
+Chai,Lucknow,2026-03-19,3,3,False,41.5,rain,15,96
+Chai,Lucknow,2026-03-20,4,3,False,34.1,clear,15,110
+Chai,Lucknow,2026-03-21,5,3,False,32.5,clear,15,111
+Chai,Lucknow,2026-03-22,6,3,False,28.6,clear,15,89
+Chai,Lucknow,2026-03-23,0,3,False,32.8,clear,15,93
+Chai,Lucknow,2026-03-24,1,3,False,38.0,clear,15,103
+Chai,Lucknow,2026-03-25,2,3,True,39.6,extreme_heat,15,128
+Chai,Lucknow,2026-03-26,3,3,False,38.8,extreme_heat,15,61
+Chai,Lucknow,2026-03-27,4,3,False,37.1,clear,15,128
+Chai,Lucknow,2026-03-28,5,3,False,30.3,clear,15,119
+Chai,Lucknow,2026-03-29,6,3,False,34.6,clear,15,118
+Chai,Lucknow,2026-03-30,0,3,False,25.7,clear,15,105
+Chai,Lucknow,2026-03-31,1,3,False,44.1,extreme_heat,15,69
+Chai,Lucknow,2026-04-01,2,4,False,35.2,clear,15,85
+Chai,Lucknow,2026-04-02,3,4,False,32.6,clear,15,86
+Chai,Lucknow,2026-04-03,4,4,False,38.6,extreme_heat,15,89
+Chai,Lucknow,2026-04-04,5,4,False,26.7,clear,15,124
+Chai,Lucknow,2026-04-05,6,4,False,34.8,clear,15,103
+Chai,Lucknow,2026-04-06,0,4,False,33.9,clear,15,101
+Chai,Lucknow,2026-04-07,1,4,False,21.9,clear,15,92
+Chai,Lucknow,2026-04-08,2,4,False,34.5,clear,15,93
+Chai,Lucknow,2026-04-09,3,4,False,33.5,clear,15,88
+Chai,Lucknow,2026-04-10,4,4,False,40.7,extreme_heat,15,90
+Chai,Lucknow,2026-04-11,5,4,False,35.9,clear,15,109
+Chai,Lucknow,2026-04-12,6,4,False,39.8,extreme_heat,15,90
+Chai,Lucknow,2026-04-13,0,4,False,33.9,clear,15,88
+Chai,Lucknow,2026-04-14,1,4,False,39.3,extreme_heat,15,75
+Chai,Lucknow,2026-04-15,2,4,False,29.4,clear,15,114
+Chai,Lucknow,2026-04-16,3,4,False,34.1,clear,15,106
+Chai,Lucknow,2026-04-17,4,4,False,36.4,clear,15,112
+Chai,Lucknow,2026-04-18,5,4,False,33.4,clear,15,95
+Chai,Lucknow,2026-04-19,6,4,False,34.6,rain,15,160
+Chai,Lucknow,2026-04-20,0,4,False,35.4,clear,15,90
+Chai,Lucknow,2026-04-21,1,4,False,48.7,extreme_heat,15,66
+Chai,Lucknow,2026-04-22,2,4,False,38.0,clear,15,76
+Chai,Lucknow,2026-04-23,3,4,False,33.3,clear,15,71
+Chai,Lucknow,2026-04-24,4,4,False,29.3,clear,15,108
+Chai,Lucknow,2026-04-25,5,4,False,37.0,clear,15,124
+Chai,Lucknow,2026-04-26,6,4,False,29.1,clear,15,90
+Chai,Lucknow,2026-04-27,0,4,False,29.5,clear,15,109
+Chai,Lucknow,2026-04-28,1,4,False,36.6,clear,15,91
+Chai,Lucknow,2026-04-29,2,4,False,29.9,clear,15,78
+Chai,Lucknow,2026-04-30,3,4,False,28.6,clear,15,87
+Chai,Lucknow,2026-05-01,4,5,False,29.4,clear,15,96
+Chai,Lucknow,2026-05-02,5,5,False,36.5,clear,15,133
+Chai,Lucknow,2026-05-03,6,5,False,36.6,clear,15,104
+Chai,Lucknow,2026-05-04,0,5,False,35.3,clear,15,87
+Chai,Lucknow,2026-05-05,1,5,False,33.7,clear,15,78
+Chai,Lucknow,2026-05-06,2,5,False,27.9,clear,15,80
+Chai,Lucknow,2026-05-07,3,5,False,38.1,extreme_heat,15,61
+Chai,Lucknow,2026-05-08,4,5,False,44.0,extreme_heat,15,95
+Chai,Lucknow,2026-05-09,5,5,False,38.2,extreme_heat,15,75
+Chai,Lucknow,2026-05-10,6,5,False,33.8,clear,15,148
+Chai,Lucknow,2026-05-11,0,5,False,27.0,clear,15,80
+Chai,Lucknow,2026-05-12,1,5,False,27.5,clear,15,118
+Chai,Lucknow,2026-05-13,2,5,False,32.6,clear,15,67
+Chai,Lucknow,2026-05-14,3,5,False,33.8,clear,15,84
+Chai,Lucknow,2026-05-15,4,5,False,36.1,clear,15,119
+Chai,Lucknow,2026-05-16,5,5,False,33.4,clear,15,124
+Chai,Lucknow,2026-05-17,6,5,False,35.1,clear,15,125
+Chai,Lucknow,2026-05-18,0,5,False,27.9,clear,15,83
+Chai,Lucknow,2026-05-19,1,5,False,29.7,clear,15,95
+Chai,Lucknow,2026-05-20,2,5,False,40.5,extreme_heat,15,75
+Chai,Lucknow,2026-05-21,3,5,False,41.0,extreme_heat,15,74
+Chai,Lucknow,2026-05-22,4,5,False,42.4,extreme_heat,15,88
+Chai,Lucknow,2026-05-23,5,5,False,30.8,clear,15,132
+Chai,Lucknow,2026-05-24,6,5,False,34.7,clear,15,88
+Chai,Lucknow,2026-05-25,0,5,False,34.7,clear,15,84
+Chai,Lucknow,2026-05-26,1,5,False,46.9,extreme_heat,15,70
+Chai,Lucknow,2026-05-27,2,5,False,35.1,clear,15,83
+Chai,Lucknow,2026-05-28,3,5,False,39.9,extreme_heat,15,66
+Chai,Lucknow,2026-05-29,4,5,False,41.5,extreme_heat,15,98
+Chai,Lucknow,2026-05-30,5,5,False,32.7,clear,15,104
+Chai,Lucknow,2026-05-31,6,5,False,30.0,clear,15,106
+Chai,Lucknow,2026-06-01,0,6,False,25.9,rain,15,109
+Chai,Lucknow,2026-06-02,1,6,False,29.7,clear,15,85
+Chai,Lucknow,2026-06-03,2,6,False,29.9,rain,15,103
+Chai,Lucknow,2026-06-04,3,6,False,31.2,rain,15,110
+Chai,Lucknow,2026-06-05,4,6,False,28.2,clear,15,96
+Chai,Lucknow,2026-06-06,5,6,False,26.6,clear,15,100
+Chai,Lucknow,2026-06-07,6,6,False,30.3,clear,15,103
+Chai,Lucknow,2026-06-08,0,6,False,29.9,clear,15,89
+Chai,Lucknow,2026-06-09,1,6,False,26.9,rain,15,97
+Chai,Lucknow,2026-06-10,2,6,False,32.0,clear,15,85
+Chai,Lucknow,2026-06-11,3,6,False,25.2,rain,15,117
+Chai,Lucknow,2026-06-12,4,6,False,29.8,clear,15,135
+Chai,Lucknow,2026-06-13,5,6,False,28.1,rain,15,140
+Chai,Lucknow,2026-06-14,6,6,False,26.5,rain,15,138
+Chai,Lucknow,2026-06-15,0,6,False,29.8,clear,15,111
+Chai,Lucknow,2026-06-16,1,6,False,29.5,clear,15,109
+Chai,Lucknow,2026-06-17,2,6,False,31.9,clear,15,92
+Chai,Lucknow,2026-06-18,3,6,False,29.6,rain,15,89
+Chai,Lucknow,2026-06-19,4,6,False,24.4,rain,15,117
+Chai,Lucknow,2026-06-20,5,6,False,27.1,clear,15,113
+Chai,Lucknow,2026-06-21,6,6,False,29.6,clear,15,109
+Chai,Lucknow,2026-06-22,0,6,False,30.8,clear,15,84
+Chai,Lucknow,2026-06-23,1,6,False,29.5,clear,15,92
+Chai,Lucknow,2026-06-24,2,6,False,26.9,clear,15,94
+Chai,Lucknow,2026-06-25,3,6,False,28.5,clear,15,77
+Chai,Lucknow,2026-06-26,4,6,False,26.1,clear,15,113
+Chai,Lucknow,2026-06-27,5,6,False,27.3,rain,15,134
+Chai,Lucknow,2026-06-28,6,6,False,31.7,rain,15,140
+Chai,Lucknow,2026-06-29,0,6,False,27.4,rain,15,111
+Chai,Lucknow,2026-06-30,1,6,False,31.6,clear,15,99
+Chai,Lucknow,2026-07-01,2,7,False,28.7,clear,15,105
+Chai,Lucknow,2026-07-02,3,7,False,27.0,rain,15,109
+Chai,Lucknow,2026-07-03,4,7,False,30.2,clear,15,115
+Chai,Lucknow,2026-07-04,5,7,False,28.7,rain,15,130
+Chai,Lucknow,2026-07-05,6,7,False,28.5,clear,15,136
+Chai,Lucknow,2026-07-06,0,7,False,25.4,clear,15,64
+Chai,Lucknow,2026-07-07,1,7,False,27.6,clear,15,87
+Chai,Lucknow,2026-07-08,2,7,False,32.3,clear,15,94
+Chai,Lucknow,2026-07-09,3,7,False,27.9,clear,15,93
+Chai,Lucknow,2026-07-10,4,7,False,26.5,clear,15,110
+Chai,Lucknow,2026-07-11,5,7,False,31.3,rain,15,135
+Chai,Lucknow,2026-07-12,6,7,False,26.7,clear,15,124
+Chai,Lucknow,2026-07-13,0,7,False,23.7,clear,15,102
+Chai,Lucknow,2026-07-14,1,7,False,30.3,clear,15,99
+Chai,Lucknow,2026-07-15,2,7,False,29.5,rain,15,131
+Chai,Lucknow,2026-07-16,3,7,False,27.9,clear,15,66
+Chai,Lucknow,2026-07-17,4,7,False,32.8,clear,15,117
+Chai,Lucknow,2026-07-18,5,7,False,30.7,rain,15,124
+Chai,Lucknow,2026-07-19,6,7,False,30.6,clear,15,108
+Chai,Lucknow,2026-07-20,0,7,False,32.4,rain,15,98
+Chai,Lucknow,2026-07-21,1,7,False,26.8,clear,15,101
+Chai,Lucknow,2026-07-22,2,7,False,26.0,clear,15,102
+Chai,Lucknow,2026-07-23,3,7,False,28.7,rain,15,103
+Chai,Lucknow,2026-07-24,4,7,False,28.4,clear,15,131
+Chai,Lucknow,2026-07-25,5,7,False,26.7,clear,15,116
+Chai,Lucknow,2026-07-26,6,7,False,25.8,rain,15,156
+Chai,Lucknow,2026-07-27,0,7,False,29.6,rain,15,111
+Chai,Lucknow,2026-07-28,1,7,False,28.6,clear,15,91
+Chai,Lucknow,2026-07-29,2,7,False,29.9,clear,15,109
+Chai,Lucknow,2026-07-30,3,7,False,23.5,clear,15,116
+Chai,Lucknow,2026-07-31,4,7,False,28.7,clear,15,111
+Chai,Lucknow,2026-08-01,5,8,False,33.4,clear,15,105
+Chai,Lucknow,2026-08-02,6,8,False,26.9,rain,15,140
+Chai,Lucknow,2026-08-03,0,8,False,33.0,rain,15,113
+Chai,Lucknow,2026-08-04,1,8,False,25.0,clear,15,100
+Chai,Lucknow,2026-08-05,2,8,False,25.0,clear,15,97
+Chai,Lucknow,2026-08-06,3,8,False,25.6,clear,15,93
+Chai,Lucknow,2026-08-07,4,8,False,30.5,clear,15,126
+Chai,Lucknow,2026-08-08,5,8,False,29.2,clear,15,105
+Chai,Lucknow,2026-08-09,6,8,False,26.8,clear,15,110
+Chai,Lucknow,2026-08-10,0,8,False,30.2,rain,15,81
+Chai,Lucknow,2026-08-11,1,8,False,26.6,clear,15,95
+Chai,Lucknow,2026-08-12,2,8,False,24.7,clear,15,93
+Chai,Lucknow,2026-08-13,3,8,False,30.2,rain,15,103
+Chai,Lucknow,2026-08-14,4,8,False,26.8,clear,15,131
+Chai,Lucknow,2026-08-15,5,8,True,31.5,rain,15,190
+Chai,Lucknow,2026-08-16,6,8,False,32.8,clear,15,121
+Chai,Lucknow,2026-08-17,0,8,False,24.1,clear,15,98
+Chai,Lucknow,2026-08-18,1,8,False,26.6,clear,15,100
+Chai,Lucknow,2026-08-19,2,8,False,35.4,rain,15,105
+Chai,Lucknow,2026-08-20,3,8,False,29.0,clear,15,107
+Sugarcane Juice,Prayagraj,2025-09-01,0,9,False,28.0,clear,20,73
+Sugarcane Juice,Prayagraj,2025-09-02,1,9,False,30.7,rain,20,59
+Sugarcane Juice,Prayagraj,2025-09-03,2,9,False,33.1,clear,20,74
+Sugarcane Juice,Prayagraj,2025-09-04,3,9,False,34.2,rain,20,71
+Sugarcane Juice,Prayagraj,2025-09-05,4,9,False,30.6,clear,20,75
+Sugarcane Juice,Prayagraj,2025-09-06,5,9,False,26.9,clear,20,92
+Sugarcane Juice,Prayagraj,2025-09-07,6,9,False,34.9,clear,20,97
+Sugarcane Juice,Prayagraj,2025-09-08,0,9,False,32.5,clear,20,62
+Sugarcane Juice,Prayagraj,2025-09-09,1,9,False,33.2,clear,20,75
+Sugarcane Juice,Prayagraj,2025-09-10,2,9,False,29.6,rain,20,59
+Sugarcane Juice,Prayagraj,2025-09-11,3,9,False,30.9,rain,20,54
+Sugarcane Juice,Prayagraj,2025-09-12,4,9,False,25.9,clear,20,90
+Sugarcane Juice,Prayagraj,2025-09-13,5,9,False,28.9,clear,20,93
+Sugarcane Juice,Prayagraj,2025-09-14,6,9,False,27.1,rain,20,72
+Sugarcane Juice,Prayagraj,2025-09-15,0,9,False,27.7,clear,20,55
+Sugarcane Juice,Prayagraj,2025-09-16,1,9,False,26.6,rain,20,47
+Sugarcane Juice,Prayagraj,2025-09-17,2,9,False,32.4,rain,20,57
+Sugarcane Juice,Prayagraj,2025-09-18,3,9,False,29.9,clear,20,66
+Sugarcane Juice,Prayagraj,2025-09-19,4,9,False,31.6,clear,20,83
+Sugarcane Juice,Prayagraj,2025-09-20,5,9,False,26.6,rain,20,85
+Sugarcane Juice,Prayagraj,2025-09-21,6,9,False,28.4,rain,20,65
+Sugarcane Juice,Prayagraj,2025-09-22,0,9,False,30.2,clear,20,74
+Sugarcane Juice,Prayagraj,2025-09-23,1,9,False,27.8,rain,20,58
+Sugarcane Juice,Prayagraj,2025-09-24,2,9,False,27.9,rain,20,70
+Sugarcane Juice,Prayagraj,2025-09-25,3,9,False,21.4,clear,20,67
+Sugarcane Juice,Prayagraj,2025-09-26,4,9,False,27.8,clear,20,81
+Sugarcane Juice,Prayagraj,2025-09-27,5,9,False,27.0,clear,20,93
+Sugarcane Juice,Prayagraj,2025-09-28,6,9,False,27.7,rain,20,67
+Sugarcane Juice,Prayagraj,2025-09-29,0,9,False,32.8,clear,20,74
+Sugarcane Juice,Prayagraj,2025-09-30,1,9,False,28.2,clear,20,85
+Sugarcane Juice,Prayagraj,2025-10-01,2,10,False,23.2,clear,20,80
+Sugarcane Juice,Prayagraj,2025-10-02,3,10,True,21.1,clear,20,113
+Sugarcane Juice,Prayagraj,2025-10-03,4,10,False,24.0,clear,20,111
+Sugarcane Juice,Prayagraj,2025-10-04,5,10,False,25.3,clear,20,92
+Sugarcane Juice,Prayagraj,2025-10-05,6,10,False,24.2,clear,20,92
+Sugarcane Juice,Prayagraj,2025-10-06,0,10,False,25.0,rain,20,60
+Sugarcane Juice,Prayagraj,2025-10-07,1,10,False,26.5,clear,20,63
+Sugarcane Juice,Prayagraj,2025-10-08,2,10,False,36.1,clear,20,72
+Sugarcane Juice,Prayagraj,2025-10-09,3,10,False,18.0,clear,20,63
+Sugarcane Juice,Prayagraj,2025-10-10,4,10,False,22.2,clear,20,94
+Sugarcane Juice,Prayagraj,2025-10-11,5,10,False,26.3,clear,20,108
+Sugarcane Juice,Prayagraj,2025-10-12,6,10,False,19.2,clear,20,99
+Sugarcane Juice,Prayagraj,2025-10-13,0,10,False,26.3,clear,20,72
+Sugarcane Juice,Prayagraj,2025-10-14,1,10,False,22.1,clear,20,69
+Sugarcane Juice,Prayagraj,2025-10-15,2,10,False,15.8,clear,20,70
+Sugarcane Juice,Prayagraj,2025-10-16,3,10,False,22.1,clear,20,74
+Sugarcane Juice,Prayagraj,2025-10-17,4,10,False,20.4,clear,20,93
+Sugarcane Juice,Prayagraj,2025-10-18,5,10,False,26.1,clear,20,77
+Sugarcane Juice,Prayagraj,2025-10-19,6,10,False,24.4,clear,20,78
+Sugarcane Juice,Prayagraj,2025-10-20,0,10,True,21.0,clear,20,109
+Sugarcane Juice,Prayagraj,2025-10-21,1,10,True,22.2,clear,20,118
+Sugarcane Juice,Prayagraj,2025-10-22,2,10,False,25.4,clear,20,66
+Sugarcane Juice,Prayagraj,2025-10-23,3,10,False,15.3,clear,20,75
+Sugarcane Juice,Prayagraj,2025-10-24,4,10,False,23.3,clear,20,97
+Sugarcane Juice,Prayagraj,2025-10-25,5,10,False,17.8,clear,20,77
+Sugarcane Juice,Prayagraj,2025-10-26,6,10,False,31.1,clear,20,65
+Sugarcane Juice,Prayagraj,2025-10-27,0,10,False,17.9,clear,20,67
+Sugarcane Juice,Prayagraj,2025-10-28,1,10,False,18.7,clear,20,74
+Sugarcane Juice,Prayagraj,2025-10-29,2,10,False,25.9,clear,20,77
+Sugarcane Juice,Prayagraj,2025-10-30,3,10,False,22.5,clear,20,76
+Sugarcane Juice,Prayagraj,2025-10-31,4,10,False,17.5,clear,20,91
+Sugarcane Juice,Prayagraj,2025-11-01,5,11,True,29.1,clear,20,127
+Sugarcane Juice,Prayagraj,2025-11-02,6,11,False,19.4,clear,20,90
+Sugarcane Juice,Prayagraj,2025-11-03,0,11,False,22.1,clear,20,60
+Sugarcane Juice,Prayagraj,2025-11-04,1,11,False,23.8,clear,20,65
+Sugarcane Juice,Prayagraj,2025-11-05,2,11,False,30.2,clear,20,82
+Sugarcane Juice,Prayagraj,2025-11-06,3,11,False,21.9,clear,20,71
+Sugarcane Juice,Prayagraj,2025-11-07,4,11,False,17.2,clear,20,88
+Sugarcane Juice,Prayagraj,2025-11-08,5,11,False,27.0,clear,20,88
+Sugarcane Juice,Prayagraj,2025-11-09,6,11,False,20.5,rain,20,79
+Sugarcane Juice,Prayagraj,2025-11-10,0,11,False,25.5,clear,20,81
+Sugarcane Juice,Prayagraj,2025-11-11,1,11,False,27.1,clear,20,66
+Sugarcane Juice,Prayagraj,2025-11-12,2,11,False,20.0,clear,20,73
+Sugarcane Juice,Prayagraj,2025-11-13,3,11,False,18.4,clear,20,59
+Sugarcane Juice,Prayagraj,2025-11-14,4,11,False,23.8,rain,20,81
+Sugarcane Juice,Prayagraj,2025-11-15,5,11,False,25.5,clear,20,99
+Sugarcane Juice,Prayagraj,2025-11-16,6,11,False,22.3,clear,20,74
+Sugarcane Juice,Prayagraj,2025-11-17,0,11,False,20.2,clear,20,53
+Sugarcane Juice,Prayagraj,2025-11-18,1,11,False,23.9,clear,20,73
+Sugarcane Juice,Prayagraj,2025-11-19,2,11,False,19.7,clear,20,72
+Sugarcane Juice,Prayagraj,2025-11-20,3,11,False,29.6,clear,20,65
+Sugarcane Juice,Prayagraj,2025-11-21,4,11,False,23.0,clear,20,94
+Sugarcane Juice,Prayagraj,2025-11-22,5,11,False,26.4,clear,20,83
+Sugarcane Juice,Prayagraj,2025-11-23,6,11,False,22.9,clear,20,92
+Sugarcane Juice,Prayagraj,2025-11-24,0,11,False,25.5,clear,20,81
+Sugarcane Juice,Prayagraj,2025-11-25,1,11,False,21.5,clear,20,76
+Sugarcane Juice,Prayagraj,2025-11-26,2,11,False,24.0,clear,20,93
+Sugarcane Juice,Prayagraj,2025-11-27,3,11,False,20.7,clear,20,65
+Sugarcane Juice,Prayagraj,2025-11-28,4,11,False,31.1,clear,20,82
+Sugarcane Juice,Prayagraj,2025-11-29,5,11,False,26.1,clear,20,84
+Sugarcane Juice,Prayagraj,2025-11-30,6,11,False,27.0,clear,20,92
+Sugarcane Juice,Prayagraj,2025-12-01,0,12,False,14.8,clear,20,74
+Sugarcane Juice,Prayagraj,2025-12-02,1,12,False,15.2,clear,20,87
+Sugarcane Juice,Prayagraj,2025-12-03,2,12,False,10.8,clear,20,69
+Sugarcane Juice,Prayagraj,2025-12-04,3,12,False,22.0,clear,20,66
+Sugarcane Juice,Prayagraj,2025-12-05,4,12,False,11.1,clear,20,75
+Sugarcane Juice,Prayagraj,2025-12-06,5,12,False,13.1,clear,20,93
+Sugarcane Juice,Prayagraj,2025-12-07,6,12,False,13.0,clear,20,102
+Sugarcane Juice,Prayagraj,2025-12-08,0,12,False,9.8,clear,20,66
+Sugarcane Juice,Prayagraj,2025-12-09,1,12,False,21.4,clear,20,63
+Sugarcane Juice,Prayagraj,2025-12-10,2,12,False,11.3,clear,20,70
+Sugarcane Juice,Prayagraj,2025-12-11,3,12,False,14.3,clear,20,66
+Sugarcane Juice,Prayagraj,2025-12-12,4,12,False,15.4,clear,20,99
+Sugarcane Juice,Prayagraj,2025-12-13,5,12,False,14.4,clear,20,71
+Sugarcane Juice,Prayagraj,2025-12-14,6,12,False,10.8,clear,20,89
+Sugarcane Juice,Prayagraj,2025-12-15,0,12,False,15.3,clear,20,62
+Sugarcane Juice,Prayagraj,2025-12-16,1,12,False,14.1,clear,20,66
+Sugarcane Juice,Prayagraj,2025-12-17,2,12,False,20.7,clear,20,75
+Sugarcane Juice,Prayagraj,2025-12-18,3,12,False,22.2,clear,20,72
+Sugarcane Juice,Prayagraj,2025-12-19,4,12,False,16.5,rain,20,80
+Sugarcane Juice,Prayagraj,2025-12-20,5,12,False,10.6,clear,20,102
+Sugarcane Juice,Prayagraj,2025-12-21,6,12,False,16.1,clear,20,80
+Sugarcane Juice,Prayagraj,2025-12-22,0,12,False,17.3,clear,20,49
+Sugarcane Juice,Prayagraj,2025-12-23,1,12,False,20.0,clear,20,65
+Sugarcane Juice,Prayagraj,2025-12-24,2,12,False,19.0,clear,20,66
+Sugarcane Juice,Prayagraj,2025-12-25,3,12,True,16.4,clear,20,138
+Sugarcane Juice,Prayagraj,2025-12-26,4,12,False,16.4,clear,20,99
+Sugarcane Juice,Prayagraj,2025-12-27,5,12,False,10.0,clear,20,87
+Sugarcane Juice,Prayagraj,2025-12-28,6,12,False,17.6,clear,20,94
+Sugarcane Juice,Prayagraj,2025-12-29,0,12,False,14.1,clear,20,74
+Sugarcane Juice,Prayagraj,2025-12-30,1,12,False,2.7,clear,20,78
+Sugarcane Juice,Prayagraj,2025-12-31,2,12,False,16.8,clear,20,87
+Sugarcane Juice,Prayagraj,2026-01-01,3,1,False,16.2,clear,20,82
+Sugarcane Juice,Prayagraj,2026-01-02,4,1,False,16.5,clear,20,64
+Sugarcane Juice,Prayagraj,2026-01-03,5,1,False,13.1,clear,20,87
+Sugarcane Juice,Prayagraj,2026-01-04,6,1,False,18.2,clear,20,105
+Sugarcane Juice,Prayagraj,2026-01-05,0,1,False,13.8,clear,20,77
+Sugarcane Juice,Prayagraj,2026-01-06,1,1,False,21.0,clear,20,69
+Sugarcane Juice,Prayagraj,2026-01-07,2,1,False,18.4,clear,20,75
+Sugarcane Juice,Prayagraj,2026-01-08,3,1,False,13.8,clear,20,76
+Sugarcane Juice,Prayagraj,2026-01-09,4,1,False,18.0,clear,20,87
+Sugarcane Juice,Prayagraj,2026-01-10,5,1,False,16.3,clear,20,112
+Sugarcane Juice,Prayagraj,2026-01-11,6,1,False,18.0,clear,20,90
+Sugarcane Juice,Prayagraj,2026-01-12,0,1,False,17.2,clear,20,74
+Sugarcane Juice,Prayagraj,2026-01-13,1,1,False,10.8,clear,20,63
+Sugarcane Juice,Prayagraj,2026-01-14,2,1,True,13.3,clear,20,144
+Sugarcane Juice,Prayagraj,2026-01-15,3,1,False,13.3,clear,20,68
+Sugarcane Juice,Prayagraj,2026-01-16,4,1,False,21.6,clear,20,80
+Sugarcane Juice,Prayagraj,2026-01-17,5,1,False,25.9,clear,20,79
+Sugarcane Juice,Prayagraj,2026-01-18,6,1,False,14.8,clear,20,100
+Sugarcane Juice,Prayagraj,2026-01-19,0,1,False,22.4,clear,20,68
+Sugarcane Juice,Prayagraj,2026-01-20,1,1,False,18.1,rain,20,54
+Sugarcane Juice,Prayagraj,2026-01-21,2,1,False,8.0,clear,20,65
+Sugarcane Juice,Prayagraj,2026-01-22,3,1,False,10.3,clear,20,62
+Sugarcane Juice,Prayagraj,2026-01-23,4,1,False,2.4,clear,20,86
+Sugarcane Juice,Prayagraj,2026-01-24,5,1,False,12.6,clear,20,85
+Sugarcane Juice,Prayagraj,2026-01-25,6,1,False,18.5,clear,20,91
+Sugarcane Juice,Prayagraj,2026-01-26,0,1,True,11.7,clear,20,106
+Sugarcane Juice,Prayagraj,2026-01-27,1,1,False,15.7,clear,20,65
+Sugarcane Juice,Prayagraj,2026-01-28,2,1,False,19.0,clear,20,69
+Sugarcane Juice,Prayagraj,2026-01-29,3,1,False,15.6,rain,20,56
+Sugarcane Juice,Prayagraj,2026-01-30,4,1,False,15.3,clear,20,81
+Sugarcane Juice,Prayagraj,2026-01-31,5,1,False,8.5,clear,20,98
+Sugarcane Juice,Prayagraj,2026-02-01,6,2,False,12.2,clear,20,101
+Sugarcane Juice,Prayagraj,2026-02-02,0,2,False,20.2,clear,20,90
+Sugarcane Juice,Prayagraj,2026-02-03,1,2,False,11.9,clear,20,72
+Sugarcane Juice,Prayagraj,2026-02-04,2,2,False,13.2,clear,20,75
+Sugarcane Juice,Prayagraj,2026-02-05,3,2,False,16.1,clear,20,77
+Sugarcane Juice,Prayagraj,2026-02-06,4,2,False,18.2,clear,20,80
+Sugarcane Juice,Prayagraj,2026-02-07,5,2,False,21.5,clear,20,85
+Sugarcane Juice,Prayagraj,2026-02-08,6,2,False,12.5,rain,20,71
+Sugarcane Juice,Prayagraj,2026-02-09,0,2,False,9.9,clear,20,72
+Sugarcane Juice,Prayagraj,2026-02-10,1,2,False,12.6,clear,20,76
+Sugarcane Juice,Prayagraj,2026-02-11,2,2,False,16.1,clear,20,72
+Sugarcane Juice,Prayagraj,2026-02-12,3,2,False,16.4,clear,20,73
+Sugarcane Juice,Prayagraj,2026-02-13,4,2,False,19.3,clear,20,101
+Sugarcane Juice,Prayagraj,2026-02-14,5,2,False,13.0,clear,20,95
+Sugarcane Juice,Prayagraj,2026-02-15,6,2,False,17.9,clear,20,97
+Sugarcane Juice,Prayagraj,2026-02-16,0,2,False,13.6,clear,20,78
+Sugarcane Juice,Prayagraj,2026-02-17,1,2,False,16.7,clear,20,83
+Sugarcane Juice,Prayagraj,2026-02-18,2,2,False,11.5,clear,20,88
+Sugarcane Juice,Prayagraj,2026-02-19,3,2,False,18.5,clear,20,76
+Sugarcane Juice,Prayagraj,2026-02-20,4,2,False,15.6,clear,20,82
+Sugarcane Juice,Prayagraj,2026-02-21,5,2,False,14.8,clear,20,95
+Sugarcane Juice,Prayagraj,2026-02-22,6,2,False,19.5,clear,20,80
+Sugarcane Juice,Prayagraj,2026-02-23,0,2,False,16.3,clear,20,72
+Sugarcane Juice,Prayagraj,2026-02-24,1,2,False,13.8,clear,20,54
+Sugarcane Juice,Prayagraj,2026-02-25,2,2,False,13.4,clear,20,67
+Sugarcane Juice,Prayagraj,2026-02-26,3,2,False,18.6,clear,20,73
+Sugarcane Juice,Prayagraj,2026-02-27,4,2,False,13.9,clear,20,91
+Sugarcane Juice,Prayagraj,2026-02-28,5,2,False,14.7,clear,20,95
+Sugarcane Juice,Prayagraj,2026-03-01,6,3,False,38.8,extreme_heat,20,109
+Sugarcane Juice,Prayagraj,2026-03-02,0,3,False,26.3,clear,20,76
+Sugarcane Juice,Prayagraj,2026-03-03,1,3,False,37.5,clear,20,90
+Sugarcane Juice,Prayagraj,2026-03-04,2,3,False,32.0,clear,20,81
+Sugarcane Juice,Prayagraj,2026-03-05,3,3,False,30.1,clear,20,75
+Sugarcane Juice,Prayagraj,2026-03-06,4,3,True,49.3,extreme_heat,20,238
+Sugarcane Juice,Prayagraj,2026-03-07,5,3,False,41.0,extreme_heat,20,110
+Sugarcane Juice,Prayagraj,2026-03-08,6,3,False,40.3,extreme_heat,20,149
+Sugarcane Juice,Prayagraj,2026-03-09,0,3,False,36.0,clear,20,90
+Sugarcane Juice,Prayagraj,2026-03-10,1,3,False,33.3,clear,20,72
+Sugarcane Juice,Prayagraj,2026-03-11,2,3,False,38.6,extreme_heat,20,84
+Sugarcane Juice,Prayagraj,2026-03-12,3,3,False,34.6,clear,20,71
+Sugarcane Juice,Prayagraj,2026-03-13,4,3,False,41.1,extreme_heat,20,130
+Sugarcane Juice,Prayagraj,2026-03-14,5,3,False,35.3,clear,20,78
+Sugarcane Juice,Prayagraj,2026-03-15,6,3,False,35.1,clear,20,99
+Sugarcane Juice,Prayagraj,2026-03-16,0,3,False,26.4,clear,20,81
+Sugarcane Juice,Prayagraj,2026-03-17,1,3,False,34.5,clear,20,66
+Sugarcane Juice,Prayagraj,2026-03-18,2,3,False,36.8,clear,20,78
+Sugarcane Juice,Prayagraj,2026-03-19,3,3,False,32.8,clear,20,74
+Sugarcane Juice,Prayagraj,2026-03-20,4,3,False,37.7,clear,20,104
+Sugarcane Juice,Prayagraj,2026-03-21,5,3,False,32.7,clear,20,115
+Sugarcane Juice,Prayagraj,2026-03-22,6,3,False,32.0,clear,20,92
+Sugarcane Juice,Prayagraj,2026-03-23,0,3,False,35.3,clear,20,74
+Sugarcane Juice,Prayagraj,2026-03-24,1,3,False,34.8,clear,20,53
+Sugarcane Juice,Prayagraj,2026-03-25,2,3,True,44.4,extreme_heat,20,172
+Sugarcane Juice,Prayagraj,2026-03-26,3,3,False,28.1,clear,20,68
+Sugarcane Juice,Prayagraj,2026-03-27,4,3,False,42.3,extreme_heat,20,137
+Sugarcane Juice,Prayagraj,2026-03-28,5,3,False,31.7,clear,20,90
+Sugarcane Juice,Prayagraj,2026-03-29,6,3,False,41.4,extreme_heat,20,106
+Sugarcane Juice,Prayagraj,2026-03-30,0,3,False,25.3,clear,20,67
+Sugarcane Juice,Prayagraj,2026-03-31,1,3,False,26.9,clear,20,56
+Sugarcane Juice,Prayagraj,2026-04-01,2,4,False,29.9,clear,20,78
+Sugarcane Juice,Prayagraj,2026-04-02,3,4,False,35.9,clear,20,61
+Sugarcane Juice,Prayagraj,2026-04-03,4,4,False,29.3,rain,20,87
+Sugarcane Juice,Prayagraj,2026-04-04,5,4,False,39.5,rain,20,72
+Sugarcane Juice,Prayagraj,2026-04-05,6,4,False,35.1,clear,20,91
+Sugarcane Juice,Prayagraj,2026-04-06,0,4,False,45.2,extreme_heat,20,98
+Sugarcane Juice,Prayagraj,2026-04-07,1,4,False,41.1,extreme_heat,20,93
+Sugarcane Juice,Prayagraj,2026-04-08,2,4,False,32.4,clear,20,60
+Sugarcane Juice,Prayagraj,2026-04-09,3,4,False,38.0,clear,20,79
+Sugarcane Juice,Prayagraj,2026-04-10,4,4,False,30.6,clear,20,83
+Sugarcane Juice,Prayagraj,2026-04-11,5,4,False,33.3,clear,20,94
+Sugarcane Juice,Prayagraj,2026-04-12,6,4,False,29.1,clear,20,78
+Sugarcane Juice,Prayagraj,2026-04-13,0,4,False,29.0,clear,20,71
+Sugarcane Juice,Prayagraj,2026-04-14,1,4,False,39.7,extreme_heat,20,107
+Sugarcane Juice,Prayagraj,2026-04-15,2,4,False,29.5,clear,20,77
+Sugarcane Juice,Prayagraj,2026-04-16,3,4,False,31.9,rain,20,67
+Sugarcane Juice,Prayagraj,2026-04-17,4,4,False,33.3,clear,20,111
+Sugarcane Juice,Prayagraj,2026-04-18,5,4,False,34.1,clear,20,100
+Sugarcane Juice,Prayagraj,2026-04-19,6,4,False,27.7,clear,20,84
+Sugarcane Juice,Prayagraj,2026-04-20,0,4,False,30.7,clear,20,80
+Sugarcane Juice,Prayagraj,2026-04-21,1,4,False,41.3,extreme_heat,20,96
+Sugarcane Juice,Prayagraj,2026-04-22,2,4,False,24.6,clear,20,75
+Sugarcane Juice,Prayagraj,2026-04-23,3,4,False,35.9,clear,20,86
+Sugarcane Juice,Prayagraj,2026-04-24,4,4,False,38.9,extreme_heat,20,119
+Sugarcane Juice,Prayagraj,2026-04-25,5,4,False,34.5,clear,20,99
+Sugarcane Juice,Prayagraj,2026-04-26,6,4,False,36.8,clear,20,107
+Sugarcane Juice,Prayagraj,2026-04-27,0,4,False,35.5,clear,20,75
+Sugarcane Juice,Prayagraj,2026-04-28,1,4,False,36.4,clear,20,72
+Sugarcane Juice,Prayagraj,2026-04-29,2,4,False,39.1,extreme_heat,20,85
+Sugarcane Juice,Prayagraj,2026-04-30,3,4,False,27.9,clear,20,86
+Sugarcane Juice,Prayagraj,2026-05-01,4,5,False,36.6,clear,20,106
+Sugarcane Juice,Prayagraj,2026-05-02,5,5,False,38.4,extreme_heat,20,153
+Sugarcane Juice,Prayagraj,2026-05-03,6,5,False,37.7,clear,20,86
+Sugarcane Juice,Prayagraj,2026-05-04,0,5,False,36.3,clear,20,81
+Sugarcane Juice,Prayagraj,2026-05-05,1,5,False,30.2,clear,20,70
+Sugarcane Juice,Prayagraj,2026-05-06,2,5,False,33.7,clear,20,74
+Sugarcane Juice,Prayagraj,2026-05-07,3,5,False,44.4,extreme_heat,20,106
+Sugarcane Juice,Prayagraj,2026-05-08,4,5,False,34.9,clear,20,107
+Sugarcane Juice,Prayagraj,2026-05-09,5,5,False,30.9,clear,20,73
+Sugarcane Juice,Prayagraj,2026-05-10,6,5,False,40.6,extreme_heat,20,128
+Sugarcane Juice,Prayagraj,2026-05-11,0,5,False,24.4,clear,20,67
+Sugarcane Juice,Prayagraj,2026-05-12,1,5,False,31.7,clear,20,78
+Sugarcane Juice,Prayagraj,2026-05-13,2,5,False,32.6,clear,20,76
+Sugarcane Juice,Prayagraj,2026-05-14,3,5,False,33.0,clear,20,72
+Sugarcane Juice,Prayagraj,2026-05-15,4,5,False,36.7,clear,20,78
+Sugarcane Juice,Prayagraj,2026-05-16,5,5,False,39.9,extreme_heat,20,120
+Sugarcane Juice,Prayagraj,2026-05-17,6,5,False,31.9,clear,20,101
+Sugarcane Juice,Prayagraj,2026-05-18,0,5,False,40.6,extreme_heat,20,109
+Sugarcane Juice,Prayagraj,2026-05-19,1,5,False,36.0,clear,20,93
+Sugarcane Juice,Prayagraj,2026-05-20,2,5,False,27.8,clear,20,79
+Sugarcane Juice,Prayagraj,2026-05-21,3,5,False,36.4,clear,20,83
+Sugarcane Juice,Prayagraj,2026-05-22,4,5,False,27.2,clear,20,88
+Sugarcane Juice,Prayagraj,2026-05-23,5,5,False,31.6,clear,20,107
+Sugarcane Juice,Prayagraj,2026-05-24,6,5,False,33.3,clear,20,95
+Sugarcane Juice,Prayagraj,2026-05-25,0,5,False,30.5,clear,20,73
+Sugarcane Juice,Prayagraj,2026-05-26,1,5,False,31.5,clear,20,78
+Sugarcane Juice,Prayagraj,2026-05-27,2,5,False,27.0,clear,20,79
+Sugarcane Juice,Prayagraj,2026-05-28,3,5,False,30.9,clear,20,83
+Sugarcane Juice,Prayagraj,2026-05-29,4,5,False,28.6,clear,20,114
+Sugarcane Juice,Prayagraj,2026-05-30,5,5,False,36.8,rain,20,71
+Sugarcane Juice,Prayagraj,2026-05-31,6,5,False,32.4,clear,20,105
+Sugarcane Juice,Prayagraj,2026-06-01,0,6,False,26.7,clear,20,72
+Sugarcane Juice,Prayagraj,2026-06-02,1,6,False,25.9,clear,20,52
+Sugarcane Juice,Prayagraj,2026-06-03,2,6,False,28.6,rain,20,71
+Sugarcane Juice,Prayagraj,2026-06-04,3,6,False,23.3,clear,20,83
+Sugarcane Juice,Prayagraj,2026-06-05,4,6,False,32.8,rain,20,90
+Sugarcane Juice,Prayagraj,2026-06-06,5,6,False,24.6,clear,20,86
+Sugarcane Juice,Prayagraj,2026-06-07,6,6,False,24.0,clear,20,95
+Sugarcane Juice,Prayagraj,2026-06-08,0,6,False,26.5,clear,20,59
+Sugarcane Juice,Prayagraj,2026-06-09,1,6,False,22.6,clear,20,84
+Sugarcane Juice,Prayagraj,2026-06-10,2,6,False,25.9,clear,20,85
+Sugarcane Juice,Prayagraj,2026-06-11,3,6,False,30.3,rain,20,73
+Sugarcane Juice,Prayagraj,2026-06-12,4,6,False,26.8,rain,20,81
+Sugarcane Juice,Prayagraj,2026-06-13,5,6,False,28.2,clear,20,96
+Sugarcane Juice,Prayagraj,2026-06-14,6,6,False,29.1,clear,20,104
+Sugarcane Juice,Prayagraj,2026-06-15,0,6,False,26.1,rain,20,62
+Sugarcane Juice,Prayagraj,2026-06-16,1,6,False,30.1,clear,20,84
+Sugarcane Juice,Prayagraj,2026-06-17,2,6,False,27.0,rain,20,61
+Sugarcane Juice,Prayagraj,2026-06-18,3,6,False,28.9,clear,20,74
+Sugarcane Juice,Prayagraj,2026-06-19,4,6,False,32.7,clear,20,100
+Sugarcane Juice,Prayagraj,2026-06-20,5,6,False,29.2,rain,20,74
+Sugarcane Juice,Prayagraj,2026-06-21,6,6,False,26.0,rain,20,82
+Sugarcane Juice,Prayagraj,2026-06-22,0,6,False,28.3,clear,20,88
+Sugarcane Juice,Prayagraj,2026-06-23,1,6,False,26.1,clear,20,63
+Sugarcane Juice,Prayagraj,2026-06-24,2,6,False,35.1,clear,20,81
+Sugarcane Juice,Prayagraj,2026-06-25,3,6,False,25.0,rain,20,69
+Sugarcane Juice,Prayagraj,2026-06-26,4,6,False,28.2,rain,20,104
+Sugarcane Juice,Prayagraj,2026-06-27,5,6,False,26.2,rain,20,73
+Sugarcane Juice,Prayagraj,2026-06-28,6,6,False,33.8,rain,20,80
+Sugarcane Juice,Prayagraj,2026-06-29,0,6,False,29.1,rain,20,72
+Sugarcane Juice,Prayagraj,2026-06-30,1,6,False,27.9,clear,20,82
+Sugarcane Juice,Prayagraj,2026-07-01,2,7,False,28.4,clear,20,76
+Sugarcane Juice,Prayagraj,2026-07-02,3,7,False,31.4,rain,20,69
+Sugarcane Juice,Prayagraj,2026-07-03,4,7,False,31.4,rain,20,74
+Sugarcane Juice,Prayagraj,2026-07-04,5,7,False,31.0,rain,20,67
+Sugarcane Juice,Prayagraj,2026-07-05,6,7,False,28.0,clear,20,90
+Sugarcane Juice,Prayagraj,2026-07-06,0,7,False,33.4,clear,20,89
+Sugarcane Juice,Prayagraj,2026-07-07,1,7,False,29.8,rain,20,58
+Sugarcane Juice,Prayagraj,2026-07-08,2,7,False,29.0,clear,20,64
+Sugarcane Juice,Prayagraj,2026-07-09,3,7,False,27.4,rain,20,68
+Sugarcane Juice,Prayagraj,2026-07-10,4,7,False,30.4,clear,20,101
+Sugarcane Juice,Prayagraj,2026-07-11,5,7,False,28.5,rain,20,77
+Sugarcane Juice,Prayagraj,2026-07-12,6,7,False,32.2,clear,20,97
+Sugarcane Juice,Prayagraj,2026-07-13,0,7,False,33.8,clear,20,77
+Sugarcane Juice,Prayagraj,2026-07-14,1,7,False,25.1,clear,20,76
+Sugarcane Juice,Prayagraj,2026-07-15,2,7,False,29.1,clear,20,83
+Sugarcane Juice,Prayagraj,2026-07-16,3,7,False,26.4,clear,20,81
+Sugarcane Juice,Prayagraj,2026-07-17,4,7,False,27.1,clear,20,95
+Sugarcane Juice,Prayagraj,2026-07-18,5,7,False,24.6,rain,20,83
+Sugarcane Juice,Prayagraj,2026-07-19,6,7,False,26.3,rain,20,63
+Sugarcane Juice,Prayagraj,2026-07-20,0,7,False,25.7,rain,20,83
+Sugarcane Juice,Prayagraj,2026-07-21,1,7,False,31.2,clear,20,73
+Sugarcane Juice,Prayagraj,2026-07-22,2,7,False,26.1,rain,20,64
+Sugarcane Juice,Prayagraj,2026-07-23,3,7,False,35.3,clear,20,61
+Sugarcane Juice,Prayagraj,2026-07-24,4,7,False,27.0,rain,20,81
+Sugarcane Juice,Prayagraj,2026-07-25,5,7,False,28.8,clear,20,101
+Sugarcane Juice,Prayagraj,2026-07-26,6,7,False,25.8,rain,20,88
+Sugarcane Juice,Prayagraj,2026-07-27,0,7,False,29.0,clear,20,67
+Sugarcane Juice,Prayagraj,2026-07-28,1,7,False,29.3,rain,20,68
+Sugarcane Juice,Prayagraj,2026-07-29,2,7,False,30.7,rain,20,73
+Sugarcane Juice,Prayagraj,2026-07-30,3,7,False,29.2,clear,20,71
+Sugarcane Juice,Prayagraj,2026-07-31,4,7,False,28.3,rain,20,77
+Sugarcane Juice,Prayagraj,2026-08-01,5,8,False,26.2,rain,20,66
+Sugarcane Juice,Prayagraj,2026-08-02,6,8,False,28.3,clear,20,85
+Sugarcane Juice,Prayagraj,2026-08-03,0,8,False,27.8,rain,20,68
+Sugarcane Juice,Prayagraj,2026-08-04,1,8,False,31.2,clear,20,73
+Sugarcane Juice,Prayagraj,2026-08-05,2,8,False,30.6,rain,20,59
+Sugarcane Juice,Prayagraj,2026-08-06,3,8,False,32.6,clear,20,83
+Sugarcane Juice,Prayagraj,2026-08-07,4,8,False,31.8,clear,20,112
+Sugarcane Juice,Prayagraj,2026-08-08,5,8,False,30.2,rain,20,86
+Sugarcane Juice,Prayagraj,2026-08-09,6,8,False,29.1,clear,20,101
+Sugarcane Juice,Prayagraj,2026-08-10,0,8,False,28.1,clear,20,63
+Sugarcane Juice,Prayagraj,2026-08-11,1,8,False,27.4,rain,20,61
+Sugarcane Juice,Prayagraj,2026-08-12,2,8,False,28.3,rain,20,68
+Sugarcane Juice,Prayagraj,2026-08-13,3,8,False,26.8,clear,20,85
+Sugarcane Juice,Prayagraj,2026-08-14,4,8,False,26.9,clear,20,106
+Sugarcane Juice,Prayagraj,2026-08-15,5,8,True,32.2,rain,20,183
+Sugarcane Juice,Prayagraj,2026-08-16,6,8,False,32.2,clear,20,87
+Sugarcane Juice,Prayagraj,2026-08-17,0,8,False,28.7,clear,20,93
+Sugarcane Juice,Prayagraj,2026-08-18,1,8,False,33.4,rain,20,56
+Sugarcane Juice,Prayagraj,2026-08-19,2,8,False,30.5,rain,20,54
+Sugarcane Juice,Prayagraj,2026-08-20,3,8,False,29.7,rain,20,73
+Sugarcane Juice,Kanpur,2025-09-01,0,9,False,30.5,clear,20,57
+Sugarcane Juice,Kanpur,2025-09-02,1,9,False,28.7,clear,20,49
+Sugarcane Juice,Kanpur,2025-09-03,2,9,False,31.2,rain,20,61
+Sugarcane Juice,Kanpur,2025-09-04,3,9,False,32.3,clear,20,70
+Sugarcane Juice,Kanpur,2025-09-05,4,9,False,27.0,rain,20,70
+Sugarcane Juice,Kanpur,2025-09-06,5,9,False,27.6,clear,20,101
+Sugarcane Juice,Kanpur,2025-09-07,6,9,False,24.4,rain,20,61
+Sugarcane Juice,Kanpur,2025-09-08,0,9,False,31.7,rain,20,58
+Sugarcane Juice,Kanpur,2025-09-09,1,9,False,26.2,rain,20,62
+Sugarcane Juice,Kanpur,2025-09-10,2,9,False,34.3,rain,20,49
+Sugarcane Juice,Kanpur,2025-09-11,3,9,False,30.0,rain,20,56
+Sugarcane Juice,Kanpur,2025-09-12,4,9,False,33.4,clear,20,81
+Sugarcane Juice,Kanpur,2025-09-13,5,9,False,30.9,clear,20,74
+Sugarcane Juice,Kanpur,2025-09-14,6,9,False,26.6,clear,20,93
+Sugarcane Juice,Kanpur,2025-09-15,0,9,False,33.5,rain,20,56
+Sugarcane Juice,Kanpur,2025-09-16,1,9,False,28.1,clear,20,71
+Sugarcane Juice,Kanpur,2025-09-17,2,9,False,26.1,rain,20,59
+Sugarcane Juice,Kanpur,2025-09-18,3,9,False,28.5,rain,20,63
+Sugarcane Juice,Kanpur,2025-09-19,4,9,False,31.3,clear,20,63
+Sugarcane Juice,Kanpur,2025-09-20,5,9,False,29.8,clear,20,67
+Sugarcane Juice,Kanpur,2025-09-21,6,9,False,27.0,rain,20,70
+Sugarcane Juice,Kanpur,2025-09-22,0,9,False,33.9,clear,20,59
+Sugarcane Juice,Kanpur,2025-09-23,1,9,False,30.6,clear,20,68
+Sugarcane Juice,Kanpur,2025-09-24,2,9,False,30.2,rain,20,67
+Sugarcane Juice,Kanpur,2025-09-25,3,9,False,32.3,rain,20,61
+Sugarcane Juice,Kanpur,2025-09-26,4,9,False,31.7,rain,20,79
+Sugarcane Juice,Kanpur,2025-09-27,5,9,False,29.6,rain,20,71
+Sugarcane Juice,Kanpur,2025-09-28,6,9,False,22.9,clear,20,75
+Sugarcane Juice,Kanpur,2025-09-29,0,9,False,25.4,rain,20,59
+Sugarcane Juice,Kanpur,2025-09-30,1,9,False,28.9,rain,20,58
+Sugarcane Juice,Kanpur,2025-10-01,2,10,False,28.0,clear,20,64
+Sugarcane Juice,Kanpur,2025-10-02,3,10,True,24.0,clear,20,81
+Sugarcane Juice,Kanpur,2025-10-03,4,10,False,23.8,clear,20,81
+Sugarcane Juice,Kanpur,2025-10-04,5,10,False,22.0,clear,20,101
+Sugarcane Juice,Kanpur,2025-10-05,6,10,False,22.7,clear,20,102
+Sugarcane Juice,Kanpur,2025-10-06,0,10,False,21.8,clear,20,66
+Sugarcane Juice,Kanpur,2025-10-07,1,10,False,31.1,clear,20,68
+Sugarcane Juice,Kanpur,2025-10-08,2,10,False,23.7,clear,20,66
+Sugarcane Juice,Kanpur,2025-10-09,3,10,False,27.6,clear,20,63
+Sugarcane Juice,Kanpur,2025-10-10,4,10,False,23.0,clear,20,94
+Sugarcane Juice,Kanpur,2025-10-11,5,10,False,21.3,clear,20,86
+Sugarcane Juice,Kanpur,2025-10-12,6,10,False,30.1,clear,20,70
+Sugarcane Juice,Kanpur,2025-10-13,0,10,False,22.9,clear,20,64
+Sugarcane Juice,Kanpur,2025-10-14,1,10,False,30.4,clear,20,53
+Sugarcane Juice,Kanpur,2025-10-15,2,10,False,20.7,clear,20,71
+Sugarcane Juice,Kanpur,2025-10-16,3,10,False,25.7,clear,20,71
+Sugarcane Juice,Kanpur,2025-10-17,4,10,False,28.7,clear,20,94
+Sugarcane Juice,Kanpur,2025-10-18,5,10,False,22.8,clear,20,69
+Sugarcane Juice,Kanpur,2025-10-19,6,10,False,24.0,clear,20,94
+Sugarcane Juice,Kanpur,2025-10-20,0,10,True,17.7,rain,20,78
+Sugarcane Juice,Kanpur,2025-10-21,1,10,True,26.0,clear,20,122
+Sugarcane Juice,Kanpur,2025-10-22,2,10,False,21.9,clear,20,77
+Sugarcane Juice,Kanpur,2025-10-23,3,10,False,17.4,clear,20,74
+Sugarcane Juice,Kanpur,2025-10-24,4,10,False,23.0,rain,20,78
+Sugarcane Juice,Kanpur,2025-10-25,5,10,False,19.2,clear,20,82
+Sugarcane Juice,Kanpur,2025-10-26,6,10,False,26.9,clear,20,76
+Sugarcane Juice,Kanpur,2025-10-27,0,10,False,24.4,clear,20,84
+Sugarcane Juice,Kanpur,2025-10-28,1,10,False,18.0,clear,20,57
+Sugarcane Juice,Kanpur,2025-10-29,2,10,False,28.1,clear,20,61
+Sugarcane Juice,Kanpur,2025-10-30,3,10,False,21.6,clear,20,69
+Sugarcane Juice,Kanpur,2025-10-31,4,10,False,25.9,clear,20,70
+Sugarcane Juice,Kanpur,2025-11-01,5,11,True,26.9,clear,20,151
+Sugarcane Juice,Kanpur,2025-11-02,6,11,False,21.2,clear,20,82
+Sugarcane Juice,Kanpur,2025-11-03,0,11,False,29.2,clear,20,65
+Sugarcane Juice,Kanpur,2025-11-04,1,11,False,20.5,clear,20,58
+Sugarcane Juice,Kanpur,2025-11-05,2,11,False,21.1,clear,20,52
+Sugarcane Juice,Kanpur,2025-11-06,3,11,False,29.1,clear,20,73
+Sugarcane Juice,Kanpur,2025-11-07,4,11,False,26.2,rain,20,61
+Sugarcane Juice,Kanpur,2025-11-08,5,11,False,23.4,clear,20,88
+Sugarcane Juice,Kanpur,2025-11-09,6,11,False,27.2,clear,20,87
+Sugarcane Juice,Kanpur,2025-11-10,0,11,False,27.7,clear,20,63
+Sugarcane Juice,Kanpur,2025-11-11,1,11,False,25.9,clear,20,69
+Sugarcane Juice,Kanpur,2025-11-12,2,11,False,19.8,clear,20,71
+Sugarcane Juice,Kanpur,2025-11-13,3,11,False,27.5,clear,20,72
+Sugarcane Juice,Kanpur,2025-11-14,4,11,False,21.9,clear,20,97
+Sugarcane Juice,Kanpur,2025-11-15,5,11,False,27.2,clear,20,102
+Sugarcane Juice,Kanpur,2025-11-16,6,11,False,21.2,clear,20,76
+Sugarcane Juice,Kanpur,2025-11-17,0,11,False,23.0,clear,20,65
+Sugarcane Juice,Kanpur,2025-11-18,1,11,False,21.8,clear,20,69
+Sugarcane Juice,Kanpur,2025-11-19,2,11,False,21.6,clear,20,72
+Sugarcane Juice,Kanpur,2025-11-20,3,11,False,20.9,clear,20,49
+Sugarcane Juice,Kanpur,2025-11-21,4,11,False,19.6,clear,20,84
+Sugarcane Juice,Kanpur,2025-11-22,5,11,False,20.2,rain,20,60
+Sugarcane Juice,Kanpur,2025-11-23,6,11,False,24.7,clear,20,87
+Sugarcane Juice,Kanpur,2025-11-24,0,11,False,24.0,clear,20,77
+Sugarcane Juice,Kanpur,2025-11-25,1,11,False,17.8,rain,20,54
+Sugarcane Juice,Kanpur,2025-11-26,2,11,False,22.4,clear,20,78
+Sugarcane Juice,Kanpur,2025-11-27,3,11,False,27.2,clear,20,72
+Sugarcane Juice,Kanpur,2025-11-28,4,11,False,26.6,clear,20,92
+Sugarcane Juice,Kanpur,2025-11-29,5,11,False,23.4,clear,20,88
+Sugarcane Juice,Kanpur,2025-11-30,6,11,False,24.9,clear,20,83
+Sugarcane Juice,Kanpur,2025-12-01,0,12,False,12.1,clear,20,66
+Sugarcane Juice,Kanpur,2025-12-02,1,12,False,15.7,clear,20,58
+Sugarcane Juice,Kanpur,2025-12-03,2,12,False,11.4,clear,20,71
+Sugarcane Juice,Kanpur,2025-12-04,3,12,False,10.2,clear,20,70
+Sugarcane Juice,Kanpur,2025-12-05,4,12,False,17.4,clear,20,83
+Sugarcane Juice,Kanpur,2025-12-06,5,12,False,21.7,clear,20,93
+Sugarcane Juice,Kanpur,2025-12-07,6,12,False,16.3,clear,20,91
+Sugarcane Juice,Kanpur,2025-12-08,0,12,False,14.4,clear,20,62
+Sugarcane Juice,Kanpur,2025-12-09,1,12,False,14.3,clear,20,69
+Sugarcane Juice,Kanpur,2025-12-10,2,12,False,17.0,clear,20,56
+Sugarcane Juice,Kanpur,2025-12-11,3,12,False,21.5,clear,20,71
+Sugarcane Juice,Kanpur,2025-12-12,4,12,False,9.7,clear,20,89
+Sugarcane Juice,Kanpur,2025-12-13,5,12,False,20.4,clear,20,83
+Sugarcane Juice,Kanpur,2025-12-14,6,12,False,15.8,clear,20,80
+Sugarcane Juice,Kanpur,2025-12-15,0,12,False,8.7,clear,20,76
+Sugarcane Juice,Kanpur,2025-12-16,1,12,False,14.7,clear,20,63
+Sugarcane Juice,Kanpur,2025-12-17,2,12,False,11.6,clear,20,70
+Sugarcane Juice,Kanpur,2025-12-18,3,12,False,17.0,clear,20,59
+Sugarcane Juice,Kanpur,2025-12-19,4,12,False,12.8,clear,20,78
+Sugarcane Juice,Kanpur,2025-12-20,5,12,False,18.1,clear,20,74
+Sugarcane Juice,Kanpur,2025-12-21,6,12,False,15.3,clear,20,93
+Sugarcane Juice,Kanpur,2025-12-22,0,12,False,16.6,clear,20,70
+Sugarcane Juice,Kanpur,2025-12-23,1,12,False,14.2,clear,20,70
+Sugarcane Juice,Kanpur,2025-12-24,2,12,False,13.7,clear,20,78
+Sugarcane Juice,Kanpur,2025-12-25,3,12,True,17.5,clear,20,106
+Sugarcane Juice,Kanpur,2025-12-26,4,12,False,10.0,clear,20,85
+Sugarcane Juice,Kanpur,2025-12-27,5,12,False,15.9,clear,20,93
+Sugarcane Juice,Kanpur,2025-12-28,6,12,False,12.2,clear,20,99
+Sugarcane Juice,Kanpur,2025-12-29,0,12,False,18.1,rain,20,56
+Sugarcane Juice,Kanpur,2025-12-30,1,12,False,14.6,clear,20,71
+Sugarcane Juice,Kanpur,2025-12-31,2,12,False,25.1,clear,20,73
+Sugarcane Juice,Kanpur,2026-01-01,3,1,False,8.3,clear,20,77
+Sugarcane Juice,Kanpur,2026-01-02,4,1,False,16.6,clear,20,94
+Sugarcane Juice,Kanpur,2026-01-03,5,1,False,7.9,clear,20,104
+Sugarcane Juice,Kanpur,2026-01-04,6,1,False,7.0,clear,20,56
+Sugarcane Juice,Kanpur,2026-01-05,0,1,False,18.8,clear,20,48
+Sugarcane Juice,Kanpur,2026-01-06,1,1,False,16.8,clear,20,70
+Sugarcane Juice,Kanpur,2026-01-07,2,1,False,17.3,clear,20,52
+Sugarcane Juice,Kanpur,2026-01-08,3,1,False,17.8,clear,20,77
+Sugarcane Juice,Kanpur,2026-01-09,4,1,False,7.0,clear,20,76
+Sugarcane Juice,Kanpur,2026-01-10,5,1,False,8.6,clear,20,88
+Sugarcane Juice,Kanpur,2026-01-11,6,1,False,9.3,clear,20,91
+Sugarcane Juice,Kanpur,2026-01-12,0,1,False,12.8,clear,20,52
+Sugarcane Juice,Kanpur,2026-01-13,1,1,False,13.7,clear,20,69
+Sugarcane Juice,Kanpur,2026-01-14,2,1,True,16.5,clear,20,105
+Sugarcane Juice,Kanpur,2026-01-15,3,1,False,16.1,clear,20,67
+Sugarcane Juice,Kanpur,2026-01-16,4,1,False,16.3,clear,20,78
+Sugarcane Juice,Kanpur,2026-01-17,5,1,False,17.1,clear,20,89
+Sugarcane Juice,Kanpur,2026-01-18,6,1,False,15.1,clear,20,81
+Sugarcane Juice,Kanpur,2026-01-19,0,1,False,13.0,clear,20,71
+Sugarcane Juice,Kanpur,2026-01-20,1,1,False,15.9,clear,20,63
+Sugarcane Juice,Kanpur,2026-01-21,2,1,False,22.6,clear,20,61
+Sugarcane Juice,Kanpur,2026-01-22,3,1,False,11.0,clear,20,80
+Sugarcane Juice,Kanpur,2026-01-23,4,1,False,20.5,clear,20,76
+Sugarcane Juice,Kanpur,2026-01-24,5,1,False,22.2,clear,20,82
+Sugarcane Juice,Kanpur,2026-01-25,6,1,False,20.7,clear,20,107
+Sugarcane Juice,Kanpur,2026-01-26,0,1,True,16.0,clear,20,101
+Sugarcane Juice,Kanpur,2026-01-27,1,1,False,7.6,clear,20,77
+Sugarcane Juice,Kanpur,2026-01-28,2,1,False,17.4,clear,20,60
+Sugarcane Juice,Kanpur,2026-01-29,3,1,False,15.9,clear,20,71
+Sugarcane Juice,Kanpur,2026-01-30,4,1,False,15.7,clear,20,94
+Sugarcane Juice,Kanpur,2026-01-31,5,1,False,2.5,clear,20,111
+Sugarcane Juice,Kanpur,2026-02-01,6,2,False,9.0,rain,20,72
+Sugarcane Juice,Kanpur,2026-02-02,0,2,False,13.1,clear,20,72
+Sugarcane Juice,Kanpur,2026-02-03,1,2,False,15.6,clear,20,68
+Sugarcane Juice,Kanpur,2026-02-04,2,2,False,27.7,rain,20,59
+Sugarcane Juice,Kanpur,2026-02-05,3,2,False,8.2,clear,20,77
+Sugarcane Juice,Kanpur,2026-02-06,4,2,False,9.7,clear,20,85
+Sugarcane Juice,Kanpur,2026-02-07,5,2,False,20.5,clear,20,82
+Sugarcane Juice,Kanpur,2026-02-08,6,2,False,7.6,clear,20,92
+Sugarcane Juice,Kanpur,2026-02-09,0,2,False,7.9,clear,20,74
+Sugarcane Juice,Kanpur,2026-02-10,1,2,False,19.5,clear,20,74
+Sugarcane Juice,Kanpur,2026-02-11,2,2,False,17.1,clear,20,53
+Sugarcane Juice,Kanpur,2026-02-12,3,2,False,9.0,rain,20,57
+Sugarcane Juice,Kanpur,2026-02-13,4,2,False,16.6,clear,20,97
+Sugarcane Juice,Kanpur,2026-02-14,5,2,False,19.6,clear,20,88
+Sugarcane Juice,Kanpur,2026-02-15,6,2,False,11.6,rain,20,75
+Sugarcane Juice,Kanpur,2026-02-16,0,2,False,1.4,clear,20,73
+Sugarcane Juice,Kanpur,2026-02-17,1,2,False,12.6,clear,20,65
+Sugarcane Juice,Kanpur,2026-02-18,2,2,False,15.5,clear,20,82
+Sugarcane Juice,Kanpur,2026-02-19,3,2,False,14.6,clear,20,78
+Sugarcane Juice,Kanpur,2026-02-20,4,2,False,17.3,clear,20,97
+Sugarcane Juice,Kanpur,2026-02-21,5,2,False,25.2,clear,20,87
+Sugarcane Juice,Kanpur,2026-02-22,6,2,False,15.7,clear,20,79
+Sugarcane Juice,Kanpur,2026-02-23,0,2,False,13.9,clear,20,59
+Sugarcane Juice,Kanpur,2026-02-24,1,2,False,12.9,rain,20,71
+Sugarcane Juice,Kanpur,2026-02-25,2,2,False,17.1,clear,20,62
+Sugarcane Juice,Kanpur,2026-02-26,3,2,False,20.5,clear,20,69
+Sugarcane Juice,Kanpur,2026-02-27,4,2,False,13.2,clear,20,75
+Sugarcane Juice,Kanpur,2026-02-28,5,2,False,16.6,clear,20,83
+Sugarcane Juice,Kanpur,2026-03-01,6,3,False,36.0,clear,20,90
+Sugarcane Juice,Kanpur,2026-03-02,0,3,False,32.6,clear,20,74
+Sugarcane Juice,Kanpur,2026-03-03,1,3,False,40.6,extreme_heat,20,88
+Sugarcane Juice,Kanpur,2026-03-04,2,3,False,30.2,clear,20,64
+Sugarcane Juice,Kanpur,2026-03-05,3,3,False,29.9,clear,20,72
+Sugarcane Juice,Kanpur,2026-03-06,4,3,True,37.9,clear,20,150
+Sugarcane Juice,Kanpur,2026-03-07,5,3,False,32.9,clear,20,83
+Sugarcane Juice,Kanpur,2026-03-08,6,3,False,37.2,clear,20,82
+Sugarcane Juice,Kanpur,2026-03-09,0,3,False,28.4,rain,20,57
+Sugarcane Juice,Kanpur,2026-03-10,1,3,False,25.5,clear,20,77
+Sugarcane Juice,Kanpur,2026-03-11,2,3,False,47.6,extreme_heat,20,87
+Sugarcane Juice,Kanpur,2026-03-12,3,3,False,29.5,clear,20,70
+Sugarcane Juice,Kanpur,2026-03-13,4,3,False,30.9,clear,20,66
+Sugarcane Juice,Kanpur,2026-03-14,5,3,False,39.6,extreme_heat,20,116
+Sugarcane Juice,Kanpur,2026-03-15,6,3,False,27.9,clear,20,83
+Sugarcane Juice,Kanpur,2026-03-16,0,3,False,34.9,clear,20,81
+Sugarcane Juice,Kanpur,2026-03-17,1,3,False,38.7,extreme_heat,20,109
+Sugarcane Juice,Kanpur,2026-03-18,2,3,False,37.8,clear,20,77
+Sugarcane Juice,Kanpur,2026-03-19,3,3,False,40.4,extreme_heat,20,77
+Sugarcane Juice,Kanpur,2026-03-20,4,3,False,30.8,clear,20,94
+Sugarcane Juice,Kanpur,2026-03-21,5,3,False,34.9,clear,20,100
+Sugarcane Juice,Kanpur,2026-03-22,6,3,False,41.0,extreme_heat,20,102
+Sugarcane Juice,Kanpur,2026-03-23,0,3,False,37.4,clear,20,55
+Sugarcane Juice,Kanpur,2026-03-24,1,3,False,33.6,clear,20,73
+Sugarcane Juice,Kanpur,2026-03-25,2,3,True,45.1,extreme_heat,20,193
+Sugarcane Juice,Kanpur,2026-03-26,3,3,False,35.9,clear,20,58
+Sugarcane Juice,Kanpur,2026-03-27,4,3,False,40.6,extreme_heat,20,107
+Sugarcane Juice,Kanpur,2026-03-28,5,3,False,41.4,extreme_heat,20,132
+Sugarcane Juice,Kanpur,2026-03-29,6,3,False,33.2,clear,20,86
+Sugarcane Juice,Kanpur,2026-03-30,0,3,False,38.9,extreme_heat,20,97
+Sugarcane Juice,Kanpur,2026-03-31,1,3,False,44.9,extreme_heat,20,91
+Sugarcane Juice,Kanpur,2026-04-01,2,4,False,39.1,extreme_heat,20,116
+Sugarcane Juice,Kanpur,2026-04-02,3,4,False,40.9,extreme_heat,20,91
+Sugarcane Juice,Kanpur,2026-04-03,4,4,False,37.9,clear,20,91
+Sugarcane Juice,Kanpur,2026-04-04,5,4,False,37.3,rain,20,71
+Sugarcane Juice,Kanpur,2026-04-05,6,4,False,34.2,clear,20,104
+Sugarcane Juice,Kanpur,2026-04-06,0,4,False,33.8,clear,20,62
+Sugarcane Juice,Kanpur,2026-04-07,1,4,False,38.6,extreme_heat,20,112
+Sugarcane Juice,Kanpur,2026-04-08,2,4,False,36.0,rain,20,58
+Sugarcane Juice,Kanpur,2026-04-09,3,4,False,37.6,clear,20,70
+Sugarcane Juice,Kanpur,2026-04-10,4,4,False,35.7,clear,20,84
+Sugarcane Juice,Kanpur,2026-04-11,5,4,False,33.8,clear,20,115
+Sugarcane Juice,Kanpur,2026-04-12,6,4,False,29.0,clear,20,77
+Sugarcane Juice,Kanpur,2026-04-13,0,4,False,34.5,clear,20,74
+Sugarcane Juice,Kanpur,2026-04-14,1,4,False,35.9,clear,20,64
+Sugarcane Juice,Kanpur,2026-04-15,2,4,False,33.8,clear,20,56
+Sugarcane Juice,Kanpur,2026-04-16,3,4,False,29.2,clear,20,76
+Sugarcane Juice,Kanpur,2026-04-17,4,4,False,36.2,clear,20,68
+Sugarcane Juice,Kanpur,2026-04-18,5,4,False,27.6,clear,20,58
+Sugarcane Juice,Kanpur,2026-04-19,6,4,False,41.1,extreme_heat,20,129
+Sugarcane Juice,Kanpur,2026-04-20,0,4,False,30.6,clear,20,96
+Sugarcane Juice,Kanpur,2026-04-21,1,4,False,23.6,clear,20,54
+Sugarcane Juice,Kanpur,2026-04-22,2,4,False,37.1,clear,20,71
+Sugarcane Juice,Kanpur,2026-04-23,3,4,False,30.4,clear,20,57
+Sugarcane Juice,Kanpur,2026-04-24,4,4,False,41.2,extreme_heat,20,98
+Sugarcane Juice,Kanpur,2026-04-25,5,4,False,43.0,extreme_heat,20,144
+Sugarcane Juice,Kanpur,2026-04-26,6,4,False,41.1,extreme_heat,20,116
+Sugarcane Juice,Kanpur,2026-04-27,0,4,False,35.6,clear,20,73
+Sugarcane Juice,Kanpur,2026-04-28,1,4,False,35.9,clear,20,69
+Sugarcane Juice,Kanpur,2026-04-29,2,4,False,41.5,rain,20,56
+Sugarcane Juice,Kanpur,2026-04-30,3,4,False,32.2,clear,20,58
+Sugarcane Juice,Kanpur,2026-05-01,4,5,False,31.2,clear,20,85
+Sugarcane Juice,Kanpur,2026-05-02,5,5,False,38.5,extreme_heat,20,126
+Sugarcane Juice,Kanpur,2026-05-03,6,5,False,34.2,clear,20,89
+Sugarcane Juice,Kanpur,2026-05-04,0,5,False,32.5,clear,20,77
+Sugarcane Juice,Kanpur,2026-05-05,1,5,False,36.2,clear,20,62
+Sugarcane Juice,Kanpur,2026-05-06,2,5,False,27.7,clear,20,83
+Sugarcane Juice,Kanpur,2026-05-07,3,5,False,36.0,clear,20,72
+Sugarcane Juice,Kanpur,2026-05-08,4,5,False,34.7,clear,20,94
+Sugarcane Juice,Kanpur,2026-05-09,5,5,False,20.1,clear,20,77
+Sugarcane Juice,Kanpur,2026-05-10,6,5,False,27.9,clear,20,92
+Sugarcane Juice,Kanpur,2026-05-11,0,5,False,26.8,clear,20,76
+Sugarcane Juice,Kanpur,2026-05-12,1,5,False,35.2,clear,20,62
+Sugarcane Juice,Kanpur,2026-05-13,2,5,False,40.1,extreme_heat,20,106
+Sugarcane Juice,Kanpur,2026-05-14,3,5,False,34.2,clear,20,56
+Sugarcane Juice,Kanpur,2026-05-15,4,5,False,34.3,clear,20,73
+Sugarcane Juice,Kanpur,2026-05-16,5,5,False,37.5,clear,20,81
+Sugarcane Juice,Kanpur,2026-05-17,6,5,False,39.3,extreme_heat,20,123
+Sugarcane Juice,Kanpur,2026-05-18,0,5,False,43.1,extreme_heat,20,99
+Sugarcane Juice,Kanpur,2026-05-19,1,5,False,33.5,clear,20,68
+Sugarcane Juice,Kanpur,2026-05-20,2,5,False,37.7,clear,20,76
+Sugarcane Juice,Kanpur,2026-05-21,3,5,False,45.7,extreme_heat,20,79
+Sugarcane Juice,Kanpur,2026-05-22,4,5,False,28.3,clear,20,87
+Sugarcane Juice,Kanpur,2026-05-23,5,5,False,39.4,extreme_heat,20,130
+Sugarcane Juice,Kanpur,2026-05-24,6,5,False,34.2,clear,20,83
+Sugarcane Juice,Kanpur,2026-05-25,0,5,False,29.0,clear,20,69
+Sugarcane Juice,Kanpur,2026-05-26,1,5,False,38.2,extreme_heat,20,83
+Sugarcane Juice,Kanpur,2026-05-27,2,5,False,33.8,clear,20,66
+Sugarcane Juice,Kanpur,2026-05-28,3,5,False,30.6,rain,20,63
+Sugarcane Juice,Kanpur,2026-05-29,4,5,False,43.2,extreme_heat,20,128
+Sugarcane Juice,Kanpur,2026-05-30,5,5,False,38.6,extreme_heat,20,105
+Sugarcane Juice,Kanpur,2026-05-31,6,5,False,29.6,clear,20,96
+Sugarcane Juice,Kanpur,2026-06-01,0,6,False,29.9,clear,20,48
+Sugarcane Juice,Kanpur,2026-06-02,1,6,False,35.2,rain,20,75
+Sugarcane Juice,Kanpur,2026-06-03,2,6,False,24.7,clear,20,52
+Sugarcane Juice,Kanpur,2026-06-04,3,6,False,30.1,rain,20,52
+Sugarcane Juice,Kanpur,2026-06-05,4,6,False,24.9,rain,20,81
+Sugarcane Juice,Kanpur,2026-06-06,5,6,False,34.4,clear,20,90
+Sugarcane Juice,Kanpur,2026-06-07,6,6,False,25.1,rain,20,70
+Sugarcane Juice,Kanpur,2026-06-08,0,6,False,30.4,rain,20,67
+Sugarcane Juice,Kanpur,2026-06-09,1,6,False,26.5,clear,20,70
+Sugarcane Juice,Kanpur,2026-06-10,2,6,False,28.0,rain,20,56
+Sugarcane Juice,Kanpur,2026-06-11,3,6,False,34.2,clear,20,72
+Sugarcane Juice,Kanpur,2026-06-12,4,6,False,28.2,rain,20,87
+Sugarcane Juice,Kanpur,2026-06-13,5,6,False,26.8,clear,20,86
+Sugarcane Juice,Kanpur,2026-06-14,6,6,False,29.4,clear,20,93
+Sugarcane Juice,Kanpur,2026-06-15,0,6,False,33.4,rain,20,52
+Sugarcane Juice,Kanpur,2026-06-16,1,6,False,27.6,rain,20,74
+Sugarcane Juice,Kanpur,2026-06-17,2,6,False,32.0,clear,20,68
+Sugarcane Juice,Kanpur,2026-06-18,3,6,False,28.1,clear,20,77
+Sugarcane Juice,Kanpur,2026-06-19,4,6,False,30.5,clear,20,93
+Sugarcane Juice,Kanpur,2026-06-20,5,6,False,28.4,rain,20,77
+Sugarcane Juice,Kanpur,2026-06-21,6,6,False,31.7,clear,20,96
+Sugarcane Juice,Kanpur,2026-06-22,0,6,False,28.9,clear,20,53
+Sugarcane Juice,Kanpur,2026-06-23,1,6,False,28.6,clear,20,85
+Sugarcane Juice,Kanpur,2026-06-24,2,6,False,30.1,clear,20,70
+Sugarcane Juice,Kanpur,2026-06-25,3,6,False,31.9,clear,20,66
+Sugarcane Juice,Kanpur,2026-06-26,4,6,False,27.0,clear,20,102
+Sugarcane Juice,Kanpur,2026-06-27,5,6,False,27.1,clear,20,76
+Sugarcane Juice,Kanpur,2026-06-28,6,6,False,28.4,clear,20,111
+Sugarcane Juice,Kanpur,2026-06-29,0,6,False,24.0,rain,20,53
+Sugarcane Juice,Kanpur,2026-06-30,1,6,False,32.0,rain,20,56
+Sugarcane Juice,Kanpur,2026-07-01,2,7,False,29.2,clear,20,85
+Sugarcane Juice,Kanpur,2026-07-02,3,7,False,30.6,clear,20,48
+Sugarcane Juice,Kanpur,2026-07-03,4,7,False,28.8,clear,20,103
+Sugarcane Juice,Kanpur,2026-07-04,5,7,False,23.5,rain,20,65
+Sugarcane Juice,Kanpur,2026-07-05,6,7,False,34.1,rain,20,68
+Sugarcane Juice,Kanpur,2026-07-06,0,7,False,29.1,clear,20,62
+Sugarcane Juice,Kanpur,2026-07-07,1,7,False,29.1,rain,20,46
+Sugarcane Juice,Kanpur,2026-07-08,2,7,False,27.9,clear,20,59
+Sugarcane Juice,Kanpur,2026-07-09,3,7,False,29.7,clear,20,86
+Sugarcane Juice,Kanpur,2026-07-10,4,7,False,28.3,clear,20,98
+Sugarcane Juice,Kanpur,2026-07-11,5,7,False,25.0,clear,20,95
+Sugarcane Juice,Kanpur,2026-07-12,6,7,False,28.3,clear,20,87
+Sugarcane Juice,Kanpur,2026-07-13,0,7,False,31.5,rain,20,55
+Sugarcane Juice,Kanpur,2026-07-14,1,7,False,29.4,clear,20,64
+Sugarcane Juice,Kanpur,2026-07-15,2,7,False,29.4,clear,20,71
+Sugarcane Juice,Kanpur,2026-07-16,3,7,False,24.1,rain,20,55
+Sugarcane Juice,Kanpur,2026-07-17,4,7,False,32.1,clear,20,82
+Sugarcane Juice,Kanpur,2026-07-18,5,7,False,32.6,clear,20,91
+Sugarcane Juice,Kanpur,2026-07-19,6,7,False,31.3,rain,20,76
+Sugarcane Juice,Kanpur,2026-07-20,0,7,False,27.0,clear,20,65
+Sugarcane Juice,Kanpur,2026-07-21,1,7,False,33.5,clear,20,71
+Sugarcane Juice,Kanpur,2026-07-22,2,7,False,31.3,clear,20,69
+Sugarcane Juice,Kanpur,2026-07-23,3,7,False,28.9,clear,20,66
+Sugarcane Juice,Kanpur,2026-07-24,4,7,False,28.6,clear,20,98
+Sugarcane Juice,Kanpur,2026-07-25,5,7,False,28.7,clear,20,88
+Sugarcane Juice,Kanpur,2026-07-26,6,7,False,28.3,rain,20,64
+Sugarcane Juice,Kanpur,2026-07-27,0,7,False,25.9,rain,20,69
+Sugarcane Juice,Kanpur,2026-07-28,1,7,False,28.9,clear,20,82
+Sugarcane Juice,Kanpur,2026-07-29,2,7,False,33.7,clear,20,64
+Sugarcane Juice,Kanpur,2026-07-30,3,7,False,27.5,rain,20,63
+Sugarcane Juice,Kanpur,2026-07-31,4,7,False,28.2,rain,20,85
+Sugarcane Juice,Kanpur,2026-08-01,5,8,False,27.3,rain,20,84
+Sugarcane Juice,Kanpur,2026-08-02,6,8,False,25.5,clear,20,77
+Sugarcane Juice,Kanpur,2026-08-03,0,8,False,26.0,clear,20,76
+Sugarcane Juice,Kanpur,2026-08-04,1,8,False,28.0,rain,20,61
+Sugarcane Juice,Kanpur,2026-08-05,2,8,False,25.6,rain,20,69
+Sugarcane Juice,Kanpur,2026-08-06,3,8,False,28.8,rain,20,64
+Sugarcane Juice,Kanpur,2026-08-07,4,8,False,22.9,clear,20,123
+Sugarcane Juice,Kanpur,2026-08-08,5,8,False,28.6,clear,20,98
+Sugarcane Juice,Kanpur,2026-08-09,6,8,False,33.9,clear,20,66
+Sugarcane Juice,Kanpur,2026-08-10,0,8,False,30.7,clear,20,77
+Sugarcane Juice,Kanpur,2026-08-11,1,8,False,25.5,rain,20,52
+Sugarcane Juice,Kanpur,2026-08-12,2,8,False,32.7,clear,20,72
+Sugarcane Juice,Kanpur,2026-08-13,3,8,False,26.4,rain,20,72
+Sugarcane Juice,Kanpur,2026-08-14,4,8,False,29.3,clear,20,77
+Sugarcane Juice,Kanpur,2026-08-15,5,8,True,23.4,clear,20,146
+Sugarcane Juice,Kanpur,2026-08-16,6,8,False,31.9,rain,20,91
+Sugarcane Juice,Kanpur,2026-08-17,0,8,False,26.8,rain,20,53
+Sugarcane Juice,Kanpur,2026-08-18,1,8,False,32.0,rain,20,49
+Sugarcane Juice,Kanpur,2026-08-19,2,8,False,35.3,clear,20,69
+Sugarcane Juice,Kanpur,2026-08-20,3,8,False,32.8,clear,20,77
+Chaat,Lucknow,2025-09-01,0,9,False,32.7,rain,25,58
+Chaat,Lucknow,2025-09-02,1,9,False,30.7,rain,25,69
+Chaat,Lucknow,2025-09-03,2,9,False,28.8,clear,25,67
+Chaat,Lucknow,2025-09-04,3,9,False,31.9,clear,25,73
+Chaat,Lucknow,2025-09-05,4,9,False,29.3,clear,25,97
+Chaat,Lucknow,2025-09-06,5,9,False,36.7,rain,25,67
+Chaat,Lucknow,2025-09-07,6,9,False,32.0,rain,25,83
+Chaat,Lucknow,2025-09-08,0,9,False,29.5,rain,25,44
+Chaat,Lucknow,2025-09-09,1,9,False,24.1,clear,25,79
+Chaat,Lucknow,2025-09-10,2,9,False,24.9,clear,25,75
+Chaat,Lucknow,2025-09-11,3,9,False,28.3,rain,25,61
+Chaat,Lucknow,2025-09-12,4,9,False,26.6,clear,25,107
+Chaat,Lucknow,2025-09-13,5,9,False,30.1,rain,25,76
+Chaat,Lucknow,2025-09-14,6,9,False,29.0,rain,25,64
+Chaat,Lucknow,2025-09-15,0,9,False,35.2,clear,25,89
+Chaat,Lucknow,2025-09-16,1,9,False,28.4,clear,25,82
+Chaat,Lucknow,2025-09-17,2,9,False,32.4,rain,25,64
+Chaat,Lucknow,2025-09-18,3,9,False,34.5,rain,25,57
+Chaat,Lucknow,2025-09-19,4,9,False,27.4,rain,25,85
+Chaat,Lucknow,2025-09-20,5,9,False,26.0,rain,25,84
+Chaat,Lucknow,2025-09-21,6,9,False,30.9,rain,25,67
+Chaat,Lucknow,2025-09-22,0,9,False,29.4,clear,25,77
+Chaat,Lucknow,2025-09-23,1,9,False,23.7,clear,25,78
+Chaat,Lucknow,2025-09-24,2,9,False,28.8,clear,25,67
+Chaat,Lucknow,2025-09-25,3,9,False,31.2,clear,25,80
+Chaat,Lucknow,2025-09-26,4,9,False,35.2,rain,25,58
+Chaat,Lucknow,2025-09-27,5,9,False,27.4,rain,25,70
+Chaat,Lucknow,2025-09-28,6,9,False,24.8,rain,25,71
+Chaat,Lucknow,2025-09-29,0,9,False,34.7,clear,25,86
+Chaat,Lucknow,2025-09-30,1,9,False,25.2,clear,25,82
+Chaat,Lucknow,2025-10-01,2,10,False,28.3,clear,25,76
+Chaat,Lucknow,2025-10-02,3,10,True,18.5,clear,25,133
+Chaat,Lucknow,2025-10-03,4,10,False,22.3,clear,25,82
+Chaat,Lucknow,2025-10-04,5,10,False,21.4,clear,25,105
+Chaat,Lucknow,2025-10-05,6,10,False,24.3,clear,25,91
+Chaat,Lucknow,2025-10-06,0,10,False,17.6,clear,25,88
+Chaat,Lucknow,2025-10-07,1,10,False,23.4,clear,25,75
+Chaat,Lucknow,2025-10-08,2,10,False,23.9,clear,25,52
+Chaat,Lucknow,2025-10-09,3,10,False,24.8,clear,25,89
+Chaat,Lucknow,2025-10-10,4,10,False,27.9,clear,25,109
+Chaat,Lucknow,2025-10-11,5,10,False,23.0,rain,25,73
+Chaat,Lucknow,2025-10-12,6,10,False,23.2,clear,25,99
+Chaat,Lucknow,2025-10-13,0,10,False,24.8,clear,25,86
+Chaat,Lucknow,2025-10-14,1,10,False,27.1,clear,25,82
+Chaat,Lucknow,2025-10-15,2,10,False,24.7,clear,25,75
+Chaat,Lucknow,2025-10-16,3,10,False,24.1,clear,25,91
+Chaat,Lucknow,2025-10-17,4,10,False,24.0,clear,25,112
+Chaat,Lucknow,2025-10-18,5,10,False,27.2,clear,25,91
+Chaat,Lucknow,2025-10-19,6,10,False,25.3,rain,25,66
+Chaat,Lucknow,2025-10-20,0,10,True,24.5,clear,25,116
+Chaat,Lucknow,2025-10-21,1,10,True,27.6,clear,25,136
+Chaat,Lucknow,2025-10-22,2,10,False,22.9,rain,25,58
+Chaat,Lucknow,2025-10-23,3,10,False,19.1,clear,25,78
+Chaat,Lucknow,2025-10-24,4,10,False,34.4,clear,25,103
+Chaat,Lucknow,2025-10-25,5,10,False,25.0,rain,25,63
+Chaat,Lucknow,2025-10-26,6,10,False,17.0,clear,25,95
+Chaat,Lucknow,2025-10-27,0,10,False,15.6,rain,25,55
+Chaat,Lucknow,2025-10-28,1,10,False,23.1,clear,25,73
+Chaat,Lucknow,2025-10-29,2,10,False,30.9,clear,25,71
+Chaat,Lucknow,2025-10-30,3,10,False,23.7,clear,25,69
+Chaat,Lucknow,2025-10-31,4,10,False,20.9,clear,25,91
+Chaat,Lucknow,2025-11-01,5,11,True,19.6,clear,25,155
+Chaat,Lucknow,2025-11-02,6,11,False,16.1,clear,25,105
+Chaat,Lucknow,2025-11-03,0,11,False,25.8,clear,25,88
+Chaat,Lucknow,2025-11-04,1,11,False,29.8,clear,25,83
+Chaat,Lucknow,2025-11-05,2,11,False,24.7,clear,25,71
+Chaat,Lucknow,2025-11-06,3,11,False,24.4,clear,25,80
+Chaat,Lucknow,2025-11-07,4,11,False,21.4,clear,25,100
+Chaat,Lucknow,2025-11-08,5,11,False,23.4,clear,25,79
+Chaat,Lucknow,2025-11-09,6,11,False,19.4,clear,25,100
+Chaat,Lucknow,2025-11-10,0,11,False,24.9,clear,25,83
+Chaat,Lucknow,2025-11-11,1,11,False,28.3,rain,25,59
+Chaat,Lucknow,2025-11-12,2,11,False,28.4,clear,25,80
+Chaat,Lucknow,2025-11-13,3,11,False,29.1,clear,25,74
+Chaat,Lucknow,2025-11-14,4,11,False,22.8,clear,25,114
+Chaat,Lucknow,2025-11-15,5,11,False,18.2,clear,25,82
+Chaat,Lucknow,2025-11-16,6,11,False,19.4,clear,25,92
+Chaat,Lucknow,2025-11-17,0,11,False,17.8,clear,25,83
+Chaat,Lucknow,2025-11-18,1,11,False,28.2,clear,25,76
+Chaat,Lucknow,2025-11-19,2,11,False,23.9,clear,25,51
+Chaat,Lucknow,2025-11-20,3,11,False,20.2,clear,25,67
+Chaat,Lucknow,2025-11-21,4,11,False,23.0,clear,25,88
+Chaat,Lucknow,2025-11-22,5,11,False,24.3,clear,25,93
+Chaat,Lucknow,2025-11-23,6,11,False,22.2,clear,25,96
+Chaat,Lucknow,2025-11-24,0,11,False,17.0,clear,25,73
+Chaat,Lucknow,2025-11-25,1,11,False,29.0,clear,25,88
+Chaat,Lucknow,2025-11-26,2,11,False,20.0,rain,25,49
+Chaat,Lucknow,2025-11-27,3,11,False,21.2,clear,25,91
+Chaat,Lucknow,2025-11-28,4,11,False,19.4,rain,25,72
+Chaat,Lucknow,2025-11-29,5,11,False,26.3,rain,25,58
+Chaat,Lucknow,2025-11-30,6,11,False,26.0,clear,25,91
+Chaat,Lucknow,2025-12-01,0,12,False,15.6,clear,25,76
+Chaat,Lucknow,2025-12-02,1,12,False,13.5,clear,25,80
+Chaat,Lucknow,2025-12-03,2,12,False,12.4,clear,25,81
+Chaat,Lucknow,2025-12-04,3,12,False,21.9,rain,25,66
+Chaat,Lucknow,2025-12-05,4,12,False,12.6,clear,25,94
+Chaat,Lucknow,2025-12-06,5,12,False,14.4,clear,25,111
+Chaat,Lucknow,2025-12-07,6,12,False,18.5,clear,25,104
+Chaat,Lucknow,2025-12-08,0,12,False,15.9,clear,25,65
+Chaat,Lucknow,2025-12-09,1,12,False,14.4,clear,25,83
+Chaat,Lucknow,2025-12-10,2,12,False,12.5,clear,25,67
+Chaat,Lucknow,2025-12-11,3,12,False,14.8,clear,25,93
+Chaat,Lucknow,2025-12-12,4,12,False,17.3,clear,25,96
+Chaat,Lucknow,2025-12-13,5,12,False,19.4,clear,25,95
+Chaat,Lucknow,2025-12-14,6,12,False,10.6,clear,25,125
+Chaat,Lucknow,2025-12-15,0,12,False,16.6,clear,25,76
+Chaat,Lucknow,2025-12-16,1,12,False,17.0,clear,25,72
+Chaat,Lucknow,2025-12-17,2,12,False,12.4,clear,25,74
+Chaat,Lucknow,2025-12-18,3,12,False,13.2,clear,25,78
+Chaat,Lucknow,2025-12-19,4,12,False,14.3,clear,25,99
+Chaat,Lucknow,2025-12-20,5,12,False,18.0,clear,25,103
+Chaat,Lucknow,2025-12-21,6,12,False,14.0,clear,25,85
+Chaat,Lucknow,2025-12-22,0,12,False,12.6,clear,25,70
+Chaat,Lucknow,2025-12-23,1,12,False,15.4,clear,25,62
+Chaat,Lucknow,2025-12-24,2,12,False,18.3,clear,25,70
+Chaat,Lucknow,2025-12-25,3,12,True,10.6,rain,25,108
+Chaat,Lucknow,2025-12-26,4,12,False,13.4,rain,25,82
+Chaat,Lucknow,2025-12-27,5,12,False,7.8,clear,25,126
+Chaat,Lucknow,2025-12-28,6,12,False,4.2,clear,25,89
+Chaat,Lucknow,2025-12-29,0,12,False,13.9,clear,25,85
+Chaat,Lucknow,2025-12-30,1,12,False,14.5,clear,25,76
+Chaat,Lucknow,2025-12-31,2,12,False,17.1,clear,25,62
+Chaat,Lucknow,2026-01-01,3,1,False,23.0,clear,25,76
+Chaat,Lucknow,2026-01-02,4,1,False,13.4,clear,25,118
+Chaat,Lucknow,2026-01-03,5,1,False,17.3,clear,25,81
+Chaat,Lucknow,2026-01-04,6,1,False,13.4,clear,25,77
+Chaat,Lucknow,2026-01-05,0,1,False,18.3,clear,25,92
+Chaat,Lucknow,2026-01-06,1,1,False,22.3,clear,25,82
+Chaat,Lucknow,2026-01-07,2,1,False,10.1,clear,25,73
+Chaat,Lucknow,2026-01-08,3,1,False,10.7,clear,25,74
+Chaat,Lucknow,2026-01-09,4,1,False,13.7,clear,25,88
+Chaat,Lucknow,2026-01-10,5,1,False,21.9,clear,25,116
+Chaat,Lucknow,2026-01-11,6,1,False,10.9,clear,25,92
+Chaat,Lucknow,2026-01-12,0,1,False,13.6,clear,25,92
+Chaat,Lucknow,2026-01-13,1,1,False,19.8,clear,25,80
+Chaat,Lucknow,2026-01-14,2,1,True,11.9,clear,25,108
+Chaat,Lucknow,2026-01-15,3,1,False,13.2,clear,25,60
+Chaat,Lucknow,2026-01-16,4,1,False,14.8,clear,25,111
+Chaat,Lucknow,2026-01-17,5,1,False,12.7,clear,25,103
+Chaat,Lucknow,2026-01-18,6,1,False,5.7,clear,25,95
+Chaat,Lucknow,2026-01-19,0,1,False,22.3,clear,25,87
+Chaat,Lucknow,2026-01-20,1,1,False,14.6,clear,25,65
+Chaat,Lucknow,2026-01-21,2,1,False,17.4,clear,25,95
+Chaat,Lucknow,2026-01-22,3,1,False,19.0,clear,25,69
+Chaat,Lucknow,2026-01-23,4,1,False,9.5,clear,25,89
+Chaat,Lucknow,2026-01-24,5,1,False,20.9,clear,25,96
+Chaat,Lucknow,2026-01-25,6,1,False,17.1,clear,25,94
+Chaat,Lucknow,2026-01-26,0,1,True,17.6,clear,25,120
+Chaat,Lucknow,2026-01-27,1,1,False,17.8,clear,25,71
+Chaat,Lucknow,2026-01-28,2,1,False,17.4,clear,25,83
+Chaat,Lucknow,2026-01-29,3,1,False,13.2,clear,25,95
+Chaat,Lucknow,2026-01-30,4,1,False,21.2,clear,25,93
+Chaat,Lucknow,2026-01-31,5,1,False,13.8,clear,25,94
+Chaat,Lucknow,2026-02-01,6,2,False,12.5,clear,25,97
+Chaat,Lucknow,2026-02-02,0,2,False,22.1,clear,25,83
+Chaat,Lucknow,2026-02-03,1,2,False,23.3,clear,25,76
+Chaat,Lucknow,2026-02-04,2,2,False,10.3,clear,25,71
+Chaat,Lucknow,2026-02-05,3,2,False,14.6,clear,25,93
+Chaat,Lucknow,2026-02-06,4,2,False,19.6,clear,25,85
+Chaat,Lucknow,2026-02-07,5,2,False,21.1,clear,25,85
+Chaat,Lucknow,2026-02-08,6,2,False,8.0,clear,25,81
+Chaat,Lucknow,2026-02-09,0,2,False,12.5,clear,25,75
+Chaat,Lucknow,2026-02-10,1,2,False,16.4,clear,25,79
+Chaat,Lucknow,2026-02-11,2,2,False,22.7,clear,25,82
+Chaat,Lucknow,2026-02-12,3,2,False,8.7,clear,25,74
+Chaat,Lucknow,2026-02-13,4,2,False,19.2,rain,25,79
+Chaat,Lucknow,2026-02-14,5,2,False,17.7,clear,25,111
+Chaat,Lucknow,2026-02-15,6,2,False,12.0,clear,25,94
+Chaat,Lucknow,2026-02-16,0,2,False,16.4,clear,25,79
+Chaat,Lucknow,2026-02-17,1,2,False,10.7,clear,25,79
+Chaat,Lucknow,2026-02-18,2,2,False,12.8,clear,25,80
+Chaat,Lucknow,2026-02-19,3,2,False,12.5,clear,25,69
+Chaat,Lucknow,2026-02-20,4,2,False,24.4,clear,25,102
+Chaat,Lucknow,2026-02-21,5,2,False,19.7,clear,25,68
+Chaat,Lucknow,2026-02-22,6,2,False,13.4,clear,25,96
+Chaat,Lucknow,2026-02-23,0,2,False,15.8,clear,25,68
+Chaat,Lucknow,2026-02-24,1,2,False,16.6,rain,25,62
+Chaat,Lucknow,2026-02-25,2,2,False,12.9,clear,25,78
+Chaat,Lucknow,2026-02-26,3,2,False,22.1,clear,25,86
+Chaat,Lucknow,2026-02-27,4,2,False,14.8,rain,25,80
+Chaat,Lucknow,2026-02-28,5,2,False,13.8,clear,25,62
+Chaat,Lucknow,2026-03-01,6,3,False,41.4,extreme_heat,25,115
+Chaat,Lucknow,2026-03-02,0,3,False,34.9,clear,25,75
+Chaat,Lucknow,2026-03-03,1,3,False,35.1,clear,25,95
+Chaat,Lucknow,2026-03-04,2,3,False,46.2,extreme_heat,25,75
+Chaat,Lucknow,2026-03-05,3,3,False,28.5,clear,25,80
+Chaat,Lucknow,2026-03-06,4,3,True,33.6,clear,25,147
+Chaat,Lucknow,2026-03-07,5,3,False,35.7,clear,25,112
+Chaat,Lucknow,2026-03-08,6,3,False,34.5,clear,25,97
+Chaat,Lucknow,2026-03-09,0,3,False,34.3,clear,25,86
+Chaat,Lucknow,2026-03-10,1,3,False,30.6,clear,25,79
+Chaat,Lucknow,2026-03-11,2,3,False,35.6,clear,25,77
+Chaat,Lucknow,2026-03-12,3,3,False,39.0,extreme_heat,25,73
+Chaat,Lucknow,2026-03-13,4,3,False,35.8,clear,25,87
+Chaat,Lucknow,2026-03-14,5,3,False,34.8,clear,25,87
+Chaat,Lucknow,2026-03-15,6,3,False,33.1,clear,25,110
+Chaat,Lucknow,2026-03-16,0,3,False,34.5,clear,25,80
+Chaat,Lucknow,2026-03-17,1,3,False,29.0,clear,25,66
+Chaat,Lucknow,2026-03-18,2,3,False,29.7,clear,25,72
+Chaat,Lucknow,2026-03-19,3,3,False,37.3,clear,25,87
+Chaat,Lucknow,2026-03-20,4,3,False,29.9,clear,25,100
+Chaat,Lucknow,2026-03-21,5,3,False,46.6,extreme_heat,25,88
+Chaat,Lucknow,2026-03-22,6,3,False,38.4,extreme_heat,25,76
+Chaat,Lucknow,2026-03-23,0,3,False,30.8,clear,25,76
+Chaat,Lucknow,2026-03-24,1,3,False,33.3,clear,25,93
+Chaat,Lucknow,2026-03-25,2,3,True,27.9,rain,25,108
+Chaat,Lucknow,2026-03-26,3,3,False,34.8,clear,25,67
+Chaat,Lucknow,2026-03-27,4,3,False,33.9,rain,25,77
+Chaat,Lucknow,2026-03-28,5,3,False,28.0,clear,25,101
+Chaat,Lucknow,2026-03-29,6,3,False,35.9,clear,25,94
+Chaat,Lucknow,2026-03-30,0,3,False,31.4,clear,25,78
+Chaat,Lucknow,2026-03-31,1,3,False,34.5,clear,25,60
+Chaat,Lucknow,2026-04-01,2,4,False,32.2,clear,25,81
+Chaat,Lucknow,2026-04-02,3,4,False,41.0,extreme_heat,25,83
+Chaat,Lucknow,2026-04-03,4,4,False,41.9,extreme_heat,25,114
+Chaat,Lucknow,2026-04-04,5,4,False,44.3,extreme_heat,25,103
+Chaat,Lucknow,2026-04-05,6,4,False,34.0,clear,25,96
+Chaat,Lucknow,2026-04-06,0,4,False,38.1,extreme_heat,25,74
+Chaat,Lucknow,2026-04-07,1,4,False,23.2,clear,25,78
+Chaat,Lucknow,2026-04-08,2,4,False,37.3,clear,25,83
+Chaat,Lucknow,2026-04-09,3,4,False,42.2,extreme_heat,25,98
+Chaat,Lucknow,2026-04-10,4,4,False,40.4,extreme_heat,25,111
+Chaat,Lucknow,2026-04-11,5,4,False,29.2,clear,25,117
+Chaat,Lucknow,2026-04-12,6,4,False,25.7,clear,25,106
+Chaat,Lucknow,2026-04-13,0,4,False,44.8,extreme_heat,25,91
+Chaat,Lucknow,2026-04-14,1,4,False,32.2,clear,25,68
+Chaat,Lucknow,2026-04-15,2,4,False,29.6,clear,25,69
+Chaat,Lucknow,2026-04-16,3,4,False,38.7,extreme_heat,25,65
+Chaat,Lucknow,2026-04-17,4,4,False,32.4,clear,25,97
+Chaat,Lucknow,2026-04-18,5,4,False,35.2,clear,25,113
+Chaat,Lucknow,2026-04-19,6,4,False,33.4,clear,25,101
+Chaat,Lucknow,2026-04-20,0,4,False,37.4,clear,25,72
+Chaat,Lucknow,2026-04-21,1,4,False,31.4,clear,25,73
+Chaat,Lucknow,2026-04-22,2,4,False,38.5,extreme_heat,25,62
+Chaat,Lucknow,2026-04-23,3,4,False,33.3,clear,25,66
+Chaat,Lucknow,2026-04-24,4,4,False,32.0,clear,25,96
+Chaat,Lucknow,2026-04-25,5,4,False,35.8,clear,25,118
+Chaat,Lucknow,2026-04-26,6,4,False,37.4,clear,25,102
+Chaat,Lucknow,2026-04-27,0,4,False,35.6,clear,25,75
+Chaat,Lucknow,2026-04-28,1,4,False,38.8,rain,25,71
+Chaat,Lucknow,2026-04-29,2,4,False,41.5,extreme_heat,25,74
+Chaat,Lucknow,2026-04-30,3,4,False,37.5,clear,25,97
+Chaat,Lucknow,2026-05-01,4,5,False,35.4,clear,25,95
+Chaat,Lucknow,2026-05-02,5,5,False,28.9,clear,25,91
+Chaat,Lucknow,2026-05-03,6,5,False,40.5,extreme_heat,25,97
+Chaat,Lucknow,2026-05-04,0,5,False,40.8,extreme_heat,25,95
+Chaat,Lucknow,2026-05-05,1,5,False,32.9,clear,25,86
+Chaat,Lucknow,2026-05-06,2,5,False,38.6,rain,25,68
+Chaat,Lucknow,2026-05-07,3,5,False,37.6,clear,25,86
+Chaat,Lucknow,2026-05-08,4,5,False,44.8,extreme_heat,25,75
+Chaat,Lucknow,2026-05-09,5,5,False,48.1,extreme_heat,25,113
+Chaat,Lucknow,2026-05-10,6,5,False,35.1,clear,25,92
+Chaat,Lucknow,2026-05-11,0,5,False,38.1,extreme_heat,25,91
+Chaat,Lucknow,2026-05-12,1,5,False,37.2,clear,25,60
+Chaat,Lucknow,2026-05-13,2,5,False,34.6,clear,25,83
+Chaat,Lucknow,2026-05-14,3,5,False,39.8,extreme_heat,25,77
+Chaat,Lucknow,2026-05-15,4,5,False,40.9,extreme_heat,25,103
+Chaat,Lucknow,2026-05-16,5,5,False,33.3,clear,25,105
+Chaat,Lucknow,2026-05-17,6,5,False,41.1,extreme_heat,25,94
+Chaat,Lucknow,2026-05-18,0,5,False,39.4,extreme_heat,25,76
+Chaat,Lucknow,2026-05-19,1,5,False,31.5,clear,25,89
+Chaat,Lucknow,2026-05-20,2,5,False,34.8,clear,25,65
+Chaat,Lucknow,2026-05-21,3,5,False,39.2,extreme_heat,25,80
+Chaat,Lucknow,2026-05-22,4,5,False,41.2,extreme_heat,25,96
+Chaat,Lucknow,2026-05-23,5,5,False,34.1,clear,25,116
+Chaat,Lucknow,2026-05-24,6,5,False,28.4,clear,25,114
+Chaat,Lucknow,2026-05-25,0,5,False,34.1,clear,25,85
+Chaat,Lucknow,2026-05-26,1,5,False,36.7,clear,25,86
+Chaat,Lucknow,2026-05-27,2,5,False,30.1,clear,25,92
+Chaat,Lucknow,2026-05-28,3,5,False,35.9,clear,25,80
+Chaat,Lucknow,2026-05-29,4,5,False,36.0,clear,25,97
+Chaat,Lucknow,2026-05-30,5,5,False,28.0,clear,25,103
+Chaat,Lucknow,2026-05-31,6,5,False,26.8,clear,25,101
+Chaat,Lucknow,2026-06-01,0,6,False,30.5,clear,25,73
+Chaat,Lucknow,2026-06-02,1,6,False,26.7,clear,25,81
+Chaat,Lucknow,2026-06-03,2,6,False,29.4,rain,25,58
+Chaat,Lucknow,2026-06-04,3,6,False,27.9,clear,25,74
+Chaat,Lucknow,2026-06-05,4,6,False,27.3,clear,25,107
+Chaat,Lucknow,2026-06-06,5,6,False,24.9,rain,25,68
+Chaat,Lucknow,2026-06-07,6,6,False,31.7,rain,25,72
+Chaat,Lucknow,2026-06-08,0,6,False,33.8,rain,25,68
+Chaat,Lucknow,2026-06-09,1,6,False,30.3,rain,25,65
+Chaat,Lucknow,2026-06-10,2,6,False,32.6,clear,25,99
+Chaat,Lucknow,2026-06-11,3,6,False,31.6,rain,25,63
+Chaat,Lucknow,2026-06-12,4,6,False,29.4,clear,25,101
+Chaat,Lucknow,2026-06-13,5,6,False,29.7,clear,25,106
+Chaat,Lucknow,2026-06-14,6,6,False,29.1,rain,25,82
+Chaat,Lucknow,2026-06-15,0,6,False,29.5,rain,25,74
+Chaat,Lucknow,2026-06-16,1,6,False,28.6,rain,25,59
+Chaat,Lucknow,2026-06-17,2,6,False,27.5,clear,25,95
+Chaat,Lucknow,2026-06-18,3,6,False,30.3,rain,25,66
+Chaat,Lucknow,2026-06-19,4,6,False,29.2,rain,25,80
+Chaat,Lucknow,2026-06-20,5,6,False,27.7,clear,25,104
+Chaat,Lucknow,2026-06-21,6,6,False,30.8,rain,25,83
+Chaat,Lucknow,2026-06-22,0,6,False,26.3,clear,25,76
+Chaat,Lucknow,2026-06-23,1,6,False,25.8,rain,25,54
+Chaat,Lucknow,2026-06-24,2,6,False,26.9,clear,25,76
+Chaat,Lucknow,2026-06-25,3,6,False,28.4,rain,25,67
+Chaat,Lucknow,2026-06-26,4,6,False,31.5,rain,25,82
+Chaat,Lucknow,2026-06-27,5,6,False,29.2,clear,25,92
+Chaat,Lucknow,2026-06-28,6,6,False,32.9,clear,25,94
+Chaat,Lucknow,2026-06-29,0,6,False,29.1,rain,25,53
+Chaat,Lucknow,2026-06-30,1,6,False,29.5,rain,25,54
+Chaat,Lucknow,2026-07-01,2,7,False,24.6,clear,25,78
+Chaat,Lucknow,2026-07-02,3,7,False,28.7,rain,25,66
+Chaat,Lucknow,2026-07-03,4,7,False,28.8,rain,25,75
+Chaat,Lucknow,2026-07-04,5,7,False,26.6,rain,25,65
+Chaat,Lucknow,2026-07-05,6,7,False,30.6,clear,25,114
+Chaat,Lucknow,2026-07-06,0,7,False,28.0,clear,25,71
+Chaat,Lucknow,2026-07-07,1,7,False,27.0,clear,25,93
+Chaat,Lucknow,2026-07-08,2,7,False,34.0,clear,25,100
+Chaat,Lucknow,2026-07-09,3,7,False,28.1,rain,25,55
+Chaat,Lucknow,2026-07-10,4,7,False,30.3,clear,25,89
+Chaat,Lucknow,2026-07-11,5,7,False,30.4,clear,25,108
+Chaat,Lucknow,2026-07-12,6,7,False,31.7,clear,25,91
+Chaat,Lucknow,2026-07-13,0,7,False,27.6,clear,25,81
+Chaat,Lucknow,2026-07-14,1,7,False,29.3,rain,25,74
+Chaat,Lucknow,2026-07-15,2,7,False,26.8,rain,25,54
+Chaat,Lucknow,2026-07-16,3,7,False,29.2,clear,25,93
+Chaat,Lucknow,2026-07-17,4,7,False,27.7,rain,25,81
+Chaat,Lucknow,2026-07-18,5,7,False,27.4,rain,25,71
+Chaat,Lucknow,2026-07-19,6,7,False,30.8,rain,25,81
+Chaat,Lucknow,2026-07-20,0,7,False,30.7,clear,25,68
+Chaat,Lucknow,2026-07-21,1,7,False,30.4,clear,25,76
+Chaat,Lucknow,2026-07-22,2,7,False,35.5,clear,25,75
+Chaat,Lucknow,2026-07-23,3,7,False,32.5,rain,25,58
+Chaat,Lucknow,2026-07-24,4,7,False,32.7,rain,25,63
+Chaat,Lucknow,2026-07-25,5,7,False,30.6,clear,25,122
+Chaat,Lucknow,2026-07-26,6,7,False,27.2,clear,25,125
+Chaat,Lucknow,2026-07-27,0,7,False,26.4,rain,25,65
+Chaat,Lucknow,2026-07-28,1,7,False,26.4,rain,25,60
+Chaat,Lucknow,2026-07-29,2,7,False,28.3,clear,25,83
+Chaat,Lucknow,2026-07-30,3,7,False,29.5,rain,25,58
+Chaat,Lucknow,2026-07-31,4,7,False,28.6,rain,25,73
+Chaat,Lucknow,2026-08-01,5,8,False,30.0,clear,25,94
+Chaat,Lucknow,2026-08-02,6,8,False,28.2,clear,25,123
+Chaat,Lucknow,2026-08-03,0,8,False,29.1,clear,25,78
+Chaat,Lucknow,2026-08-04,1,8,False,29.0,clear,25,81
+Chaat,Lucknow,2026-08-05,2,8,False,26.2,clear,25,57
+Chaat,Lucknow,2026-08-06,3,8,False,25.6,clear,25,91
+Chaat,Lucknow,2026-08-07,4,8,False,33.0,clear,25,112
+Chaat,Lucknow,2026-08-08,5,8,False,27.6,clear,25,118
+Chaat,Lucknow,2026-08-09,6,8,False,29.2,clear,25,99
+Chaat,Lucknow,2026-08-10,0,8,False,34.9,rain,25,72
+Chaat,Lucknow,2026-08-11,1,8,False,34.1,clear,25,78
+Chaat,Lucknow,2026-08-12,2,8,False,25.9,rain,25,67
+Chaat,Lucknow,2026-08-13,3,8,False,28.4,rain,25,66
+Chaat,Lucknow,2026-08-14,4,8,False,23.4,rain,25,74
+Chaat,Lucknow,2026-08-15,5,8,True,30.6,rain,25,145
+Chaat,Lucknow,2026-08-16,6,8,False,28.7,clear,25,104
+Chaat,Lucknow,2026-08-17,0,8,False,29.6,clear,25,84
+Chaat,Lucknow,2026-08-18,1,8,False,27.9,clear,25,90
+Chaat,Lucknow,2026-08-19,2,8,False,27.3,clear,25,78
+Chaat,Lucknow,2026-08-20,3,8,False,32.7,rain,25,63
+Momos,Varanasi,2025-09-01,0,9,False,27.7,rain,30,52
+Momos,Varanasi,2025-09-02,1,9,False,30.9,clear,30,54
+Momos,Varanasi,2025-09-03,2,9,False,24.9,clear,30,49
+Momos,Varanasi,2025-09-04,3,9,False,26.8,rain,30,35
+Momos,Varanasi,2025-09-05,4,9,False,25.0,rain,30,56
+Momos,Varanasi,2025-09-06,5,9,False,26.6,clear,30,59
+Momos,Varanasi,2025-09-07,6,9,False,32.3,clear,30,68
+Momos,Varanasi,2025-09-08,0,9,False,29.6,rain,30,45
+Momos,Varanasi,2025-09-09,1,9,False,25.3,clear,30,46
+Momos,Varanasi,2025-09-10,2,9,False,30.1,rain,30,45
+Momos,Varanasi,2025-09-11,3,9,False,30.7,clear,30,46
+Momos,Varanasi,2025-09-12,4,9,False,29.1,rain,30,67
+Momos,Varanasi,2025-09-13,5,9,False,24.6,rain,30,75
+Momos,Varanasi,2025-09-14,6,9,False,28.2,clear,30,58
+Momos,Varanasi,2025-09-15,0,9,False,20.7,clear,30,55
+Momos,Varanasi,2025-09-16,1,9,False,26.3,rain,30,50
+Momos,Varanasi,2025-09-17,2,9,False,23.7,clear,30,49
+Momos,Varanasi,2025-09-18,3,9,False,26.7,clear,30,43
+Momos,Varanasi,2025-09-19,4,9,False,29.6,rain,30,60
+Momos,Varanasi,2025-09-20,5,9,False,29.6,clear,30,52
+Momos,Varanasi,2025-09-21,6,9,False,30.5,rain,30,55
+Momos,Varanasi,2025-09-22,0,9,False,32.1,rain,30,53
+Momos,Varanasi,2025-09-23,1,9,False,33.3,clear,30,44
+Momos,Varanasi,2025-09-24,2,9,False,22.4,rain,30,46
+Momos,Varanasi,2025-09-25,3,9,False,26.8,rain,30,41
+Momos,Varanasi,2025-09-26,4,9,False,27.7,rain,30,49
+Momos,Varanasi,2025-09-27,5,9,False,28.7,clear,30,65
+Momos,Varanasi,2025-09-28,6,9,False,32.7,rain,30,57
+Momos,Varanasi,2025-09-29,0,9,False,22.0,clear,30,55
+Momos,Varanasi,2025-09-30,1,9,False,24.3,rain,30,47
+Momos,Varanasi,2025-10-01,2,10,False,29.9,clear,30,47
+Momos,Varanasi,2025-10-02,3,10,True,23.8,rain,30,71
+Momos,Varanasi,2025-10-03,4,10,False,28.2,clear,30,64
+Momos,Varanasi,2025-10-04,5,10,False,25.8,rain,30,63
+Momos,Varanasi,2025-10-05,6,10,False,24.6,clear,30,65
+Momos,Varanasi,2025-10-06,0,10,False,25.5,clear,30,47
+Momos,Varanasi,2025-10-07,1,10,False,28.9,clear,30,44
+Momos,Varanasi,2025-10-08,2,10,False,24.7,clear,30,47
+Momos,Varanasi,2025-10-09,3,10,False,27.8,clear,30,51
+Momos,Varanasi,2025-10-10,4,10,False,11.9,clear,30,66
+Momos,Varanasi,2025-10-11,5,10,False,25.9,clear,30,62
+Momos,Varanasi,2025-10-12,6,10,False,23.3,clear,30,62
+Momos,Varanasi,2025-10-13,0,10,False,19.0,clear,30,44
+Momos,Varanasi,2025-10-14,1,10,False,30.0,clear,30,52
+Momos,Varanasi,2025-10-15,2,10,False,21.9,clear,30,56
+Momos,Varanasi,2025-10-16,3,10,False,15.3,clear,30,50
+Momos,Varanasi,2025-10-17,4,10,False,24.9,clear,30,49
+Momos,Varanasi,2025-10-18,5,10,False,20.8,clear,30,58
+Momos,Varanasi,2025-10-19,6,10,False,27.9,clear,30,66
+Momos,Varanasi,2025-10-20,0,10,True,24.6,clear,30,80
+Momos,Varanasi,2025-10-21,1,10,True,27.2,clear,30,85
+Momos,Varanasi,2025-10-22,2,10,False,18.0,clear,30,53
+Momos,Varanasi,2025-10-23,3,10,False,25.7,clear,30,48
+Momos,Varanasi,2025-10-24,4,10,False,30.0,clear,30,67
+Momos,Varanasi,2025-10-25,5,10,False,26.4,clear,30,61
+Momos,Varanasi,2025-10-26,6,10,False,21.4,clear,30,75
+Momos,Varanasi,2025-10-27,0,10,False,25.7,clear,30,70
+Momos,Varanasi,2025-10-28,1,10,False,25.3,clear,30,50
+Momos,Varanasi,2025-10-29,2,10,False,20.1,clear,30,48
+Momos,Varanasi,2025-10-30,3,10,False,21.7,clear,30,61
+Momos,Varanasi,2025-10-31,4,10,False,25.2,clear,30,69
+Momos,Varanasi,2025-11-01,5,11,True,25.9,rain,30,99
+Momos,Varanasi,2025-11-02,6,11,False,24.5,clear,30,69
+Momos,Varanasi,2025-11-03,0,11,False,24.7,clear,30,60
+Momos,Varanasi,2025-11-04,1,11,False,22.1,clear,30,53
+Momos,Varanasi,2025-11-05,2,11,False,21.6,clear,30,49
+Momos,Varanasi,2025-11-06,3,11,False,22.0,clear,30,47
+Momos,Varanasi,2025-11-07,4,11,False,25.1,clear,30,68
+Momos,Varanasi,2025-11-08,5,11,False,13.6,clear,30,60
+Momos,Varanasi,2025-11-09,6,11,False,25.8,clear,30,62
+Momos,Varanasi,2025-11-10,0,11,False,23.6,rain,30,53
+Momos,Varanasi,2025-11-11,1,11,False,23.9,clear,30,57
+Momos,Varanasi,2025-11-12,2,11,False,26.7,rain,30,52
+Momos,Varanasi,2025-11-13,3,11,False,22.2,clear,30,45
+Momos,Varanasi,2025-11-14,4,11,False,19.3,clear,30,57
+Momos,Varanasi,2025-11-15,5,11,False,28.6,clear,30,61
+Momos,Varanasi,2025-11-16,6,11,False,23.8,clear,30,64
+Momos,Varanasi,2025-11-17,0,11,False,19.7,clear,30,57
+Momos,Varanasi,2025-11-18,1,11,False,25.0,clear,30,56
+Momos,Varanasi,2025-11-19,2,11,False,24.0,clear,30,56
+Momos,Varanasi,2025-11-20,3,11,False,23.3,clear,30,63
+Momos,Varanasi,2025-11-21,4,11,False,23.9,clear,30,61
+Momos,Varanasi,2025-11-22,5,11,False,28.7,clear,30,52
+Momos,Varanasi,2025-11-23,6,11,False,21.3,clear,30,70
+Momos,Varanasi,2025-11-24,0,11,False,23.0,clear,30,56
+Momos,Varanasi,2025-11-25,1,11,False,22.9,clear,30,53
+Momos,Varanasi,2025-11-26,2,11,False,20.7,clear,30,53
+Momos,Varanasi,2025-11-27,3,11,False,17.3,clear,30,49
+Momos,Varanasi,2025-11-28,4,11,False,28.1,clear,30,61
+Momos,Varanasi,2025-11-29,5,11,False,22.1,clear,30,64
+Momos,Varanasi,2025-11-30,6,11,False,31.2,clear,30,61
+Momos,Varanasi,2025-12-01,0,12,False,16.0,clear,30,57
+Momos,Varanasi,2025-12-02,1,12,False,9.7,clear,30,54
+Momos,Varanasi,2025-12-03,2,12,False,19.9,clear,30,60
+Momos,Varanasi,2025-12-04,3,12,False,14.4,clear,30,33
+Momos,Varanasi,2025-12-05,4,12,False,8.9,clear,30,64
+Momos,Varanasi,2025-12-06,5,12,False,17.5,clear,30,56
+Momos,Varanasi,2025-12-07,6,12,False,13.3,clear,30,66
+Momos,Varanasi,2025-12-08,0,12,False,11.8,clear,30,48
+Momos,Varanasi,2025-12-09,1,12,False,11.5,clear,30,58
+Momos,Varanasi,2025-12-10,2,12,False,14.5,clear,30,57
+Momos,Varanasi,2025-12-11,3,12,False,23.6,clear,30,59
+Momos,Varanasi,2025-12-12,4,12,False,19.1,rain,30,58
+Momos,Varanasi,2025-12-13,5,12,False,9.9,rain,30,54
+Momos,Varanasi,2025-12-14,6,12,False,13.4,clear,30,62
+Momos,Varanasi,2025-12-15,0,12,False,17.1,clear,30,40
+Momos,Varanasi,2025-12-16,1,12,False,12.0,clear,30,53
+Momos,Varanasi,2025-12-17,2,12,False,17.0,clear,30,47
+Momos,Varanasi,2025-12-18,3,12,False,16.0,rain,30,40
+Momos,Varanasi,2025-12-19,4,12,False,18.0,clear,30,72
+Momos,Varanasi,2025-12-20,5,12,False,12.6,clear,30,61
+Momos,Varanasi,2025-12-21,6,12,False,17.6,clear,30,63
+Momos,Varanasi,2025-12-22,0,12,False,5.3,clear,30,52
+Momos,Varanasi,2025-12-23,1,12,False,13.4,clear,30,44
+Momos,Varanasi,2025-12-24,2,12,False,12.7,clear,30,48
+Momos,Varanasi,2025-12-25,3,12,True,19.1,clear,30,76
+Momos,Varanasi,2025-12-26,4,12,False,12.1,clear,30,75
+Momos,Varanasi,2025-12-27,5,12,False,19.5,clear,30,54
+Momos,Varanasi,2025-12-28,6,12,False,9.8,clear,30,69
+Momos,Varanasi,2025-12-29,0,12,False,6.7,clear,30,62
+Momos,Varanasi,2025-12-30,1,12,False,14.1,clear,30,56
+Momos,Varanasi,2025-12-31,2,12,False,10.7,clear,30,51
+Momos,Varanasi,2026-01-01,3,1,False,11.2,clear,30,61
+Momos,Varanasi,2026-01-02,4,1,False,11.1,clear,30,61
+Momos,Varanasi,2026-01-03,5,1,False,14.9,clear,30,60
+Momos,Varanasi,2026-01-04,6,1,False,17.3,clear,30,68
+Momos,Varanasi,2026-01-05,0,1,False,5.1,clear,30,57
+Momos,Varanasi,2026-01-06,1,1,False,17.5,clear,30,45
+Momos,Varanasi,2026-01-07,2,1,False,12.2,clear,30,60
+Momos,Varanasi,2026-01-08,3,1,False,15.7,clear,30,52
+Momos,Varanasi,2026-01-09,4,1,False,16.2,clear,30,69
+Momos,Varanasi,2026-01-10,5,1,False,15.9,clear,30,50
+Momos,Varanasi,2026-01-11,6,1,False,15.5,clear,30,60
+Momos,Varanasi,2026-01-12,0,1,False,16.9,clear,30,52
+Momos,Varanasi,2026-01-13,1,1,False,17.2,clear,30,54
+Momos,Varanasi,2026-01-14,2,1,True,14.8,clear,30,78
+Momos,Varanasi,2026-01-15,3,1,False,14.0,clear,30,51
+Momos,Varanasi,2026-01-16,4,1,False,10.6,clear,30,57
+Momos,Varanasi,2026-01-17,5,1,False,14.7,clear,30,67
+Momos,Varanasi,2026-01-18,6,1,False,14.2,clear,30,63
+Momos,Varanasi,2026-01-19,0,1,False,10.5,clear,30,51
+Momos,Varanasi,2026-01-20,1,1,False,17.4,clear,30,50
+Momos,Varanasi,2026-01-21,2,1,False,13.2,clear,30,51
+Momos,Varanasi,2026-01-22,3,1,False,13.4,clear,30,45
+Momos,Varanasi,2026-01-23,4,1,False,12.7,clear,30,70
+Momos,Varanasi,2026-01-24,5,1,False,11.4,clear,30,58
+Momos,Varanasi,2026-01-25,6,1,False,17.2,clear,30,64
+Momos,Varanasi,2026-01-26,0,1,True,9.5,clear,30,92
+Momos,Varanasi,2026-01-27,1,1,False,10.0,clear,30,53
+Momos,Varanasi,2026-01-28,2,1,False,16.5,clear,30,46
+Momos,Varanasi,2026-01-29,3,1,False,11.1,clear,30,48
+Momos,Varanasi,2026-01-30,4,1,False,4.0,clear,30,57
+Momos,Varanasi,2026-01-31,5,1,False,16.9,clear,30,65
+Momos,Varanasi,2026-02-01,6,2,False,19.0,clear,30,78
+Momos,Varanasi,2026-02-02,0,2,False,10.8,clear,30,57
+Momos,Varanasi,2026-02-03,1,2,False,14.2,clear,30,50
+Momos,Varanasi,2026-02-04,2,2,False,23.3,clear,30,54
+Momos,Varanasi,2026-02-05,3,2,False,17.2,clear,30,45
+Momos,Varanasi,2026-02-06,4,2,False,9.8,clear,30,68
+Momos,Varanasi,2026-02-07,5,2,False,14.1,rain,30,42
+Momos,Varanasi,2026-02-08,6,2,False,14.2,clear,30,73
+Momos,Varanasi,2026-02-09,0,2,False,19.0,clear,30,55
+Momos,Varanasi,2026-02-10,1,2,False,9.0,clear,30,56
+Momos,Varanasi,2026-02-11,2,2,False,20.0,clear,30,42
+Momos,Varanasi,2026-02-12,3,2,False,13.4,clear,30,54
+Momos,Varanasi,2026-02-13,4,2,False,15.1,clear,30,74
+Momos,Varanasi,2026-02-14,5,2,False,10.6,clear,30,58
+Momos,Varanasi,2026-02-15,6,2,False,13.6,clear,30,65
+Momos,Varanasi,2026-02-16,0,2,False,14.3,clear,30,58
+Momos,Varanasi,2026-02-17,1,2,False,14.8,clear,30,51
+Momos,Varanasi,2026-02-18,2,2,False,14.9,clear,30,53
+Momos,Varanasi,2026-02-19,3,2,False,17.8,clear,30,56
+Momos,Varanasi,2026-02-20,4,2,False,11.7,clear,30,61
+Momos,Varanasi,2026-02-21,5,2,False,18.4,rain,30,70
+Momos,Varanasi,2026-02-22,6,2,False,10.4,clear,30,61
+Momos,Varanasi,2026-02-23,0,2,False,9.5,clear,30,57
+Momos,Varanasi,2026-02-24,1,2,False,15.0,clear,30,50
+Momos,Varanasi,2026-02-25,2,2,False,12.6,clear,30,48
+Momos,Varanasi,2026-02-26,3,2,False,9.7,clear,30,51
+Momos,Varanasi,2026-02-27,4,2,False,23.2,rain,30,65
+Momos,Varanasi,2026-02-28,5,2,False,19.3,clear,30,60
+Momos,Varanasi,2026-03-01,6,3,False,38.7,extreme_heat,30,49
+Momos,Varanasi,2026-03-02,0,3,False,29.4,clear,30,56
+Momos,Varanasi,2026-03-03,1,3,False,33.7,clear,30,42
+Momos,Varanasi,2026-03-04,2,3,False,29.5,clear,30,49
+Momos,Varanasi,2026-03-05,3,3,False,35.6,clear,30,67
+Momos,Varanasi,2026-03-06,4,3,True,34.9,clear,30,95
+Momos,Varanasi,2026-03-07,5,3,False,26.6,clear,30,53
+Momos,Varanasi,2026-03-08,6,3,False,35.1,clear,30,51
+Momos,Varanasi,2026-03-09,0,3,False,43.7,extreme_heat,30,38
+Momos,Varanasi,2026-03-10,1,3,False,39.5,extreme_heat,30,54
+Momos,Varanasi,2026-03-11,2,3,False,31.3,clear,30,55
+Momos,Varanasi,2026-03-12,3,3,False,38.0,clear,30,52
+Momos,Varanasi,2026-03-13,4,3,False,37.6,clear,30,68
+Momos,Varanasi,2026-03-14,5,3,False,34.3,clear,30,71
+Momos,Varanasi,2026-03-15,6,3,False,35.2,clear,30,76
+Momos,Varanasi,2026-03-16,0,3,False,27.9,clear,30,53
+Momos,Varanasi,2026-03-17,1,3,False,36.6,clear,30,42
+Momos,Varanasi,2026-03-18,2,3,False,34.3,clear,30,57
+Momos,Varanasi,2026-03-19,3,3,False,34.0,clear,30,43
+Momos,Varanasi,2026-03-20,4,3,False,45.3,extreme_heat,30,70
+Momos,Varanasi,2026-03-21,5,3,False,30.3,clear,30,71
+Momos,Varanasi,2026-03-22,6,3,False,30.9,clear,30,67
+Momos,Varanasi,2026-03-23,0,3,False,37.3,clear,30,57
+Momos,Varanasi,2026-03-24,1,3,False,42.9,extreme_heat,30,58
+Momos,Varanasi,2026-03-25,2,3,True,31.9,clear,30,90
+Momos,Varanasi,2026-03-26,3,3,False,29.7,clear,30,53
+Momos,Varanasi,2026-03-27,4,3,False,30.7,clear,30,68
+Momos,Varanasi,2026-03-28,5,3,False,34.6,clear,30,66
+Momos,Varanasi,2026-03-29,6,3,False,33.2,clear,30,61
+Momos,Varanasi,2026-03-30,0,3,False,48.3,extreme_heat,30,44
+Momos,Varanasi,2026-03-31,1,3,False,32.5,clear,30,45
+Momos,Varanasi,2026-04-01,2,4,False,37.1,clear,30,55
+Momos,Varanasi,2026-04-02,3,4,False,41.2,extreme_heat,30,45
+Momos,Varanasi,2026-04-03,4,4,False,36.0,clear,30,67
+Momos,Varanasi,2026-04-04,5,4,False,31.0,clear,30,53
+Momos,Varanasi,2026-04-05,6,4,False,37.0,clear,30,68
+Momos,Varanasi,2026-04-06,0,4,False,28.9,clear,30,61
+Momos,Varanasi,2026-04-07,1,4,False,37.9,clear,30,63
+Momos,Varanasi,2026-04-08,2,4,False,31.1,clear,30,44
+Momos,Varanasi,2026-04-09,3,4,False,38.7,extreme_heat,30,43
+Momos,Varanasi,2026-04-10,4,4,False,38.1,extreme_heat,30,67
+Momos,Varanasi,2026-04-11,5,4,False,36.1,clear,30,71
+Momos,Varanasi,2026-04-12,6,4,False,36.5,clear,30,68
+Momos,Varanasi,2026-04-13,0,4,False,39.2,extreme_heat,30,47
+Momos,Varanasi,2026-04-14,1,4,False,28.1,clear,30,64
+Momos,Varanasi,2026-04-15,2,4,False,32.6,clear,30,58
+Momos,Varanasi,2026-04-16,3,4,False,24.7,clear,30,56
+Momos,Varanasi,2026-04-17,4,4,False,20.5,clear,30,76
+Momos,Varanasi,2026-04-18,5,4,False,40.0,extreme_heat,30,66
+Momos,Varanasi,2026-04-19,6,4,False,36.1,clear,30,64
+Momos,Varanasi,2026-04-20,0,4,False,35.6,clear,30,62
+Momos,Varanasi,2026-04-21,1,4,False,42.6,extreme_heat,30,46
+Momos,Varanasi,2026-04-22,2,4,False,30.2,clear,30,57
+Momos,Varanasi,2026-04-23,3,4,False,36.6,clear,30,56
+Momos,Varanasi,2026-04-24,4,4,False,29.6,clear,30,78
+Momos,Varanasi,2026-04-25,5,4,False,43.2,extreme_heat,30,50
+Momos,Varanasi,2026-04-26,6,4,False,36.0,clear,30,60
+Momos,Varanasi,2026-04-27,0,4,False,34.7,clear,30,58
+Momos,Varanasi,2026-04-28,1,4,False,47.4,extreme_heat,30,42
+Momos,Varanasi,2026-04-29,2,4,False,41.1,extreme_heat,30,47
+Momos,Varanasi,2026-04-30,3,4,False,34.7,clear,30,58
+Momos,Varanasi,2026-05-01,4,5,False,37.3,clear,30,77
+Momos,Varanasi,2026-05-02,5,5,False,55.1,extreme_heat,30,61
+Momos,Varanasi,2026-05-03,6,5,False,28.5,clear,30,65
+Momos,Varanasi,2026-05-04,0,5,False,32.3,rain,30,59
+Momos,Varanasi,2026-05-05,1,5,False,41.2,extreme_heat,30,41
+Momos,Varanasi,2026-05-06,2,5,False,41.7,extreme_heat,30,38
+Momos,Varanasi,2026-05-07,3,5,False,38.6,extreme_heat,30,34
+Momos,Varanasi,2026-05-08,4,5,False,30.9,clear,30,73
+Momos,Varanasi,2026-05-09,5,5,False,32.4,clear,30,73
+Momos,Varanasi,2026-05-10,6,5,False,32.7,clear,30,58
+Momos,Varanasi,2026-05-11,0,5,False,28.2,clear,30,55
+Momos,Varanasi,2026-05-12,1,5,False,39.6,extreme_heat,30,44
+Momos,Varanasi,2026-05-13,2,5,False,41.8,extreme_heat,30,56
+Momos,Varanasi,2026-05-14,3,5,False,41.6,extreme_heat,30,44
+Momos,Varanasi,2026-05-15,4,5,False,30.9,clear,30,57
+Momos,Varanasi,2026-05-16,5,5,False,30.2,clear,30,73
+Momos,Varanasi,2026-05-17,6,5,False,29.8,clear,30,71
+Momos,Varanasi,2026-05-18,0,5,False,42.5,extreme_heat,30,55
+Momos,Varanasi,2026-05-19,1,5,False,37.4,clear,30,46
+Momos,Varanasi,2026-05-20,2,5,False,34.4,clear,30,52
+Momos,Varanasi,2026-05-21,3,5,False,37.2,clear,30,56
+Momos,Varanasi,2026-05-22,4,5,False,34.1,clear,30,76
+Momos,Varanasi,2026-05-23,5,5,False,36.7,clear,30,66
+Momos,Varanasi,2026-05-24,6,5,False,26.3,clear,30,72
+Momos,Varanasi,2026-05-25,0,5,False,34.0,clear,30,64
+Momos,Varanasi,2026-05-26,1,5,False,29.2,clear,30,68
+Momos,Varanasi,2026-05-27,2,5,False,40.4,extreme_heat,30,42
+Momos,Varanasi,2026-05-28,3,5,False,28.2,clear,30,50
+Momos,Varanasi,2026-05-29,4,5,False,31.4,clear,30,67
+Momos,Varanasi,2026-05-30,5,5,False,37.4,clear,30,62
+Momos,Varanasi,2026-05-31,6,5,False,34.2,clear,30,82
+Momos,Varanasi,2026-06-01,0,6,False,29.7,rain,30,51
+Momos,Varanasi,2026-06-02,1,6,False,30.6,rain,30,42
+Momos,Varanasi,2026-06-03,2,6,False,34.3,rain,30,53
+Momos,Varanasi,2026-06-04,3,6,False,29.6,rain,30,59
+Momos,Varanasi,2026-06-05,4,6,False,30.7,rain,30,69
+Momos,Varanasi,2026-06-06,5,6,False,27.1,clear,30,57
+Momos,Varanasi,2026-06-07,6,6,False,25.9,clear,30,71
+Momos,Varanasi,2026-06-08,0,6,False,23.9,clear,30,49
+Momos,Varanasi,2026-06-09,1,6,False,32.8,rain,30,42
+Momos,Varanasi,2026-06-10,2,6,False,29.2,clear,30,62
+Momos,Varanasi,2026-06-11,3,6,False,29.0,clear,30,58
+Momos,Varanasi,2026-06-12,4,6,False,26.0,clear,30,71
+Momos,Varanasi,2026-06-13,5,6,False,25.7,rain,30,67
+Momos,Varanasi,2026-06-14,6,6,False,30.6,clear,30,63
+Momos,Varanasi,2026-06-15,0,6,False,26.3,rain,30,54
+Momos,Varanasi,2026-06-16,1,6,False,27.7,rain,30,41
+Momos,Varanasi,2026-06-17,2,6,False,27.0,rain,30,52
+Momos,Varanasi,2026-06-18,3,6,False,28.7,clear,30,55
+Momos,Varanasi,2026-06-19,4,6,False,28.5,rain,30,58
+Momos,Varanasi,2026-06-20,5,6,False,29.7,rain,30,63
+Momos,Varanasi,2026-06-21,6,6,False,25.5,rain,30,64
+Momos,Varanasi,2026-06-22,0,6,False,33.4,rain,30,47
+Momos,Varanasi,2026-06-23,1,6,False,29.7,rain,30,43
+Momos,Varanasi,2026-06-24,2,6,False,25.6,rain,30,50
+Momos,Varanasi,2026-06-25,3,6,False,27.0,rain,30,46
+Momos,Varanasi,2026-06-26,4,6,False,32.9,clear,30,69
+Momos,Varanasi,2026-06-27,5,6,False,30.7,clear,30,70
+Momos,Varanasi,2026-06-28,6,6,False,29.8,clear,30,70
+Momos,Varanasi,2026-06-29,0,6,False,28.9,rain,30,49
+Momos,Varanasi,2026-06-30,1,6,False,29.8,rain,30,42
+Momos,Varanasi,2026-07-01,2,7,False,28.0,rain,30,52
+Momos,Varanasi,2026-07-02,3,7,False,30.4,rain,30,53
+Momos,Varanasi,2026-07-03,4,7,False,32.4,rain,30,54
+Momos,Varanasi,2026-07-04,5,7,False,28.1,rain,30,64
+Momos,Varanasi,2026-07-05,6,7,False,30.2,clear,30,65
+Momos,Varanasi,2026-07-06,0,7,False,28.5,rain,30,54
+Momos,Varanasi,2026-07-07,1,7,False,26.0,rain,30,45
+Momos,Varanasi,2026-07-08,2,7,False,30.4,clear,30,65
+Momos,Varanasi,2026-07-09,3,7,False,27.7,rain,30,53
+Momos,Varanasi,2026-07-10,4,7,False,26.4,rain,30,60
+Momos,Varanasi,2026-07-11,5,7,False,27.5,rain,30,70
+Momos,Varanasi,2026-07-12,6,7,False,27.2,rain,30,64
+Momos,Varanasi,2026-07-13,0,7,False,24.8,clear,30,45
+Momos,Varanasi,2026-07-14,1,7,False,30.9,clear,30,55
+Momos,Varanasi,2026-07-15,2,7,False,25.1,rain,30,55
+Momos,Varanasi,2026-07-16,3,7,False,26.6,rain,30,52
+Momos,Varanasi,2026-07-17,4,7,False,30.4,clear,30,85
+Momos,Varanasi,2026-07-18,5,7,False,30.6,rain,30,61
+Momos,Varanasi,2026-07-19,6,7,False,23.4,clear,30,64
+Momos,Varanasi,2026-07-20,0,7,False,30.6,clear,30,56
+Momos,Varanasi,2026-07-21,1,7,False,26.7,clear,30,47
+Momos,Varanasi,2026-07-22,2,7,False,35.7,rain,30,59
+Momos,Varanasi,2026-07-23,3,7,False,32.8,rain,30,56
+Momos,Varanasi,2026-07-24,4,7,False,28.7,rain,30,73
+Momos,Varanasi,2026-07-25,5,7,False,32.4,clear,30,59
+Momos,Varanasi,2026-07-26,6,7,False,27.2,clear,30,76
+Momos,Varanasi,2026-07-27,0,7,False,24.2,clear,30,49
+Momos,Varanasi,2026-07-28,1,7,False,24.7,clear,30,53
+Momos,Varanasi,2026-07-29,2,7,False,31.5,clear,30,50
+Momos,Varanasi,2026-07-30,3,7,False,21.8,rain,30,60
+Momos,Varanasi,2026-07-31,4,7,False,35.3,rain,30,56
+Momos,Varanasi,2026-08-01,5,8,False,28.1,clear,30,65
+Momos,Varanasi,2026-08-02,6,8,False,29.7,clear,30,64
+Momos,Varanasi,2026-08-03,0,8,False,27.4,rain,30,44
+Momos,Varanasi,2026-08-04,1,8,False,30.4,rain,30,50
+Momos,Varanasi,2026-08-05,2,8,False,33.2,rain,30,55
+Momos,Varanasi,2026-08-06,3,8,False,23.6,clear,30,55
+Momos,Varanasi,2026-08-07,4,8,False,34.8,rain,30,61
+Momos,Varanasi,2026-08-08,5,8,False,33.4,clear,30,67
+Momos,Varanasi,2026-08-09,6,8,False,30.0,rain,30,74
+Momos,Varanasi,2026-08-10,0,8,False,30.3,rain,30,47
+Momos,Varanasi,2026-08-11,1,8,False,26.8,clear,30,47
+Momos,Varanasi,2026-08-12,2,8,False,30.5,clear,30,51
+Momos,Varanasi,2026-08-13,3,8,False,30.5,clear,30,60
+Momos,Varanasi,2026-08-14,4,8,False,27.6,rain,30,59
+Momos,Varanasi,2026-08-15,5,8,True,30.9,rain,30,108
+Momos,Varanasi,2026-08-16,6,8,False,29.3,rain,30,70
+Momos,Varanasi,2026-08-17,0,8,False,28.7,clear,30,60
+Momos,Varanasi,2026-08-18,1,8,False,26.7,clear,30,60
+Momos,Varanasi,2026-08-19,2,8,False,28.1,rain,30,49
+Momos,Varanasi,2026-08-20,3,8,False,32.1,rain,30,51
