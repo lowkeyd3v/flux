@@ -1,0 +1,64 @@
+services:
+  # ----------------------------------------------------------------------------
+  # 1. FastAPI Production Backend Web Service
+  # ----------------------------------------------------------------------------
+  - type: web
+    name: flux-backend
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    dockerContext: .
+    region: oregon
+    plan: starter
+    healthCheckPath: /api/health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: API_V1_PREFIX
+        value: /api
+      - key: DATABASE_URL
+        fromDatabase:
+          name: flux-postgres
+          property: connectionString
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: WEB_CONCURRENCY
+        value: "2"
+      - key: LOG_LEVEL
+        value: "info"
+
+  # ----------------------------------------------------------------------------
+  # 2. React Vite Static Frontend SPA
+  # ----------------------------------------------------------------------------
+  - type: web
+    name: flux-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /*
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: flux-backend
+          property: host
+
+databases:
+  # ----------------------------------------------------------------------------
+  # 3. Managed PostgreSQL 16
+  # ----------------------------------------------------------------------------
+  - name: flux-postgres
+    databaseName: flux_db
+    user: flux_user
+    plan: starter
+    region: oregon
+    postgresMajorVersion: "16"
