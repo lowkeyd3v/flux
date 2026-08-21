@@ -5,6 +5,16 @@ from app.schemas.sales_record import (
     SalesRecordResponse,
 )
 from app.schemas.prediction import PredictionRequest, PredictionResponse
+from app.schemas.recommendation import RecommendationRequest, RecommendationResponse
+from app.schemas.scheme import (
+    RetrievedChunkSchema,
+    SchemeSummarySchema,
+    SchemeDetailSchema,
+    SchemeQueryRequest,
+    SchemeQueryResponse,
+    RecommendedSchemeSchema,
+    VendorRecommendationsResponse,
+)
 
 __all__ = [
     "VendorCreate",
@@ -15,4 +25,14 @@ __all__ = [
     "SalesRecordResponse",
     "PredictionRequest",
     "PredictionResponse",
+    "RecommendationRequest",
+    "RecommendationResponse",
+    "RetrievedChunkSchema",
+    "SchemeSummarySchema",
+    "SchemeDetailSchema",
+    "SchemeQueryRequest",
+    "SchemeQueryResponse",
+    "RecommendedSchemeSchema",
+    "VendorRecommendationsResponse",
 ]
+

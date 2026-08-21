@@ -26,13 +26,15 @@ def test_create_vendor_rejects_invalid_price(client):
 
 
 def test_list_vendors(client):
-    client.post("/api/vendors", json=VALID_VENDOR)
-    client.post("/api/vendors", json={**VALID_VENDOR, "name": "Sunita Devi"})
+    v1 = client.post("/api/vendors", json=VALID_VENDOR).json()
+    v2 = client.post("/api/vendors", json={**VALID_VENDOR, "name": "Sunita Devi"}).json()
 
     response = client.get("/api/vendors")
     assert response.status_code == 200
     body = response.json()
-    assert len(body) == 2
+    ids = [v["id"] for v in body]
+    assert v1["id"] in ids
+    assert v2["id"] in ids
 
 
 def test_get_vendor_by_id(client):

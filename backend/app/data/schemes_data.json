@@ -1,0 +1,299 @@
+[
+  {
+    "id": "pm-svanidhi",
+    "name": "PM SVANidhi (PM Street Vendor's AtmaNirbhar Nidhi)",
+    "ministry": "Ministry of Housing and Urban Affairs (MoHUA)",
+    "category": "Working Capital Loan",
+    "target_audience": "Urban and peri-urban street vendors, hawkers, thelawalas, food stall operators, artisans",
+    "max_benefit": "₹10,000 (1st tranche), ₹20,000 (2nd tranche), ₹50,000 (3rd tranche)",
+    "subsidy_info": "7% interest subsidy per annum on timely repayment, plus up to ₹1,200/year cashback on digital transactions",
+    "collateral_required": false,
+    "short_description": "Micro-credit scheme providing collateral-free working capital loans up to ₹50,000 with 7% interest subsidy and digital transaction cashback for urban street vendors.",
+    "official_url": "https://pmsvanidhi.mohua.gov.in",
+    "eligibility": [
+      "Must be an urban or peri-urban street vendor engaged in vending on or before March 24, 2020 (or identified in subsequent urban surveys).",
+      "Possession of Certificate of Vending (CoV) / Identity Card issued by Urban Local Bodies (ULB) or Town Vending Committee (TVC).",
+      "Vendors left out of ULB surveys can obtain a Letter of Recommendation (LoR) from the ULB / Town Vending Committee.",
+      "Vendors from surrounding peri-urban/rural areas vending within geographic limits of ULBs are eligible with a LoR."
+    ],
+    "benefits": [
+      "Initial working capital loan of up to ₹10,000 with tenure of 1 year without any collateral.",
+      "Enhanced credit limit of ₹20,000 in 2nd tranche and ₹50,000 in 3rd tranche upon timely or early repayment.",
+      "7% interest subsidy credited directly to vendor's bank account quarterly on timely repayment.",
+      "No pre-payment penalty on early closure of loans.",
+      "Cashback incentives of ₹100 per month (up to ₹1,200 per year) for adopting digital transactions (UPI/QR code)."
+    ],
+    "documents_required": [
+      "Aadhaar Card linked with mobile number",
+      "Voter ID / Driving License (as additional identity proof)",
+      "Certificate of Vending (CoV) or Identity Card or Letter of Recommendation (LoR) from ULB",
+      "Active Bank Account details (Bank Passbook / Cancelled Cheque)",
+      "Passport size photograph"
+    ],
+    "application_steps": [
+      "Step 1: Check your name in the street vendor survey list on the PM SVANidhi portal (pmsvanidhi.mohua.gov.in) or visit your local Urban Local Body (Nagar Nigam/Municipality).",
+      "Step 2: If not listed in survey, apply for a Letter of Recommendation (LoR) at your local ULB or Common Service Centre (CSC).",
+      "Step 3: Register and apply online at pmsvanidhi.mohua.gov.in or through a nearby CSC / banking correspondent (Bank Sakhi / BC).",
+      "Step 4: Upload Aadhaar, CoV/LoR, and bank account details.",
+      "Step 5: Select your preferred lending institution (Public Sector Banks, Regional Rural Banks, Small Finance Banks, NBFCs/MFIs).",
+      "Step 6: Loan is sanctioned and disbursed directly into your bank account after verification."
+    ]
+  },
+  {
+    "id": "pm-mudra-yojana",
+    "name": "Pradhan Mantri MUDRA Yojana (PMMY)",
+    "ministry": "Ministry of Finance / Department of Financial Services",
+    "category": "Business Expansion Loan",
+    "target_audience": "Non-corporate, non-farm small and micro enterprises, food carts, retail shops, repair stalls, small manufacturers",
+    "max_benefit": "Up to ₹20 Lakhs across 3 categories: Shishu (up to ₹50k), Kishore (₹50k–₹5L), Tarun (₹5L–₹20L)",
+    "subsidy_info": "No upfront subsidy, but loans are completely collateral-free with low processing fees (zero fee for Shishu loans)",
+    "collateral_required": false,
+    "short_description": "Collateral-free institutional credit up to ₹20 Lakhs for micro-enterprises across Shishu (up to ₹50k), Kishore (₹50k-₹5L), and Tarun (₹5L-₹20L) categories.",
+    "official_url": "https://www.mudra.org.in",
+    "eligibility": [
+      "Any Indian citizen who has a business plan for a non-farm sector income-generating activity.",
+      "Manufacturing, processing, trading, food service stalls, or service sector enterprises.",
+      "Must not be a defaulter to any bank or financial institution.",
+      "Should have satisfactory credit track record if existing borrower."
+    ],
+    "benefits": [
+      "Shishu Category: Loans up to ₹50,000 for new businesses, street vendors, and starting micro units with zero processing fees.",
+      "Kishore Category: Loans from ₹50,000 up to ₹5,00,000 for expanding inventory, equipment, or working capital.",
+      "Tarun Category: Loans from ₹5,00,000 up to ₹20,00,000 for established small enterprises scaling up operations.",
+      "MUDRA Card: A RuPay debit card providing working capital credit facility that can be drawn as needed at ATMs/POS.",
+      "No collateral or third-party guarantee required under the Credit Guarantee Fund for Micro Units (CGFMU)."
+    ],
+    "documents_required": [
+      "Proof of Identity: Aadhaar Card / Voter ID / PAN Card / Passport",
+      "Proof of Residence: Utility bill / Ration card / Aadhaar",
+      "Passport size photographs (2 copies)",
+      "Quotation of machinery / items / inventory to be purchased",
+      "Proof of business address and business establishment (trade license / registration if available)",
+      "Bank statement for last 6 months (for Kishore & Tarun categories)"
+    ],
+    "application_steps": [
+      "Step 1: Choose the category suited to your requirement (Shishu for up to ₹50,000; Kishore for up to ₹5,00,000).",
+      "Step 2: Prepare your business proposal with basic cost estimates for equipment/inventory.",
+      "Step 3: Apply online on the Udyamimitra portal (udyamimitra.in) or visit any Commercial Bank, RRB, Small Finance Bank, or MFI.",
+      "Step 4: Submit the standard MUDRA application form along with KYC documents and quotations.",
+      "Step 5: Bank sanctions loan and issues a MUDRA RuPay Card for flexible withdrawals."
+    ]
+  },
+  {
+    "id": "pm-vishwakarma",
+    "name": "PM Vishwakarma Scheme",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+    "category": "Artisan & Craftsman Support",
+    "target_audience": "Traditional artisans, craftspeople, blacksmiths, carpenters, cobblers, tailors, potter/clay workers, basket weavers",
+    "max_benefit": "₹15,000 toolkit grant + ₹3,00,000 collateral-free enterprise loan (5% interest)",
+    "subsidy_info": "Concessional interest rate of 5% with government providing interest subvention up to 8%; ₹15,000 e-voucher for modern tools",
+    "collateral_required": false,
+    "short_description": "Comprehensive support for traditional artisans including ₹15,000 modern toolkit grant, ₹500/day training stipend, and collateral-free enterprise loans up to ₹3,00,000 at 5% interest.",
+    "official_url": "https://pmvishwakarma.gov.in",
+    "eligibility": [
+      "An artisan or craftsperson working with hands and tools in one of the 18 eligible traditional trades (e.g. Carpenter, Blacksmith, Cobbler, Potter, Tailor, Basket/Mat Maker, Barber, Washerman).",
+      "Minimum age of 18 years on date of registration.",
+      "Should be engaged in the trade concerned on the date of application.",
+      "Should not have availed similar credit-based schemes for self-employment (PMEGP, PM MUDRA) in the last 5 years.",
+      "Registration is restricted to one member per family."
+    ],
+    "benefits": [
+      "Recognition: PM Vishwakarma Certificate and ID Card.",
+      "Skill Upgradation: 5-7 days basic training (40 hours) and optional 15+ days advanced training with stipend of ₹500 per day.",
+      "Toolkit Incentive: Financial grant of ₹15,000 in form of e-vouchers/digital incentive for purchasing modern toolkits.",
+      "Enterprise Development Loan: Collateral-free loan of up to ₹1,00,000 (1st tranche, 18 months) and ₹2,00,000 (2nd tranche, 30 months) at fixed 5% concessional interest rate.",
+      "Digital Transaction Incentive: ₹1 per digital transaction for up to 100 transactions per month.",
+      "Marketing Support: Onboarding onto open e-commerce networks (ONDC), quality certification, and branding assistance."
+    ],
+    "documents_required": [
+      "Aadhaar Card",
+      "Mobile Number linked to Aadhaar",
+      "Bank Account details (Account Number & IFSC)",
+      "Ration Card (for family verification)",
+      "Trade-specific declaration / proof of engagement in traditional trade"
+    ],
+    "application_steps": [
+      "Step 1: Visit the nearest Common Service Centre (CSC) with Aadhaar and bank details.",
+      "Step 2: Biometric authentication and registration on the PM Vishwakarma Portal.",
+      "Step 3: Three-stage verification: Gram Panchayat / Urban Local Body verification, followed by District Implementation Committee, and National Committee screening.",
+      "Step 4: Receive PM Vishwakarma Digital Certificate & ID Card.",
+      "Step 5: Attend basic training and receive ₹15,000 toolkit e-voucher.",
+      "Step 6: Apply for 1st tranche loan of ₹1,00,000 through the portal."
+    ]
+  },
+  {
+    "id": "e-shram-portal",
+    "name": "e-Shram Portal (National Database of Unorganised Workers)",
+    "ministry": "Ministry of Labour and Employment",
+    "category": "Social Security & Insurance",
+    "target_audience": "All unorganised sector workers, street vendors, domestic helpers, agriculture workers, gig workers",
+    "max_benefit": "Universal Account Number (UAN) Card + ₹2 Lakh accidental insurance cover + access to social welfare schemes",
+    "subsidy_info": "Free registration; automatic link to government disaster relief funds and social security pensions",
+    "collateral_required": false,
+    "short_description": "National registration portal giving informal workers and street vendors a 12-digit UAN card, ₹2 Lakh accidental death/permanent disability cover, and direct access to welfare schemes.",
+    "official_url": "https://eshram.gov.in",
+    "eligibility": [
+      "Any unorganised worker between 16 and 59 years of age.",
+      "Should not be an income tax payee.",
+      "Should not be a member of EPFO (Employees' Provident Fund) or ESIC (Employees' State Insurance)."
+    ],
+    "benefits": [
+      "Universal Account Number (UAN) card valid throughout India.",
+      "Accidental Insurance Cover under PMSBY: ₹2,00,000 on death or permanent disability and ₹1,00,000 on partial disability.",
+      "Direct Benefit Transfer (DBT) during national emergencies or economic crises (e.g. pandemic assistance).",
+      "Single-window gateway to social security schemes like PM-SYM pension and Ayushman Bharat."
+    ],
+    "documents_required": [
+      "Aadhaar Card",
+      "Aadhaar-linked active Mobile Number",
+      "Bank Account Number with IFSC Code"
+    ],
+    "application_steps": [
+      "Step 1: Self-register on eshram.gov.in or visit a nearby CSC / Seva Kendra.",
+      "Step 2: Enter Aadhaar number and verify using OTP sent to registered mobile.",
+      "Step 3: Fill in address, educational qualification, occupation (Street Vendor / Hawkers), and bank account details.",
+      "Step 4: Download and print your 12-digit e-Shram UAN Card immediately."
+    ]
+  },
+  {
+    "id": "cgtmse",
+    "name": "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)",
+    "ministry": "Ministry of MSME & SIDBI",
+    "category": "Credit Guarantee Scheme",
+    "target_audience": "Micro and small business owners seeking bank loans without collateral",
+    "max_benefit": "Credit guarantee cover up to ₹500 Lakhs (₹5 Crores) for collateral-free bank loans",
+    "subsidy_info": "Up to 85% credit guarantee coverage for micro-enterprises and women/SC/ST entrepreneurs",
+    "collateral_required": false,
+    "short_description": "Enables banks to provide collateral-free credit facilities to micro and small business owners by offering credit guarantee coverage up to 85%.",
+    "official_url": "https://www.cgtmse.in",
+    "eligibility": [
+      "New and existing Micro and Small Enterprises engaged in manufacturing or service activities, retail trade, or food processing.",
+      "Educational institutions, training institutions, and retail traders are also eligible.",
+      "Borrower must have a viable business model and Udyam Registration."
+    ],
+    "benefits": [
+      "Zero third-party guarantee or tangible collateral needed to obtain bank finance.",
+      "Guarantee coverage of up to 85% for loans up to ₹5 Lakhs to micro enterprises.",
+      "Guarantee coverage of up to 85% for women-owned enterprises and units in North-East Region.",
+      "Substantially lower interest rates due to reduced lending risk for commercial banks."
+    ],
+    "documents_required": [
+      "Udyam Registration Certificate (free from udyamregistration.gov.in)",
+      "KYC documents (Aadhaar, PAN)",
+      "Project Report / Business Plan showing working capital requirement",
+      "Bank statements for previous 6 months"
+    ],
+    "application_steps": [
+      "Step 1: Register business on Udyam Registration Portal to get Udyam MSME number.",
+      "Step 2: Prepare a brief business profile and project cost estimate.",
+      "Step 3: Approach any member lending institution (MLI) including SBI, PNB, Bank of Baroda, or private scheduled banks.",
+      "Step 4: Request loan under the CGTMSE guarantee scheme without offering collateral.",
+      "Step 5: Bank evaluates project and applies directly to CGTMSE trust for guarantee cover."
+    ]
+  },
+  {
+    "id": "day-nulm",
+    "name": "DAY-NULM (Deendayal Antyodaya Yojana - National Urban Livelihoods Mission)",
+    "ministry": "Ministry of Housing and Urban Affairs (MoHUA)",
+    "category": "Urban Livelihoods & Vendor Support",
+    "target_audience": "Urban poor, street vendors, Self-Help Groups (SHGs), urban micro-enterprises",
+    "max_benefit": "Subsidized bank loans up to ₹2 Lakhs for individuals, ₹10 Lakhs for groups; interest above 7% is fully subsidized",
+    "subsidy_info": "Interest subsidy on all bank loans over 7% per annum; skill training with 100% financial support",
+    "collateral_required": false,
+    "short_description": "Urban livelihoods mission providing interest subvention over 7% on micro-enterprise loans, dedicated vending zones, and formation of vendor Self-Help Groups.",
+    "official_url": "https://nulm.gov.in",
+    "eligibility": [
+      "Urban poor and street vendors residing in urban areas.",
+      "Individual micro-entrepreneurs or Self Help Groups (SHGs) formed under DAY-NULM.",
+      "Minimum 18 years of age."
+    ],
+    "benefits": [
+      "Self-Employment Programme (SEP): Financial assistance through bank loans up to ₹2,00,000 for individual micro-enterprises.",
+      "Group Enterprises (SEP-G): Financial assistance up to ₹10,00,000 for SHG group enterprises.",
+      "Interest Subvention: Difference between the bank interest rate and 7% per annum is refunded as direct interest subsidy.",
+      "Support to Urban Street Vendors (SUSV): Creation of dedicated vending zones, ID cards, and social security linkage."
+    ],
+    "documents_required": [
+      "Aadhaar Card",
+      "Address proof in urban area / Ration card",
+      "Bank Account details",
+      "Vending ID or SHG membership certification",
+      "Project proposal for micro-enterprise"
+    ],
+    "application_steps": [
+      "Step 1: Contact City Mission Management Unit (CMMU) at your local Municipal Corporation / ULB office.",
+      "Step 2: Fill out the Self-Employment Programme (SEP) application form.",
+      "Step 3: Task Force committee at ULB reviews and sponsors the application to local banks.",
+      "Step 4: Bank sanctions loan with automated interest subvention credited directly to the loan account."
+    ]
+  },
+  {
+    "id": "pmsby-pmjjby",
+    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY) & Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "ministry": "Ministry of Finance",
+    "category": "Micro Insurance",
+    "target_audience": "All bank account holders, street vendors, unorganised sector workers aged 18 to 70",
+    "max_benefit": "₹2 Lakh life cover (PMJJBY) + ₹2 Lakh accidental insurance cover (PMSBY) for less than ₹1.50 per day",
+    "subsidy_info": "Ultra-low premium: PMSBY is ₹20/year; PMJJBY is ₹436/year, auto-debited annually",
+    "collateral_required": false,
+    "short_description": "Government-backed life and accident micro-insurance offering ₹2 Lakh life cover and ₹2 Lakh accident cover at a combined annual cost of under ₹460.",
+    "official_url": "https://financialservices.gov.in",
+    "eligibility": [
+      "PMSBY: Any individual aged 18 to 70 years with a savings bank account.",
+      "PMJJBY: Any individual aged 18 to 50 years with a savings bank account.",
+      "Consent for auto-debit of premium from savings account."
+    ],
+    "benefits": [
+      "PMSBY: ₹2,00,000 for accidental death or total permanent disability; ₹1,00,000 for partial permanent disability (Premium: ₹20/year).",
+      "PMJJBY: ₹2,00,000 life insurance cover for death due to any cause (Premium: ₹436/year).",
+      "Simple one-step enrollment through any bank branch or internet banking.",
+      "Instant financial protection for the vendor's family in case of unforeseen emergencies."
+    ],
+    "documents_required": [
+      "Savings Bank Account Passbook",
+      "Aadhaar Card (for KYC and DBT linkage)",
+      "Simple nomination declaration form"
+    ],
+    "application_steps": [
+      "Step 1: Visit the bank branch where you have a savings account or access your mobile banking app.",
+      "Step 2: Submit the 1-page PMSBY and PMJJBY enrollment form with nominee details.",
+      "Step 3: Enable annual auto-debit consent.",
+      "Step 4: Receive policy certificate via SMS / email."
+    ]
+  },
+  {
+    "id": "pm-sym",
+    "name": "Pradhan Mantri Shram Yogi Maan-dhan (PM-SYM)",
+    "ministry": "Ministry of Labour and Employment",
+    "category": "Pension Scheme",
+    "target_audience": "Street vendors, head loaders, rickshaw pullers, domestic workers with monthly income <= ₹15,000",
+    "max_benefit": "Assured monthly pension of ₹3,000 after attaining age 60",
+    "subsidy_info": "50% matching contribution paid by Central Government into vendor's pension fund",
+    "collateral_required": false,
+    "short_description": "Voluntary contributory pension scheme ensuring ₹3,000 monthly pension post-60 with 50% matching contribution from Central Government for unorganised vendors earning <= ₹15,000/month.",
+    "official_url": "https://maandhan.in",
+    "eligibility": [
+      "Street vendors, hawkers, small shop assistants and unorganised workers.",
+      "Entry age between 18 and 40 years.",
+      "Monthly income should be ₹15,000 or below.",
+      "Should not be covered under EPFO, ESIC, or NPS, and not an income tax payer."
+    ],
+    "benefits": [
+      "Guaranteed minimum pension of ₹3,000 per month upon reaching 60 years of age.",
+      "Matching 50:50 contribution: If vendor contributes ₹55 to ₹200/month (based on entry age), Central Government matches the exact same amount.",
+      "Family pension: In case of demise of pensioner, spouse receives 50% of pension (₹1,500/month).",
+      "Easy exit with interest if discontinued before age 60."
+    ],
+    "documents_required": [
+      "Aadhaar Card",
+      "Savings Bank Account / Jan Dhan Account Passbook",
+      "Active Mobile Phone"
+    ],
+    "application_steps": [
+      "Step 1: Visit the nearest Common Services Centre (CSC).",
+      "Step 2: Provide Aadhaar and bank account details for biometric verification.",
+      "Step 3: Initial contribution amount paid in cash at CSC; system generates Shram Yogi Pension Card.",
+      "Step 4: Subsequent monthly contributions auto-debited from linked bank account."
+    ]
+  }
+]

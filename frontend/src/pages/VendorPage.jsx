@@ -6,7 +6,6 @@ import VendorList from '../components/VendorList'
 import SalesRecordForm from '../components/SalesRecordForm'
 import SalesRecordTable from '../components/SalesRecordTable'
 import DemandPredictionCard from '../components/DemandPredictionCard'
-import RecommendationCard from '../components/RecommendationCard'
 
 export default function VendorPage() {
   const { vendors, status: vendorsStatus, createVendor } = useVendors()
@@ -44,10 +43,10 @@ export default function VendorPage() {
   return (
     <div className="space-y-8">
       <section>
-        <h1 className="text-2xl font-bold text-neutral-900">Vendor Profile</h1>
+        <h1 className="text-2xl font-bold text-neutral-900">Vendor Dashboard & Schemes</h1>
         <p className="text-sm text-neutral-500 mt-1">
-          Create a business profile to start tracking sales and getting AI-powered
-          recommendations.
+          Create a business profile to track sales, forecast demand, and discover
+          grounded government support schemes.
         </p>
       </section>
 
@@ -71,6 +70,41 @@ export default function VendorPage() {
             onSelect={setSelectedVendorId}
           />
         )}
+      </section>
+
+      {/* Recommended Schemes for Selected Vendor */}
+      {selectedVendor && (
+        <section className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm space-y-4">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="text-lg">🏛️</span>
+              <h2 className="font-semibold text-neutral-800">
+                Recommended Government Schemes — {selectedVendor.name}
+              </h2>
+            </div>
+            <p className="text-sm text-neutral-500 mt-0.5">
+              Personalized subsidies, loans, and welfare benefits matched to your {selectedVendor.product} business in {selectedVendor.location}.
+            </p>
+          </div>
+          <RecommendedSchemesCard vendor={selectedVendor} />
+        </section>
+      )}
+
+      {/* Scheme RAG Assistant */}
+      <section className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm space-y-4">
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="text-lg">🤖</span>
+            <h2 className="font-semibold text-neutral-800">
+              FLUX Scheme Assistant {selectedVendor ? `— for ${selectedVendor.name}` : ''}
+            </h2>
+          </div>
+          <p className="text-sm text-neutral-500 mt-0.5">
+            Ask natural-language questions about government schemes (PM SVANidhi, MUDRA, Vishwakarma, e-Shram).
+            Answers are strictly grounded in official documents with source citations.
+          </p>
+        </div>
+        <SchemeAssistantCard vendor={selectedVendor} />
       </section>
 
       {selectedVendor && (
