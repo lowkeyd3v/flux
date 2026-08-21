@@ -9,7 +9,7 @@
 
 **An AI-powered business intelligence & welfare enablement assistant for India's 10+ million street vendors and micro-entrepreneurs.**
 
-[🚀 Live Prototype](#-prototype--demo-links) • [🎥 Demo Video](#-demo-video) • [⚡ Quickstart](#-quickstart--local-run-instructions) • [🏛️ System Architecture](#-system-architecture) • [📊 Core Capabilities](#-core-capabilities) • [📜 API Reference](#-api-documentation)
+[⚡ Quickstart & Local Run](#-quickstart--local-run-instructions) • [🎥 Demo Video](#-demo-video) • [🏛️ System Architecture](#-system-architecture) • [📊 Core Capabilities](#-core-capabilities) • [📜 API Reference](#-api-documentation) • [🧪 Testing](#-running-automated-tests)
 
 </div>
 
@@ -24,33 +24,46 @@
 | **Theme** | Inclusive AI, Social Impact and Empowerment of Underserved Communities |
 | **Sub-Track** | *AI for Micro-Entrepreneurs and Street Vendors* & *AI for Accessible Public Services* |
 | **Repository** | [github.com/lowkeyd3v/flux](https://github.com/lowkeyd3v/flux) |
-| **Live Prototype** | [Live App Deployment](https://flux.example.com) *(or see [Local Setup](#-quickstart--local-run-instructions))* |
-| **Demo Video** | [Watch 10-Minute Showcase](https://youtu.be/placeholder-demo-video) *(Mandatory Demo Video)* |
+| **Prototype Access** | **[One-Command Local Run (Docker Compose)](#-quickstart--local-run-instructions)** (`http://localhost`) |
+| **Demo Video** | **[Watch 10-Minute Video Demo](#-demo-video)** *(Mandatory submission video)* |
 | **Test Suite** | **48/48 Automated Tests Passing** (Pytest + React Build) |
 
 ---
 
-## 🔗 Prototype & Demo Links
+## 🚀 How to Run the Prototype
 
-- 🌐 **Live Web Application:** [https://flux.example.com](https://flux.example.com) *(Hosted on Cloudflare CDN + Containerized Backend)*
-- 📑 **Interactive API Swagger Docs:** [http://localhost:8000/docs](http://localhost:8000/docs) (when running locally)
-- 📊 **Prometheus Metrics Scraper:** [http://localhost:8000/api/metrics](http://localhost:8000/api/metrics)
-- 🩺 **System Health & Readiness:** [http://localhost:8000/api/health/ready](http://localhost:8000/api/health/ready)
+Per hackathon submission guidelines, the prototype can be run locally with a single command using Docker Compose:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/lowkeyd3v/flux.git
+cd flux
+
+# 2. Start the full application stack (PostgreSQL, Backend API, Web Frontend, Prometheus)
+docker compose -f docker-compose.prod.yml up -d --build
+```
+
+- 🌐 **Web Dashboard:** `http://localhost`
+- 📑 **Interactive OpenAPI (Swagger) Docs:** `http://localhost:8000/docs`
+- 📊 **Prometheus Real-Time Metrics:** `http://localhost:8000/api/metrics`
+- 🩺 **Health & Readiness Check:** `http://localhost:8000/api/health/ready`
+
+*(For step-by-step developer setup without Docker, see [Local Developer Setup](#option-b-local-developer-setup))*
 
 ---
 
 ## 🎥 Demo Video
 
-[![FLUX Demo Video](https://img.shields.io/badge/YouTube-Watch%20Demo%20Video%20(10%20Min)-red?style=for-the-badge&logo=youtube)](https://youtu.be/placeholder-demo-video)
+> 🔗 **Video Submission Link:** [Watch FLUX 10-Minute Demo Video](https://youtu.be/placeholder-demo-video) *(Update with your video link)*
 
-> **Video Highlights:**
-> 1. **Vendor Business Profile & Ledger:** Fast vendor setup and daily sales logging.
-> 2. **ML Demand Forecasting with Uncertainty:** Real-time demand inference with high/low confidence bounds.
-> 3. **Smart Weather-Aware Recommendations:** Actionable stock preparation quantities adjusted for rain/heat and budget constraints.
-> 4. **Grounded Government Scheme RAG:** Hallucination-free Q&A on PM SVANidhi, PM MUDRA, PM Vishwakarma, e-Shram, and PMSYM with citations and application steps.
-> 5. **Personalized Scheme Matching:** Automated recommendations tailored to vendor trades and budgets.
-> 6. **Voice & Trilingual Accessibility:** Hands-free speech recognition (STT) and voice narration (TTS) in English, Hindi (हिंदी), and Hinglish.
-> 7. **Production Observability:** Live Prometheus metrics and structured distributed tracing.
+### Video Walkthrough Highlights:
+1. **Vendor Business Profile & Ledger:** Vendor registration and daily sales logging.
+2. **ML Demand Forecasting with Uncertainty:** Real-time demand inference with confidence bounds.
+3. **Smart Weather-Aware Recommendations:** Actionable stock preparation quantities adjusted for rain/heat and budget constraints.
+4. **Grounded Government Scheme RAG:** Hallucination-free Q&A on PM SVANidhi, PM MUDRA, PM Vishwakarma, e-Shram, and PMSYM with citations and application steps.
+5. **Personalized Scheme Matching:** Automated recommendations tailored to vendor trades and budgets.
+6. **Voice & Trilingual Accessibility:** Hands-free speech recognition (STT) and voice narration (TTS) in English, Hindi (हिंदी), and Hinglish.
+7. **Production Observability:** Live Prometheus metrics and structured distributed tracing.
 
 ---
 
