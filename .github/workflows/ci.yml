@@ -113,7 +113,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
-        uses: actions/docker-setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v3
 
       - name: Build Backend Docker Image
         uses: docker/build-push-action@v5
@@ -121,6 +121,7 @@ jobs:
           context: .
           file: backend/Dockerfile
           push: false
+          load: true
           tags: flux-backend:ci-test
 
       - name: Build Frontend Docker Image
@@ -129,4 +130,5 @@ jobs:
           context: .
           file: frontend/Dockerfile
           push: false
+          load: true
           tags: flux-frontend:ci-test
