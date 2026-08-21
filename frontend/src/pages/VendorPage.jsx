@@ -6,6 +6,7 @@ import VendorList from '../components/VendorList'
 import SalesRecordForm from '../components/SalesRecordForm'
 import SalesRecordTable from '../components/SalesRecordTable'
 import DemandPredictionCard from '../components/DemandPredictionCard'
+import RecommendationCard from '../components/RecommendationCard'
 
 export default function VendorPage() {
   const { vendors, status: vendorsStatus, createVendor } = useVendors()
@@ -84,6 +85,21 @@ export default function VendorPage() {
             </p>
           </div>
           <DemandPredictionCard vendor={selectedVendor} />
+        </section>
+      )}
+
+      {selectedVendor && (
+        <section className="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm space-y-4">
+          <div>
+            <h2 className="font-semibold text-neutral-800">
+              Recommendation — {selectedVendor.name}
+            </h2>
+            <p className="text-sm text-neutral-500">
+              How much to prepare, expected revenue, and risk — combining the demand
+              forecast with your inventory, budget, and local weather.
+            </p>
+          </div>
+          <RecommendationCard vendor={selectedVendor} />
         </section>
       )}
 
