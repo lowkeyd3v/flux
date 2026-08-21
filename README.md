@@ -2,11 +2,11 @@
 
 **Adaptive intelligence for everyday commerce.**
 
-FLUX is an AI-powered business intelligence assistant for Indian street vendors and micro-entrepreneurs. It combines demand forecasting, weather/contextual awareness, explainable recommendations, and a government-scheme RAG assistant to help vendors make better daily business decisions.
+FLUX is an AI-powered business intelligence assistant for Indian street vendors and micro-entrepreneurs. It combines data-driven demand forecasting, real-time weather and contextual awareness, explainable stock preparation recommendations, and a grounded government-scheme RAG (Retrieval-Augmented Generation) assistant to help vendors make confident, profitable daily business decisions.
 
 Built for **OOSC 4.0 Hackathon — Problem Statement PS5: AI for Public Good**.
 
-> **Status: Milestone 1 (Foundation) complete.** This README reflects only what is currently implemented. Sections describing future milestones (ML forecasting, recommendations, RAG, voice) are marked as planned and will be filled in as those features are built — see [Project Status](#project-status).
+> **Status: Milestones 1–6 (Foundation through Government Scheme RAG & Dashboard) Complete.** All core features—vendor profile management, sales ledger, ML demand forecasting with uncertainty bounds, rule-based recommendation engine with OpenWeatherMap integration, and grounded government scheme Q&A with personalized recommendations—are fully implemented, integrated into the UI, and verified with automated test suites.
 
 ---
 
@@ -15,289 +15,508 @@ Built for **OOSC 4.0 Hackathon — Problem Statement PS5: AI for Public Good**.
 - [Problem Statement](#problem-statement)
 - [Solution](#solution)
 - [Target Users](#target-users)
-- [Project Status](#project-status)
-- [Architecture](#architecture)
+- [Core Features](#core-features)
+- [Project Status & Roadmap](#project-status--roadmap)
+- [System Architecture](#system-architecture)
 - [Tech Stack](#tech-stack)
 - [Repository Structure](#repository-structure)
 - [Local Setup](#local-setup)
 - [Environment Variables](#environment-variables)
 - [ML Methodology & Dataset](#ml-methodology--dataset)
+- [Government Scheme RAG System](#government-scheme-rag-system)
 - [API Documentation](#api-documentation)
 - [Running Tests](#running-tests)
 - [Deployment](#deployment)
-- [Team](#team)
-- [Future Scope](#future-scope)
 - [Limitations](#limitations)
+- [Future Scope](#future-scope)
+- [License](#license)
 
 ---
 
 ## Problem Statement
 
-Street vendors and micro-entrepreneurs across India make daily business decisions — how much stock to prepare, what to price, when demand will spike or dip — largely by intuition. They often lack access to:
+Over 10 million street vendors and micro-entrepreneurs across India make daily business decisions—how much stock to prepare, what to price, when demand will spike or dip—largely by intuition. They face systemic hurdles:
 
-- Data-driven demand forecasting
-- Localized, contextual information (e.g. weather impact on footfall/sales)
-- Awareness of government schemes they may be eligible for, and how to access them
+- **Demand Uncertainty & Perishability:** Over-preparation leads to wasted raw materials and inventory spoilage; under-preparation leads to lost revenue and dissatisfied customers.
+- **Weather & Local Context Vulnerability:** Extreme heat, sudden rains, and festivals significantly alter daily footfall and purchasing patterns, but vendors lack localized forecasting tools.
+- **Information Asymmetry in Government Support:** Valuable welfare and financial schemes (such as PM SVANidhi, PM MUDRA Yojana, and PM Vishwakarma) offer low-cost working capital, toolkits, and interest subsidies, yet vendors struggle to discover eligibility rules, required documentation, and application procedures due to complex bureaucratic portals.
 
-This creates avoidable financial risk (over-preparation → waste, under-preparation → lost sales) and leaves real economic support (schemes, subsidies, credit access) underutilized simply because it's hard to discover and understand.
+---
 
 ## Solution
 
-FLUX gives a vendor a simple, mobile-friendly dashboard where they can:
+FLUX provides a lightweight, mobile-friendly dashboard tailored to the operational realities of street vendors:
 
-1. Create a business profile and log sales history
-2. Get an ML-driven demand prediction for an upcoming day, adjusted for weather/context
-3. Receive an explainable recommendation (how much to prepare, expected revenue, risk level)
-4. Ask a FLUX assistant natural-language questions about government schemes, with answers grounded in real scheme documents via RAG — not invented by the model
+1. **Vendor Business Profile & Sales Ledger:** Create store profiles (product type, location, unit price, current inventory, daily working budget) and log daily sales history.
+2. **ML-Driven Demand Forecasting:** Predict unit demand for upcoming days using a Random Forest model trained on seasonal patterns, calendar events, and weather conditions, complete with confidence intervals.
+3. **Smart Recommendations with Weather Context:** Receive plain-language, actionable stock preparation quantities and expected revenue adjusted for live weather forecasts, current inventory, and budget constraints.
+4. **Government Scheme RAG Assistant:** Ask natural-language questions regarding government welfare, loans, and subsidies, receiving hallucination-free answers grounded in official scheme documents with source citations and direct application links.
+5. **Personalized Scheme Matching:** Automatically matches vendors to relevant government initiatives based on their business product, budget size, and geographic location.
+
+---
 
 ## Target Users
 
-Indian street vendors and micro-entrepreneurs (e.g. food carts, small retail stalls) who need lightweight, low-friction tools that work in simple language, and eventually in Hindi/Hinglish.
+Indian street vendors, roadside food stalls, artisans, and micro-retailers (e.g., chaat carts, tea stalls, fruit vendors, handicraft makers) needing accessible, low-friction, high-utility business tools.
 
-## Project Status
+---
 
-| Feature | Status |
-|---|---|
-| Project foundation (frontend, backend, DB, health check) | Done (Milestone 1) |
-| Vendor profile + sales data | Done (Milestone 2) |
-| Demand forecasting (ML) | Done (Milestone 3) |
-| Recommendation engine + weather | Planned (Milestone 4) |
-| Government scheme RAG | Planned (Milestone 5) |
-| Dashboard integration | Planned (Milestone 6) |
-| Hindi/Hinglish + voice | Planned (Milestone 7, if time permits) |
-| Testing + deployment | Planned (Milestone 8) |
+## Core Features
 
-Nothing below this point describes a shipped feature unless explicitly stated. Service interfaces for the AI/ML components exist as clean, typed abstractions (see `backend/app/services/`) but currently raise `NotImplementedError` — this is intentional, so the codebase never pretends to have AI/ML functionality it doesn't yet have.
+### 1. Vendor Profile & Sales Management (Milestone 2)
+- Fast vendor profile creation with business attributes: product category, city/location, default selling price, current inventory, and daily budget.
+- Interactive sales ledger supporting single-day logging and bulk historical data entry.
+- PostgreSQL database backed by SQLAlchemy ORM and Alembic migrations.
 
-## Architecture
+### 2. Machine Learning Demand Forecasting (Milestone 3)
+- Point forecast of expected units sold for any selected future date.
+- Prediction uncertainty bounds (`predicted_demand_low`, `predicted_demand_high`) generated from ensemble tree variance.
+- Incorporates calendar features (day of week, seasonality), holiday/event flags, and weather conditions.
+
+### 3. Recommendation Engine & Weather Intelligence (Milestone 4)
+- **Constraint-Aware Arithmetic:** Calculates exact preparation units needed beyond existing stock, capped by the vendor's actual available budget.
+- **Weather Integration:** Connects with OpenWeatherMap API for live temperature and rain forecasts (with automatic fallback to manual entry or neutral historical baselines when offline/unconfigured).
+- **Risk Assessment & Explainability:** Evaluates forecast confidence and low/high spread to assign a risk rating (`low`, `medium`, `high`) accompanied by clear, non-technical reasoning.
+
+### 4. Government Scheme RAG & Personalized Advisor (Milestone 5)
+- **Comprehensive Knowledge Base:** Curated database of major Indian micro-enterprise schemes including **PM SVANidhi**, **PM MUDRA Yojana (Shishu, Kishore, Tarun)**, **PM Vishwakarma**, **e-Shram Portal**, and **PMSYM**.
+- **Source-Grounded Retrieval:** Vector TF-IDF indexing and cosine similarity retrieval with intent and domain-specific lexical boosting.
+- **Dual-Engine Synthesis:** Deterministic, hallucination-free extractive synthesis engine with seamless LLM API integration for enriched responses.
+- **Interactive Assistant UI:** Question suggestions, source chunk transparency drawers, step-by-step application modals, and recommended follow-up questions.
+- **Personalized Recommendations:** Automated matching engine analyzing vendor constraints to suggest optimal credit lines and grants.
+
+### 5. Unified Dashboard (Milestone 6)
+- Cohesive React interface linking vendor profile state directly to predictions, recommendations, sales history, and personalized schemes.
+
+---
+
+## Project Status & Roadmap
+
+| Feature / Milestone | Status | Description |
+|---|---|---|
+| **Milestone 1: Project Foundation** | **Complete** | React + Vite + Tailwind frontend, FastAPI backend, Docker PostgreSQL, DB migrations, health checks. |
+| **Milestone 2: Vendor Profiles & Sales** | **Complete** | Full CRUD for vendor profiles and sales records, validation schemas, database models. |
+| **Milestone 3: Demand Forecasting (ML)** | **Complete** | Time-series split, Random Forest model, feature engineering, uncertainty intervals, inference API. |
+| **Milestone 4: Recommendation Engine** | **Complete** | Rule-based preparation logic, OpenWeatherMap integration, risk scoring, explainable text. |
+| **Milestone 5: Scheme RAG Assistant** | **Complete** | Vector search over scheme documents, grounded synthesis, personalized vendor scheme matching. |
+| **Milestone 6: Dashboard Integration** | **Complete** | End-to-end frontend integration connecting vendor selection with all AI/ML & RAG services. |
+| **Milestone 7: Hindi/Hinglish & Voice** | *Planned* | Multilingual UI localization, speech-to-text / text-to-speech voice assistant for hands-free vendor queries. |
+| **Milestone 8: Production Deployment** | *Planned* | Cloud hosting, production containerization, CDN integration, and performance monitoring. |
+
+---
+
+## System Architecture
 
 ```
-React Frontend
-      |
-      v
-FastAPI Backend
-      |
- -----------------------------------------
- |          |              |             |
- ML     Recommendation   RAG/AI       Weather
- Service   Service       Service      Service
- |          |              |             |
- -----------------------------------------
-                |
-           PostgreSQL
+                                +---------------------------------------------+
+                                |               React Frontend                |
+                                |  (Tailwind CSS, React Router, Vite, Axios)  |
+                                +---------------------------------------------+
+                                                       |
+                                            REST API Calls (/api/*)
+                                                       v
++-------------------------------------------------------------------------------------------------------------------+
+|                                                 FastAPI Backend                                                   |
+|                                                                                                                   |
+|  +---------------------+   +-----------------------+   +---------------------+   +-----------------------------+  |
+|  |     Vendors &       |   |   Demand Prediction   |   |   Recommendation    |   |     Government Scheme       |  |
+|  |    Sales API        |   |       Service         |   |       Service       |   |       RAG Service           |  |
+|  +---------------------+   +-----------------------+   +---------------------+   +-----------------------------+  |
+|             |                         |                           |                             |                 |
+|             |              +----------------------+               |               +----------------------------+  |
+|             |              |  Random Forest Model |               |               |  Schemes Knowledge Base    |  |
+|             |              |  (Scikit-Learn/Joblib)               |               |    (TF-IDF / Vector RAG)   |  |
+|             |              +----------------------+               |               +----------------------------+  |
+|             |                                                     |                             |                 |
+|             |                                           +-------------------+     +----------------------------+  |
+|             |                                           |  Weather Service  |     |   Extractive / LLM Engine  |  |
+|             |                                           |  (OpenWeatherMap) |     |     (AI Service Layer)     |  |
+|             |                                           +-------------------+     +----------------------------+  |
++-------------|-----------------------------------------------------------------------------------|-----------------+
+              |                                                                                   |
+              v                                                                                   v
++-----------------------------+                                                   +---------------------------------+
+|     PostgreSQL Database     |                                                   |        External Providers       |
+|  (Vendors, Sales Records)   |                                                   |  (OpenWeatherMap, OpenAI/LLM)   |
++-----------------------------+                                                   +---------------------------------+
 ```
 
-Each AI/ML/RAG/Weather component is defined as an independently replaceable service interface, so implementations can be swapped without touching API routes.
-
-Currently implemented: Frontend to Backend to PostgreSQL, with a working `/api/health` endpoint that checks DB connectivity. Service interfaces exist as abstractions only.
+---
 
 ## Tech Stack
 
-**Frontend:** React, Vite, Tailwind CSS, React Router, Recharts, Axios
-**Backend:** Python, FastAPI, Pydantic, SQLAlchemy, PostgreSQL
-**ML (planned):** Pandas, NumPy, Scikit-learn, Joblib
-**Generative AI (planned):** LLM API (provider-abstracted), FAISS/ChromaDB, Sentence Transformers
-**Voice (planned, P2):** Whisper or equivalent
-**Deployment:** Simple, single-service hosting (no Kubernetes/microservices)
+- **Frontend:** React 18, Vite, Tailwind CSS, Lucide Icons, React Router v6, Axios
+- **Backend:** Python 3.11+, FastAPI, Pydantic v2, SQLAlchemy 2.0, Alembic
+- **Database:** PostgreSQL 16 (local development via Docker Compose)
+- **Machine Learning:** Scikit-learn, Pandas, NumPy, Joblib
+- **Generative AI & RAG:** Custom TF-IDF vector retrieval engine with lexical/intent boosting, Grounded Extractive Synthesizer, LLM chat client
+- **External Services:** OpenWeatherMap API (5-day forecasts & current weather)
+- **Testing:** Pytest, FastAPI TestClient, Starlette, AnyIO
+
+---
 
 ## Repository Structure
 
 ```
 flux/
-├── frontend/            # React + Vite + Tailwind app
-│   └── src/
-│       ├── components/  # Reusable UI components
-│       ├── pages/       # Route-level pages
-│       ├── layouts/     # Page layout wrappers
-│       ├── services/    # API client + service calls
-│       ├── hooks/       # Custom React hooks
-│       ├── utils/       # Helpers
-│       └── assets/
+├── frontend/                     # React Single-Page Application
+│   ├── src/
+│   │   ├── components/           # UI Components
+│   │   │   ├── DemandPredictionCard.jsx     # ML forecast card
+│   │   │   ├── HealthStatusCard.jsx         # Backend connectivity monitor
+│   │   │   ├── RecommendationCard.jsx       # Inventory & weather recommendation
+│   │   │   ├── RecommendedSchemesCard.jsx   # Personalized scheme badges
+│   │   │   ├── SalesRecordForm.jsx          # Daily sales logging form
+│   │   │   ├── SalesRecordTable.jsx         # Historical sales ledger table
+│   │   │   ├── SchemeAssistantCard.jsx      # Interactive RAG assistant & chat
+│   │   │   ├── SchemeDetailModal.jsx        # Scheme deep-dive & steps modal
+│   │   │   ├── VendorList.jsx               # Vendor profile picker
+│   │   │   └── VendorProfileForm.jsx        # Create vendor form
+│   │   ├── pages/                # Route pages (HomePage, VendorPage)
+│   │   ├── services/             # Axios API client modules
+│   │   ├── hooks/                # Custom React state hooks
+│   │   └── layouts/              # Main application shell
+│   ├── package.json
+│   └── vite.config.js
 │
-├── backend/              # FastAPI application
+├── backend/                      # FastAPI Backend
 │   ├── app/
-│   │   ├── main.py       # Thin entrypoint: settings + middleware + routers
-│   │   ├── core/         # Config/settings
-│   │   ├── api/          # API route handlers
-│   │   ├── models/       # SQLAlchemy ORM models (Vendor, SalesRecord)
-│   │   ├── schemas/      # Pydantic request/response schemas
-│   │   ├── services/     # Service interfaces (ML, RAG, AI, Weather, Voice, Recommendation)
-│   │   ├── db/           # DB session/engine setup
-│   │   └── utils/
-│   ├── alembic/           # Database migrations
-│   ├── tests/             # Pytest suite
+│   │   ├── main.py               # Application factory & router wiring
+│   │   ├── core/config.py        # Pydantic Settings & environment config
+│   │   ├── api/                  # REST route controllers
+│   │   │   ├── health.py         # DB & API health check
+│   │   │   ├── vendors.py        # Vendor profile CRUD
+│   │   │   ├── sales_records.py  # Sales history logging & bulk upload
+│   │   │   ├── predictions.py    # Demand forecasting endpoint
+│   │   │   ├── recommendations.py# Stock prep & weather recommendation
+│   │   │   └── schemes.py        # Government scheme RAG & recommendations
+│   │   ├── models/               # SQLAlchemy ORM models (Vendor, SalesRecord)
+│   │   ├── schemas/              # Pydantic request/response schemas
+│   │   ├── services/             # Core business & AI logic
+│   │   │   ├── demand_prediction_service.py # ML inference interface
+│   │   │   ├── recommendation_service.py    # Rule-based decision engine
+│   │   │   ├── rag_service.py               # Vector retrieval & chunking
+│   │   │   ├── ai_service.py                # Grounded synthesis / LLM wrapper
+│   │   │   ├── weather_service.py           # OpenWeatherMap client
+│   │   │   └── voice_service.py             # Voice abstraction (planned)
+│   │   ├── data/
+│   │   │   └── schemes_data.json            # Curated scheme knowledge base
+│   │   └── db/session.py         # Database engine & session maker
+│   ├── alembic/                  # Database migration versions
+│   ├── tests/                    # 35 Pytest unit and integration tests
 │   ├── requirements.txt
 │   └── .env.example
 │
-├── ml/                    # ML training/inference — synthetic data, preprocessing, training, inference (Milestone 3)
-├── data/                  # Datasets (synthetic data will be clearly labeled)
-├── docs/                  # Architecture diagrams, design notes
-├── tests/                 # (reserved for cross-cutting/integration tests)
-├── docker-compose.yml     # PostgreSQL for local development
-├── .gitignore
-├── LICENSE
+├── ml/                           # Machine Learning Pipeline
+│   ├── data/
+│   │   ├── generate_synthetic_data.py # Synthetic time-series generator
+│   │   └── synthetic_sales_data.csv   # ~2,800 training rows
+│   ├── preprocessing/features.py      # Feature derivation & one-hot encoding
+│   ├── training/train_demand_model.py # Training & date-based evaluation
+│   ├── inference/predict.py           # Model loading & inference wrapper
+│   └── models/
+│       ├── demand_model.joblib        # Serialized Random Forest model
+│       └── demand_model_metadata.json # Evaluation metrics & metadata
+│
+├── docker-compose.yml            # Local PostgreSQL service
+├── LICENSE                       # MIT License
 └── README.md
 ```
+
+---
 
 ## Local Setup
 
 ### Prerequisites
 
-- Node.js 18+ and npm
-- Python 3.11+
-- Docker + Docker Compose (for PostgreSQL) — or a local PostgreSQL instance
+- **Node.js:** v18.0 or higher
+- **Python:** v3.11 or higher
+- **Docker & Docker Compose** (or a local PostgreSQL instance)
 
-### 1. Clone and enter the repo
+---
+
+### Step 1: Clone and Enter the Repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/your-username/flux.git
 cd flux
 ```
 
-### 2. Start PostgreSQL
+---
+
+### Step 2: Start PostgreSQL with Docker
 
 ```bash
 docker-compose up -d
 ```
 
-This starts PostgreSQL on `localhost:5432` with database `flux_db`, user `flux_user`, password `flux_password` (see `docker-compose.yml`; change these for anything beyond local dev).
+*Starts PostgreSQL on `localhost:5432` with database `flux_db`, user `flux_user`, and password `flux_password`.*
 
-If Docker isn't available, install PostgreSQL locally and create a matching user/database, or point `DATABASE_URL` in `backend/.env` at your own instance.
+---
 
-### 3. Backend setup
+### Step 3: Backend Setup & Database Migrations
 
 ```bash
 cd backend
-python3 -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+python -m venv venv
+
+# Activate virtual environment
+# On Linux/macOS:
+source venv/bin/activate
+# On Windows (PowerShell):
+.\venv\Scripts\Activate.ps1
+# On Windows (CMD):
+.\venv\Scripts\activate.bat
+
 pip install -r requirements.txt
-cp .env.example .env            # adjust values if needed
-alembic upgrade head            # creates vendors and sales_records tables
+cp .env.example .env
+alembic upgrade head
+```
+
+---
+
+### Step 4: Generate Synthetic Data & Train ML Model (One-Time)
+
+From the repo root (with backend virtual environment activated):
+
+```bash
+# Generate the synthetic sales dataset (~2,800 records)
+python -m ml.data.generate_synthetic_data
+
+# Train and serialize the Random Forest demand forecasting model
+python -m ml.training.train_demand_model
+```
+
+---
+
+### Step 5: Start Backend Server
+
+```bash
+cd backend
 uvicorn app.main:app --reload --port 8000
 ```
 
-### 3b. Generate the demand forecasting model (one-time)
+- Backend API: `http://localhost:8000`
+- Interactive OpenAPI Docs: `http://localhost:8000/docs`
+- Health Check: `http://localhost:8000/api/health`
 
-In a separate terminal, from the repo root, with the backend venv active:
+---
 
-```bash
-source backend/venv/bin/activate    # Windows: backend\venv\Scripts\activate
-python -m ml.data.generate_synthetic_data      # creates ml/data/synthetic_sales_data.csv
-python -m ml.training.train_demand_model       # trains and saves ml/models/demand_model.joblib
-```
+### Step 6: Frontend Setup & Run
 
-This only needs to be run once (or whenever you want to regenerate the dataset/retrain). Without this step, the `/predict` endpoint returns a 503 error rather than a fake prediction.
-
-Backend will be available at `http://localhost:8000`. Interactive API docs at `http://localhost:8000/docs`.
-
-### 4. Frontend setup
-
-In a separate terminal:
+In a separate terminal window:
 
 ```bash
 cd frontend
 npm install
-cp .env.example .env            # adjust VITE_API_BASE_URL if needed
+cp .env.example .env
 npm run dev
 ```
 
-Frontend will be available at `http://localhost:5173`. It calls the backend's `/api/health` endpoint on load and displays connection status on the home page.
+Frontend application will be accessible at `http://localhost:5173`.
 
-### 5. Verify
-
-- Visit `http://localhost:5173` — you should see the FLUX home page with a "Connected" backend status badge.
-- Visit `http://localhost:8000/api/health` directly — should return `{"status": "ok", "service": "flux-backend", "database": "ok"}`.
-- Visit `http://localhost:5173/vendor` — create a vendor profile, select it, and log a sales record. Refresh to confirm the data persisted.
-- On the same page, use the **Demand Prediction** card to get a forecast for a chosen date/weather — should return a real number, not a placeholder.
-- Just below it, use the **Recommendation** card to get how much to prepare, expected revenue, and risk level. If you set `WEATHER_API_KEY` in `backend/.env`, leaving "Enter weather manually" unchecked will auto-fetch weather for the vendor's location; otherwise it falls back gracefully (`weather.source: "unavailable"`) rather than failing.
+---
 
 ## Environment Variables
 
-**Backend** (`backend/.env`, see `backend/.env.example`):
+### Backend Configuration (`backend/.env`)
+
+| Variable | Description | Default / Example |
+|---|---|---|
+| `APP_ENV` | Application environment mode | `development` |
+| `DATABASE_URL` | SQLAlchemy PostgreSQL connection string | `postgresql://flux_user:flux_password@localhost:5432/flux_db` |
+| `CORS_ORIGINS` | Comma-separated list of allowed frontend origins | `http://localhost:5173,http://127.0.0.1:5173` |
+| `WEATHER_API_KEY` | *(Optional)* [OpenWeatherMap](https://openweathermap.org/api) API key for automated live weather in recommendations. If empty, manual weather entry is used with graceful neutral fallback. | `""` |
+| `LLM_API_KEY` | *(Optional)* OpenAI / LLM API key for generative chat answers. If empty, the system uses the deterministic Grounded Extractive engine. | `""` |
+| `API_V1_PREFIX` | Base prefix for all API routes | `/api` |
+
+### Frontend Configuration (`frontend/.env`)
 
 | Variable | Description | Default |
 |---|---|---|
-| `APP_ENV` | Environment name | `development` |
-| `DATABASE_URL` | SQLAlchemy Postgres connection string | see `.env.example` |
-| `CORS_ORIGINS` | Comma-separated allowed origins | `http://localhost:5173,http://127.0.0.1:5173` |
-| `LLM_API_KEY` | Reserved for AI assistant service (Milestone 5) | empty |
-| `WEATHER_API_KEY` | [OpenWeatherMap](https://openweathermap.org/api) API key. Optional: if empty, `/recommend` still works but skips auto-fetched weather (falls back to the demand model's neutral defaults, or your own `temperature_celsius`/`weather_condition` values) | empty |
+| `VITE_API_BASE_URL` | Backend URL endpoint consumed by Axios | `http://localhost:8000` |
 
-**Frontend** (`frontend/.env`, see `frontend/.env.example`):
-
-| Variable | Description | Default |
-|---|---|---|
-| `VITE_API_BASE_URL` | Backend API base URL | `http://localhost:8000` |
+---
 
 ## ML Methodology & Dataset
 
-**Dataset**: `ml/data/synthetic_sales_data.csv` — **SYNTHETIC / DEMO DATA, not real vendor sales.** No real street-vendor sales dataset was available at hackathon time, so `ml/data/generate_synthetic_data.py` generates ~2,800 rows of daily sales for 8 vendor archetypes (5 products × 4 North Indian cities) over roughly one year, with realistic weekly seasonality, holiday/event spikes, weather sensitivity, and random noise. The schema matches the `SalesRecord` model, so real vendor data can replace this file without changing the pipeline.
+### 1. Synthetic Dataset
+Because real street-vendor point-of-sale datasets are scarce and proprietary, `ml/data/generate_synthetic_data.py` generates ~2,800 rows of daily sales records across 8 vendor archetypes (covering 5 product categories across 4 North Indian cities) spanning a full year. The generator incorporates:
+- **Weekly Seasonality:** Weekend demand surges (e.g. chaat/tea on Saturday/Sunday).
+- **Festival & Holiday Spikes:** Explicit multipliers for Diwali, Holi, Eid, and local fairs.
+- **Weather Sensitivity:** Negative elasticity for heavy rain and extreme heat (>40°C).
+- **Realistic Noise:** Gaussian variance mimicking real retail fluctuation.
 
-**Preprocessing** (`ml/preprocessing/features.py`): derives calendar features (day of week, month) from the date, one-hot encodes product/location/weather condition, and assembles a numeric feature matrix. The same function is used for both training and inference, so there's no train/serve skew.
+### 2. Feature Engineering & Preprocessing
+`ml/preprocessing/features.py` derives:
+- Calendar features: `day_of_week`, `is_weekend`, `month`.
+- Binary indicators: `is_holiday_or_event`.
+- Contextual features: `temperature_celsius`, `weather_condition` (one-hot encoded: `clear`, `cloudy`, `rain`, `extreme_heat`).
+- Vendor attributes: `product`, `location`, `price`.
 
-**Train/validation split** (`ml/training/train_demand_model.py`): split **by date**, not randomly — the most recent 20% of the date range is held out for validation, and the model only ever trains on earlier dates. A random shuffle split would leak future information into training for time-series data, so this was deliberately avoided.
+The exact same transformation pipeline is executed during both training and real-time inference to prevent train/serve skew.
 
-**Models compared**: a Linear Regression baseline and a Random Forest Regressor. The Random Forest was selected (lower validation MAE): **MAE ≈ 8.7 units, MAPE ≈ 10.7%, R² ≈ 0.84** on held-out validation data (exact numbers in `ml/models/demand_model_metadata.json`, regenerated each time the model is retrained).
+### 3. Date-Based Train/Validation Split
+To prevent temporal data leakage (where future sales leak into past predictions), the dataset is split strictly **chronologically**:
+- **Training Set:** First 80% of historical dates.
+- **Validation Set:** Most recent 20% held-out date range.
 
-**Serving**: the trained model is serialized with `joblib` to `ml/models/demand_model.joblib`. `ml/inference/predict.py` loads it once and exposes `predict_demand(...)`, which the backend's `MLDemandPredictionService` calls. The prediction's low/high range comes from the spread across the Random Forest's individual trees, giving an honest uncertainty band rather than a single falsely-precise number.
+### 4. Model Selection & Metrics
+A baseline Linear Regression model was evaluated against a **Random Forest Regressor** (100 estimators):
+- **Validation MAE:** ≈ 8.7 units
+- **Validation MAPE:** ≈ 10.7%
+- **Validation R² Score:** ≈ 0.84
 
-**Retraining**: to regenerate the dataset and retrain the model:
+*Detailed metrics and hyperparameters are serialized in `ml/models/demand_model_metadata.json`.*
 
-```bash
-cd /path/to/flux   # repo root
-source backend/venv/bin/activate
-python -m ml.data.generate_synthetic_data
-python -m ml.training.train_demand_model
+### 5. Prediction Uncertainty Intervals
+Rather than outputting an artificially exact point estimate, the inference service computes the spread across the individual decision trees in the Random Forest ensemble:
+- `predicted_demand_low`: 10th percentile of tree predictions.
+- `predicted_demand_point`: Mean ensemble prediction.
+- `predicted_demand_high`: 90th percentile of tree predictions.
+
+---
+
+## Government Scheme RAG System
+
+The FLUX Scheme Assistant delivers accurate, actionable, and non-hallucinated guidance on Indian government initiatives for micro-enterprises.
+
 ```
+                      +------------------------------------------+
+                      |         Vendor Query + Profile           |
+                      +------------------------------------------+
+                                           |
+                                           v
+                      +------------------------------------------+
+                      |  TF-IDF Vector Index & Lexical Boosting  |
+                      +------------------------------------------+
+                                           |
+                    +----------------------+---------------------+
+                    | Top-K Relevant Scheme Document Chunks      |
+                    +--------------------------------------------+
+                                           |
+                                           v
+                      +------------------------------------------+
+                      |    Dual-Engine Synthesis Architecture    |
+                      |  - Grounded Extractive Synthesizer       |
+                      |  - External LLM Client (OpenAI/Gemini)   |
+                      +------------------------------------------+
+                                           |
+                                           v
+                      +------------------------------------------+
+                      | Grounded Answer with Citations & Portals |
+                      | Suggested Follow-Ups & Match Reasons     |
+                      +------------------------------------------+
+```
+
+### Knowledge Base Content
+Structured in `backend/app/data/schemes_data.json`, containing curated documents for:
+- **PM SVANidhi:** Collateral-free working capital micro-credit (₹10k → ₹20k → ₹50k tranches) with 7% interest subvention and digital transaction cashback.
+- **PM MUDRA Yojana:** Non-farm enterprise loans up to ₹10 Lakhs categorized into *Shishu* (up to ₹50k), *Kishore* (₹50k to ₹5 Lakhs), and *Tarun* (₹5 to ₹10 Lakhs).
+- **PM Vishwakarma:** 18 traditional artisan trades with ₹15,000 toolkits, skill training stipends, and 5% concessional enterprise loans.
+- **e-Shram Portal:** Unorganized worker national database providing 12-digit UAN and ₹2 Lakh accidental insurance coverage.
+- **PMSYM (Pradhan Mantri Shram Yogi Maan-dhan):** Old-age social security pension scheme providing ₹3,000/month after age 60.
+
+### Document Chunking & Retrieval
+- Documents are segmented into targeted chunks: *Overview & Target Group*, *Eligibility Criteria*, *Financial Assistance & Subsidies*, *Required Documents*, and *Application Process*.
+- Retrieval uses TF-IDF vectorization with cosine similarity, boosted by exact domain keyword matches and intent keywords (`eligible`, `documents`, `subsidy`, `apply`).
+
+### Grounded Answer Synthesis
+- **Deterministic Extractive Engine:** Operates entirely locally without external API dependencies or API keys. Extracts exact criteria, required documents, and application steps directly from retrieved context chunks.
+- **LLM Synthesis:** When `LLM_API_KEY` is provided, queries are synthesized into fluid conversational answers while strictly bounded by the retrieved official context.
+
+---
 
 ## API Documentation
 
-Currently implemented endpoints:
+All endpoints are prefixed with `/api` (configurable via `API_V1_PREFIX`). Interactive Swagger documentation is available at `http://localhost:8000/docs`.
 
-| Method | Path | Description |
+### Health Check
+| Method | Endpoint | Description |
 |---|---|---|
-| `GET` | `/` | Basic API liveness message |
-| `GET` | `/api/health` | Health check; also verifies DB connectivity |
-| `POST` | `/api/vendors` | Create a vendor business profile |
-| `GET` | `/api/vendors` | List all vendor profiles |
-| `GET` | `/api/vendors/{vendor_id}` | Get a single vendor profile |
-| `PATCH` | `/api/vendors/{vendor_id}` | Partially update a vendor profile |
-| `DELETE` | `/api/vendors/{vendor_id}` | Delete a vendor profile (cascades to its sales records) |
-| `POST` | `/api/vendors/{vendor_id}/sales` | Log a single day's sales record |
-| `POST` | `/api/vendors/{vendor_id}/sales/bulk` | Upload multiple historical sales records at once |
-| `GET` | `/api/vendors/{vendor_id}/sales` | List a vendor's sales history |
-| `DELETE` | `/api/vendors/{vendor_id}/sales/{record_id}` | Delete a single sales record |
-| `POST` | `/api/vendors/{vendor_id}/predict` | Predict expected demand for a given date, with optional weather/holiday context |
+| `GET` | `/api/health` | Service health and PostgreSQL database connectivity check |
 
-Full interactive documentation (Swagger UI) is auto-generated by FastAPI at `/docs` once the backend is running. This table will grow as milestones add real endpoints (predictions, recommendations, scheme Q&A).
+### Vendor Profile Management
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/vendors` | Create a new vendor profile |
+| `GET` | `/api/vendors` | List all registered vendor profiles |
+| `GET` | `/api/vendors/{vendor_id}` | Retrieve specific vendor profile by UUID |
+| `PATCH` | `/api/vendors/{vendor_id}` | Partially update vendor attributes (budget, inventory, price) |
+| `DELETE` | `/api/vendors/{vendor_id}` | Delete vendor profile (cascades to associated sales records) |
+
+### Sales History Ledger
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/vendors/{vendor_id}/sales` | Log a daily sales record |
+| `POST` | `/api/vendors/{vendor_id}/sales/bulk` | Batch upload historical sales records |
+| `GET` | `/api/vendors/{vendor_id}/sales` | Retrieve historical sales logs for a vendor |
+| `DELETE` | `/api/vendors/{vendor_id}/sales/{record_id}` | Delete a specific sales record |
+
+### Demand Forecasting & Smart Recommendations
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/vendors/{vendor_id}/predict` | ML demand forecast for a target date with weather context |
+| `POST` | `/api/vendors/{vendor_id}/recommend` | Preparation quantity, revenue forecast, risk score & weather summary |
+
+### Government Schemes & RAG Assistant
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/api/schemes` | List all government schemes (with optional `?category=` filter) |
+| `GET` | `/api/schemes/{scheme_id}` | Get full scheme details, eligibility, required docs, and steps |
+| `POST` | `/api/schemes/query` | Natural-language RAG query with source-attributed answers |
+| `GET` | `/api/vendors/{vendor_id}/schemes/recommended` | Personalized scheme recommendations matching vendor profile |
+
+---
 
 ## Running Tests
 
+The test suite covers database persistence, ML model inference, rule-based recommendation logic, weather fallback mechanisms, and RAG retrieval/synthesis:
+
 ```bash
 cd backend
-source venv/bin/activate
-pytest
+# With virtual environment activated
+pytest -v
 ```
 
-Current test coverage: 35 unit and integration tests covering health check, vendor profiles, sales records, ML demand forecasting, recommendation engine, and government scheme RAG (`backend/tests/`).
+**Test Coverage Summary:**
+- `tests/test_health.py`: Health endpoint and DB connectivity checks.
+- `tests/test_vendors.py`: Vendor CRUD and validation.
+- `tests/test_sales_records.py`: Single and bulk sales logging with constraints.
+- `tests/test_predictions.py`: ML prediction inference and range bounds.
+- `tests/test_recommendations.py`: Stock prep constraints, budget limits, risk assessment, and weather fallbacks.
+- `tests/test_schemes.py`: Scheme listing, detail lookup, vector retrieval, vendor-context queries, and personalized matching.
+
+---
 
 ## Deployment
 
-Not yet deployed. Deployment instructions and the live prototype link will be added in Milestone 8, per the project's simple-deployment principle (no Kubernetes or microservices).
+For production deployment:
+1. **Containerized Backend:** Package the FastAPI backend using Docker, connecting to a managed PostgreSQL service (e.g. AWS RDS or Supabase).
+2. **Static Frontend:** Build frontend static assets via `npm run build` and deploy to Cloudflare Pages, Vercel, or AWS S3/CloudFront.
+3. **Environment Setup:** Set `APP_ENV=production`, configure production `DATABASE_URL`, `CORS_ORIGINS`, and optionally supply `WEATHER_API_KEY` and `LLM_API_KEY`.
 
-## Team
-
-- _Add team member names and roles here_
-
-## Future Scope
-
-See [Project Status](#project-status) for the milestone roadmap: dashboard integration, and — time permitting — Hindi/Hinglish voice support.
+---
 
 ## Limitations
 
-- This is a hackathon prototype, not a production system. Authentication, payments, and enterprise-grade infrastructure are intentionally out of scope.
-- As of Milestone 3, vendor profiles, sales history, and demand predictions work end-to-end, but the recommendation engine, government scheme RAG, and voice features are not implemented yet — only their interfaces.
-- The demand forecasting model is trained on **synthetic data**, not real vendor sales (see [ML Methodology & Dataset](#ml-methodology--dataset)). Predictions are directionally reasonable (respond correctly to weather, holidays, weekends) but should not be treated as real-world accurate until retrained on real data.
-- There is no authentication, so any client can view or modify any vendor's data. Acceptable for a hackathon demo; would need to be addressed for a real deployment.
-- Local development currently assumes PostgreSQL is reachable at the configured `DATABASE_URL`; no managed cloud DB is configured yet.
+- **Synthetic Sales Data:** The current ML demand forecasting model is trained on synthetic data representing typical North Indian street food and retail dynamics. Retraining on actual vendor point-of-sale logs is recommended for production accuracy.
+- **Simplified Authentication:** In this hackathon build, vendor profiles are accessible without individual authentication tokens. Multi-tenant authentication (e.g. phone OTP / JWT) will be integrated in subsequent milestones.
+- **Weather Forecast Horizon:** Free-tier OpenWeatherMap forecasts are limited to a 5-day horizon; queries beyond 5 days rely on vendor manual input or historical weather averages.
 
+---
+
+## Future Scope
+
+- **Milestone 7: Hindi & Hinglish Localization + Voice Assistant:**
+  - Speech-to-Text (STT) using Whisper / browser Web Speech API for voice-driven sales logging and questions.
+  - Multilingual user interface with full Hindi and Hinglish translation.
+  - Text-to-Speech (TTS) audio output of scheme guidance and daily recommendations.
+- **Supplier & Raw Material Price Tracking:** Integrating local mandi (wholesale market) commodity pricing to advise vendors on optimal raw ingredient purchasing times.
+- **Peer Benchmark Insights:** Anonymized neighborhood demand trends comparing vendor sales against local averages.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

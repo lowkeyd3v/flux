@@ -6,6 +6,9 @@ import VendorList from '../components/VendorList'
 import SalesRecordForm from '../components/SalesRecordForm'
 import SalesRecordTable from '../components/SalesRecordTable'
 import DemandPredictionCard from '../components/DemandPredictionCard'
+import RecommendedSchemesCard from '../components/RecommendedSchemesCard'
+import SchemeAssistantCard from '../components/SchemeAssistantCard'
+import RecommendationCard from '../components/RecommendationCard'
 
 export default function VendorPage() {
   const { vendors, status: vendorsStatus, createVendor } = useVendors()
