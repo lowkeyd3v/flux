@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import HealthStatusCard from '../components/HealthStatusCard'
 
 export default function HomePage() {
@@ -12,6 +13,12 @@ export default function HomePage() {
           vendors and micro-entrepreneurs forecast demand, plan inventory,
           and access government schemes.
         </p>
+        <Link
+          to="/vendor"
+          className="inline-block mt-5 px-6 py-2.5 rounded-lg bg-orange-600 text-white font-medium hover:bg-orange-700 transition"
+        >
+          Create Your Vendor Profile
+        </Link>
       </section>
 
       <HealthStatusCard />
