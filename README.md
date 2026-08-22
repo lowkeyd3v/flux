@@ -26,7 +26,7 @@
 | **Repository** | [github.com/lowkeyd3v/flux](https://github.com/lowkeyd3v/flux) |
 | **Live Prototype URL** | 🌐 **[https://flux-frontend-iojr.onrender.com](https://flux-frontend-iojr.onrender.com)** |
 | **Live API Swagger Docs** | 📑 **[https://flux-backend-w7fd.onrender.com/docs](https://flux-backend-w7fd.onrender.com/docs)** |
-| **Demo Video** | **[Watch 10-Minute Video Demo](#-demo-video)** *(Mandatory submission video)* |
+| **Demo Video** | **[Watch 5-Minute Video Demo (YouTube)](https://youtu.be/81PoO0M_TRU)** *(Mandatory submission video)* |
 | **Test Suite** | **48/48 Automated Tests Passing** (Pytest + React Build) |
 
 ---
@@ -64,16 +64,17 @@ docker compose -f docker-compose.prod.yml up -d --build
 
 ## 🎥 Demo Video
 
-> 🔗 **Video Submission Link:** [Watch FLUX 10-Minute Demo Video](https://youtu.be/placeholder-demo-video) *(Update with your video link)*
+[![Watch FLUX Demo Video](https://img.youtube.com/vi/81PoO0M_TRU/maxresdefault.jpg)](https://youtu.be/81PoO0M_TRU)
+
+> 🔗 **Video Submission Link:** [Watch FLUX 5-Minute Demo Video on YouTube](https://youtu.be/81PoO0M_TRU)
 
 ### Video Walkthrough Highlights:
-1. **Vendor Business Profile & Ledger:** Vendor registration and daily sales logging.
-2. **ML Demand Forecasting with Uncertainty:** Real-time demand inference with confidence bounds.
-3. **Smart Weather-Aware Recommendations:** Actionable stock preparation quantities adjusted for rain/heat and budget constraints.
-4. **Grounded Government Scheme RAG:** Hallucination-free Q&A on PM SVANidhi, PM MUDRA, PM Vishwakarma, e-Shram, and PMSYM with citations and application steps.
-5. **Personalized Scheme Matching:** Automated recommendations tailored to vendor trades and budgets.
-6. **Voice & Trilingual Accessibility:** Hands-free speech recognition (STT) and voice narration (TTS) in English, Hindi (हिंदी), and Hinglish.
-7. **Production Observability:** Live Prometheus metrics and structured distributed tracing.
+1. **[0:00 - 0:56] Team Intro & Street Vendor Problem Reality:** Context on India's 10M+ street vendors, perishable spoilage, and language barriers *(Shivansh)*.
+2. **[0:56 - 1:51] Live Dashboard & ML Demand Forecasting:** Dynamic vendor profiles, daily sales logging, and real-time ML demand inference with confidence bounds *(Shivansh)*.
+3. **[1:51 - 2:37] Weather-Aware Stock Recommendation Engine:** Margin-optimized prep recommendations factoring in extreme heat, rain, and perishability *(Riddhi)*.
+4. **[2:37 - 3:23] Grounded Scheme RAG & Trilingual Voice Assistant:** Grounded Q&A for PM SVANidhi, MUDRA & Vishwakarma with hands-free voice interaction in Hindi, English, and Hinglish *(Riddhi)*.
+5. **[3:23 - 4:09] Production Engineering, Metrics & 48 Tests:** OpenAPI Swagger documentation, live Prometheus telemetry, and 48/48 passing automated tests *(Shivansh)*.
+6. **[4:09 - 4:35] Measurable Social Impact & Closing Remarks:** Financial resilience, welfare accessibility, and final takeaways *(Shivansh & Riddhi)*.
 
 ---
 
