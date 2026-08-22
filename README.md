@@ -64,17 +64,15 @@ docker compose -f docker-compose.prod.yml up -d --build
 
 ## 🎥 Demo Video
 
-[![Watch FLUX Demo Video](https://img.youtube.com/vi/81PoO0M_TRU/maxresdefault.jpg)](https://youtu.be/81PoO0M_TRU)
-
 > 🔗 **Video Submission Link:** [Watch FLUX 5-Minute Demo Video on YouTube](https://youtu.be/81PoO0M_TRU)
 
 ### Video Walkthrough Highlights:
-1. **[0:00 - 0:56] Team Intro & Street Vendor Problem Reality:** Context on India's 10M+ street vendors, perishable spoilage, and language barriers *(Shivansh)*.
-2. **[0:56 - 1:51] Live Dashboard & ML Demand Forecasting:** Dynamic vendor profiles, daily sales logging, and real-time ML demand inference with confidence bounds *(Shivansh)*.
-3. **[1:51 - 2:37] Weather-Aware Stock Recommendation Engine:** Margin-optimized prep recommendations factoring in extreme heat, rain, and perishability *(Riddhi)*.
-4. **[2:37 - 3:23] Grounded Scheme RAG & Trilingual Voice Assistant:** Grounded Q&A for PM SVANidhi, MUDRA & Vishwakarma with hands-free voice interaction in Hindi, English, and Hinglish *(Riddhi)*.
-5. **[3:23 - 4:09] Production Engineering, Metrics & 48 Tests:** OpenAPI Swagger documentation, live Prometheus telemetry, and 48/48 passing automated tests *(Shivansh)*.
-6. **[4:09 - 4:35] Measurable Social Impact & Closing Remarks:** Financial resilience, welfare accessibility, and final takeaways *(Shivansh & Riddhi)*.
+1. **Team Intro & Street Vendor Problem Reality:** Context on India's 10M+ street vendors, perishable spoilage, and language barriers.
+2. **Live Dashboard & ML Demand Forecasting:** Dynamic vendor profiles, daily sales logging, and real-time ML demand inference with confidence bounds.
+3. **Weather-Aware Stock Recommendation Engine:** Margin-optimized prep recommendations factoring in extreme heat, rain, and perishability.
+4. **Grounded Scheme RAG & Trilingual Voice Assistant:** Grounded Q&A for PM SVANidhi, MUDRA & Vishwakarma with hands-free voice interaction in Hindi, English, and Hinglish.
+5. **Production Engineering, Metrics & 48 Tests:** OpenAPI Swagger documentation, live Prometheus telemetry, and 48/48 passing automated tests.
+6. **Measurable Social Impact & Closing Remarks:** Financial resilience, welfare accessibility, and production readiness.
 
 ---
 
